@@ -6,6 +6,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 Das heir ist die erste Website von Lars
 
+
+# For Life
+
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
