@@ -1,3 +1,64 @@
-site_name: My Docs
+﻿site_name: Wissensspeicher
+site_url: https://wiki-code.github.io/
+repo_url: https://github.com/umbassa-long/wiki-long
+repo_name: GitHub
 
-theme: readthedocs
+# --- Theme Einstellungen ---
+theme:
+  name: material
+  language: de
+  palette:
+    # Dies ist die typische Standardfarbe (Dunkelblau/Indigo)
+    primary: indigo 
+    accent: indigo
+  features:
+    - navigation.tabs       # Aktiviert die horizontale Navigation
+    - navigation.sections   # Faltet Hauptabschnitte zusammen, wenn tabs aktiv sind
+    - navigation.with_icons
+    - navigation.expand
+    - navigation.footer
+    - content.code.copy # Für den Copy-Button bei Code-Blöcken
+    - toc.follow      # Lässt das Inhaltsverzeichnis (rechts) mitschrollen
+plugins:
+  #- search
+  - git-revision-date-localized:
+      # Optional: Konfiguriert das Datumsformat
+      # Standardmäßig: Jahr-Monat-Tag
+      date_format: "%d. %B %Y"
+      # Optional: Konfiguriert die Zeitanzeige
+      time_format: "%H:%M"
+extra:
+  revision:
+    date: true
+markdown_extensions:
+  - admonition
+  - pymdownx.details      # Für faltbare Admonitions (??? Syntax)
+  - pymdownx.superfences  # Für verschachtelte Code-Blöcke
+  # Weitere nützliche Extensions für Material:
+  - pymdownx.tabbed       # Für Tabs innerhalb des Seiteninhalts
+  - pymdownx.highlight    # Bessere Code-Hervorhebung
+  - attr_list             # Ermöglicht das Hinzufügen von Klassen/Attributen zu Elementen
+# --- Navigation (Linke Seitenleiste) ---
+nav:
+  - Wissensspeicher: index.md            # Hier kommt der Inhalt der Startseite hin
+  - 📘 Inhaltsübersicht: summary.md
+  - Code:
+    - Welcome to MkDocs: code/welcome.md
+  - Links:
+    - Links & Ressourcen: links/links.md
+    #- ... weitere Links
+  - Markdown:
+    - Formatierung: markdown/formatierung.md
+    - Grundlagen: markdown/grundlagen.md
+    - Markdown-Tabellen: markdown/tabellen.md
+    - Highlighting: markdown/admonition.md
+    - Emoji: markdown/emoji.md
+    #- ... weitere Markdown-Themen
+  - How Tos:
+    - Projekt1: projekte/projekt1.md
+    - Projekt2: projekte/projekt2.md
+    #- ... weitere Projekte
+  - Tools:
+    - Docker: tools/docker.md
+    - Git: tools/git.md
+    #- ... weitere Tools
