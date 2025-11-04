@@ -14,3 +14,6 @@ body { margin:0; background:#e8ede3; overflow:hidden; font-family:'Georgia'; tex
 .text { position:relative; color:#2f3d2a; font-size:1.2em; margin-top:20px; }
 .text span { font-size:0.9em; opacity:0.7; }
 </style>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE0NjA0NjU0Nl19
+-->
