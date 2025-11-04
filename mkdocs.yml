@@ -7,11 +7,12 @@ repo_name: GitHub
 theme:
   name: material
   language: de
-  palette:
-    # Dies ist die typische Standardfarbe (Dunkelblau/Indigo)
-    primary: indigo 
-    accent: indigo
-  features:
+palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: cyan 
+    accent: pink
+features:
     - navigation.tabs       # Aktiviert die horizontale Navigation
     - navigation.sections   # Faltet Hauptabschnitte zusammen, wenn tabs aktiv sind
     - navigation.with_icons
@@ -62,3 +63,7 @@ nav:
     - Docker: tools/docker.md
     - Git: tools/git.md
     #- ... weitere Tools
+
+    # Eigener CSS-Abschnitt
+extra_css:
+  - css/style.css
