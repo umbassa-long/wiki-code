@@ -28,17 +28,10 @@ jobs:
 
       # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (DIE WICHTIGE KORREKTUR)
       - name: Install MkDocs Dependencies ⚙️
-        run: |
-          # Installiert die Basis-MkDocs und ghp-import (für gh-deploy)
+        run: 
           pip install mkdocs 
-          
-          # Installiert das Material-Theme (für features und palette)
           pip install mkdocs-material
-          
-          # Installiert das fehlende Plugin (das den Fehler verursacht hat)
           pip install mkdocs-git-revision-date-localized-plugin
-          
-          # Optionale Installation von 'ghp-import', falls mkdocs es nicht selbst mitbringt
           pip install ghp-import 
 
       # Schritt 4: Dokumentation bereitstellen
