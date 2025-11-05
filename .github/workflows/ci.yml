@@ -26,13 +26,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (DIE WICHTIGE KORREKTUR)
+      # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (KORREKTUR)
+      # Wir installieren jetzt alle Pakete in einem einzigen pip install-Befehl.
       - name: Install MkDocs Dependencies ⚙️
-        run: 
-          pip install mkdocs;
-          pip install mkdocs-material;
-          pip install mkdocs-git-revision-date-localized-plugin;
-          pip install ghp-import;
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin ghp-import
 
       # Schritt 4: Dokumentation bereitstellen
       - name: Deploy documentation to GitHub Pages 🚀
