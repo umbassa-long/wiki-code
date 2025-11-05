@@ -36,7 +36,7 @@ jobs:
           pip install mkdocs-material
           
           # Installiert das fehlende Plugin (das den Fehler verursacht hat)
-          pip install mkdocs-git-revision-date-plugin
+          pip install mkdocs-git-revision-date-localized-plugin
           
           # Optionale Installation von 'ghp-import', falls mkdocs es nicht selbst mitbringt
           pip install ghp-import 
