@@ -25,7 +25,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-          cache: 'pip' # Fügt Caching für Python-Abhängigkeiten hinzu
+          # FEHLERBEHEBUNG: 'cache: pip' entfernt, da keine requirements.txt vorhanden ist.
+          # cache: 'pip' 
 
       # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (BULLETPROOF)
       # Wir installieren jetzt alle Pakete in einem einzigen, robusten pip install-Befehl.
