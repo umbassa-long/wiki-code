@@ -3,43 +3,53 @@ site_url: https://wiki-code.github.io/
 repo_url: https://github.com/umbassa-long/wiki-long
 repo_name: GitHub
 
-    
+# --- Theme Einstellungen ---
 theme:
   name: material
   language: de
-  logo: assets/images/logo.png  # LOGO Hinzufügen --- ANGENOMMEN, Ihr Logo liegt unter docs/assets/images/logo.png
-palette:
-  - media: "(prefers-color-scheme: light)"
-    scheme: default
-    primary: cyan 
-    accent: pink
-features:
-  - navigation.tabs 
-  - navigation.sections 
-  - navigation.with_icons
-  - navigation.expand
-  - navigation.footer
-  - content.code.copy
-  - toc.follow 
+  logo: assets/images/logo.png # Logo-Pfad
+
+  # DIESE ABSCHNITTE MÜSSEN UNTER 'theme:' EINGEFÜGT WERDEN
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan 
+      accent: pink
+  
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.with_icons
+    - navigation.expand
+    - navigation.footer
+    - content.code.copy
+    - toc.follow
+
+# Plugins MÜSSEN UNTER 'plugins:' EINGEFÜGT WERDEN
 plugins:
-        #- search
-        # 2. KORRIGIERTER PLUGIN-NAME (muss 'mkdocs-git-revision-date-localized-plugin' heißen)
-  - mkdocs-git-revision-date-localized-plugin:
-      date_format: "%d. %B %Y" # Optional: Konfiguriert das Datumsformat
-      time_format: "%H:%M" # Optional: Konfiguriert die Zeitanzeige
+  # Der korrekte Plugin-Name als Listeneintrag mit Bindestrich:
+  - git-revision-date-localized-plugin:
+      # Optional: Konfiguriert das Datumsformat
+      date_format: "%d. %B %Y"
+      # Optional: Konfiguriert die Zeitanzeige
+      time_format: "%H:%M"
+
 extra:
   revision:
     date: true
-extra_javascript: # 3. POPSINS SCHRIFTART HINZUFÜGEN (Zusätzlich zur CSS @import-Regel für Robustheit)
+extra_javascript:
   - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
 markdown_extensions:
   - admonition
-  - pymdownx.details 
-  - pymdownx.superfences 
-  - pymdownx.tabbed # Weitere nützliche Extensions für Material:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
   - pymdownx.highlight
   - attr_list
-nav: # Navigation (Linke Seitenleiste) ---
+  - pymdownx.emoji # Empfohlen, da Sie Emoji verwenden
+  
+# --- Navigation (Linke Seitenleiste) ---
+nav:
   - Wissensspeicher: index.md
   - 📘 Inhaltsübersicht: summary.md
   - Code:
@@ -58,5 +68,6 @@ nav: # Navigation (Linke Seitenleiste) ---
   - Tools:
     - Docker: tools/docker.md
     - Git: tools/git.md
+    
 extra_css: # Eigener CSS-Abschnitt
   - css/style.css
