@@ -1,18 +1,15 @@
 name: Deploy MkDocs to GitHub Pages
 
-# 🚀 Workflow wird bei jedem Push auf den main-Branch ausgeführt
 on:
   push:
     branches:
       - main
 
-# 🔐 Erforderliche Berechtigungen für GitHub Pages Deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 🧱 Optional: verhindert parallele Deployments
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -21,34 +18,33 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ Repository auschecken
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Python einrichten
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      # 3️⃣ Abhängigkeiten installieren (keine venv nötig)
       - name: Install MkDocs and Plugins ⚙️
         run: |
-          pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin
+          python -m pip install --upgrade pip
+          python -m pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin
 
-      # 4️⃣ Dokumentation bauen
+      - name: Verify MkDocs Plugin Installation 🧩
+        run: |
+          python -m pip show mkdocs-git-revision-date-localized-plugin
+          mkdocs --version
+
       - name: Build MkDocs Site 🏗️
         run: |
           mkdocs build --clean
 
-      # 5️⃣ Artefakt hochladen (an GitHub Pages übergeben)
       - name: Upload built site artifact 📦
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
-  # 🔹 Zweiter Job: Deployment auf GitHub Pages
   deploy:
     environment:
       name: github-pages
