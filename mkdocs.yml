@@ -3,7 +3,7 @@ site_url: https://wiki-code.github.io/
 repo_url: https://github.com/umbassa-long/wiki-long
 repo_name: GitHub
 
-# --- Theme Einstellungen ---
+    #  --- Theme Einstellungen ---
 theme:
   name: material
   language: de
@@ -23,9 +23,9 @@ features:
   - content.code.copy
   - toc.follow 
 plugins:
-  #- search
-  # 2. KORRIGIERTER PLUGIN-NAME (muss 'mkdocs-git-revision-date-localized-plugin' heißen)
-  - git-revision-date-localized-plugin:
+        #- search
+        # 2. KORRIGIERTER PLUGIN-NAME (muss 'mkdocs-git-revision-date-localized-plugin' heißen)
+  - mkdocs-git-revision-date-localized-plugin:
       # Optional: Konfiguriert das Datumsformat
       date_format: "%d. %B %Y"
       # Optional: Konfiguriert die Zeitanzeige
@@ -33,8 +33,7 @@ plugins:
 extra:
   revision:
     date: true
-# 3. POPSINS SCHRIFTART HINZUFÜGEN (Zusätzlich zur CSS @import-Regel für Robustheit)
-extra_javascript:
+extra_javascript: # 3. POPSINS SCHRIFTART HINZUFÜGEN (Zusätzlich zur CSS @import-Regel für Robustheit)
   - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
 markdown_extensions:
   - admonition
@@ -44,7 +43,7 @@ markdown_extensions:
   - pymdownx.tabbed 
   - pymdownx.highlight
   - attr_list
-# --- Navigation (Linke Seitenleiste) ---
+  # Navigation (Linke Seitenleiste) ---
 nav:
   - Wissensspeicher: index.md
   - 📘 Inhaltsübersicht: summary.md
