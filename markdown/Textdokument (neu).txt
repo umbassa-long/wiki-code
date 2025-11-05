@@ -1,0 +1,30 @@
+Arten von Verlinkungen in Markdown
+1. Inline-Links
+Die häufigste Form, bei der der Link-Text und die Ziel-URL direkt nebeneinander stehen.
+Syntax: [Link-Text](URL).
+Beispiel: {Link: AnVIL Portal https://anvilproject.org/guides/content/creating-links}.
+Optionaler Tooltip: Fügen Sie einen Titel in Anführungszeichen nach der URL ein, der angezeigt wird, wenn man mit der Maus über den Link fährt.
+Beispiel mit Tooltip: [Hauptseite](https://inf-schule.de "Buch IF"). 
+2. Referenz-Links
+Eine Methode, bei der Sie den Link-Text und die URL in zwei separaten Teilen definieren. Das ist besonders nützlich für längere Dokumente, um den Text übersichtlicher zu gestalten.
+Syntax:
+[Link-Text][Referenz-ID]
+[Referenz-ID]: URL.
+Beispiel:
+[AnVIL Portal][1]
+[1]: https://anvilproject.org/guides/content/creating-links. 
+3. Verlinkung auf interne Anker
+Diese Links ermöglichen es, innerhalb eines Dokuments zu bestimmten Abschnitten zu springen.
+Syntax: [Link-Text](#Überschrift).
+Beispiel: [Weiter zu Abschnitt 2](#abschnitt-2). 
+4. Verlinkung auf Bilder
+Bilder werden wie Links aufgebaut, jedoch mit einem Ausrufezeichen ! am Anfang.
+Syntax: ![Alt-Text](URL-zum-Bild).
+Beispiel: ![Eine Katze, die liest](/bilder/katze.jpg).
+Verlinktes Bild: Sie können auch ein Bild mit einem Link versehen, indem Sie die Link-Syntax um die Bild-Syntax legen.
+Beispiel: [![Alt-Text](/pfad/zum/bild.jpg)](https://cmsstash.de). 
+5. Verlinkung auf lokale Dateien
+Ähnlich wie bei externen Links, aber die URL ist ein relativer oder absoluter Dateipfad.
+Syntax: [Link-Text](Pfad/zur/Datei.pdf).
+Beispiel: [Meine Präsentation](dokumente/praesentation.pdf).
+Hinweis: Lokale Links funktionieren nur in Umgebungen, in denen der Pfad zugänglich ist, z. B. in einem Projekt-Repository. 
