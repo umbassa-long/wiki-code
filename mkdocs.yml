@@ -26,10 +26,8 @@ plugins:
         #- search
         # 2. KORRIGIERTER PLUGIN-NAME (muss 'mkdocs-git-revision-date-localized-plugin' heißen)
   - mkdocs-git-revision-date-localized-plugin:
-      # Optional: Konfiguriert das Datumsformat
-      date_format: "%d. %B %Y"
-      # Optional: Konfiguriert die Zeitanzeige
-      time_format: "%H:%M"
+      date_format: "%d. %B %Y" # Optional: Konfiguriert das Datumsformat
+      time_format: "%H:%M" # Optional: Konfiguriert die Zeitanzeige
 extra:
   revision:
     date: true
@@ -39,12 +37,10 @@ markdown_extensions:
   - admonition
   - pymdownx.details 
   - pymdownx.superfences 
-  # Weitere nützliche Extensions für Material:
-  - pymdownx.tabbed 
+  - pymdownx.tabbed # Weitere nützliche Extensions für Material:
   - pymdownx.highlight
   - attr_list
-  # Navigation (Linke Seitenleiste) ---
-nav:
+nav: # Navigation (Linke Seitenleiste) ---
   - Wissensspeicher: index.md
   - 📘 Inhaltsübersicht: summary.md
   - Code:
