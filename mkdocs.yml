@@ -3,12 +3,11 @@ site_url: https://wiki-code.github.io/
 repo_url: https://github.com/umbassa-long/wiki-long
 repo_name: GitHub
 
-    #  --- Theme Einstellungen ---
+    
 theme:
   name: material
   language: de
-  # 1. LOGO HINZUFÜGEN
-  logo: assets/images/logo.png  # ANGENOMMEN, Ihr Logo liegt unter docs/assets/images/logo.png
+  logo: assets/images/logo.png  # LOGO Hinzufügen --- ANGENOMMEN, Ihr Logo liegt unter docs/assets/images/logo.png
 palette:
   - media: "(prefers-color-scheme: light)"
     scheme: default
