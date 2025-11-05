@@ -7,61 +7,62 @@ repo_name: GitHub
 theme:
   name: material
   language: de
+  # 1. LOGO HINZUFÜGEN
+  logo: assets/images/logo.png  # ANGENOMMEN, Ihr Logo liegt unter docs/assets/images/logo.png
 palette:
   - media: "(prefers-color-scheme: light)"
     scheme: default
     primary: cyan 
     accent: pink
 features:
-    - navigation.tabs       # Aktiviert die horizontale Navigation
-    - navigation.sections   # Faltet Hauptabschnitte zusammen, wenn tabs aktiv sind
-    - navigation.with_icons
-    - navigation.expand
-    - navigation.footer
-    - content.code.copy # Für den Copy-Button bei Code-Blöcken
-    - toc.follow      # Lässt das Inhaltsverzeichnis (rechts) mitschrollen
+  - navigation.tabs 
+  - navigation.sections 
+  - navigation.with_icons
+  - navigation.expand
+  - navigation.footer
+  - content.code.copy
+  - toc.follow 
 plugins:
   #- search
-  - git-revision-date-localized:
+  # 2. KORRIGIERTER PLUGIN-NAME (muss 'mkdocs-git-revision-date-localized-plugin' heißen)
+  - git-revision-date-localized-plugin:
       # Optional: Konfiguriert das Datumsformat
-      # Standardmäßig: Jahr-Monat-Tag
       date_format: "%d. %B %Y"
       # Optional: Konfiguriert die Zeitanzeige
       time_format: "%H:%M"
 extra:
   revision:
     date: true
+# 3. POPSINS SCHRIFTART HINZUFÜGEN (Zusätzlich zur CSS @import-Regel für Robustheit)
+extra_javascript:
+  - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
 markdown_extensions:
   - admonition
-  - pymdownx.details      # Für faltbare Admonitions (??? Syntax)
-  - pymdownx.superfences  # Für verschachtelte Code-Blöcke
+  - pymdownx.details 
+  - pymdownx.superfences 
   # Weitere nützliche Extensions für Material:
-  - pymdownx.tabbed       # Für Tabs innerhalb des Seiteninhalts
-  - pymdownx.highlight    # Bessere Code-Hervorhebung
-  - attr_list             # Ermöglicht das Hinzufügen von Klassen/Attributen zu Elementen
+  - pymdownx.tabbed 
+  - pymdownx.highlight
+  - attr_list
 # --- Navigation (Linke Seitenleiste) ---
 nav:
-  - Wissensspeicher: index.md            # Hier kommt der Inhalt der Startseite hin
+  - Wissensspeicher: index.md
   - 📘 Inhaltsübersicht: summary.md
   - Code:
     - Welcome to MkDocs: code/welcome.md
   - Links:
     - Links & Ressourcen: links/links.md
-    #- ... weitere Links
   - Markdown:
     - Formatierung: markdown/formatierung.md
     - Grundlagen: markdown/grundlagen.md
     - Markdown-Tabellen: markdown/tabellen.md
     - Highlighting: markdown/admonition.md
     - Emoji: markdown/emoji.md
-    #- ... weitere Markdown-Themen
   - How Tos:
     - Projekt1: projekte/projekt1.md
     - Projekt2: projekte/projekt2.md
-    #- ... weitere Projekte
   - Tools:
     - Docker: tools/docker.md
     - Git: tools/git.md
-    #- ... weitere Tools
 extra_css: # Eigener CSS-Abschnitt
   - css/style.css
