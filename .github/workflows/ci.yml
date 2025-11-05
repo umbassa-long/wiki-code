@@ -4,9 +4,9 @@ name: Deploy Docs
 on:
   push:
     branches:
-      - main 
+      - main
 
-# Erlaubt dem GITHUB_TOKEN Schreibzugriff, der für die Bereitstellung von gh-pages erforderlich ist.
+# Erlaubt dem GITHUB_TOKEN Schreibzugriff (für gh-pages Deployment)
 permissions:
   contents: write
   pages: write
@@ -16,35 +16,23 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Schritt 1: Code auschecken
+      # 1️⃣ Code auschecken
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Schritt 2: Python einrichten
+      # 2️⃣ Python einrichten
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (MIT VIRTUELLER UMGEBUNG)
+      # 3️⃣ Abhängigkeiten installieren (ohne venv – direkt global)
       - name: Install MkDocs Dependencies ⚙️
-        # Führt alle Befehle in einem einzigen Skript aus, um die venv zu aktivieren.
         run: |
-          # 1. VENV ERSTELLEN UND AKTIVIEREN
-          python -m venv venv
-          source venv/bin/activate
-          
-          # 2. PAKETE INSTALLIEREN (werden direkt in die venv installiert)
           pip install --upgrade pip
           pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin ghp-import
 
-      # Schritt 4: Dokumentation bereitstellen (INNERHALB DER VENV)
+      # 4️⃣ Dokumentation bauen & auf GitHub Pages deployen
       - name: Deploy documentation to GitHub Pages 🚀
-        # Alle Befehle werden in der venv ausgeführt, um 100%ige Sicherheit zu gewährleisten.
         run: |
-          source venv/bin/activate
           mkdocs gh-deploy --force
-
-      # Optional: Wenn Sie den neueren 'Pages' Deployment-Prozess von GitHub verwenden
-      # - name: Deploy to GitHub Pages
-      #   uses: actions/deploy-pages@v4
