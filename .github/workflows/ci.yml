@@ -38,10 +38,11 @@ jobs:
           # Installiert alle benötigten Pakete in einem Rutsch
           pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin ghp-import
 
-      # Schritt 4: Dokumentation bereitstellen
+      # Schritt 4: Dokumentation bereitstellen (ULTRA-ROBUST)
       - name: Deploy documentation to GitHub Pages 🚀
-        # Der Befehl, der zuvor fehlgeschlagen ist, sollte nun erfolgreich sein
-        run: mkdocs gh-deploy --force
+        # WICHTIG: Führt MkDocs direkt über das Python-Modul aus, 
+        # um Umgebungsprobleme und "Plugin nicht gefunden"-Fehler zu umgehen.
+        run: python -m mkdocs gh-deploy --force
 
       # Optional: Wenn Sie den neueren 'Pages' Deployment-Prozess von GitHub verwenden
       # - name: Deploy to GitHub Pages
