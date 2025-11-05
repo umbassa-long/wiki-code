@@ -63,7 +63,5 @@ nav:
     - Docker: tools/docker.md
     - Git: tools/git.md
     #- ... weitere Tools
-
-    # Eigener CSS-Abschnitt
-extra_css:
+extra_css: # Eigener CSS-Abschnitt
   - css/style.css
