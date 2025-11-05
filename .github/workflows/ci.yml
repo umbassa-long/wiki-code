@@ -25,5 +25,7 @@ jobs:
           path: ~/.cache 
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+      # --- KORRIGIERTER SCHRITT: Installiert Theme UND Plugin ---
+      - run: pip install mkdocs-material mkdocs-git-revision-date-localized
+      # -----------------------------------------------------------
       - run: mkdocs gh-deploy --force
