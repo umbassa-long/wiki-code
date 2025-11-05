@@ -25,20 +25,25 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-          # cache: 'pip' entfernt, um Konflikte zu vermeiden
 
-      # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (LOKAL & GARANTIERT)
+      # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (MIT VIRTUELLER UMGEBUNG)
       - name: Install MkDocs Dependencies ⚙️
-        # Die Kommentare sind jetzt außerhalb des run-Blocks, um das Highlighting zu fixen.
+        # Führt alle Befehle in einem einzigen Skript aus, um die venv zu aktivieren.
         run: |
+          # 1. VENV ERSTELLEN UND AKTIVIEREN
+          python -m venv venv
+          source venv/bin/activate
+          
+          # 2. PAKETE INSTALLIEREN (werden direkt in die venv installiert)
           pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin ghp-import --target .local_mkdocs
+          pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin ghp-import
 
-      # Schritt 4: Dokumentation bereitstellen (ABSOLUT ROBUST)
-      # WICHTIG: Setzt den PYTHONPATH, um Python zu zwingen, die lokal
-      # installierten Pakete im Ordner .local_mkdocs zu finden.
+      # Schritt 4: Dokumentation bereitstellen (INNERHALB DER VENV)
       - name: Deploy documentation to GitHub Pages 🚀
-        run: PYTHONPATH=.local_mkdocs python -m mkdocs gh-deploy --force
+        # Alle Befehle werden in der venv ausgeführt, um 100%ige Sicherheit zu gewährleisten.
+        run: |
+          source venv/bin/activate
+          mkdocs gh-deploy --force
 
       # Optional: Wenn Sie den neueren 'Pages' Deployment-Prozess von GitHub verwenden
       # - name: Deploy to GitHub Pages
