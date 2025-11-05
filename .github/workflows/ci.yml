@@ -29,17 +29,15 @@ jobs:
 
       # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (LOKAL & GARANTIERT)
       - name: Install MkDocs Dependencies ⚙️
+        # Die Kommentare sind jetzt außerhalb des run-Blocks, um das Highlighting zu fixen.
         run: |
-          # WICHTIG: Stellt sicher, dass die neueste pip-Version verwendet wird
           pip install --upgrade pip
-          
-          # NEU: Installiert alle benötigten Pakete in ein lokales Verzeichnis (.local_mkdocs).
           pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin ghp-import --target .local_mkdocs
 
       # Schritt 4: Dokumentation bereitstellen (ABSOLUT ROBUST)
+      # WICHTIG: Setzt den PYTHONPATH, um Python zu zwingen, die lokal
+      # installierten Pakete im Ordner .local_mkdocs zu finden.
       - name: Deploy documentation to GitHub Pages 🚀
-        # WICHTIG: Setzt den PYTHONPATH, um Python zu zwingen, die lokal
-        # installierten Pakete im Ordner .local_mkdocs zu finden.
         run: PYTHONPATH=.local_mkdocs python -m mkdocs gh-deploy --force
 
       # Optional: Wenn Sie den neueren 'Pages' Deployment-Prozess von GitHub verwenden
