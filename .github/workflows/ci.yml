@@ -25,26 +25,23 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-          # FEHLERBEHEBUNG: 'cache: pip' entfernt, da keine requirements.txt vorhanden ist.
-          # cache: 'pip' 
+          # cache: 'pip' entfernt, um Konflikte zu vermeiden
 
-      # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (BULLETPROOF)
-      # Wir installieren jetzt alle Pakete in einem einzigen, robusten pip install-Befehl.
+      # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (LOKAL & GARANTIERT)
       - name: Install MkDocs Dependencies ⚙️
         run: |
           # WICHTIG: Stellt sicher, dass die neueste pip-Version verwendet wird
           pip install --upgrade pip
           
-          # Installiert alle benötigten Pakete in einem Rutsch
-          pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin ghp-import
+          # NEU: Installiert alle benötigten Pakete in ein lokales Verzeichnis (.local_mkdocs).
+          pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin ghp-import --target .local_mkdocs
 
-      # Schritt 4: Dokumentation bereitstellen (ULTRA-ROBUST)
+      # Schritt 4: Dokumentation bereitstellen (ABSOLUT ROBUST)
       - name: Deploy documentation to GitHub Pages 🚀
-        # WICHTIG: Führt MkDocs direkt über das Python-Modul aus, 
-        # um Umgebungsprobleme und "Plugin nicht gefunden"-Fehler zu umgehen.
-        run: python -m mkdocs gh-deploy --force
+        # WICHTIG: Setzt den PYTHONPATH, um Python zu zwingen, die lokal
+        # installierten Pakete im Ordner .local_mkdocs zu finden.
+        run: PYTHONPATH=.local_mkdocs python -m mkdocs gh-deploy --force
 
       # Optional: Wenn Sie den neueren 'Pages' Deployment-Prozess von GitHub verwenden
       # - name: Deploy to GitHub Pages
       #   uses: actions/deploy-pages@v4
-      
