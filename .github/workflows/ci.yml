@@ -1,31 +1,51 @@
-name: ci 
+name: Deploy Docs
+
+# Führt den Workflow bei jedem Push auf dem 'main'-Branch aus
 on:
   push:
     branches:
-      - master 
-      - main
+      - main 
+
+# Erlaubt dem GITHUB_TOKEN Schreibzugriff, der für die Bereitstellung von gh-pages erforderlich ist.
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Configure Git Credentials
+      # Schritt 1: Code auschecken
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Schritt 2: Python einrichten
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # SCHRITT 3: ABHÄNGIGKEITEN INSTALLIEREN (DIE WICHTIGE KORREKTUR)
+      - name: Install MkDocs Dependencies ⚙️
         run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: actions/setup-python@v5
-        with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
-      - uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: ~/.cache 
-          restore-keys: |
-            mkdocs-material-
-      # --- KORRIGIERTER SCHRITT: Installiert Theme UND Plugin ---
-      - run: pip install mkdocs-material mkdocs-git-revision-date-localized
-      # -----------------------------------------------------------
-      - run: mkdocs gh-deploy --force
+          # Installiert die Basis-MkDocs und ghp-import (für gh-deploy)
+          pip install mkdocs 
+          
+          # Installiert das Material-Theme (für features und palette)
+          pip install mkdocs-material
+          
+          # Installiert das fehlende Plugin (das den Fehler verursacht hat)
+          pip install mkdocs-git-revision-date-localized
+          
+          # Optionale Installation von 'ghp-import', falls mkdocs es nicht selbst mitbringt
+          pip install ghp-import 
+
+      # Schritt 4: Dokumentation bereitstellen
+      - name: Deploy documentation to GitHub Pages 🚀
+        # Der Befehl, der zuvor fehlgeschlagen ist, sollte nun erfolgreich sein
+        run: mkdocs gh-deploy --force
+
+      # Optional: Wenn Sie den neueren 'Pages' Deployment-Prozess von GitHub verwenden
+      # - name: Deploy to GitHub Pages
+      #   uses: actions/deploy-pages@v4
