@@ -3,19 +3,17 @@ site_url: https://wiki-code.github.io/
 repo_url: https://github.com/umbassa-long/wiki-long
 repo_name: GitHub
 
-# --- Theme Einstellungen ---
 theme:
   name: material
   language: de
-  logo: assets/images/logo.png # Logo-Pfad
+  logo: assets/images/logo.png
 
-  # DIESE ABSCHNITTE MÜSSEN UNTER 'theme:' EINGEFÜGT WERDEN
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: cyan 
       accent: pink
-  
+
   features:
     - navigation.tabs
     - navigation.sections
@@ -25,20 +23,22 @@ theme:
     - content.code.copy
     - toc.follow
 
-# Plugins MÜSSEN UNTER 'plugins:' EINGEFÜGT WERDEN
+# ✅ Korrigierter Plugin-Name
 plugins:
-  # Der korrekte Plugin-Name als Listeneintrag mit Bindestrich:
-  - git-revision-date-localized-plugin:
-      # Optional: Konfiguriert das Datumsformat
+  - git-revision-date-localized:
       date_format: "%d. %B %Y"
-      # Optional: Konfiguriert die Zeitanzeige
       time_format: "%H:%M"
 
 extra:
   revision:
     date: true
+
 extra_javascript:
   - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
+
+extra_css:
+  - css/style.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -46,9 +46,8 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.highlight
   - attr_list
-  - pymdownx.emoji # Empfohlen, da Sie Emoji verwenden
-  
-# --- Navigation (Linke Seitenleiste) ---
+  - pymdownx.emoji
+
 nav:
   - Wissensspeicher: index.md
   - 📘 Inhaltsübersicht: summary.md
@@ -68,6 +67,3 @@ nav:
   - Tools:
     - Docker: tools/docker.md
     - Git: tools/git.md
-    
-extra_css: # Eigener CSS-Abschnitt
-  - css/style.css
