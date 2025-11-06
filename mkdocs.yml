@@ -23,7 +23,6 @@ theme:
     - content.code.copy
     - toc.follow
 
-# ✅ Korrigierter Plugin-Name
 plugins:
   - git-revision-date-localized:
       date_format: "%d. %B %Y"
