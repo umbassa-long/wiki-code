@@ -35,8 +35,8 @@ extra:
 extra_javascript:
   - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
 
-extra_css:
-  - css/style.css
+#extra_css:
+#  - css/style.css
 
 markdown_extensions:
   - admonition
