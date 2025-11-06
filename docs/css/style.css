@@ -239,4 +239,26 @@ blockquote {
 }
 
 /* ================================================= */
-/* NEU: FÜR STICKY RIGHT SIDEBAR (Inhaltsverzeichnis/TOC)
+/* NEU: FIX: ERZWINGT STICKY & INTERN SCROLLBARE RIGHT SIDEBAR (TOC) */
+/* ================================================= */
+
+/* 1. Neutralisiert mögliche Layout-Breaker (Häufige Ursache für Sticky-Fehler) */
+.md-container,
+.md-main,
+.md-main__inner {
+    /* Stellt sicher, dass kein Eltern-Container das Kleben verhindert */
+    overflow: visible !important; 
+}
+
+/* 2. Macht den TOC-Inhalt selbst sticky UND intern scrollbar */
+.md-sidebar--secondary .md-toc {
+    /* STICKY FUNKTION */
+    position: sticky !important; 
+    top: 1rem !important;        /* Abstand vom oberen Rand */
+    z-index: 10 !important;      
+    
+    /* INTERN SCROLLBARE FUNKTION (Wie das Markdown Cheat Sheet) */
+    /* Berechnet: 100% der Viewport-Höhe minus 2rem (Abstand oben und unten) */
+    max-height: calc(100vh - 2rem) !important;
+    overflow-y: auto !important; /* Fügt eine Scrollbar hinzu, wenn max-height überschritten wird */
+}
