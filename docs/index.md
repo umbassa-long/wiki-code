@@ -48,6 +48,8 @@ Eine einfache Liste mit allen wichtigen Startpunkten.
 * :material-code-json: [Code-Beispiele und Syntax](code/welcome.md)
 * :fontawesome-solid-link: [Externe Links & Ressourcen](links/ressourcen.md)
 * :material-lightbulb-on: [Die Idee hinter diesem Wiki](concept.md)
+
+{% include 'markdown_cheatsheet.md' %}
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTQ0NDU5NTQ5Ml19
 -->

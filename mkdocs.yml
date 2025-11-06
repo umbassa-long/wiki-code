@@ -27,7 +27,9 @@ plugins:
   - git-revision-date-localized:
       date_format: "%d. %B %Y"
       time_format: "%H:%M"
-
+  - macros:
+      # Inhalt der Sidebar rechts kommt hier rein
+      include_dir: includes
 extra:
   revision:
     date: true
