@@ -48,7 +48,7 @@ markdown_extensions:
   - pymdownx.emoji
 
 nav:
-  - Wissensspeicher: index.md
+  - Wissensspeicher: docs/index.md
   - 📘 Inhaltsübersicht: summary.md
   - Code:
     - Welcome to MkDocs: code/welcome.md
