@@ -52,6 +52,83 @@ hr {
     opacity: 0.8;
 }
 
+/* NEUER CODE: Layout für die Landing Page (Flexbox) */
+
+/* Erstellt einen Container für das Haupt-Layout der Landing Page */
+.landing-container {
+    display: flex; /* Aktiviert Flexbox für nebeneinanderliegende Elemente */
+    gap: 30px;     /* Abstand zwischen Bild und Text */
+    align-items: flex-start; /* Stellt sicher, dass der Inhalt oben beginnt */
+    padding: 20px 0;
+}
+
+/* Stil für die Bildspalte (linke Seite) */
+.landing-image-col {
+    flex: 0 0 40%; /* Nimmt 40% der Breite ein */
+    max-width: 40%; 
+    min-width: 300px;
+    padding-top: 20px;
+}
+
+/* Stil für die Text-Spalte (rechte Seite) */
+.landing-text-col {
+    flex: 1; /* Nimmt den restlichen Platz ein */
+}
+
+/* Stellt sicher, dass das Bild responsive ist */
+.landing-image-col img {
+    width: 100%;
+    height: auto;
+}
+
+/* Fügt eine dezente Linie unter dem Haupttitel ein */
+.landing-text-col h2:first-of-type {
+    border-bottom: 2px solid var(--md-default-fg-color--light);
+    padding-bottom: 10px;
+}
+
+/* Layout für die 6 Gründe / Argumente (verwenden von CSS Grid) */
+.argument-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Zwei gleich große Spalten */
+    gap: 20px 50px; /* Vertikaler und horizontaler Abstand */
+    margin-top: 20px;
+}
+
+/* Stil für jeden einzelnen Grund/Punkt */
+.argument-item {
+    padding: 5px 0;
+}
+
+.argument-item strong {
+    font-size: 1.2em; /* Hebt die Nummer hervor */
+    color: var(--md-default-color-primary); /* Verwendet die primäre Akzentfarbe */
+}
+
+/* RESPONSIVE DESIGN (Media Query) */
+/* Bricht das Layout für Bildschirme kleiner als 900px (typische Tablet-Größe im Hochformat) um */
+@media screen and (max-width: 900px) {
+    .landing-container {
+        flex-direction: column; /* Stapelt Bild und Text untereinander */
+        gap: 0; /* Entfernt den Abstand zwischen den gestapelten Elementen */
+    }
+
+    .landing-image-col,
+    .landing-text-col {
+        flex: 1 1 100%; /* Nimmt die volle Breite ein */
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    /* Das Argument-Grid wird auf Mobilgeräten zu einer einzelnen Spalte */
+    .argument-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+}
+/* ENDE NEUER CODE */
+
+
 /* 3. CTA Button (Auffällig & Peppig) */
 
 /* Spezieller Selektor für den CTA-Link im Markdown */
