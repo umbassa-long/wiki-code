@@ -54,7 +54,6 @@ markdown_extensions:
 
 nav:
   - Wissensspeicher: index.md
-  - 📘 Inhaltsübersicht: summary.md
   - Code:
     - Welcome to MkDocs: code/welcome.md
   - Links:
