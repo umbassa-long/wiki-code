@@ -11,7 +11,7 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: cyan 
+      primary: cyan
       accent: pink
 
   features:
@@ -21,15 +21,18 @@ theme:
     - navigation.expand
     - navigation.footer
     - content.code.copy
-    #- toc.follow
+    # - toc.follow
 
 plugins:
   - git-revision-date-localized:
-      date_format: "%d. %B %Y"
-      time_format: "%H:%M"
+      type: date            # ✅ replaces the old date_format/time_format options
+      fallback_to_build_date: true
+      locale: de
   - macros:
-      # Inhalt der Sidebar rechts kommt hier rein
-      include_dir: includes
+      # ✅ Fix: either point to a valid folder or comment out the line
+      # include_dir: includes   # uncomment only if you have this folder
+      include_dir: docs/includes  # optional safer path (if you move macros here)
+
 extra:
   revision:
     date: true
