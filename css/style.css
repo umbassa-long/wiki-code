@@ -181,6 +181,14 @@ blockquote {
 /* Logo sizing */
 .md-header__title img { max-height: 38px; }
 
+/* Styling für den Card-Inhalt Fix */
+.card-content {
+    /* Stellt sicher, dass der Inhalt den Container ausfüllt */
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+}
+
 /* ================================================= */
 /* FIX: Sticky & intern scrollbare eingebaute TOC-Sidebar */
 /* ================================================= */
