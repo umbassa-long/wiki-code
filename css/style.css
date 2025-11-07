@@ -187,7 +187,6 @@ blockquote {
 
 /* --- Verstärkte Card-Styles für MkDocs Material (ans Ende der Datei einfügen) --- */
 
-/* Ziel: selektiv in den Material Content eingreifen, hohe Spezifität */
 .md-main .md-content .grid.cards,
 .md-main .md-content .grid.cards > * {
     box-sizing: border-box;
@@ -212,7 +211,7 @@ blockquote {
     border-left: 6px solid var(--md-primary-fg-color) !important;
     box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08) !important;
     transition: transform 0.18s cubic-bezier(.2,.9,.3,1), box-shadow 0.18s ease !important;
-    min-height: 110px; /* sorgt für sichtbare Fläche, auch bei wenig Inhalt */
+    min-height: 110px;
 }
 
 /* Hover/Focus Effekte */
@@ -239,26 +238,59 @@ blockquote {
 }
 
 /* ================================================= */
-/* NEU: FIX: ERZWINGT STICKY & INTERN SCROLLBARE RIGHT SIDEBAR (TOC) */
+/* FIX: Sticky & intern scrollbare eingebaute TOC-Sidebar */
 /* ================================================= */
 
-/* 1. Neutralisiert mögliche Layout-Breaker (Häufige Ursache für Sticky-Fehler) */
 .md-container,
 .md-main,
 .md-main__inner {
-    /* Stellt sicher, dass kein Eltern-Container das Kleben verhindert */
     overflow: visible !important; 
 }
 
-/* 2. Macht den TOC-Inhalt selbst sticky UND intern scrollbar */
 .md-sidebar--secondary .md-toc {
-    /* STICKY FUNKTION */
-    position: sticky !important; 
-    top: 1rem !important;        /* Abstand vom oberen Rand */
-    z-index: 10 !important;      
-    
-    /* INTERN SCROLLBARE FUNKTION (Wie das Markdown Cheat Sheet) */
-    /* Berechnet: 100% der Viewport-Höhe minus 2rem (Abstand oben und unten) */
+    position: sticky !important;
+    top: 1rem !important;
+    z-index: 10 !important;
     max-height: calc(100vh - 2rem) !important;
-    overflow-y: auto !important; /* Fügt eine Scrollbar hinzu, wenn max-height überschritten wird */
+    overflow-y: auto !important;
+}
+
+/* ================================================= */
+/* NEU: Benutzerdefinierte rechte Sidebar (Cheat Sheet Include) */
+/* ================================================= */
+
+.right-sidebar {
+  position: fixed;
+  top: 6rem;
+  right: 2rem;
+  width: 300px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background-color: var(--md-surface);
+  border: 1px solid var(--md-divider-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  z-index: 20;
+}
+
+/* Platz für Sidebar schaffen */
+.md-content {
+  margin-right: 340px;
+}
+
+/* Responsiv */
+@media screen and (max-width: 1000px) {
+  .right-sidebar {
+    position: static;
+    width: 100%;
+    max-height: none;
+    box-shadow: none;
+    margin-top: 2rem;
+  }
+  .md-content {
+    margin-right: 0;
+  }
 }
