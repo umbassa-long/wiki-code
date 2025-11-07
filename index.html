@@ -1087,16 +1087,166 @@
 </ul>
 <h2 id="material-note-text-outline-markdown-cheat-sheet">:material-note-text-outline: Markdown Cheat Sheet</h2>
 <div class="right-sidebar" markdown>
-# test
 
-## test 2
+# Formatierung
 
-### test 3
+## Fett & Kursiv & Highlighting & und mehr
 
-#### test 4
+<div class="highlight"><pre><span></span><code><span class="ge">*Kursiver Text*</span>
+<span class="ge">_Kursiver Text_</span>
+<span class="gs">**Fetter Text**</span>
+<span class="gs">__Fetter Text__</span>
+***Kursiver und fetter Text***
+___Kursiver und fetter Text___
+Highlighting ==very important words==.
+H~2~O
+X^2^
+</code></pre></div>
 
-##### test 5
-###### test 6
+- *Kursiver Text*
+- _Kursiver Text_
+- **Fetter Text**
+- __Fetter Text__
+- ***Kursiver und fetter Text***
+- ___Kursiver und fetter Text___
+- Highlighting ==very important words== .
+- H~2~O
+- X^2^
+
+## Unterstreichen
+
+Eine horizontale Linie wird durch drei oder mehr Bindestriche, 
+Sternchen oder Unterstriche in einer eigenen Zeile erstellt.
+
+<div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>---
+<span class="k">-</span><span class="w"> </span>***
+</code></pre></div>
+
+## Durchstreichen
+
+<div class="highlight"><pre><span></span><code><span class="gd">~~Dieser Text ist durchgestrichen.~~</span> Dieser aber nicht.
+</code></pre></div>
+
+## Überschriften
+
+<div class="highlight"><pre><span></span><code><span class="gh"># Überschrift 1</span>
+<span class="gu">## Überschrift 2</span>
+<span class="gu">### Überschrift 3</span>
+<span class="gu">#### Überschrift 4</span>
+<span class="gu">##### Überschrift 5</span>
+<span class="gu">###### Überschrift 6</span>
+</code></pre></div>
+
+## Zitate
+
+<div class="highlight"><pre><span></span><code>&gt;Dies ist ein <span class="gs">**eingerückter Bereich**</span>.
+&gt;Der Bereich geht hier weiter.
+&gt;Dies ist ein weiterer <span class="gs">**eingerückter Bereich**</span>.
+Auch dieser Bereich geht in der nächsten Zeile weiter.
+Diese Zeile ist allerdings nicht mehr eingerückt.
+</code></pre></div>
+
+- >Dies ist ein **eingerückter Bereich**. 
+- >Der Bereich geht hier weiter. 
+- >Dies ist ein weiterer **eingerückter Bereich**. 
+- Auch dieser Bereich geht in der nächsten Zeile weiter. 
+- Diese Zeile ist allerdings nicht mehr eingerückt. 
+
+## Listen
+
+**Unsortiert**
+
+<div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>Listenpunkt 1
+<span class="k">-</span><span class="w"> </span>Listenpunkt 2
+<span class="k">-</span><span class="w"> </span>Listenpunkt 3
+</code></pre></div>
+**Sortiert**
+
+Eine sortierte Liste hingegen erzeugt man durch eine Zahl 
+mit einem direkt darauffolgenden Punkt.
+
+<div class="highlight"><pre><span></span><code><span class="k">1.</span> Listenpunkt 1
+<span class="k">2.</span> Listenpunkt 2
+<span class="k">3.</span> Listenpunkt 3
+</code></pre></div>
+
+**Checkliste**
+
+Markdown gibt Ihnen zusätzlich die Möglichkeit, Checklisten zu erstellen. 
+Diese erscheinen mit einem Kästchen, das per Knopfdruck aktiviert werden kann. 
+Sie können auch bereits beim Erstellen der Liste Häkchen setzen. 
+Nutzen Sie hierfür eckige Klammern und ein X. Zwischen den eckigen Klammern ein Leerzeichen.
+
+<div class="highlight"><pre><span></span><code><span class="k">- [ ]</span> A
+<span class="k">- [x]</span> B
+<span class="k">- [ ]</span> C
+</code></pre></div>
+
+- [ ] A
+- [x] B
+- [ ] C
+
+**Checkliste in Tabellenform**
+
+<div class="highlight"><pre><span></span><code>| Aufgabe | Status |
+|----------|--------|
+| A | [x] |
+| B | [ ] |
+| C | [ ] |
+</code></pre></div>
+
+| Aufgabe | Status |
+|----------|--------|
+| A | [x] |
+| B | [ ] |
+| C | [ ] |
+
+## Darstellung von Code
+
+ - Apostroph vor und nach dem Wort siehe `code`.
+ - ``Zwei Apostrophe an Anfang und Ende hebt jeweils ein Apostroph auf, siehe `code`.``
+ - Drei Apostrophe Anfang und Ende, sowie der Name der Programmiersprache. 
+   Damit wird highlighting aktiviert
+
+## Links
+
+**Links ins Internet**
+- Optionaler Tooltip: Fügen Sie einen Titel in Anführungszeichen nach der URL ein, 
+  der angezeigt wird, wenn man mit der Maus über den Link fährt. 
+
+<div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>[<span class="nt">Emojis</span>](<span class="na">https://gist.github.com/rxaviers/7360908&quot;Text beim Maus gleiten&quot;</span>)
+</code></pre></div>
+
+- Links ins Internet 
+        - Es wird ein neuer Tab geöffnet.
+
+<div class="highlight"><pre><span></span><code>&lt;a href=&quot;https://qualidy.github.io/wiki-docker&quot; target=&quot;_blank&quot;&gt;Docker&lt;/a&gt;
+</code></pre></div>
+
+## Emojis
+
+- [Emojis](https://gist.github.com/rxaviers/7360908)
+
+
+## Sonderzeichen
+
+- Asterisk: *
+- Bindestrich:
+- Unterstrich: _
+- Runde Klammern: ()
+- Eckige Klammern: []
+- Geschweifte Klammern: {}
+- Punkt: .
+- Ausrufezeichen: !
+- Raute: #
+- Gravis: `
+- Backslash: \
+
+- Mit dem Backslash löst man die Bedeutung der Sonderzeichen auf.
+
+Die ist ein \*Beispiel mit Sternchen\*.
+
+Die ist ein *Beispiel mit Sternchen und ohne backslash*.
 </div>
 
 <!--stackedit_data:
