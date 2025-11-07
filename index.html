@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-rendering-error" class="md-skip">
+        <a href="#willkommen-in-meinem-wissensspeicher" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -358,6 +358,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Wissensspeicher
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -369,6 +382,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fokus-bereiche" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Fokus-Bereiche
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wichtige-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Wichtige Links
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-note-text-outline-markdown-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipps &amp; Tricks
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -929,6 +988,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fokus-bereiche" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Fokus-Bereiche
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wichtige-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Wichtige Links
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-note-text-outline-markdown-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipps &amp; Tricks
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -946,25 +1040,68 @@
   
 
 
-<h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
-<p><em>File</em>: <code>index.md</code></p>
-<p><em>TemplateNotFound</em>: 'includes/markdown_cheatsheet.md' not found in search path: 'docs/includes'</p>
-<div class="highlight"><pre><span></span><code>Traceback (most recent call last):
-  File &quot;/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/mkdocs_macros/plugin.py&quot;, line 704, in render
-    return md_template.render(**page_variables)
-           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File &quot;/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/jinja2/environment.py&quot;, line 1295, in render
-    self.environment.handle_exception()
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File &quot;/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/jinja2/environment.py&quot;, line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File &quot;&lt;template&gt;&quot;, line 55, in top-level template code
-  File &quot;/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/jinja2/loaders.py&quot;, line 209, in get_source
-    raise TemplateNotFound(
-    ...&lt;2 lines&gt;...
-    )
-jinja2.exceptions.TemplateNotFound: &#39;includes/markdown_cheatsheet.md&#39; not found in search path: &#39;docs/includes&#39;
-</code></pre></div>
+<h1 id="willkommen-in-meinem-wissensspeicher">🌐 Willkommen in meinem Wissensspeicher</h1>
+<p>Herzlich willkommen im zentralen digitalen Notizbuch! Hier finden Sie alle gesammelten <strong>Wissens- und Programmier-Tools</strong> sowie praktische <strong>How-To-Anleitungen</strong> – thematisch geordnet, leicht durchsuchbar und immer auf dem neuesten Stand.</p>
+<div class="admonition tip">
+<p class="admonition-title">So nutzen Sie das Wiki am besten</p>
+<p>Verwenden Sie die <strong>horizontale Navigation</strong> (Tabs) oben, um zwischen den Hauptthemen zu wechseln, oder nutzen Sie die <strong>schnelle Suche</strong> (oben rechts) für spezifische Begriffe.</p>
+</div>
+<hr />
+<h2 id="fokus-bereiche">🎯 Fokus-Bereiche</h2>
+<p>Dies ist der Herzstück-Bereich, der die wichtigsten Kategorien in visuellen Karten hervorhebt.</p>
+<div class="grid cards" markdown>
+
+<div class="card" markdown>
+  ## :material-book-edit: Markdown
+
+  Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions).
+
+  [:fontawesome-solid-arrow-right: Zur Markdown-Anleitung](markdown/grundlagen.md){ .md-button }
+</div>
+
+<div class="card" markdown>
+  ## :material-tools: Tools & Setup
+
+  Schnellstart-Anleitungen für **Docker** und die Verwendung von **Git** in Ihren Projekten.
+
+  [:fontawesome-solid-arrow-right: Zu den Tools](tools/docker.md){ .md-button }
+</div>
+
+<div class="card" markdown>
+  ## :material-rocket-launch-outline: Projekte & How To's
+
+  Schritt-für-Schritt-Anleitungen und Dokumentationen zu meinen aktuellen Projekten.
+
+  [:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
+</div>
+
+</div>
+
+<hr />
+<h2 id="wichtige-links">📝 Wichtige Links</h2>
+<p>Eine einfache Liste mit allen wichtigen Startpunkten.</p>
+<ul>
+<li>:material-code-json: <a href="code/welcome.md">Code-Beispiele und Syntax</a></li>
+<li>:fontawesome-solid-link: <a href="links/ressourcen.md">Externe Links &amp; Ressourcen</a></li>
+<li>:material-lightbulb-on: <a href="concept.md">Die Idee hinter diesem Wiki</a></li>
+</ul>
+<h2 id="material-note-text-outline-markdown-cheat-sheet">:material-note-text-outline: Markdown Cheat Sheet</h2>
+<div class="right-sidebar" markdown>
+# test
+
+## test 2
+
+### test 3
+
+#### test 4
+
+##### test 5
+###### test 6
+</div>
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQ0NDU5NTQ5Ml19
+-->
 
 
 
