@@ -11,7 +11,6 @@ Herzlich willkommen im zentralen digitalen Notizbuch! Hier finden Sie alle gesam
 
 Dies ist der Herzstück-Bereich, der die wichtigsten Kategorien in visuellen Karten hervorhebt.
 
-
 <div class="grid cards" markdown>
 
     <div class="card" markdown>
