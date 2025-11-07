@@ -31,7 +31,7 @@ plugins:
   - macros:
       # ✅ Fix: either point to a valid folder or comment out the line
       # include_dir: includes   # uncomment only if you have this folder
-      include_dir: docs/includes  # optional safer path (if you move macros here)
+      include_dir: includes  # optional safer path (if you move macros here)
 
 extra:
   revision:
