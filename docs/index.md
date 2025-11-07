@@ -50,7 +50,11 @@ Eine einfache Liste mit allen wichtigen Startpunkten.
 * :material-lightbulb-on: [Die Idee hinter diesem Wiki](concept.md)
 
 ## :material-note-text-outline: Markdown Cheat Sheet { data-toc-label="Tipps & Tricks" } 
-{% include 'markdown_cheatsheet.md' %}
+
+<div class="right-sidebar" markdown>
+{% include 'includes/markdown_cheatsheet.md' %}
+</div>
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTQ0NDU5NTQ5Ml19
 -->
