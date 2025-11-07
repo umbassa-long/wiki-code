@@ -14,32 +14,30 @@ Dies ist der Herzstück-Bereich, der die wichtigsten Kategorien in visuellen Kar
 
 <div class="grid cards" markdown>
 
+    <div class="card" markdown>
+        ## :material-book-edit: Markdown
+  
+        Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions).
+  
+        [:fontawesome-solid-arrow-right: Zur Markdown-Anleitung](markdown/grundlagen.md){ .md-button }
+    </div>
 
-<div class="card" markdown>
+    <div class="card" markdown>
+        ## :material-tools: Tools & Setup
+  
+        Schnellstart-Anleitungen für **Docker** und die Verwendung von **Git** in Ihren Projekten.
+  
+        [:fontawesome-solid-arrow-right: Zu den Tools](tools/docker.md){ .md-button }
+    </div>
 
-  ## :material-book-edit: Markdown
+    <div class="card" markdown>
+        ## :material-rocket-launch-outline: Projekte & How To's
   
-  Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions).
+        Schritt-für-Schritt-Anleitungen und Dokumentationen zu meinen aktuellen Projekten.
   
-  [:fontawesome-solid-arrow-right: Zur Markdown-Anleitung](markdown/grundlagen.md){ .md-button }
-</div>
+        [:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
 
-<div class="card" markdown>
-  ## :material-tools: Tools & Setup
-  
-  Schnellstart-Anleitungen für **Docker** und die Verwendung von **Git** in Ihren Projekten.
-  
-  [:fontawesome-solid-arrow-right: Zu den Tools](tools/docker.md){ .md-button }
-</div>
-
-<div class="card" markdown>
-  ## :material-rocket-launch-outline: Projekte & How To's
-  
-  Schritt-für-Schritt-Anleitungen und Dokumentationen zu meinen aktuellen Projekten.
-  
-  [:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
-
-</div>
+    </div>
 
 </div>
 
