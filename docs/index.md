@@ -1,9 +1,13 @@
-﻿# 🌐 Willkommen in meinem Wissensspeicher
+﻿---
+hide:
+  - toc
+---
+# 🌐 Willkommen in meinem Wissensspeicher
 
 Herzlich willkommen im zentralen digitalen Notizbuch! Hier finden Sie alle gesammelten **Wissens- und Programmier-Tools** sowie praktische **How-To-Anleitungen** – thematisch geordnet, leicht durchsuchbar und immer auf dem neuesten Stand.
 
 !!! tip "So nutzen Sie das Wiki am besten"
-    Verwenden Sie die **horizontale Navigation** (Tabs) oben, um zwischen den Hauptthemen zu wechseln, oder nutzen Sie die **schnelle Suche** (oben rechts) für spezifische Begriffe.
+    Verwenden Sie die **horizontale Navigation** (Tabs) oben, um zwischen den Hauptthemen zu wechseln, oder nutzen Sie die **schnelle Suche** (oben rechts) für spezifische Begriffe.
 
 ---
 
@@ -35,11 +39,11 @@ Schritt-für-Schritt-Anleitungen und Dokumentationen zu meinen aktuellen Projekt
 ---
 
 !!! abstract "📝 Wichtige Links"
-    Eine einfache Liste mit allen wichtigen Startpunkten.
+    Eine einfache Liste mit allen wichtigen Startpunkten.
 
-    * :material-code-json: [Code-Beispiele und Syntax](code/welcome.md)
-    * :fontawesome-solid-link: [Externe Links & Ressourcen](links/links.md)
-    * :material-lightbulb-on: [Die Idee hinter diesem Wiki](concept.md)
+    * :material-code-json: [Code-Beispiele und Syntax](code/welcome.md)
+    * :fontawesome-solid-link: [Externe Links & Ressourcen](links/links.md)
+    * :material-lightbulb-on: [Die Idee hinter diesem Wiki](concept.md)
 
 ---
 
