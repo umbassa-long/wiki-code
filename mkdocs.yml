@@ -8,7 +8,7 @@ theme:
   language: de
   logo: assets/images/logo.png
   font:
-    text: Momo Signature
+    text: Playwrite México Guides
 
   palette:
     - media: "(prefers-color-scheme: light)"
