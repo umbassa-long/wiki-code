@@ -8,7 +8,7 @@ theme:
   language: de
   logo: assets/images/logo.png
   font:
-    text: Playwrite México Guides
+    text: Playwrite Magyarország
 
   palette:
     - media: "(prefers-color-scheme: light)"
