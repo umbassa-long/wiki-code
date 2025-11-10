@@ -49,11 +49,11 @@ Schritt-für-Schritt-Anleitungen und Dokumentationen zu meinen aktuellen Projekt
 ---
 
 !!! abstract "📝 Wichtige Links"
-    Eine einfache Liste mit allen wichtigen Startpunkten.
+    Eine einfache Liste mit allen wichtigen Startpunkten.
 
-    * :material-code-json: [Code-Beispiele und Syntax](code/welcome.md)
-    * :fontawesome-solid-link: [Externe Links & Ressourcen](links/links.md)
-    * :material-lightbulb-on: [Die Idee hinter diesem Wiki](concept.md)
+    * :material-code-json: [Code-Beispiele und Syntax](code/welcome.md)
+    * :fontawesome-solid-link: [Externe Links & Ressourcen](links/links.md)
+    * :material-lightbulb-on: [Die Idee hinter diesem Wiki](concept.md)
 
 ---
 
