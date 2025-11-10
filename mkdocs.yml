@@ -8,7 +8,7 @@ theme:
   language: de
   logo: assets/images/logo.png
   font:
-    text: Playwrite Magyarország
+    text: pacifico
 
   palette:
     - media: "(prefers-color-scheme: light)"
