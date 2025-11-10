@@ -1040,12 +1040,9 @@ Schritt-für-Schritt-Anleitungen und Dokumentationen zu meinen aktuellen Projekt
 <blockquote>
 <p>Dies ist ein schnell zugängliches Spickzettel für die wichtigsten Markdown-Elemente und Admonitions, die in diesem Wiki verwendet werden.</p>
 </blockquote>
-<div markdown>
-
-# Formatierung
-
-## Fett & Kursiv & Highlighting & und mehr
-
+<div>
+<h1 id="formatierung">Formatierung</h1>
+<h2 id="fett-kursiv-highlighting-und-mehr">Fett &amp; Kursiv &amp; Highlighting &amp; und mehr</h2>
 <div class="highlight"><pre><span></span><code><span class="ge">*Kursiver Text*</span>
 <span class="ge">_Kursiver Text_</span>
 <span class="gs">**Fetter Text**</span>
@@ -1056,33 +1053,27 @@ Highlighting ==very important words==.
 H~2~O
 X^2^
 </code></pre></div>
-
-- *Kursiver Text*
-- _Kursiver Text_
-- **Fetter Text**
-- __Fetter Text__
-- ***Kursiver und fetter Text***
-- ___Kursiver und fetter Text___
-- Highlighting ==very important words== .
-- H~2~O
-- X^2^
-
-## Unterstreichen
-
-Eine horizontale Linie wird durch drei oder mehr Bindestriche, 
-Sternchen oder Unterstriche in einer eigenen Zeile erstellt.
-
+<ul>
+<li><em>Kursiver Text</em></li>
+<li><em>Kursiver Text</em></li>
+<li><strong>Fetter Text</strong></li>
+<li><strong>Fetter Text</strong></li>
+<li><strong><em>Kursiver und fetter Text</em></strong></li>
+<li><strong><em>Kursiver und fetter Text</em></strong></li>
+<li>Highlighting ==very important words== .</li>
+<li>H~2~O</li>
+<li>X^2^</li>
+</ul>
+<h2 id="unterstreichen">Unterstreichen</h2>
+<p>Eine horizontale Linie wird durch drei oder mehr Bindestriche, 
+Sternchen oder Unterstriche in einer eigenen Zeile erstellt.</p>
 <div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>---
 <span class="k">-</span><span class="w"> </span>***
 </code></pre></div>
-
-## Durchstreichen
-
+<h2 id="durchstreichen">Durchstreichen</h2>
 <div class="highlight"><pre><span></span><code><span class="gd">~~Dieser Text ist durchgestrichen.~~</span> Dieser aber nicht.
 </code></pre></div>
-
-## Überschriften
-
+<h2 id="uberschriften">Überschriften</h2>
 <div class="highlight"><pre><span></span><code><span class="gh"># Überschrift 1</span>
 <span class="gu">## Überschrift 2</span>
 <span class="gu">### Überschrift 3</span>
@@ -1090,119 +1081,133 @@ Sternchen oder Unterstriche in einer eigenen Zeile erstellt.
 <span class="gu">##### Überschrift 5</span>
 <span class="gu">###### Überschrift 6</span>
 </code></pre></div>
-
-## Zitate
-
+<h2 id="zitate">Zitate</h2>
 <div class="highlight"><pre><span></span><code>&gt;Dies ist ein <span class="gs">**eingerückter Bereich**</span>.
 &gt;Der Bereich geht hier weiter.
 &gt;Dies ist ein weiterer <span class="gs">**eingerückter Bereich**</span>.
 Auch dieser Bereich geht in der nächsten Zeile weiter.
 Diese Zeile ist allerdings nicht mehr eingerückt.
 </code></pre></div>
-
-- >Dies ist ein **eingerückter Bereich**. 
-- >Der Bereich geht hier weiter. 
-- >Dies ist ein weiterer **eingerückter Bereich**. 
-- Auch dieser Bereich geht in der nächsten Zeile weiter. 
-- Diese Zeile ist allerdings nicht mehr eingerückt. 
-
-## Listen
-
-**Unsortiert**
-
-<div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>Listenpunkt 1
+<ul>
+<li>
+<blockquote>
+<p>Dies ist ein <strong>eingerückter Bereich</strong>. </p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Der Bereich geht hier weiter. </p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Dies ist ein weiterer <strong>eingerückter Bereich</strong>. </p>
+</blockquote>
+</li>
+<li>Auch dieser Bereich geht in der nächsten Zeile weiter. </li>
+<li>Diese Zeile ist allerdings nicht mehr eingerückt. </li>
+</ul>
+<h2 id="listen">Listen</h2>
+<p><strong>Unsortiert</strong></p>
+<p><div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>Listenpunkt 1
 <span class="k">-</span><span class="w"> </span>Listenpunkt 2
 <span class="k">-</span><span class="w"> </span>Listenpunkt 3
 </code></pre></div>
-**Sortiert**
-
-Eine sortierte Liste hingegen erzeugt man durch eine Zahl 
-mit einem direkt darauffolgenden Punkt.
-
+<strong>Sortiert</strong></p>
+<p>Eine sortierte Liste hingegen erzeugt man durch eine Zahl 
+mit einem direkt darauffolgenden Punkt.</p>
 <div class="highlight"><pre><span></span><code><span class="k">1.</span> Listenpunkt 1
 <span class="k">2.</span> Listenpunkt 2
 <span class="k">3.</span> Listenpunkt 3
 </code></pre></div>
-
-**Checkliste**
-
-Markdown gibt Ihnen zusätzlich die Möglichkeit, Checklisten zu erstellen. 
+<p><strong>Checkliste</strong></p>
+<p>Markdown gibt Ihnen zusätzlich die Möglichkeit, Checklisten zu erstellen. 
 Diese erscheinen mit einem Kästchen, das per Knopfdruck aktiviert werden kann. 
 Sie können auch bereits beim Erstellen der Liste Häkchen setzen. 
-Nutzen Sie hierfür eckige Klammern und ein X. Zwischen den eckigen Klammern ein Leerzeichen.
-
+Nutzen Sie hierfür eckige Klammern und ein X. Zwischen den eckigen Klammern ein Leerzeichen.</p>
 <div class="highlight"><pre><span></span><code><span class="k">- [ ]</span> A
 <span class="k">- [x]</span> B
 <span class="k">- [ ]</span> C
 </code></pre></div>
-
-- [ ] A
-- [x] B
-- [ ] C
-
-**Checkliste in Tabellenform**
-
+<ul>
+<li>[ ] A</li>
+<li>[x] B</li>
+<li>[ ] C</li>
+</ul>
+<p><strong>Checkliste in Tabellenform</strong></p>
 <div class="highlight"><pre><span></span><code>| Aufgabe | Status |
 |----------|--------|
 | A | [x] |
 | B | [ ] |
 | C | [ ] |
 </code></pre></div>
-
-| Aufgabe | Status |
-|----------|--------|
-| A | [x] |
-| B | [ ] |
-| C | [ ] |
-
-## Darstellung von Code
-
- - Apostroph vor und nach dem Wort siehe `code`.
- - ``Zwei Apostrophe an Anfang und Ende hebt jeweils ein Apostroph auf, siehe `code`.``
- - Drei Apostrophe Anfang und Ende, sowie der Name der Programmiersprache. 
-   Damit wird highlighting aktiviert
-
-## Links
-
-**Links ins Internet**
+<table>
+<thead>
+<tr>
+<th>Aufgabe</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>[x]</td>
+</tr>
+<tr>
+<td>B</td>
+<td>[ ]</td>
+</tr>
+<tr>
+<td>C</td>
+<td>[ ]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="darstellung-von-code">Darstellung von Code</h2>
+<ul>
+<li>Apostroph vor und nach dem Wort siehe <code>code</code>.</li>
+<li><code>Zwei Apostrophe an Anfang und Ende hebt jeweils ein Apostroph auf, siehe `code`.</code></li>
+<li>Drei Apostrophe Anfang und Ende, sowie der Name der Programmiersprache. 
+   Damit wird highlighting aktiviert</li>
+</ul>
+<h2 id="links">Links</h2>
+<p><strong>Links ins Internet</strong>
 - Optionaler Tooltip: Fügen Sie einen Titel in Anführungszeichen nach der URL ein, 
-  der angezeigt wird, wenn man mit der Maus über den Link fährt. 
-
+  der angezeigt wird, wenn man mit der Maus über den Link fährt. </p>
 <div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>[<span class="nt">Emojis</span>](<span class="na">https://gist.github.com/rxaviers/7360908&quot;Text beim Maus gleiten&quot;</span>)
 </code></pre></div>
-
-- Links ins Internet 
-        - Es wird ein neuer Tab geöffnet.
-
+<ul>
+<li>Links ins Internet 
+        - Es wird ein neuer Tab geöffnet.</li>
+</ul>
 <div class="highlight"><pre><span></span><code>&lt;a href=&quot;https://qualidy.github.io/wiki-docker&quot; target=&quot;_blank&quot;&gt;Docker&lt;/a&gt;
 </code></pre></div>
-
-## Emojis
-
-- [Emojis](https://gist.github.com/rxaviers/7360908)
-
-
-## Sonderzeichen
-
-- Asterisk: *
-- Bindestrich:
-- Unterstrich: _
-- Runde Klammern: ()
-- Eckige Klammern: []
-- Geschweifte Klammern: {}
-- Punkt: .
-- Ausrufezeichen: !
-- Raute: #
-- Gravis: `
-- Backslash: \
-
-- Mit dem Backslash löst man die Bedeutung der Sonderzeichen auf.
-
-Die ist ein \*Beispiel mit Sternchen\*.
-
-Die ist ein *Beispiel mit Sternchen und ohne backslash*.
+<h2 id="emojis">Emojis</h2>
+<ul>
+<li><a href="https://gist.github.com/rxaviers/7360908">Emojis</a></li>
+</ul>
+<h2 id="sonderzeichen">Sonderzeichen</h2>
+<ul>
+<li>Asterisk: *</li>
+<li>Bindestrich:</li>
+<li>Unterstrich: _</li>
+<li>Runde Klammern: ()</li>
+<li>Eckige Klammern: []</li>
+<li>Geschweifte Klammern: {}</li>
+<li>Punkt: .</li>
+<li>Ausrufezeichen: !</li>
+<li>Raute: #</li>
+<li>Gravis: `</li>
+<li>
+<p>Backslash: \</p>
+</li>
+<li>
+<p>Mit dem Backslash löst man die Bedeutung der Sonderzeichen auf.</p>
+</li>
+</ul>
+<p>Die ist ein *Beispiel mit Sternchen*.</p>
+<p>Die ist ein <em>Beispiel mit Sternchen und ohne backslash</em>.</p>
 </div>
-
 <hr />
 <p><em>Zuletzt aktualisiert am <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="10. November 2025 11:45:12 CET">10. November 2025 11:45:12</span>.</em></p>
 
