@@ -25,9 +25,12 @@ theme:
 
 plugins:
   - git-revision-date-localized:
-      type: date            # ✅ replaces the old date_format/time_format options
+      type: datetime
+      timezone: Europe/Berlin
       fallback_to_build_date: true
       locale: de
+      enable_creation_date: false
+      format: "%d.%m.%Y, %H:%M Uhr"
   - macros:
       # ✅ Fix: either point to a valid folder or comment out the line
       # include_dir: includes   # uncomment only if you have this folder
