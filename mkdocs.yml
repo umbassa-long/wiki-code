@@ -47,10 +47,9 @@ plugins:
   - git-revision-date-localized:
       type: datetime
       timezone: Europe/Berlin
-      fallback_to_build_date: true
       locale: de
-      enable_creation_date: false
       format: "%d.%m.%Y, %H:%M Uhr"
+
   - macros
 
 
@@ -81,7 +80,7 @@ markdown_extensions:
   - attr_list           # Für Attribute auf Markdown-Elementen
   - md_in_html          # Erlaubt Markdown-Syntax innerhalb von HTML-Tags
   - pymdownx.emoji      # Ermöglicht die Verwendung von Emojis
-
+  - tables
 # --- Navigation ---
 
 nav:
