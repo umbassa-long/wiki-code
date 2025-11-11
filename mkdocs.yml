@@ -21,12 +21,17 @@ theme:
       scheme: default
       primary: deep purple # Primärfarbe für Header, etc.
       accent: pink         # Akzentfarbe für Hervorhebungen
-    
+      toggle:
+        icon: material/weather-night
+        name: In Dunkelmodus wechseln
     # Dunkles Farbschema (Automatisch von Zensical/Material unterstützt)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue grey
       accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: In Hellmodus wechseln
 
   features:
     - navigation.tabs
