@@ -37,4 +37,13 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 
 </div>
 
+---
+
+## 📝 Wichtiger Hinweis zur Fehlerbehebung
+
+!!! attention "Wenn Icons fehlen oder Code angezeigt wird"
+    Sollten Sie Icons (wie die oben genannten) als Klartext sehen oder Jinja-Code (`{{ ... }}`) angezeigt bekommen, liegt dies an einem Problem im Build-Prozess.
+
+    Bitte stellen Sie sicher, dass die **Plugin-Reihenfolge** in Ihrer `mkdocs.yml` korrekt ist: `macros` muss vor `git-revision-date-localized` stehen.
+
 Zuletzt aktualisiert am {{ git_revision_date_localized }}.
