@@ -43,7 +43,7 @@ theme:
     - toc.follow
 
 plugins:
-  # Plugins aus der requirements.txt
+  # Stellen Sie sicher, dass 'macros' keine Unterpunkte hat.
   - git-revision-date-localized:
       type: datetime
       timezone: Europe/Berlin
@@ -51,11 +51,9 @@ plugins:
       locale: de
       enable_creation_date: false
       format: "%d.%m.%Y, %H:%M Uhr"
-  - macros:
+  - macros
 
-# --- Externe Assets und Skripte ---
 
-# LEER: JavaScript-URLs, die eigentlich CSS waren, wurden nach extra_css verschoben.
 extra_javascript: [] 
 
 # KORRIGIERT: Alle Schriftarten und Stylesheet-Links gehören hierher.
