@@ -3,43 +3,47 @@ hide:
   - toc
 ---
 
-🌐 Willkommen in meinem Wissensspeicher
+# 🚀 Willkommen im Wissensspeicher
 
-Herzlich willkommen im zentralen digitalen Notizbuch! Hier finden Sie alle gesammelten Wissens- und Programmier-Tools sowie praktische How-To-Anleitungen – thematisch geordnet, leicht durchsuchbar und immer auf dem neuesten Stand.
+Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das moderne **Zensical**-Theme. Hier finden Sie gesammelte Anleitungen, Code-Snippets und Projektdokumentationen – thematisch geordnet und leicht zugänglich.
 
-So nutzen Sie das Wiki am besten
-Verwenden Sie die **horizontale Navigation (Tabs)** oben, um zwischen den Hauptthemen zu wechseln, oder nutzen Sie die **schnelle Suche** (oben rechts) für spezifische Begriffe.
+<div class="grid cards" markdown>
 
-🎯 Fokus-Bereiche
+## 💡 Schnellstart & Wichtige Links
 
----
+* :fontawesome-solid-book: [Grundlagen zur Wiki-Nutzung](markdown/grundlagen.md)
+* :material-code-tags: [Code-Beispiele und Syntax](code/welcome.md)
+* :material-link: [Externe Links & Ressourcen](links/links.md)
 
-## :material-book-edit: Markdown
-Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions).
-[:fontawesome-solid-arrow-right: Zur Markdown-Anleitung](markdown/grundlagen.md){ .md-button }
-
-## :material-tools: Tools & Setup
-Schnellstart-Anleitungen für **Docker** und die Verwendung von **Git** in Ihren Projekten.
-[:fontawesome-solid-arrow-right: Zu den Tools](tools/docker.md){ .md-button }
-
-## :material-rocket-launch-outline: Projekte & How To's
-Schritt-für-Schritt-Anleitungen und Dokumentationen zu meinen aktuellen Projekten.
-[:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
+</div>
 
 ---
 
-📝 Wichtige Links
+## 🎯 Fokus-Bereiche: Themen im Überblick
 
-Eine einfache Liste mit allen wichtigen Startpunkten.
+<div class="grid cards" markdown>
 
-* :material-code-json: Code-Beispiele und Syntax
-* :fontawesome-solid-link: Externe Links & Ressourcen
-* :material-lightbulb-on: Die Idee hinter diesem Wiki
-* :material-note-text-outline: Markdown Cheat Sheet
+- :material-book-edit:{ .lg .middle } **Markdown**
+  ~ Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen.
+  [:fontawesome-solid-arrow-right: Zur Anleitung](markdown/formatierung.md){ .md-button }
+
+- :material-tools:{ .lg .middle } **Tools & Setup**
+  ~ Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces.
+  [:fontawesome-solid-arrow-right: Zu den Tools](tools/docker.md){ .md-button }
+
+- :material-rocket-launch-outline:{ .lg .middle } **Projekte & How To's**
+  ~ Schritt-für-Schritt-Dokumentationen zu meinen aktuellen Projekten und How-To-Anleitungen.
+  [:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
+
+</div>
 
 ---
 
-Dies ist ein schnell zugängliches Spickzettel für die wichtigsten Markdown-Elemente und Admonitions, die in diesem Wiki verwendet werden.
-{% include 'includes/markdown_cheatsheet.md' %}
+## 📝 Wichtiger Hinweis zur Fehlerbehebung
+
+!!! attention "Wenn Icons fehlen oder Code angezeigt wird"
+    Sollten Sie Icons (wie die oben genannten) als Klartext sehen oder Jinja-Code (`{{ ... }}`) angezeigt bekommen, liegt dies an einem Problem im Build-Prozess.
+
+    Bitte stellen Sie sicher, dass die **Plugin-Reihenfolge** in Ihrer `mkdocs.yml` korrekt ist: `macros` muss vor `git-revision-date-localized` stehen.
 
 Zuletzt aktualisiert am {{ git_revision_date_localized }}.
