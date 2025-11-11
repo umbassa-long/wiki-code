@@ -43,14 +43,13 @@ theme:
     - toc.follow
 
 plugins:
-  # Stellen Sie sicher, dass 'macros' keine Unterpunkte hat.
+  - macros
   - git-revision-date-localized:
       type: datetime
       timezone: Europe/Berlin
       locale: de
       format: "%d.%m.%Y, %H:%M Uhr"
 
-  - macros
 
 
 extra_javascript: [] 
