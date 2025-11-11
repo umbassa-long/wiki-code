@@ -48,7 +48,6 @@ plugins:
       type: datetime
       timezone: Europe/Berlin
       locale: de
-      format: '%d.%m.%Y %H:%M Uhr'
 
 
 
