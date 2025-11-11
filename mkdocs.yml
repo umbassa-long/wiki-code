@@ -5,16 +5,27 @@ repo_url: https://github.com/umbassa-long/wiki-code
 repo_name: GitHub
 
 theme:
+  # 'modern' ist der korrekte Name für den neuen Look in Zensical/Material
   name: modern
   language: de
   logo: assets/images/logo.png
+  
+  # KORRIGIERT: Die Schriftart wird jetzt korrekt definiert und muss per extra_css geladen werden
   font:
-    text: pacifico
-
+    text: Pacifico
+    code: Roboto Mono # Code-Schriftarten sollten leserlich bleiben
+  
   palette:
+    # Helles Farbschema (Standard)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
+      primary: deep purple # Primärfarbe für Header, etc.
+      accent: pink         # Akzentfarbe für Hervorhebungen
+    
+    # Dunkles Farbschema (Automatisch von Zensical/Material unterstützt)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
       accent: pink
 
   features:
@@ -27,6 +38,7 @@ theme:
     - toc.follow
 
 plugins:
+  # Plugins aus der requirements.txt
   - git-revision-date-localized:
       type: datetime
       timezone: Europe/Berlin
@@ -35,29 +47,39 @@ plugins:
       enable_creation_date: false
       format: "%d.%m.%Y, %H:%M Uhr"
   - macros:
-      # ✅ Fix: either point to a valid folder or comment out the line
-      # include_dir: includes   # uncomment only if you have this folder
-      # include_dir: includes  # optional safer path (if you move macros here)
+      # Optional: Pfad für Makro-Includes, falls verwendet. 
+      # include_dir: includes 
+      
+# --- Externe Assets und Skripte ---
+
+# LEER: JavaScript-URLs, die eigentlich CSS waren, wurden nach extra_css verschoben.
+extra_javascript: [] 
+
+# KORRIGIERT: Alle Schriftarten und Stylesheet-Links gehören hierher.
+extra_css:
+  # Lädt die definierte Schriftart "Pacifico"
+  - https://fonts.googleapis.com/css2?family=Pacifico&display=swap
+  # Lädt die zusätzliche Schriftart "Poppins"
+  - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
+  - css/style.css
 
 extra:
   revision:
     date: true
 
-extra_javascript:
-  - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
-
-extra_css:
-  - css/style.css
+# --- Markdown Erweiterungen ---
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - pymdownx.highlight
-  - attr_list
-  - md_in_html
-  - pymdownx.emoji
+  - admonition          # Hinweisboxen (Note, Warning, etc.)
+  - pymdownx.details    # Aufklappbare Boxen (Akkordeons)
+  - pymdownx.superfences # Erweiterte Code-Blöcke
+  - pymdownx.tabbed     # Tabs innerhalb des Seiteninhalts
+  # ENTFERNT: pymdownx.highlight ist redundant, da SuperFences dies übernimmt.
+  - attr_list           # Für Attribute auf Markdown-Elementen
+  - md_in_html          # Erlaubt Markdown-Syntax innerhalb von HTML-Tags
+  - pymdownx.emoji      # Ermöglicht die Verwendung von Emojis
+
+# --- Navigation ---
 
 nav:
   - Wissensspeicher: index.md
