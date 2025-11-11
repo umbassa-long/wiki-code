@@ -1,5 +1,4 @@
-mkdocs
-mkdocs-material
+# requirements.txt für Zensical
+zensical
 mkdocs-macros-plugin
 mkdocs-git-revision-date-localized-plugin
-zensical
