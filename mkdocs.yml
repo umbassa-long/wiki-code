@@ -4,7 +4,7 @@ repo_url: https://github.com/umbassa-long/wiki-code
 repo_name: GitHub
 
 theme:
-  name: material
+  name: modern
   language: de
   logo: assets/images/logo.png
   font:
