@@ -8,9 +8,11 @@ hide:
 Herzlich willkommen im zentralen digitalen Notizbuch! Hier finden Sie alle gesammelten Wissens- und Programmier-Tools sowie praktische How-To-Anleitungen – thematisch geordnet, leicht durchsuchbar und immer auf dem neuesten Stand.
 
 So nutzen Sie das Wiki am besten
-Verwenden Sie die horizontale Navigation (Tabs) oben, um zwischen den Hauptthemen zu wechseln, oder nutzen Sie die schnelle Suche (oben rechts) für spezifische Begriffe.
+Verwenden Sie die **horizontale Navigation (Tabs)** oben, um zwischen den Hauptthemen zu wechseln, oder nutzen Sie die **schnelle Suche** (oben rechts) für spezifische Begriffe.
 
 🎯 Fokus-Bereiche
+
+---
 
 ## :material-book-edit: Markdown
 Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions).
@@ -23,6 +25,8 @@ Schnellstart-Anleitungen für **Docker** und die Verwendung von **Git** in Ihren
 ## :material-rocket-launch-outline: Projekte & How To's
 Schritt-für-Schritt-Anleitungen und Dokumentationen zu meinen aktuellen Projekten.
 [:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
+
+---
 
 📝 Wichtige Links
 
