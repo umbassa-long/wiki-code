@@ -5,7 +5,7 @@ hide:
 
 # 🚀 Willkommen im Wissensspeicher
 
-Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das moderne **Zensical**-Theme. Hier finden Sie gesammelte Anleitungen, Code-Snippets und Projektdokumentationen – thematisch geordnet und leicht zugänglich.
+Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das Material-Theme. Hier finden Sie gesammelte Anleitungen, Code-Snippets und Projektdokumentationen – thematisch geordnet und leicht zugänglich.
 
 <div class="grid cards" markdown>
 
