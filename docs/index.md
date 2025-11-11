@@ -1,6 +1,6 @@
 ﻿---
 hide:
- - toc
+  - toc
 ---
 
 🌐 Willkommen in meinem Wissensspeicher
