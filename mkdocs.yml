@@ -58,10 +58,10 @@ extra_javascript: []
 # KORRIGIERT: Alle Schriftarten und Stylesheet-Links gehören hierher.
 extra_css:
   # Lädt die definierte Schriftart "Pacifico"
-  - https://fonts.googleapis.com/css2?family=Pacifico&display=swap
+  #- https://fonts.googleapis.com/css2?family=Pacifico&display=swap
   # Lädt die zusätzliche Schriftart "Poppins"
-  - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
-  - css/style.css
+  #- https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
+  #- css/style.css
 
 extra:
   revision:
