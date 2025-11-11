@@ -6,7 +6,7 @@ repo_name: GitHub
 
 theme:
   # 'modern' ist der korrekte Name für den neuen Look in Zensical/Material
-  name: modern
+  name: material
   language: de
   logo: assets/images/logo.png
   
@@ -48,7 +48,7 @@ plugins:
       type: datetime
       timezone: Europe/Berlin
       locale: de
-      format: "%d.%m.%Y, %H:%M Uhr"
+      format: '%d.%m.%Y %H:%M Uhr'
 
 
 
