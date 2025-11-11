@@ -48,7 +48,7 @@ plugins:
       format: "%d.%m.%Y, %H:%M Uhr"
   - macros:
       # Optional: Pfad für Makro-Includes, falls verwendet. 
-      # include_dir: includes 
+      include_dir: includes 
       
 # --- Externe Assets und Skripte ---
 
