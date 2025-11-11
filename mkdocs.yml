@@ -12,7 +12,7 @@ theme:
   
   # KORRIGIERT: Die Schriftart wird jetzt korrekt definiert und muss per extra_css geladen werden
   font:
-    text: Roboto Mono
+    text: Poppins
     code: Roboto Mono # Code-Schriftarten sollten leserlich bleiben
   
   palette:
@@ -60,9 +60,9 @@ extra_css:
   # Lädt die definierte Schriftart "Pacifico"
   #- https://fonts.googleapis.com/css2?family=Pacifico&display=swap
   # Lädt die definierte Schriftart "Roboto Mono"
-  - https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap
+  #- https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap
   # Lädt die zusätzliche Schriftart "Poppins"
-  #- https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
+  - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
   - css/style.css
 
 extra:
