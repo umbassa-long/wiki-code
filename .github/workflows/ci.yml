@@ -34,7 +34,7 @@ jobs:
 
       - name: Build MkDocs site
         # Dieser Schritt wird nun fehlerfrei ausgeführt, da alle Plugins installiert sind.
-        run: zensical build -d site
+        run: zensical build 
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
