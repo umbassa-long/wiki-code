@@ -52,9 +52,7 @@ plugins:
       enable_creation_date: false
       format: "%d.%m.%Y, %H:%M Uhr"
   - macros:
-      # Optional: Pfad für Makro-Includes, falls verwendet. 
-      include_dir: includes 
-      
+
 # --- Externe Assets und Skripte ---
 
 # LEER: JavaScript-URLs, die eigentlich CSS waren, wurden nach extra_css verschoben.
