@@ -1,17 +1,25 @@
-/* docs/assets/extra.css */
+/* docs/assets/extra.css - BEREINIGTE VERSION */
 
-/* Allgemeine Schriftgröße */
-.md-typeset {
-    font-size: 1.05em;
+/* 1. GLOBALE SCHRIFTGRÖSSE (Relative Anpassung für das gesamte Theme) */
+:root {
+    /* Erhöht die Basis-Schriftgröße und passt alle Header, Navigationen und den Text an */
+    --md-font-size: 1.09375em; 
 }
 
-/* Tabellen-Styling (Entfernt Rahmen und fügt Abstand hinzu) */
+/* 2. SCHRIFTGRÖSSE DES HAUPTTEXTES (Zusätzliche Anpassung und Fix) */
+.md-typeset {
+    /* Setzt die Schriftgröße des Haupt-Textkörpers auf 1.05 mal die (neue) Basisgröße */
+    font-size: 1.05em; 
+}
+
+/* 3. TABELLEN-STYLING (Entfernt Rahmen für den Card-Look) */
 .md-typeset table {
     border: none !important;
     border-collapse: separate;
     border-spacing: 0 10px;
     margin-bottom: 30px;
 }
+
 .md-typeset table th,
 .md-typeset table td {
     border: none !important;
@@ -20,16 +28,16 @@
 
 /* --- FARBSCHEMASPEZIFISCHES STYLING --- */
 
-/* Helles Schema (default) */
+/* 4. HELLES SCHEMA (default) */
 .md-theme-default .md-typeset table tbody tr {
     background-color: #fcfcfc; /* Heller Hintergrund für die Zellen */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 }
 
-/* Dunkles Schema (slate) */
+/* 5. DUNKLES SCHEMA (slate) - BEHEBT DEN WEISSEN BALKENFEHLER */
 .md-theme-slate .md-typeset table tbody tr {
-    /* Wichtig: Nutzt die Hintergrundfarbe des Headers im Dunkelmodus, was dunkler ist */
+    /* Nutzt eine dunkle Theme-Variable, um den weißen Balken zu verhindern */
     background-color: var(--md-code-bg-color); 
     box-shadow: none;
     border-radius: 5px;
