@@ -15,7 +15,25 @@ plugins:
         timezone: Europe/Berlin
         locale: de
 
-# Hier sind ALLE Erweiterungen deaktiviert, um Konflikte auszuschließen.
+nav:
+  - Wissensspeicher: index.md
+  - Code:
+    - Welcome to MkDocs: code/welcome.md
+  - Links:
+    - Links & Ressourcen: links/links.md
+  - Markdown:
+    - Formatierung: markdown/formatierung.md
+    - Grundlagen: markdown/grundlagen.md
+    - Markdown-Tabellen: markdown/tabellen.md
+    - Highlighting: markdown/admonition.md
+    - Emoji: markdown/emoji.md
+  - How Tos:
+    - Projekt1: projekte/projekt1.md
+    - Projekt2: projekte/projekt2.md
+  - Tools:
+    - Docker: tools/docker.md
+    - Git: tools/git.md
+
 markdown_extensions:
   - admonition
   - pymdownx.superfences
