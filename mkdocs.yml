@@ -46,6 +46,11 @@ plugins:
       type: datetime
       timezone: Europe/Berlin
       locale: de
+  - search:
+       separator: '[\s\-\.]+'
+       lang:
+          - de
+          - en
 
 nav:
   - Wissensspeicher: index.md
