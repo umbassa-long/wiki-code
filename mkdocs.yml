@@ -1,7 +1,7 @@
 ﻿site_name: Denkwürdig
 site_url: https://wiki-code.github.io/
-repo_url: https://github.com/Ihr-Github-Name/wiki-code # BITTE HIER IHRE REPO-URL EINFÜGEN!
-repo_name: GitHub
+#repo_url: https://github.com/Ihr-Github-Name/wiki-code # BITTE HIER IHRE REPO-URL EINFÜGEN!
+#repo_name: GitHub
 
 theme:
   name: material
@@ -33,6 +33,7 @@ theme:
     - search.suggest
     - search.share
     - content.action.top
+    - content.code.copy
     - toc.follow
 
 extra_css:
