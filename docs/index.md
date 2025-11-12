@@ -7,6 +7,8 @@ hide:
 
 Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das Material-Theme. Hier finden Sie gesammelte Anleitungen, Code-Snippets und Projektdokumentationen – thematisch geordnet und leicht zugänglich.
 
+---
+
 <div class="grid cards" markdown>
 
 ## 💡 Schnellstart & Wichtige Links
