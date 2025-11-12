@@ -3,42 +3,20 @@ hide:
   - toc
 ---
 
-# 🚀 Willkommen im Wissensspeicher
+# 🚀 Willkommen im Minimal-Wiki
 
-
-test
-Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das Material-Theme. Hier finden Sie gesammelte Anleitungen, Code-Snippets und Projektdokumentationen – thematisch geordnet und leicht zugänglich.
+Herzlich willkommen im sauberen Test-Setup.
 
 ---
 
-<div class="grid cards" markdown>
+## ✅ Erster Test: Icons
 
-## 💡 Schnellstart & Wichtige Links
-
-* :fontawesome-solid-book: [Grundlagen zur Wiki-Nutzung](markdown/grundlagen.md)
-* :material-code-tags: [Code-Beispiele und Syntax](code/welcome.md)
-* :material-link: [Externe Links & Ressourcen](links/links.md)
-
-</div>
+* Icon Material: :material-check:
+* Icon FontAwesome: :fontawesome-solid-thumbs-up:
 
 ---
 
-## 🎯 Fokus-Bereiche: Themen im Überblick
+## 💡 Erster Test: Admonition
 
-<div class="grid cards" markdown>
-
-- **:material-book-edit: Markdown**
-  ~ Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen.
-  [:fontawesome-solid-arrow-right: Zur Anleitung](markdown/formatierung.md){ .md-button }
-
-- **:material-tools: Tools & Setup**
-  ~ Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces.
-  [:fontawesome-solid-arrow-right: Zu den Tools](tools/docker.md){ .md-button }
-
-- **:material-rocket-launch-outline: Projekte & How To's**
-  ~ Schritt-für-Schritt-Dokumentationen zu meinen aktuellen Projekten und How-To-Anleitungen.
-  [:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
-
-</div>
-
-Zuletzt aktualisiert am {{ git_revision_date_localized }}.
+!!! note "Status"
+    Wenn die obigen Icons als Haken und Daumen erscheinen, ist das Basis-Setup erfolgreich!

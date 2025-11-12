@@ -1,101 +1,15 @@
-﻿site_name: Wissensspeicher
+﻿site_name: Mein Minimal-Wiki
 site_url: https://wiki-code.github.io/
-site_dir: site
-repo_url: https://github.com/umbassa-long/wiki-code
-repo_name: GitHub
 
 theme:
-  # 'modern' ist der korrekte Name für den neuen Look in Zensical/Material
   name: material
   language: de
-  logo: assets/images/logo.png
-  
-  # KORRIGIERT: Die Schriftart wird jetzt korrekt definiert und muss per extra_css geladen werden
-  font:
-    text: Poppins
-    code: Roboto Mono # Code-Schriftarten sollten leserlich bleiben
-  
-  palette:
-    # Helles Farbschema (Standard)
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple # Primärfarbe für Header, etc.
-      accent: pink         # Akzentfarbe für Hervorhebungen
-      toggle:
-        icon: material/weather-night
-        name: In Dunkelmodus wechseln
-    # Dunkles Farbschema (Automatisch von Zensical/Material unterstützt)
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue grey
-      accent: pink
-      toggle:
-        icon: material/weather-sunny
-        name: In Hellmodus wechseln
-
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.with_icons
-    - navigation.expand
-    - navigation.footer
-    - content.code.copy
-    - toc.follow
-
-plugins:
-  - macros
-  - git-revision-date-localized:
-      type: datetime
-      timezone: Europe/Berlin
-      locale: de
-
-
-
-extra_javascript: [] 
-
-# KORRIGIERT: Alle Schriftarten und Stylesheet-Links gehören hierher.
-extra_css:
-  # Lädt die definierte Schriftart "Pacifico"
-  #- https://fonts.googleapis.com/css2?family=Pacifico&display=swap
-  # Lädt die definierte Schriftart "Roboto Mono"
-  #- https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap
-  # Lädt die zusätzliche Schriftart "Poppins"
-  - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
-  - css/style.css
-
-extra:
-  revision:
-    date: true
-
-# --- Markdown Erweiterungen ---
-
-markdown_extensions:
-  - admonition          # Hinweisboxen (Note, Warning, etc.)
-  - pymdownx.details    # Aufklappbare Boxen (Akkordeons)
-  - pymdownx.superfences # Erweiterte Code-Blöcke
-  - pymdownx.tabbed     # Tabs innerhalb des Seiteninhalts
-  # ENTFERNT: pymdownx.highlight ist redundant, da SuperFences dies übernimmt.
-  # - attr_list           # Für Attribute auf Markdown-Elementen
-  # - md_in_html          # Erlaubt Markdown-Syntax innerhalb von HTML-Tags
-  - pymdownx.emoji      # Ermöglicht die Verwendung von Emojis
-  - tables
-# --- Navigation ---
 
 nav:
-  - Wissensspeicher: index.md
-  - Code:
-    - Welcome to MkDocs: code/welcome.md
-  - Links:
-    - Links & Ressourcen: links/links.md
-  - Markdown:
-    - Formatierung: markdown/formatierung.md
-    - Grundlagen: markdown/grundlagen.md
-    - Markdown-Tabellen: markdown/tabellen.md
-    - Highlighting: markdown/admonition.md
-    - Emoji: markdown/emoji.md
-  - How Tos:
-    - Projekt1: projekte/projekt1.md
-    - Projekt2: projekte/projekt2.md
-  - Tools:
-    - Docker: tools/docker.md
-    - Git: tools/git.md
+  - Startseite: index.md
+
+# Hier sind ALLE Erweiterungen deaktiviert, um Konflikte auszuschließen.
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.emoji
