@@ -20,3 +20,7 @@ Herzlich willkommen im sauberen Test-Setup.
 
 !!! note "Status"
     Wenn die obigen Icons als Haken und Daumen erscheinen, ist das Basis-Setup erfolgreich!
+
+---
+
+Zuletzt aktualisiert am {{ git_revision_date_localized }}.
