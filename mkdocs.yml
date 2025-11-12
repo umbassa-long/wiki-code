@@ -8,12 +8,12 @@ theme:
 nav:
   - Startseite: index.md
 
-#plugins:
-#    - macros
-#    - git-revision-date-localized:
-#        type: datetime
-#        timezone: Europe/Berlin
-#        locale: de
+plugins:
+    - macros
+    - git-revision-date-localized:
+        type: datetime
+        timezone: Europe/Berlin
+        locale: de
 
 # Hier sind ALLE Erweiterungen deaktiviert, um Konflikte auszuschließen.
 markdown_extensions:
