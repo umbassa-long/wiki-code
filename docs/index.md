@@ -5,6 +5,8 @@ hide:
 
 # 🚀 Willkommen im Wissensspeicher
 
+
+test
 Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das Material-Theme. Hier finden Sie gesammelte Anleitungen, Code-Snippets und Projektdokumentationen – thematisch geordnet und leicht zugänglich.
 
 ---
