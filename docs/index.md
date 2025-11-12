@@ -9,32 +9,40 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 
 ---
 
-<div class="grid cards" markdown>
+<div class="grid cards">
 
-## 💡 Schnellstart & Wichtige Links
+<h2>💡 Schnellstart & Wichtige Links</h2>
 
-* :fontawesome-solid-book: [Grundlagen zur Wiki-Nutzung](markdown/grundlagen.md)
-* :material-code-tags: [Code-Beispiele und Syntax](code/welcome.md)
-* :material-link: [Externe Links & Ressourcen](links/links.md)
+<ul>
+  <li>:fontawesome-solid-book: <a href="markdown/grundlagen.md">Grundlagen zur Wiki-Nutzung</a></li>
+  <li>:material-code-tags: <a href="code/welcome.md">Code-Beispiele und Syntax</a></li>
+  <li>:material-link: <a href="links/links.md">Externe Links & Ressourcen</a></li>
+</ul>
 
 </div>
 
 ---
 
-## 🎯 Fokus-Bereiche: Themen im Überblick
+<h2>🎯 Fokus-Bereiche: Themen im Überblick</h2>
 
-<div class="grid cards" markdown>
+<div class="grid cards">
 
-- **:material-book-edit: Markdown**
-  ~ Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen.
-  [:fontawesome-solid-arrow-right: Zur Anleitung](markdown/formatierung.md){ .md-button }
+<p>
+  <strong>:material-book-edit: Markdown</strong>
+  <br> Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen.
+  <a href="markdown/formatierung.md">[:fontawesome-solid-arrow-right: Zur Anleitung]</a>
+</p>
 
-- **:material-tools: Tools & Setup**
-  ~ Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces.
-  [:fontawesome-solid-arrow-right: Zu den Tools](tools/docker.md){ .md-button }
+<p>
+  <strong>:material-tools: Tools & Setup</strong>
+  <br> Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces.
+  <a href="tools/docker.md">[:fontawesome-solid-arrow-right: Zu den Tools]</a>
+</p>
 
-- **:material-rocket-launch-outline: Projekte & How To's**
-  ~ Schritt-für-Schritt-Dokumentationen zu meinen aktuellen Projekten und How-To-Anleitungen.
-  [:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
+<p>
+  <strong>:material-rocket-launch-outline: Projekte & How To's</strong>
+  <br> Schritt-für-Schritt-Dokumentationen zu meinen aktuellen Projekten und How-To-Anleitungen.
+  <a href="projekte/projekt1.md">[:fontawesome-solid-arrow-right: Alle Projekte ansehen]</a>
+</p>
 
 </div>
