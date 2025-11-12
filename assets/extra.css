@@ -5,30 +5,43 @@
     font-size: 1.05em;
 }
 
-/* Entfernt die Tabellenrahmen und trennt die Zellen optisch voneinander */
+/* Tabellen-Styling (für den Card-Look) */
 .md-typeset table {
     border: none !important;
-    border-collapse: separate; /* Erlaubt das Setzen von cell-spacing */
-    border-spacing: 0 10px; /* Vertikaler Abstand zwischen den Zeilen */
+    border-collapse: separate;
+    border-spacing: 0 10px;
     margin-bottom: 30px;
 }
-
-/* Entfernt alle Rahmenlinien von Header und Zellen */
 .md-typeset table th,
 .md-typeset table td {
     border: none !important;
-    /* Fügt interne Polsterung für den Card-Effekt hinzu */
     padding: 15px 12px;
 }
 
-/* Hintergrund für den Tabellen-Header (macht die Spaltenüberschriften deutlicher) */
-.md-typeset table thead {
-    background-color: var(--md-default-bg-color); /* Nutzt den Standard-Hintergrund des Themes */
+/* --- FARBSCHEMASPEZIFISCHES STYLING --- */
+
+/* Helles Schema */
+@media (prefers-color-scheme: light) {
+    /* Setzt den Hintergrund der Tabellenzeilen auf sehr hell (fast weiß) */
+    .md-typeset table tbody tr {
+        background-color: #fcfcfc;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+    }
 }
 
-/* Fügt einen leichten Hintergrund für die Zeilen hinzu (optional) */
-.md-typeset table tbody tr {
-    background-color: #fcfcfc; /* Sehr helles Grau */
-    border-radius: 5px; /* Leichte Rundung der Ecken */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Leichter Schatten */
+/* Dunkles Schema (slate) */
+@media (prefers-color-scheme: dark) {
+    /* Setzt den Hintergrund der Tabellenzeilen auf einen dunklen Wert, der zum Theme passt */
+    .md-typeset table tbody tr {
+        /* Nutzt eine Variable des Themes für dunklen Hintergrund, oder einen festen, dunklen Wert */
+        background-color: var(--md-code-bg-color); /* Nutzt den dunkleren Code-Hintergrund des Themes */
+        box-shadow: none; /* Entfernt den Schatten im Dunkelmodus */
+        border-radius: 5px;
+    }
+}
+
+/* Hintergrund für den Tabellen-Header */
+.md-typeset table thead {
+    background-color: var(--md-default-bg-color);
 }
