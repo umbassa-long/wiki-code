@@ -9,7 +9,7 @@
 /* 2. SCHRIFTGRÖSSE DES HAUPTTEXTES (Zusätzliche Anpassung und Fix) */
 .md-typeset {
     /* Setzt die Schriftgröße des Haupt-Textkörpers auf 1.05 mal die (neue) Basisgröße */
-    font-size: 1.05em; 
+    font-size: 1.25em; 
 }
 
 /* 3. TABELLEN-STYLING (Entfernt Rahmen für den Card-Look) */
