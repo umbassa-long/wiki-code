@@ -165,17 +165,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Wissensspeicher
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -185,34 +174,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#fokus-bereiche-themen-im-uberblick" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Fokus-Bereiche: Themen im Überblick
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -681,23 +642,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#fokus-bereiche-themen-im-uberblick" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Fokus-Bereiche: Themen im Überblick
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -714,31 +658,40 @@
 <h1 id="willkommen-im-wissensspeicher">🚀 Willkommen im Wissensspeicher</h1>
 <p>Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das Material-Theme. Hier finden Sie gesammelte Anleitungen, Code-Snippets und Projektdokumentationen – thematisch geordnet und leicht zugänglich.</p>
 <hr />
-<div class="grid cards" markdown>
+<div class="grid cards">
 
-## 💡 Schnellstart & Wichtige Links
+<h2>💡 Schnellstart & Wichtige Links</h2>
 
-* :fontawesome-solid-book: [Grundlagen zur Wiki-Nutzung](markdown/grundlagen.md)
-* :material-code-tags: [Code-Beispiele und Syntax](code/welcome.md)
-* :material-link: [Externe Links & Ressourcen](links/links.md)
+<ul>
+  <li>:fontawesome-solid-book: <a href="markdown/grundlagen.md">Grundlagen zur Wiki-Nutzung</a></li>
+  <li>:material-code-tags: <a href="code/welcome.md">Code-Beispiele und Syntax</a></li>
+  <li>:material-link: <a href="links/links.md">Externe Links & Ressourcen</a></li>
+</ul>
 
 </div>
 
 <hr />
-<h2 id="fokus-bereiche-themen-im-uberblick">🎯 Fokus-Bereiche: Themen im Überblick</h2>
-<div class="grid cards" markdown>
+<h2>🎯 Fokus-Bereiche: Themen im Überblick</h2>
 
-- **:material-book-edit: Markdown**
-  ~ Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen.
-  [:fontawesome-solid-arrow-right: Zur Anleitung](markdown/formatierung.md){ .md-button }
+<div class="grid cards">
 
-- **:material-tools: Tools & Setup**
-  ~ Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces.
-  [:fontawesome-solid-arrow-right: Zu den Tools](tools/docker.md){ .md-button }
+<p>
+  <strong>:material-book-edit: Markdown</strong>
+  <br> Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen.
+  <a href="markdown/formatierung.md">[:fontawesome-solid-arrow-right: Zur Anleitung]</a>
+</p>
 
-- **:material-rocket-launch-outline: Projekte & How To's**
-  ~ Schritt-für-Schritt-Dokumentationen zu meinen aktuellen Projekten und How-To-Anleitungen.
-  [:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
+<p>
+  <strong>:material-tools: Tools & Setup</strong>
+  <br> Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces.
+  <a href="tools/docker.md">[:fontawesome-solid-arrow-right: Zu den Tools]</a>
+</p>
+
+<p>
+  <strong>:material-rocket-launch-outline: Projekte & How To's</strong>
+  <br> Schritt-für-Schritt-Dokumentationen zu meinen aktuellen Projekten und How-To-Anleitungen.
+  <a href="projekte/projekt1.md">[:fontawesome-solid-arrow-right: Alle Projekte ansehen]</a>
+</p>
 
 </div>
 
@@ -761,7 +714,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="12. November 2025 09:52:13 CET">12. November 2025 09:52:13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="12. November 2025 10:31:44 CET">12. November 2025 10:31:44</span>
   </span>
 
     
