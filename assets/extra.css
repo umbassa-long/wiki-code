@@ -29,8 +29,8 @@
 
 /* Dunkles Schema (slate) */
 .md-theme-slate .md-typeset table tbody tr {
-    /* Wichtig: Nutzt eine Variable des Themes für einen dunklen Hintergrund, der nicht weiß ist */
-    background-color: var(--md-default-fg-color--light);
-    box-shadow: none; /* Keine Schatten im Dunkelmodus */
+    /* Wichtig: Nutzt die Hintergrundfarbe des Headers im Dunkelmodus, was dunkler ist */
+    background-color: var(--md-code-bg-color); 
+    box-shadow: none;
     border-radius: 5px;
 }
