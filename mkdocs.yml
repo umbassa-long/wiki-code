@@ -1,16 +1,39 @@
 ﻿site_name: Denkwürdig
 site_url: https://wiki-code.github.io/
+repo_url: https://github.com/Ihr-Github-Name/wiki-code # <--- HIER REPO-URL EINFÜGEN!
+repo_name: GitHub
 
 theme:
   name: material
   language: de
   palette:
-    primary: 'indigo'
-    accent: 'teal'
-    scheme: 'default'
+    # 1. Helles Schema (Standard)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: 'yellow'
+      accent: 'red'
+      toggle:
+        icon: material/brightness-7
+        name: Auf dunkles Schema wechseln
+    # 2. Dunkles Schema
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: 'indigo'
+      accent: 'teal'
+      toggle:
+        icon: material/brightness-4
+        name: Auf helles Schema wechseln
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
+  features:
+    # Hervorhebung des Suchbegriffs auf der Seite
+    - search.highlight
+    # Anzeige von Vorschlägen während der Eingabe
+    - search.suggest
+    # Suche basiert auf vollständigen Wörtern
+    - search.share
+    - content.code.copy # Ermöglicht das Kopieren von Codeblöcken mit einem Klick
 
 extra_css:
   - assets/extra.css
