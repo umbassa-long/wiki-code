@@ -1,9 +1,19 @@
-﻿site_name: Mein Minimal-Wiki
+﻿site_name: Denkwürdig
 site_url: https://wiki-code.github.io/
 
 theme:
   name: material
   language: de
+  palette:
+    primary: 'indigo'
+    accent: 'teal'
+    scheme: 'default'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+extra_css:
+  - assets/extra.css
 
 nav:
   - Startseite: index.md
