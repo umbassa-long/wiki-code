@@ -13,7 +13,7 @@ theme:
       primary: 'indigo'
       accent: 'teal'
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Auf dunkles Schema wechseln
     # 2. Dunkles Schema
     - media: "(prefers-color-scheme: dark)"
@@ -21,12 +21,14 @@ theme:
       primary: 'indigo'
       accent: 'teal'
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Auf helles Schema wechseln
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
   features:
+    - navigation.tabs
+    - navigation.top
     - search.highlight
     - search.suggest
     - search.share
