@@ -23,15 +23,15 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 
 <div class="grid cards" markdown>
 
-- :material-book-edit:{ .lg .middle } **Markdown**
+- **:material-book-edit: Markdown**
   ~ Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen.
   [:fontawesome-solid-arrow-right: Zur Anleitung](markdown/formatierung.md){ .md-button }
 
-- :material-tools:{ .lg .middle } **Tools & Setup**
+- **:material-tools: Tools & Setup**
   ~ Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces.
   [:fontawesome-solid-arrow-right: Zu den Tools](tools/docker.md){ .md-button }
 
-- :material-rocket-launch-outline:{ .lg .middle } **Projekte & How To's**
+- **:material-rocket-launch-outline: Projekte & How To's**
   ~ Schritt-für-Schritt-Dokumentationen zu meinen aktuellen Projekten und How-To-Anleitungen.
   [:fontawesome-solid-arrow-right: Alle Projekte ansehen](projekte/projekt1.md){ .md-button }
 
@@ -42,7 +42,7 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 ## 📌 Hinweis zur Plugin-Kompatibilität
 
 !!! note "Wichtige Information"
-    **Icons und Layout:** Wenn Icons wie der Pfeil (:fontawesome-solid-arrow-right:) nicht gerendert werden, liegt das an der Plugin-Verarbeitung.
-    **Datum:** Die Anzeige des Datums funktioniert nur, wenn das Makro-Plugin **fehlerfrei** arbeiten kann, was jetzt der Fall sein sollte.
+    Icons und Layout: Wenn Icons wie der Pfeil (:fontawesome-solid-arrow-right:) nicht gerendert werden, liegt das an der Plugin-Verarbeitung.
+    Datum: Die Anzeige des Datums funktioniert nur, wenn das Makro-Plugin **fehlerfrei** arbeiten kann, was jetzt der Fall sein sollte.
 
 Zuletzt aktualisiert am {{ git_revision_date_localized }}.
