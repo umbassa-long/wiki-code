@@ -11,7 +11,7 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 
 <div class="grid cards">
 
-<h2>💡 Schnellstart & Wichtige Links</h2>
+<h3>💡 Schnellstart & Wichtige Links</h3>
 
 <p>
   :fontawesome-solid-book: <a href="markdown/grundlagen.md">Grundlagen zur Wiki-Nutzung</a>
