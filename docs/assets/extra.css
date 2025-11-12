@@ -1,11 +1,11 @@
 /* docs/assets/extra.css */
 
-/* Allgemeine Schriftgröße leicht vergrößern */
+/* Allgemeine Schriftgröße */
 .md-typeset {
     font-size: 1.05em;
 }
 
-/* Tabellen-Styling (für den Card-Look) */
+/* Tabellen-Styling (Entfernt Rahmen und fügt Abstand hinzu) */
 .md-typeset table {
     border: none !important;
     border-collapse: separate;
@@ -20,28 +20,17 @@
 
 /* --- FARBSCHEMASPEZIFISCHES STYLING --- */
 
-/* Helles Schema */
-@media (prefers-color-scheme: light) {
-    /* Setzt den Hintergrund der Tabellenzeilen auf sehr hell (fast weiß) */
-    .md-typeset table tbody tr {
-        background-color: #fcfcfc;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        border-radius: 5px;
-    }
+/* Helles Schema (default) */
+.md-theme-default .md-typeset table tbody tr {
+    background-color: #fcfcfc; /* Heller Hintergrund für die Zellen */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
 }
 
 /* Dunkles Schema (slate) */
-@media (prefers-color-scheme: dark) {
-    /* Setzt den Hintergrund der Tabellenzeilen auf einen dunklen Wert, der zum Theme passt */
-    .md-typeset table tbody tr {
-        /* Nutzt eine Variable des Themes für dunklen Hintergrund, oder einen festen, dunklen Wert */
-        background-color: var(--md-code-bg-color); /* Nutzt den dunkleren Code-Hintergrund des Themes */
-        box-shadow: none; /* Entfernt den Schatten im Dunkelmodus */
-        border-radius: 5px;
-    }
-}
-
-/* Hintergrund für den Tabellen-Header */
-.md-typeset table thead {
-    background-color: var(--md-default-bg-color);
+.md-theme-slate .md-typeset table tbody tr {
+    /* Wichtig: Nutzt eine Variable des Themes für einen dunklen Hintergrund, der nicht weiß ist */
+    background-color: var(--md-default-fg-color--light);
+    box-shadow: none; /* Keine Schatten im Dunkelmodus */
+    border-radius: 5px;
 }
