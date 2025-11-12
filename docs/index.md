@@ -9,44 +9,19 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 
 ---
 
-<div class="grid cards">
+## 💡 Schnellstart & Wichtige Links
 
-<h3>💡 Schnellstart & Wichtige Links</h3>
-
-<p>
-  :fontawesome-solid-book: <a href="markdown/grundlagen.md">Grundlagen zur Wiki-Nutzung</a>
-</p>
-<p>
-  :material-code-tags: <a href="code/welcome.md">Code-Beispiele und Syntax</a>
-</p>
-<p>
-  :material-link: <a href="links/links.md">Externe Links & Ressourcen</a>
-</p>
-
-</div>
+| Links | Ressourcen |
+| :--- | :--- |
+| :fontawesome-solid-book: [Grundlagen zur Wiki-Nutzung](markdown/grundlagen.md) | :material-code-tags: [Code-Beispiele und Syntax](code/welcome.md) |
+| :material-link: [Externe Links & Ressourcen](links/links.md) | |
 
 ---
 
-<h2>🎯 Fokus-Bereiche: Themen im Überblick</h2>
+## 🎯 Fokus-Bereiche: Themen im Überblick (Tabellen-Layout)
 
-<div class="grid cards">
-
-<p>
-  <strong>:material-book-edit: Markdown</strong>
-  <br> Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen.
-  <a href="markdown/formatierung.md">Zur Anleitung :fontawesome-solid-arrow-right:</a>
-</p>
-
-<p>
-  <strong>:material-tools: Tools & Setup</strong>
-  <br> Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces.
-  <a href="tools/docker.md">Zu den Tools :fontawesome-solid-arrow-right:</a>
-</p>
-
-<p>
-  <strong>:material-rocket-launch-outline: Projekte & How To's</strong>
-  <br> Schritt-für-Schritt-Dokumentationen zu meinen aktuellen Projekten und How-To-Anleitungen.
-  <a href="projekte/projekt1.md">Alle Projekte ansehen :fontawesome-solid-arrow-right:</a>
-</p>
-
-</div>
+| Thema | Beschreibung | Link |
+| :--- | :--- | :--- |
+| **:material-book-edit: Markdown** | Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen. | [Zur Anleitung :fontawesome-solid-arrow-right:](markdown/formatierung.md) |
+| **:material-tools: Tools & Setup** | Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces. | [Zu den Tools :fontawesome-solid-arrow-right:](tools/docker.md) |
+| **:material-rocket-launch-outline: Projekte & How To's** | Dokumentationen zu meinen aktuellen Projekten und How-To-Anleitungen. | [Alle Projekte ansehen :fontawesome-solid-arrow-right:](projekte/projekt1.md) |
