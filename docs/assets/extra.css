@@ -3,7 +3,7 @@
 /* 1. GLOBALE SCHRIFTGRÖSSE (Relative Anpassung für das gesamte Theme) */
 :root {
     /* Erhöht die Basis-Schriftgröße und passt alle Header, Navigationen und den Text an */
-    --md-font-size: 1.09375em; 
+    --md-font-size: 1.15em; 
 }
 
 /* 2. SCHRIFTGRÖSSE DES HAUPTTEXTES (Zusätzliche Anpassung und Fix) */
