@@ -76,7 +76,7 @@ markdown_extensions:
   - pymdownx.tabbed     # Tabs innerhalb des Seiteninhalts
   # ENTFERNT: pymdownx.highlight ist redundant, da SuperFences dies übernimmt.
   # - attr_list           # Für Attribute auf Markdown-Elementen
-  - md_in_html          # Erlaubt Markdown-Syntax innerhalb von HTML-Tags
+  # - md_in_html          # Erlaubt Markdown-Syntax innerhalb von HTML-Tags
   - pymdownx.emoji      # Ermöglicht die Verwendung von Emojis
   - tables
 # --- Navigation ---
