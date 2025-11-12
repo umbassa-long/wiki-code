@@ -1,81 +1,24 @@
-﻿site_name: Denkwürdig
-site_url: https://wiki-code.github.io/
-repo_url: https://github.com/Ihr-Github-Name/wiki-code # <--- HIER REPO-URL EINFÜGEN!
-repo_name: GitHub
-
-theme:
+﻿theme:
   name: material
   language: de
   palette:
-    # 1. Helles Schema (Standard)
+    # 1. Helles Schema (Die Sonne/Helle Ansicht)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: 'yellow'
-      accent: 'red'
+      primary: 'indigo'
+      accent: 'teal'
       toggle:
-        icon: material/brightness-7
+        icon: material/brightness-7 # Das Symbol der Sonne
         name: Auf dunkles Schema wechseln
-    # 2. Dunkles Schema
+    # 2. Dunkles Schema (Der Mond/Dunkle Ansicht)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: 'indigo'
       accent: 'teal'
       toggle:
-        icon: material/brightness-4
+        icon: material/brightness-4 # Das Symbol des Mondes
         name: Auf helles Schema wechseln
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
-  features:
-    # Hervorhebung des Suchbegriffs auf der Seite
-    - search.highlight
-    # Anzeige von Vorschlägen während der Eingabe
-    - search.suggest
-    # Suche basiert auf vollständigen Wörtern
-    - search.share
-    - content.code.copy # Ermöglicht das Kopieren von Codeblöcken mit einem Klick
-
-extra_css:
-  - assets/extra.css
-
-nav:
-  - Startseite: index.md
-
-plugins:
-    - macros
-    - git-revision-date-localized:
-        type: datetime
-        timezone: Europe/Berlin
-        locale: de
-
-nav:
-  - Wissensspeicher: index.md
-  - Code:
-    - Welcome to MkDocs: code/welcome.md
-  - Links:
-    - Links & Ressourcen: links/links.md
-  - Markdown:
-    - Formatierung: markdown/formatierung.md
-    - Grundlagen: markdown/grundlagen.md
-    - Markdown-Tabellen: markdown/tabellen.md
-    - Highlighting: markdown/admonition.md
-    - Emoji: markdown/emoji.md
-  - How Tos:
-    - Projekt1: projekte/projekt1.md
-    - Projekt2: projekte/projekt2.md
-  - Tools:
-    - Docker: tools/docker.md
-    - Git: tools/git.md
-
-markdown_extensions:
-  - admonition
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  # - attr_list 
-  # - pymdownx.md_in_html:
-   #   markdown_extensions:
-   #     - pymdownx.superfences
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # ... weitere features ...
