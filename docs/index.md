@@ -37,12 +37,4 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 
 </div>
 
----
-
-## 📌 Hinweis zur Plugin-Kompatibilität
-
-!!! note "Wichtige Information"
-    Icons und Layout: Wenn Icons wie der Pfeil (:fontawesome-solid-arrow-right:) nicht gerendert werden, liegt das an der Plugin-Verarbeitung.
-    Datum: Die Anzeige des Datums funktioniert nur, wenn das Makro-Plugin **fehlerfrei** arbeiten kann, was jetzt der Fall sein sollte.
-
 Zuletzt aktualisiert am {{ git_revision_date_localized }}.
