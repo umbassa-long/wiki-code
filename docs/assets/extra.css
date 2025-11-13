@@ -1,20 +1,17 @@
 /* ==========================================================================
-   docs/assets/extra.css – ENDGÜLTIGE, GETESTETE VERSION
-   Für Material for MkDocs (alle Themes)
+   docs/assets/extra.css – ENDGÜLTIGE VERSION (funktioniert mit MkDocs Material)
    ========================================================================== */
 
 /* 1. GLOBALE SCHRIFTGRÖSSE (Relative Anpassung)
    ------------------------------------------------------------ */
 :root {
-    /* Basisgröße auf 1.2em (ca. 19.2px) – angenehm lesbar */
-    --md-font-size: 1.2em;
+    --md-font-size: 1.2em; /* ca. 19.2px */
 }
 
 /* 2. SCHRIFTGRÖSSE DES HAUPTTEXTES
    ------------------------------------------------------------ */
 .md-typeset {
-    /* 1.0em = keine doppelte Skalierung (1.2em * 1.0em = 1.2em gesamt) */
-    font-size: 1.0em;
+    font-size: 1.0em; /* verhindert doppelte Skalierung */
 }
 
 /* ==========================================================================
@@ -48,34 +45,24 @@
 }
 
 /* ==========================================================================
-   IKONEN-FARBANPASSUNG (GLOBAL)
+   MATERIAL ICONS (SVG & FONT) – Farbfix für Tabellen und Text
    ========================================================================== */
 
-/* 1. SVGs sollen Textfarbe erben */
-.md-typeset :is(.twemoji, .octicons, .md-icon) svg,
-.md-typeset :is(.twemoji, .octicons, .md-icon) svg path {
+/* Alle Icons sollen Textfarbe übernehmen */
+.md-typeset :is(.md-icon, .mdx-icon, .material-icons, .material-symbols, .twemoji) {
+    color: currentColor !important;
     fill: currentColor !important;
 }
 
-/* 2. Farbdefinitionen – global gültig */
-.md-typeset .md-icon[title*="check-circle"],
-.md-typeset .md-icon[title*="check-bold"] {
-    color: #4CAF50 !important; /* Grün */
+/* Pfade in SVGs auch einfärben */
+.md-typeset :is(.md-icon svg path, .mdx-icon svg path) {
+    fill: currentColor !important;
 }
 
-.md-typeset .md-icon[title*="close-circle"],
-.md-typeset .md-icon[title*="alert-octagon"] {
-    color: #F44336 !important; /* Rot */
-}
+/* =========================================================
+   FARBZUTEILUNGEN FÜR ICONS
+   ========================================================= */
 
-.md-typeset .md-icon[title*="warning"],
-.md-typeset .md-icon[title*="alert-circle"] {
-    color: #FFEB3B !important; /* Gelb */
-}
-
-/* ==========================================================================
-   IKONEN-FARBANPASSUNG (TABELLEN-SPEZIFISCH)
-   ========================================================================== */
-
-/* 1. Erzwinge Farbvererbung bis in die Pfadebene (entscheidend!) */
-.md-typeset table td .md-icon svg path {
+/* ✅ Grün (Erfolg / Bestätigung) */
+.md-typeset :is(
+    .material-sym
