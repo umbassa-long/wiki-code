@@ -1,19 +1,24 @@
-/* docs/assets/extra.css - KORRIGIERTE VERSION */
+/* ==========================================================================
+   docs/assets/extra.css – KORRIGIERTE UND GETESTETE VERSION
+   ========================================================================== */
 
-/* 1. GLOBALE SCHRIFTGRÖSSE (Relative Anpassung) */
+/* 1. GLOBALE SCHRIFTGRÖSSE (Relative Anpassung)
+   ------------------------------------------------------------ */
 :root {
-    /* Setzt die Basisgröße auf 1.2em (ca. 19.2px) – Stark vergrößert, aber stabil */
-    --md-font-size: 1.2em; 
+    /* Basisgröße auf 1.2em (ca. 19.2px) – angenehm lesbar */
+    --md-font-size: 1.2em;
 }
 
-/* 2. SCHRIFTGRÖSSE DES HAUPTTEXTES */
+/* 2. SCHRIFTGRÖSSE DES HAUPTTEXTES
+   ------------------------------------------------------------ */
 .md-typeset {
-    /* Setzen Sie dies auf 1em, um die doppelte Multiplikation zu vermeiden. 
-       Der Textkörper ist jetzt 1.2em * 1.0em = 1.2em groß. */
-    font-size: 1.0em; 
+    /* 1.0em = keine doppelte Skalierung (1.2em * 1.0em = 1.2em gesamt) */
+    font-size: 1.0em;
 }
 
-/* 3. TABELLEN-STYLING (Card-Look) */
+/* ==========================================================================
+   TABELLEN-STYLING (Card-Look)
+   ========================================================================== */
 .md-typeset table {
     border: none !important;
     border-collapse: separate;
@@ -27,77 +32,71 @@
     padding: 15px 12px;
 }
 
-/* --- FARBSCHEMASPEZIFISCHES STYLING --- */
-
-/* 4. HELLES SCHEMA (default) */
+/* 4. Helles Schema (default) */
 .md-theme-default .md-typeset table tbody tr {
     background-color: #fcfcfc;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 }
 
-/* 5. DUNKLES SCHEMA (slate) */
+/* 5. Dunkles Schema (slate) */
 .md-theme-slate .md-typeset table tbody tr {
-    background-color: var(--md-code-bg-color); 
+    background-color: var(--md-code-bg-color);
     box-shadow: none;
     border-radius: 5px;
 }
 
-/* --- IKONEN-FARBANPASSUNG (FÜR DAS GESAMTE WIKI) --- */
+/* ==========================================================================
+   IKONEN-FARBANPASSUNG (GLOBAL)
+   ========================================================================== */
 
-/* 1. VORBEREITUNG: Stellt sicher, dass SVGs die Textfarbe erben können (WICHTIG!) */
-/* Dies muss für den allgemeinen Textfluss gelten */
-.md-typeset :is(.twemoji, .octicons, .md-icon) svg {
-    fill: currentColor;
+/* 1. SVGs sollen Textfarbe erben */
+.md-typeset :is(.twemoji, .octicons, .md-icon) svg,
+.md-typeset :is(.twemoji, .octicons, .md-icon) svg path {
+    fill: currentColor !important;
 }
 
-/* 2. GRÜN FÜR ERFOLG ODER CHECK-SYMBOLE (Überall gültig) */
-.md-typeset .md-icon[title*="check-circle"] svg,
-.md-typeset .md-icon[title*="check-bold"] svg {
-    fill: #4CAF50 !important; /* Grünes Häkchen */
-    color: #4CAF50 !important;
+/* 2. Farbdefinitionen – global gültig */
+.md-typeset .md-icon[title*="check-circle"],
+.md-typeset .md-icon[title*="check-bold"] {
+    color: #4CAF50 !important; /* Grün */
 }
 
-/* 3. ROT FÜR FEHLER ODER ALARM-SYMBOLE (Überall gültig) */
-.md-typeset .md-icon[title*="close-circle"] svg,
-.md-typeset .md-icon[title*="alert-octagon"] svg {
-    fill: #F44336 !important; /* Rotes Kreuz/Achtung */
-    color: #F44336 !important;
+.md-typeset .md-icon[title*="close-circle"],
+.md-typeset .md-icon[title*="alert-octagon"] {
+    color: #F44336 !important; /* Rot */
 }
 
-/* 4. GELB FÜR WARNUNGEN (Überall gültig) */
-.md-typeset .md-icon[title*="warning"] svg,
-.md-typeset .md-icon[title*="alert-circle"] svg {
-    fill: #FFEB3B !important; /* Gelber Kreis/Achtung */
-    color: #FFEB3B !important;
+.md-typeset .md-icon[title*="warning"],
+.md-typeset .md-icon[title*="alert-circle"] {
+    color: #FFEB3B !important; /* Gelb */
 }
 
-/* --- IKONEN-FARBANPASSUNG (NUR FÜR TABELLEN ERZWUNGEN) --- */
+/* ==========================================================================
+   IKONEN-FARBANPASSUNG (TABELLEN-SPEZIFISCH, falls Überschreibungen nötig)
+   ========================================================================== */
 
-/* Vorbereitung: Stellt sicher, dass SVGs die Textfarbe erben können (WICHTIG!) */
-/* Wir machen diese Regel hier wieder universell, damit sie greift. */
-.md-typeset :is(.twemoji, .octicons, .md-icon) svg {
-    fill: currentColor;
+/* 1. Erzwinge Farbvererbung bis in die Pfadebene (entscheidend!) */
+.md-typeset table td .md-icon svg path {
+    fill: currentColor !important;
 }
 
-/* 2. GRÜN FÜR ERFOLG ODER CHECK-SYMBOLE */
-/* Zielt auf das SVG-Element des Icons, das in einer Tabellenzelle (td) liegt */
-.md-typeset table td .md-icon[title*="check-circle"] svg,
-.md-typeset table td .md-icon[title*="check-bold"] svg {
-    fill: #4CAF50 !important; /* Grünes Häkchen */
-    color: #4CAF50 !important;
+/* 2. Farbdefinitionen für Tabellenzellen */
+.md-typeset table td .md-icon[title*="check-circle"],
+.md-typeset table td .md-icon[title*="check-bold"] {
+    color: #4CAF50 !important; /* Grün */
 }
 
-/* 3. ROT FÜR FEHLER ODER ALARM-SYMBOLE */
-.md-typeset table td .md-icon[title*="close-circle"] svg,
-.md-typeset table td .md-icon[title*="alert-octagon"] svg {
-    fill: #F44336 !important; /* Rotes Kreuz/Achtung */
-    color: #F44336 !important;
+.md-typeset table td .md-icon[title*="close-circle"],
+.md-typeset table td .md-icon[title*="alert-octagon"] {
+    color: #F44336 !important; /* Rot */
 }
 
-/* 4. GELB FÜR WARNUNGEN */
-.md-typeset table td .md-icon[title*="warning"] svg,
-.md-typeset table td .md-icon[title*="alert-circle"] svg {
-    fill: #FFEB3B !important; /* Gelber Kreis/Achtung */
-    color: #FFEB3B !important;
+.md-typeset table td .md-icon[title*="warning"],
+.md-typeset table td .md-icon[title*="alert-circle"] {
+    color: #FFEB3B !important; /* Gelb */
 }
+
+/* ==========================================================================
+   ENDE DER DATEI
+   ========================================================================== */
