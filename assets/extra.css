@@ -1,18 +1,19 @@
-/* docs/assets/extra.css - BEREINIGTE VERSION */
+/* docs/assets/extra.css - KORRIGIERTE VERSION */
 
-/* 1. GLOBALE SCHRIFTGRÖSSE (Relative Anpassung für das gesamte Theme) */
+/* 1. GLOBALE SCHRIFTGRÖSSE (Relative Anpassung) */
 :root {
-    /* Erhöht die Basis-Schriftgröße und passt alle Header, Navigationen und den Text an */
-    --md-font-size: 1.5em; 
+    /* Setzt die Basisgröße auf 1.2em (ca. 19.2px) – Stark vergrößert, aber stabil */
+    --md-font-size: 1.2em; 
 }
 
-/* 2. SCHRIFTGRÖSSE DES HAUPTTEXTES (Zusätzliche Anpassung und Fix) */
+/* 2. SCHRIFTGRÖSSE DES HAUPTTEXTES */
 .md-typeset {
-    /* Setzt die Schriftgröße des Haupt-Textkörpers auf 1.05 mal die (neue) Basisgröße */
-    font-size: 1.25em; 
+    /* Setzen Sie dies auf 1em, um die doppelte Multiplikation zu vermeiden. 
+       Der Textkörper ist jetzt 1.2em * 1.0em = 1.2em groß. */
+    font-size: 1.0em; 
 }
 
-/* 3. TABELLEN-STYLING (Entfernt Rahmen für den Card-Look) */
+/* 3. TABELLEN-STYLING (Card-Look) */
 .md-typeset table {
     border: none !important;
     border-collapse: separate;
@@ -30,40 +31,42 @@
 
 /* 4. HELLES SCHEMA (default) */
 .md-theme-default .md-typeset table tbody tr {
-    background-color: #fcfcfc; /* Heller Hintergrund für die Zellen */
+    background-color: #fcfcfc;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 }
 
-/* 5. DUNKLES SCHEMA (slate) - BEHEBT DEN WEISSEN BALKENFEHLER */
+/* 5. DUNKLES SCHEMA (slate) */
 .md-theme-slate .md-typeset table tbody tr {
-    /* Nutzt eine dunkle Theme-Variable, um den weißen Balken zu verhindern */
     background-color: var(--md-code-bg-color); 
     box-shadow: none;
     border-radius: 5px;
 }
 
-/* --- FINALE IKONEN-FARBANPASSUNG (SVG FILL-METHODE) --- */
+/* --- FINALE IKONEN-FARBANPASSUNG (LÖSUNG FÜR SCHWARZ-WEISS) --- */
+
+/* NEU: Allgemeiner Selektor, um die "fill: currentColor" zu aktivieren */
+.md-typeset :is(.twemoji, .octicons, .md-icon) svg {
+    fill: currentColor;
+}
 
 /* 2. GRÜN FÜR ERFOLG ODER CHECK-SYMBOLE */
-/* Zielt auf das SVG-Element im Icon und erzwingt die Füllfarbe */
 .md-typeset .md-icon[title*="check-circle"] svg,
 .md-typeset .md-icon[title*="check-bold"] svg {
-    /* Wichtig: Wir verwenden fill anstatt color für SVGs */
-    fill: #4CAF50 !important; /* Grünes Häkchen */
-    color: #4CAF50 !important; /* Fallback für Text-Icons */
+    fill: #4CAF50 !important; 
+    color: #4CAF50 !important;
 }
 
 /* 3. ROT FÜR FEHLER ODER ALARM-SYMBOLE */
 .md-typeset .md-icon[title*="close-circle"] svg,
 .md-typeset .md-icon[title*="alert-octagon"] svg {
-    fill: #F44336 !important; /* Rotes Kreuz/Achtung */
+    fill: #F44336 !important; 
     color: #F44336 !important;
 }
 
 /* 4. GELB FÜR WARNUNGEN */
 .md-typeset .md-icon[title*="warning"] svg,
 .md-typeset .md-icon[title*="alert-circle"] svg {
-    fill: #FFEB3B !important; /* Gelber Kreis/Achtung */
+    fill: #FFEB3B !important; 
     color: #FFEB3B !important;
 }
