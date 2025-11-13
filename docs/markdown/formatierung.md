@@ -73,7 +73,6 @@ Diese Zeile ist allerdings nicht mehr eingerückt.
 **Unsortiert**
 
 ```markdown
-
 - Listenpunkt 1
 - Listenpunkt 2
 - Listenpunkt 3
