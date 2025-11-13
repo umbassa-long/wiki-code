@@ -98,5 +98,45 @@
 }
 
 /* ==========================================================================
+   FIX: Material-Symbole (z. B. :material-check:) in Tabellen einfärben
+   ========================================================================== */
+
+/* Gemeinsame Basis: Farbe vererbbar machen */
+.md-typeset :is(.twemoji, .material-symbols, .mdx-icon) {
+    color: inherit;
+}
+
+/* In Tabellenzellen Pfad-/Font-Farbe korrekt übernehmen */
+.md-typeset table td :is(.twemoji, .material-symbols, .mdx-icon) {
+    color: currentColor !important;
+}
+
+/* ✅ Grün – Erfolgs- oder Bestätigungssymbole */
+.md-typeset table td :is(.material-symbols--check,
+                         .material-symbols--check-circle,
+                         .material-symbols--check-circle-outline,
+                         .material-symbols--check-bold,
+                         .material-symbols--check-all,
+                         .material-symbols--checkbox-marked) {
+    color: #4CAF50 !important;
+}
+
+/* ❌ Rot – Fehler / Alarm */
+.md-typeset table td :is(.material-symbols--close,
+                         .material-symbols--close-circle,
+                         .material-symbols--alert-octagon,
+                         .material-symbols--alert) {
+    color: #F44336 !important;
+}
+
+/* ⚠️ Gelb – Warnungen */
+.md-typeset table td :is(.material-symbols--warning,
+                         .material-symbols--alert-circle,
+                         .material-symbols--alert-outline) {
+    color: #FFEB3B !important;
+}
+
+
+/* ==========================================================================
    ENDE DER DATEI
    ========================================================================== */
