@@ -1,13 +1,19 @@
-﻿site_name: Denkwürdig
+﻿# ==========================================================================
+# MKDocs Konfiguration für "Denkwürdig"
+# ==========================================================================
+site_name: Denkwürdig
 site_url: https://wiki-code.github.io/
-repo_url: https://github.com/Ihr-Github-Name/wiki-code # BITTE HIER IHRE REPO-URL EINFÜGEN!
+repo_url: https://github.com/Ihr-Github-Name/wiki-code # BITTE HIER IHRE REPO-URL EINTRAGEN
 repo_name: GitHub
 
+# ==========================================================================
+# Theme-Konfiguration: Material for MkDocs
+# ==========================================================================
 theme:
   name: material
   language: de
   palette:
-    # 1. Helles Schema (Standard)
+    # Helles Schema (Standard)
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: 'indigo'
@@ -15,7 +21,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Auf dunkles Schema wechseln
-    # 2. Dunkles Schema
+    # Dunkles Schema
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: 'indigo'
@@ -24,24 +30,33 @@ theme:
         icon: material/weather-night
         name: Auf helles Schema wechseln
   font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+    text: 'Roboto'       # Fließtext
+    code: 'Roboto Mono'  # Monospaced Code
   features:
+    # Navigation
     - navigation.tabs
     - navigation.side
     - navigation.top
     - navigation.tracking
     - navigation.instant
+    # Suche
     - search.highlight
     - search.suggest
     - search.share
+    # Content Features
     - content.action.top
     - content.code.copy
     - toc.follow
 
+# ==========================================================================
+# Extra CSS (für Twemoji, Tabellen Card-Look, Schriftgrößen)
+# ==========================================================================
 extra_css:
   - assets/extra.css
 
+# ==========================================================================
+# Plugins
+# ==========================================================================
 plugins:
   - macros
   - git-revision-date-localized:
@@ -49,42 +64,54 @@ plugins:
       timezone: Europe/Berlin
       locale: de
   - search:
-       separator: '[\s\-\.]+'
-       lang:
-          - de
-          - en
+      separator: '[\s\-\.]+'
+      lang:
+        - de
+        - en
 
+# ==========================================================================
+# Navigation
+# ==========================================================================
 nav:
   - Wissensspeicher: index.md
   - Code:
-    - Welcome to MkDocs: code/welcome.md
+      - Welcome to MkDocs: code/welcome.md
   - Links:
-    - Links & Ressourcen: links/links.md
+      - Links & Ressourcen: links/links.md
   - Markdown:
-    - Formatierung: markdown/formatierung.md
-    - Grundlagen: markdown/grundlagen.md
-    - Markdown-Tabellen: markdown/tabellen.md
-    - Highlighting: markdown/admonition.md
-    - Emoji: markdown/emoji.md
+      - Formatierung: markdown/formatierung.md
+      - Grundlagen: markdown/grundlagen.md
+      - Markdown-Tabellen: markdown/tabellen.md  # <-- hier liegt die neue Twemoji-Tabelle
+      - Highlighting: markdown/admonition.md
+      - Emoji: markdown/emoji.md
   - How Tos:
-    - Projekt1: projekte/projekt1.md
-    - Projekt2: projekte/projekt2.md
+      - Projekt1: projekte/projekt1.md
+      - Projekt2: projekte/projekt2.md
   - Tools:
-    - Docker: tools/docker.md
-    - Git: tools/git.md
+      - Docker: tools/docker.md
+      - Git: tools/git.md
 
+# ==========================================================================
+# Markdown-Erweiterungen
+# ==========================================================================
 markdown_extensions:
-  - admonition
-  - pymdownx.superfences
+  - admonition                   # für Hinweise, Tipps, Warnungen
+  - pymdownx.superfences          # für Codeblöcke mit Syntax Highlighting
   - pymdownx.tabbed:
-      alternate_style: true
+      alternate_style: true      # Tabbed Interface
   - pymdownx.tasklist:
-      custom_checkbox: true
-  # Folgende Erweiterungen wurden aufgrund von Modul-Fehlern deaktiviert:
-  # - attr_list
-  # - pymdownx.md_in_html:
-  #     markdown_extensions:
-  #       - pymdownx.superfences
+      custom_checkbox: true      # Checkboxen in Markdown
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      # Twemoji-Support, notwendig für die bunten Icons in Tabellen
+
+# ==========================================================================
+# Hinweise:
+# - Alle Tabellen in markdown/tabellen.md sind jetzt auf Twemoji-Variante aktualisiert.
+# - extra.css regelt:
+#    * Schriftgröße 1.2em für Fließtext & Tabellen
+#    * Farben der Icons (icon-success, icon-pending, icon-error)
+#    * Card-Look und Hover-Effekt für Tabellen
+# - Browser-Cache leeren (STRG+F5 / ⌘+Shift+R) nach Upload
+# ==========================================================================
