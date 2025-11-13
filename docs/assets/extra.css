@@ -1,15 +1,11 @@
 /* ==========================================================================
-   docs/assets/extra.css – ENDGÜLTIGE VERSION (funktioniert mit MkDocs Material)
+   GLOBALE SCHRIFTGRÖSSE
    ========================================================================== */
-
-/* 1. GLOBALE SCHRIFTGRÖSSE (Relative Anpassung)
-   ------------------------------------------------------------ */
 :root {
     --md-font-size: 1.2em; /* ca. 19.2px */
 }
 
-/* 2. SCHRIFTGRÖSSE DES HAUPTTEXTES
-   ------------------------------------------------------------ */
+/* SCHRIFTGRÖSSE DES HAUPTTEXTES */
 .md-typeset {
     font-size: 1.0em; /* verhindert doppelte Skalierung */
 }
@@ -22,47 +18,16 @@
     border-collapse: separate;
     border-spacing: 0 10px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .md-typeset table th,
 .md-typeset table td {
     border: none !important;
     padding: 15px 12px;
+    color: inherit; /* Textfarbe übernehmen */
 }
 
-/* 4. Helles Schema (default) */
+/* HELL (default) */
 .md-theme-default .md-typeset table tbody tr {
     background-color: #fcfcfc;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-}
-
-/* 5. Dunkles Schema (slate) */
-.md-theme-slate .md-typeset table tbody tr {
-    background-color: var(--md-code-bg-color);
-    box-shadow: none;
-    border-radius: 5px;
-}
-
-/* ==========================================================================
-   MATERIAL ICONS (SVG & FONT) – Farbfix für Tabellen und Text
-   ========================================================================== */
-
-/* Alle Icons sollen Textfarbe übernehmen */
-.md-typeset :is(.md-icon, .mdx-icon, .material-icons, .material-symbols, .twemoji) {
-    color: currentColor !important;
-    fill: currentColor !important;
-}
-
-/* Pfade in SVGs auch einfärben */
-.md-typeset :is(.md-icon svg path, .mdx-icon svg path) {
-    fill: currentColor !important;
-}
-
-/* =========================================================
-   FARBZUTEILUNGEN FÜR ICONS
-   ========================================================= */
-
-/* ✅ Grün (Erfolg / Bestätigung) */
-.md-typeset :is(
-    .material-sym
