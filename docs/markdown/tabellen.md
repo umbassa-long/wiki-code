@@ -42,13 +42,13 @@ Hier ist das Grundschema:
 ### Bunte Bildchen in Tabellen
 | Icon-Code | Darstellung (Symbol) | Bedeutung & Verwendung |
 | :--- | :--- | :--- |
-| :material-check: | | Das einfachste, grundlegendste Häkchen.|
-| :material-check-circle: | | Das am häufigsten verwendete Icon. Häkchen in einem soliden Kreis (gut für "Aktiv" / "Erledigt").|
-| :material-check-circle-outline: | | Häkchen in einem Kreis mit nur einem Umriss (etwas subtiler). 
-| :material-check-all: | | Zwei Häkchen (gut für "Alle bestätigt" oder "Gelesen"). |
-| :material-check-bold: | | Ein dickeres, prominenteres Häkchen (stärkere Betonung). 
-| :material-checkbox-marked: | | Das klassische, ausgefüllte Kontrollkästchen. |
-| :material-checkbox-blank-outline: | | Das leere Kontrollkästchen (gut für "Ausstehend"). |
+| `:material-check:` | :material-check: | Das einfachste, grundlegendste Häkchen.|
+| `:material-check-circle:` | :material-check-circle: | Das am häufigsten verwendete Icon. Häkchen in einem soliden Kreis (gut für "Aktiv" / "Erledigt").|
+| `:material-check-circle-outline:` | :material-check-circle-outline: | Häkchen in einem Kreis mit nur einem Umriss (etwas subtiler). 
+| `:material-check-all:` | :material-check-all: | Zwei Häkchen (gut für "Alle bestätigt" oder "Gelesen"). |
+| `:material-check-bold:` | :material-check-bold: | Ein dickeres, prominenteres Häkchen (stärkere Betonung). 
+| `:material-checkbox-marked:` | :material-checkbox-marked: | Das klassische, ausgefüllte Kontrollkästchen. |
+| `:material-checkbox-blank-outline:` | :material-checkbox-blank-outline: | Das leere Kontrollkästchen (gut für "Ausstehend"). |
 
 ### Textausrichtung
 
