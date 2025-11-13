@@ -46,6 +46,8 @@ theme:
     # Content Features
     - content.action.top
     - content.code.copy
+    - content.external_link.icon # Fügt ein Icon für externe Links hinzu
+    - content.external_link.target # Stellt sicher, dass externe Links in einem neuen Tab geöffnet werden
     - toc.follow
 
 # ==========================================================================
