@@ -43,30 +43,31 @@
     border-radius: 5px;
 }
 
-/* --- FINALE IKONEN-FARBANPASSUNG (LÖSUNG FÜR SCHWARZ-WEISS) --- */
+/* --- IKONEN-FARBANPASSUNG (FÜR DAS GESAMTE WIKI) --- */
 
-/* NEU: Allgemeiner Selektor, um die "fill: currentColor" zu aktivieren */
+/* 1. VORBEREITUNG: Stellt sicher, dass SVGs die Textfarbe erben können (WICHTIG!) */
+/* Dies muss für den allgemeinen Textfluss gelten */
 .md-typeset :is(.twemoji, .octicons, .md-icon) svg {
     fill: currentColor;
 }
 
-/* 2. GRÜN FÜR ERFOLG ODER CHECK-SYMBOLE */
+/* 2. GRÜN FÜR ERFOLG ODER CHECK-SYMBOLE (Überall gültig) */
 .md-typeset .md-icon[title*="check-circle"] svg,
 .md-typeset .md-icon[title*="check-bold"] svg {
-    fill: #4CAF50 !important; 
+    fill: #4CAF50 !important; /* Grünes Häkchen */
     color: #4CAF50 !important;
 }
 
-/* 3. ROT FÜR FEHLER ODER ALARM-SYMBOLE */
+/* 3. ROT FÜR FEHLER ODER ALARM-SYMBOLE (Überall gültig) */
 .md-typeset .md-icon[title*="close-circle"] svg,
 .md-typeset .md-icon[title*="alert-octagon"] svg {
-    fill: #F44336 !important; 
+    fill: #F44336 !important; /* Rotes Kreuz/Achtung */
     color: #F44336 !important;
 }
 
-/* 4. GELB FÜR WARNUNGEN */
+/* 4. GELB FÜR WARNUNGEN (Überall gültig) */
 .md-typeset .md-icon[title*="warning"] svg,
 .md-typeset .md-icon[title*="alert-circle"] svg {
-    fill: #FFEB3B !important; 
+    fill: #FFEB3B !important; /* Gelber Kreis/Achtung */
     color: #FFEB3B !important;
 }
