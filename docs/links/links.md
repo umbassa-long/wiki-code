@@ -5,22 +5,24 @@ title: Links
 
 | Ziel | Syntax | Ergebnis |
 | :--- | :--- | :--- |
-| **Externe Webseite** | [Google besuchen](https://www.google.com) | Google besuchen |
-| **Interne Seite (relativ)** | `[Zur Docker-Anleitung](../how-tos/docker.md)` | Zur Docker-Anleitung |
-| **Interner Abschnitt (Anker)** | `[Zum Abschnitt Tabellen](#markdown-tabellen-erstellen)` | Zum Abschnitt Tabellen |
-| **Link mit Tooltip** | `[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ "Theme Dokumentation")` | Material for MkDocs |
-
-```markdown
-| Ziel | Syntax | Ergebnis |
-| :--- | :--- | :--- |
-| **Externe Webseite** | `[Google besuchen](https://www.google.com)` | Google besuchen |
-| **Interne Seite (relativ)** | `[Zur Docker-Anleitung](../how-tos/docker.md)` | Zur Docker-Anleitung |
-| **Interner Abschnitt (Anker)** | `[Zum Abschnitt Tabellen](#markdown-tabellen-erstellen)` | Zum Abschnitt Tabellen |
-| **Link mit Tooltip** | `[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ "Theme Dokumentation")` | Material for MkDocs |
-```
+| **Externe Webseite** | `[Google besuchen](https://www.google.com)` | [Google besuchen](https://www.google.com) |
+| **Interne Seite (relativ)** | `[Zur Docker-Anleitung](../how-tos/docker.md)` | [Zur Docker-Anleitung](../how-tos/docker.md) |
+| **Interner Abschnitt (Anker)** | `[Zum Abschnitt Tabellen](#markdown-tabellen-erstellen)` | [Zum Abschnitt Tabellen](#markdown-tabellen-erstellen) |
+| **Link mit Tooltip** | `[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ "Theme Dokumentation")` | [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ "Theme Dokumentation") |
 
 ## Links in Button
 
+- Anpassung den Wert des href-Attributs im HTML-Tag `<a>` ändern.
+
+<a href="https://de247.die-staemme.de/" class="md-button md-button--primary">
+    Engage Hyperdrive :material-rocket-launch:
+</a>
+
+<a href="https://de247.die-staemme.de/" class="md-button">
+    Jettison All Cargo :material-delete-empty:
+</a>
+
+```HTML
 <a href="#" class="md-button md-button--primary">
     Engage Hyperdrive :material-rocket-launch:
 </a>
@@ -28,6 +30,7 @@ title: Links
 <a href="#" class="md-button">
     Jettison All Cargo :material-delete-empty:
 </a>
+```
 
 
 
