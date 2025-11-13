@@ -33,17 +33,14 @@ theme:
     text: 'Roboto'       # Fließtext
     code: 'Roboto Mono'  # Monospaced Code
   features:
-    # Navigation
     - navigation.tabs
     - navigation.side
     - navigation.top
     - navigation.tracking
     - navigation.instant
-    # Suche
     - search.highlight
     - search.suggest
     - search.share
-    # Content Features
     - content.action.top
     - content.code.copy
     - content.external_link.icon # Fügt ein Icon für externe Links hinzu
@@ -103,6 +100,7 @@ markdown_extensions:
       alternate_style: true      # Tabbed Interface
   - pymdownx.tasklist:
       custom_checkbox: true      # Checkboxen in Markdown
+  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
