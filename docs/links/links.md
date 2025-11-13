@@ -1,4 +1,35 @@
-﻿# Links
+﻿---
+title: Links
+---
+## Arten
+
+| Ziel | Syntax | Ergebnis |
+| :--- | :--- | :--- |
+| **Externe Webseite** | `[Google besuchen](https://www.google.com)` | Google besuchen |
+| **Interne Seite (relativ)** | `[Zur Docker-Anleitung](../how-tos/docker.md)` | Zur Docker-Anleitung |
+| **Interner Abschnitt (Anker)** | `[Zum Abschnitt Tabellen](#markdown-tabellen-erstellen)` | Zum Abschnitt Tabellen |
+| **Link mit Tooltip** | `[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ "Theme Dokumentation")` | Material for MkDocs |
+
+```markdown
+| Ziel | Syntax | Ergebnis |
+| :--- | :--- | :--- |
+| **Externe Webseite** | `[Google besuchen](https://www.google.com)` | Google besuchen |
+| **Interne Seite (relativ)** | `[Zur Docker-Anleitung](../how-tos/docker.md)` | Zur Docker-Anleitung |
+| **Interner Abschnitt (Anker)** | `[Zum Abschnitt Tabellen](#markdown-tabellen-erstellen)` | Zum Abschnitt Tabellen |
+| **Link mit Tooltip** | `[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ "Theme Dokumentation")` | Material for MkDocs |
+```
+
+## Links in Button
+
+<a href="#" class="md-button md-button--primary">
+    Engage Hyperdrive :material-rocket-launch:
+</a>
+
+<a href="#" class="md-button">
+    Jettison All Cargo :material-delete-empty:
+</a>
+
+
 
 ## Markdownguides
    - [Markdownguide](https://www.markdownguide.org/basic-syntax/)
@@ -15,6 +46,8 @@
 - <a href="https://qualidy.github.io/wiki-docker/" target="_blank">Docker</a>
 - <a href="https://docs.github.com/de/get-started" target="_blank">Starten mit Github</a>
 
+
+https://dentro.de/ai/features/
 
 - <a href="URL" target="_blank">TEXT</a> # URL mit Tab 
 - [Text](URL) # reine Markdownsyntax für URL ohne Tab
