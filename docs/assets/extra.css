@@ -71,3 +71,33 @@
     fill: #FFEB3B !important; /* Gelber Kreis/Achtung */
     color: #FFEB3B !important;
 }
+
+/* --- IKONEN-FARBANPASSUNG (NUR FÜR TABELLEN ERZWUNGEN) --- */
+
+/* Vorbereitung: Stellt sicher, dass SVGs die Textfarbe erben können (WICHTIG!) */
+/* Wir machen diese Regel hier wieder universell, damit sie greift. */
+.md-typeset :is(.twemoji, .octicons, .md-icon) svg {
+    fill: currentColor;
+}
+
+/* 2. GRÜN FÜR ERFOLG ODER CHECK-SYMBOLE */
+/* Zielt auf das SVG-Element des Icons, das in einer Tabellenzelle (td) liegt */
+.md-typeset table td .md-icon[title*="check-circle"] svg,
+.md-typeset table td .md-icon[title*="check-bold"] svg {
+    fill: #4CAF50 !important; /* Grünes Häkchen */
+    color: #4CAF50 !important;
+}
+
+/* 3. ROT FÜR FEHLER ODER ALARM-SYMBOLE */
+.md-typeset table td .md-icon[title*="close-circle"] svg,
+.md-typeset table td .md-icon[title*="alert-octagon"] svg {
+    fill: #F44336 !important; /* Rotes Kreuz/Achtung */
+    color: #F44336 !important;
+}
+
+/* 4. GELB FÜR WARNUNGEN */
+.md-typeset table td .md-icon[title*="warning"] svg,
+.md-typeset table td .md-icon[title*="alert-circle"] svg {
+    fill: #FFEB3B !important; /* Gelber Kreis/Achtung */
+    color: #FFEB3B !important;
+}
