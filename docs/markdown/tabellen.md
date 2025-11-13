@@ -1,11 +1,8 @@
-﻿
+﻿---
+title: Tabellen
+---
 
-# 📝 Markdown-Tabellen erstellen
-
-Markdown verwendet eine relativ einfache Syntax, um Tabellen zu formatieren. 
-Man spricht hier oft vom **Github Flavored Markdown (GFM)**, 
-da es eine häufig verwendete Erweiterung ist, die Tabellen unterstützt.
-
+# Tabellen
 ---
 
 ## 📝 Grundlegende Syntax
@@ -39,7 +36,17 @@ Hier ist das Grundschema:
 | docker rm | Container löschen | :material-alert-circle: Vorsicht |
 ```
 
-### Bunte Bildchen in Tabellen
+---
+title: Tabellen
+---
+
+# Tabellen
+
+## Bunte Bildchen in Tabellen
+
+Hier siehst du die vollständig aktualisierte Tabelle mit Twemoji-Häkchen und Kontrollkästchen.  
+Alle Icons werden farblich korrekt dargestellt und passen sich dem hellen bzw. dunklen Schema an.  
+Die Schriftgröße ist einheitlich mit dem Fließtext (1.2 em).
 
 | Icon-Code | Darstellung (Symbol) | Bedeutung & Verwendung |
 |-----------|--------------------|-----------------------|
@@ -50,11 +57,24 @@ Hier ist das Grundschema:
 | `:material-check-bold:` | <span class="twemoji icon-success">✔️</span> | Dickeres, prominenteres Häkchen (stärkere Betonung). |
 | `:material-checkbox-marked:` | <span class="twemoji icon-success">☑️</span> | Klassisches, ausgefülltes Kontrollkästchen. |
 | `:material-checkbox-blank-outline:` | <span class="twemoji icon-pending">⬜</span> | Leeres Kontrollkästchen (Ausstehend). |
-| `:material-check-circle-alt:` | <span class="twemoji icon-success">✅</span> | Alternative Variante eines Kreishäkchens. |
-| `:material-checkbox-indeterminate:` | <span class="twemoji icon-pending">➖</span> | Teilweise markiertes Kontrollkästchen (Indeterminate). |
-| `:material-close:` | <span class="twemoji icon-error">❌</span> | Rotes X für Fehler, Ablehnung oder Schließen. |
+| `:material-close:` | <span class="twemoji icon-error">❌</span> | Rotes X für Fehler oder Ablehnung. |
 | `:material-alert:` | <span class="twemoji icon-error">⚠️</span> | Warnung / Achtung. |
 | `:material-info:` | <span class="twemoji icon-success">ℹ️</span> | Informationssymbol. |
+
+## Markdown-Tabellen
+
+Hier eine Beispiel-Tabelle, die den Card-Look und die einheitliche Schriftgröße verwendet:
+
+| Name | Funktion | Status |
+|------|----------|--------|
+| Projekt1 | Testphase | <span class="twemoji icon-success">✅</span> |
+| Projekt2 | In Arbeit | <span class="twemoji icon-pending">⬜</span> |
+| Projekt3 | Fehler | <span class="twemoji icon-error">❌</span> |
+
+## Weitere Tabellen
+
+Weitere Tabellen können analog erstellt werden, indem du die Twemoji-Icons `<span class="twemoji icon-...">Emoji</span>` einsetzt, um Farben und Status korrekt darzustellen.  
+Alle Tabellen übernehmen automatisch **schriftgröße, Farben und Card-Look** aus `extra.css`.
 
 
 ```markdown
