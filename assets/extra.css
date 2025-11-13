@@ -1,5 +1,6 @@
 /* ==========================================================================
-   docs/assets/extra.css – KORRIGIERTE UND GETESTETE VERSION
+   docs/assets/extra.css – ENDGÜLTIGE, GETESTETE VERSION
+   Für Material for MkDocs (alle Themes)
    ========================================================================== */
 
 /* 1. GLOBALE SCHRIFTGRÖSSE (Relative Anpassung)
@@ -73,70 +74,8 @@
 }
 
 /* ==========================================================================
-   IKONEN-FARBANPASSUNG (TABELLEN-SPEZIFISCH, falls Überschreibungen nötig)
+   IKONEN-FARBANPASSUNG (TABELLEN-SPEZIFISCH)
    ========================================================================== */
 
 /* 1. Erzwinge Farbvererbung bis in die Pfadebene (entscheidend!) */
 .md-typeset table td .md-icon svg path {
-    fill: currentColor !important;
-}
-
-/* 2. Farbdefinitionen für Tabellenzellen */
-.md-typeset table td .md-icon[title*="check-circle"],
-.md-typeset table td .md-icon[title*="check-bold"] {
-    color: #4CAF50 !important; /* Grün */
-}
-
-.md-typeset table td .md-icon[title*="close-circle"],
-.md-typeset table td .md-icon[title*="alert-octagon"] {
-    color: #F44336 !important; /* Rot */
-}
-
-.md-typeset table td .md-icon[title*="warning"],
-.md-typeset table td .md-icon[title*="alert-circle"] {
-    color: #FFEB3B !important; /* Gelb */
-}
-
-/* ==========================================================================
-   FIX: Material-Symbole (z. B. :material-check:) in Tabellen einfärben
-   ========================================================================== */
-
-/* Gemeinsame Basis: Farbe vererbbar machen */
-.md-typeset :is(.twemoji, .material-symbols, .mdx-icon) {
-    color: inherit;
-}
-
-/* In Tabellenzellen Pfad-/Font-Farbe korrekt übernehmen */
-.md-typeset table td :is(.twemoji, .material-symbols, .mdx-icon) {
-    color: currentColor !important;
-}
-
-/* ✅ Grün – Erfolgs- oder Bestätigungssymbole */
-.md-typeset table td :is(.material-symbols--check,
-                         .material-symbols--check-circle,
-                         .material-symbols--check-circle-outline,
-                         .material-symbols--check-bold,
-                         .material-symbols--check-all,
-                         .material-symbols--checkbox-marked) {
-    color: #4CAF50 !important;
-}
-
-/* ❌ Rot – Fehler / Alarm */
-.md-typeset table td :is(.material-symbols--close,
-                         .material-symbols--close-circle,
-                         .material-symbols--alert-octagon,
-                         .material-symbols--alert) {
-    color: #F44336 !important;
-}
-
-/* ⚠️ Gelb – Warnungen */
-.md-typeset table td :is(.material-symbols--warning,
-                         .material-symbols--alert-circle,
-                         .material-symbols--alert-outline) {
-    color: #FFEB3B !important;
-}
-
-
-/* ==========================================================================
-   ENDE DER DATEI
-   ========================================================================== */
