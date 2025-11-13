@@ -40,15 +40,41 @@ Hier ist das Grundschema:
 ```
 
 ### Bunte Bildchen in Tabellen
+
 | Icon-Code | Darstellung (Symbol) | Bedeutung & Verwendung |
-| :--- | :--- | :--- |
-| `:material-check:` | :material-check: | Das einfachste, grundlegendste Häkchen.|
-| `:material-check-circle:` | :material-check-circle: | Das am häufigsten verwendete Icon. Häkchen in einem soliden Kreis (gut für "Aktiv" / "Erledigt").|
-| `:material-check-circle-outline:` | :material-check-circle-outline: | Häkchen in einem Kreis mit nur einem Umriss (etwas subtiler). 
-| `:material-check-all:` | :material-check-all: | Zwei Häkchen (gut für "Alle bestätigt" oder "Gelesen"). |
-| `:material-check-bold:` | :material-check-bold: | Ein dickeres, prominenteres Häkchen (stärkere Betonung). 
-| `:material-checkbox-marked:` | :material-checkbox-marked: | Das klassische, ausgefüllte Kontrollkästchen. |
-| `:material-checkbox-blank-outline:` | :material-checkbox-blank-outline: | Das leere Kontrollkästchen (gut für "Ausstehend"). |
+|-----------|--------------------|-----------------------|
+| `:material-check:` | <span class="twemoji icon-success">✅</span> | Das einfachste, grundlegendste Häkchen. |
+| `:material-check-circle:` | <span class="twemoji icon-success">✔️</span> | Häufig verwendetes Icon: Häkchen in solidem Kreis (Aktiv / Erledigt). |
+| `:material-check-circle-outline:` | <span class="twemoji icon-success">✔️</span> | Häkchen in einem Kreis-Umriss (subtiler). |
+| `:material-check-all:` | <span class="twemoji icon-success">✔✔</span> | Zwei Häkchen (Alle bestätigt / Gelesen). |
+| `:material-check-bold:` | <span class="twemoji icon-success">✔️</span> | Dickeres, prominenteres Häkchen (stärkere Betonung). |
+| `:material-checkbox-marked:` | <span class="twemoji icon-success">☑️</span> | Klassisches, ausgefülltes Kontrollkästchen. |
+| `:material-checkbox-blank-outline:` | <span class="twemoji icon-pending">⬜</span> | Leeres Kontrollkästchen (Ausstehend). |
+| `:material-check-circle-alt:` | <span class="twemoji icon-success">✅</span> | Alternative Variante eines Kreishäkchens. |
+| `:material-checkbox-indeterminate:` | <span class="twemoji icon-pending">➖</span> | Teilweise markiertes Kontrollkästchen (Indeterminate). |
+| `:material-close:` | <span class="twemoji icon-error">❌</span> | Rotes X für Fehler, Ablehnung oder Schließen. |
+| `:material-alert:` | <span class="twemoji icon-error">⚠️</span> | Warnung / Achtung. |
+| `:material-info:` | <span class="twemoji icon-success">ℹ️</span> | Informationssymbol. |
+
+
+```markdown
+| Icon-Code | Darstellung (Symbol) | Bedeutung & Verwendung |
+|-----------|--------------------|-----------------------|
+| `:material-check:` | <span class="twemoji icon-success">✅</span> | Das einfachste, grundlegendste Häkchen. |
+| `:material-check-circle:` | <span class="twemoji icon-success">✔️</span> | Häufig verwendetes Icon: Häkchen in solidem Kreis (Aktiv / Erledigt). |
+| `:material-check-circle-outline:` | <span class="twemoji icon-success">✔️</span> | Häkchen in einem Kreis-Umriss (subtiler). |
+| `:material-check-all:` | <span class="twemoji icon-success">✔✔</span> | Zwei Häkchen (Alle bestätigt / Gelesen). |
+| `:material-check-bold:` | <span class="twemoji icon-success">✔️</span> | Dickeres, prominenteres Häkchen (stärkere Betonung). |
+| `:material-checkbox-marked:` | <span class="twemoji icon-success">☑️</span> | Klassisches, ausgefülltes Kontrollkästchen. |
+| `:material-checkbox-blank-outline:` | <span class="twemoji icon-pending">⬜</span> | Leeres Kontrollkästchen (Ausstehend). |
+| `:material-check-circle-alt:` | <span class="twemoji icon-success">✅</span> | Alternative Variante eines Kreishäkchens. |
+| `:material-checkbox-indeterminate:` | <span class="twemoji icon-pending">➖</span> | Teilweise markiertes Kontrollkästchen (Indeterminate). |
+| `:material-close:` | <span class="twemoji icon-error">❌</span> | Rotes X für Fehler, Ablehnung oder Schließen. |
+| `:material-alert:` | <span class="twemoji icon-error">⚠️</span> | Warnung / Achtung. |
+| `:material-info:` | <span class="twemoji icon-success">ℹ️</span> | Informationssymbol. |
+```
+
+
 
 ### Textausrichtung
 
