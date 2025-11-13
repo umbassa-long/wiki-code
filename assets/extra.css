@@ -7,7 +7,8 @@
 
 /* SCHRIFTGRÖSSE DES HAUPTTEXTES */
 .md-typeset {
-    font-size: 1.0em; /* verhindert doppelte Skalierung */
+    font-size: 1.2em; /* gleiche Größe wie Tabellen */
+    line-height: 1.5;
 }
 
 /* ==========================================================================
@@ -19,6 +20,8 @@
     border-spacing: 0 10px;
     margin-bottom: 30px;
     width: 100%;
+    font-size: 1.2em; /* gleiche Größe wie Fließtext */
+    line-height: 1.5;
 }
 
 .md-typeset table th,
@@ -45,14 +48,11 @@
 /* ==========================================================================
    MATERIAL ICONS & TWEMOJI
    ========================================================================== */
-
-/* Icons übernehmen Textfarbe */
 .md-typeset :is(.md-icon, .mdx-icon, .material-icons, .material-symbols, .twemoji) {
     color: currentColor !important;
     fill: currentColor !important;
 }
 
-/* Alle SVG-Pfade einfärben */
 .md-typeset svg path {
     fill: currentColor !important;
 }
@@ -60,20 +60,16 @@
 /* ==========================================================================
    ICON-FARBKLASSEN
    ========================================================================== */
-
-/* Grün = Erfolg / Häkchen */
 .icon-success {
     color: #4caf50 !important;
     fill: #4caf50 !important;
 }
 
-/* Rot = Fehler / Warnung */
 .icon-error {
     color: #f44336 !important;
     fill: #f44336 !important;
 }
 
-/* Grau = Ausstehend / Pending */
 .icon-pending {
     color: #9e9e9e !important;
     fill: #9e9e9e !important;
