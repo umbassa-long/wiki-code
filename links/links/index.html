@@ -22,7 +22,7 @@
     
     
       
-        <title>Links & Ressourcen - Denkwürdig</title>
+        <title>Links - Denkwürdig</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#links" class="md-skip">
+        <a href="#arten" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Links & Ressourcen
+              Links
             
           </span>
         </div>
@@ -515,8 +515,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -545,14 +543,30 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Inhaltsverzeichnis
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links-in-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Links in Button
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#markdownguides" class="md-nav__link">
@@ -938,14 +952,30 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Inhaltsverzeichnis
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arten
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links-in-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Links in Button
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#markdownguides" class="md-nav__link">
@@ -992,7 +1022,54 @@
   
 
 
-<h1 id="links">Links</h1>
+  <h1>Links & Ressourcen</h1>
+
+<h2 id="arten">Arten</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Ziel</th>
+<th style="text-align: left;">Syntax</th>
+<th style="text-align: left;">Ergebnis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Externe Webseite</strong></td>
+<td style="text-align: left;"><code>[Google besuchen](https://www.google.com)</code></td>
+<td style="text-align: left;">Google besuchen</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Interne Seite (relativ)</strong></td>
+<td style="text-align: left;"><code>[Zur Docker-Anleitung](../how-tos/docker.md)</code></td>
+<td style="text-align: left;">Zur Docker-Anleitung</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Interner Abschnitt (Anker)</strong></td>
+<td style="text-align: left;"><code>[Zum Abschnitt Tabellen](#markdown-tabellen-erstellen)</code></td>
+<td style="text-align: left;">Zum Abschnitt Tabellen</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Link mit Tooltip</strong></td>
+<td style="text-align: left;"><code>[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ "Theme Dokumentation")</code></td>
+<td style="text-align: left;">Material for MkDocs</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>| Ziel | Syntax | Ergebnis |
+| :--- | :--- | :--- |
+| <span class="gs">**Externe Webseite**</span> | <span class="sb">`[Google besuchen](https://www.google.com)`</span> | Google besuchen |
+| <span class="gs">**Interne Seite (relativ)**</span> | <span class="sb">`[Zur Docker-Anleitung](../how-tos/docker.md)`</span> | Zur Docker-Anleitung |
+| <span class="gs">**Interner Abschnitt (Anker)**</span> | <span class="sb">`[Zum Abschnitt Tabellen](#markdown-tabellen-erstellen)`</span> | Zum Abschnitt Tabellen |
+| <span class="gs">**Link mit Tooltip**</span> | <span class="sb">`[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ &quot;Theme Dokumentation&quot;)`</span> | Material for MkDocs |
+</code></pre></div>
+<h2 id="links-in-button">Links in Button</h2>
+<p><a href="#" class="md-button md-button--primary">
+    Engage Hyperdrive <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.13 22.19-1.63-3.83c1.57-.58 3.04-1.36 4.4-2.27l-2.77 6.1M5.64 12.5l-3.83-1.63 6.1-2.77C7 9.46 6.22 10.93 5.64 12.5M21.61 2.39S16.66.269 11 5.93c-2.19 2.19-3.5 4.6-4.35 6.71-.28.75-.09 1.57.46 2.13l2.13 2.12c.55.56 1.37.74 2.12.46A19.1 19.1 0 0 0 18.07 13c5.66-5.66 3.54-10.61 3.54-10.61m-7.07 7.07c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0c.77.78.78 2.05 0 2.83-.78.78-2.05.78-2.83 0m-5.66 7.07-1.41-1.41 1.41 1.41M6.24 22l3.64-3.64c-.34-.09-.67-.24-.97-.45L4.83 22h1.41M2 22h1.41l4.77-4.76-1.42-1.41L2 20.59V22m0-2.83 4.09-4.08c-.21-.3-.36-.62-.45-.97L2 17.76v1.41Z"/></svg></span>
+</a></p>
+<p><a href="#" class="md-button">
+    Jettison All Cargo <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20.37 8.91-1 1.73-12.13-7 1-1.73 3.04 1.75 1.36-.37 4.33 2.5.37 1.37 3.03 1.75M6 19V7h5.07L18 11v8a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2Z"/></svg></span>
+</a></p>
 <h2 id="markdownguides">Markdownguides</h2>
 <ul>
 <li><a href="https://www.markdownguide.org/basic-syntax/">Markdownguide</a></li>
@@ -1007,12 +1084,11 @@
 <li><a href="https://excalidraw.com/" target="_blank">Schöne Präsentation erstellen</a></li>
 <li><a href="https://wiki.debian.org/SystemMonitoring" target="_blank">Linux Monitoring</a> # URL mit Tab </li>
 <li><a href="https://qualidy.github.io/wiki-docker/" target="_blank">Docker</a></li>
-<li>
-<p><a href="https://docs.github.com/de/get-started" target="_blank">Starten mit Github</a></p>
-</li>
-<li>
-<p><a href="URL" target="_blank">TEXT</a> # URL mit Tab </p>
-</li>
+<li><a href="https://docs.github.com/de/get-started" target="_blank">Starten mit Github</a></li>
+</ul>
+<p>https://dentro.de/ai/features/</p>
+<ul>
+<li><a href="URL" target="_blank">TEXT</a> # URL mit Tab </li>
 <li><a href="URL">Text</a> # reine Markdownsyntax für URL ohne Tab</li>
 </ul>
 <h2 id="qualitat-mal-anders-aber-nicht-gegensatzlich">Qualität mal anders, aber nicht gegensätzlich</h2>
@@ -1046,7 +1122,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="10. November 2025 13:43:21 CET">10. November 2025 13:43:21</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="13. November 2025 12:55:36 CET">13. November 2025 12:55:36</span>
   </span>
 
     
