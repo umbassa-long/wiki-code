@@ -2,12 +2,12 @@
    GLOBALE SCHRIFTGRÖSSE
    ========================================================================== */
 :root {
-    --md-font-size: 1.2em; /* ca. 19.2px */
+    --md-font-size: 1.2em; /* Einheitliche Schriftgröße für Fließtext und Tabellen */
 }
 
 /* SCHRIFTGRÖSSE DES HAUPTTEXTES */
 .md-typeset {
-    font-size: 1.2em; /* gleiche Größe wie Tabellen */
+    font-size: 1.2em;
     line-height: 1.5;
 }
 
@@ -31,14 +31,14 @@
     color: inherit; /* Textfarbe übernehmen */
 }
 
-/* HELL (default) */
+/* Helles Schema (default) */
 .md-theme-default .md-typeset table tbody tr {
     background-color: #fcfcfc;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 }
 
-/* DUNKEL (slate) */
+/* Dunkles Schema (slate) */
 .md-theme-slate .md-typeset table tbody tr {
     background-color: var(--md-code-bg-color);
     box-shadow: none;
