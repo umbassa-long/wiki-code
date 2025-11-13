@@ -94,6 +94,7 @@ nav:
 # Markdown-Erweiterungen
 # ==========================================================================
 markdown_extensions:
+  - tables
   - admonition                   # für Hinweise, Tipps, Warnungen
   - pymdownx.superfences          # für Codeblöcke mit Syntax Highlighting
   - pymdownx.tabbed:
