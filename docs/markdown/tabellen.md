@@ -29,6 +29,26 @@ Hier ist das Grundschema:
 | Zelle A1    | Zelle B1    | Zelle C1    |
 | Zelle A2    | Zelle B2    | Zelle C2    |
 
+#### Syntax
+
+```markdown
+| Docker-Befehl | Erklärung | Status |
+| :--- | :--- | :--- |
+| docker run | Container starten | :material-check-circle: Aktiv |
+| docker stop | Container stoppen | :material-close-circle: Inaktiv |
+| docker rm | Container löschen | :material-alert-circle: Vorsicht |
+```
+
+### Bunte Bildchen in Tabellen
+| Icon-Code | Darstellung (Symbol) | Bedeutung & Verwendung |
+| :--- | :--- | :--- |
+| :material-check: | | Das einfachste, grundlegendste Häkchen.|
+| :material-check-circle: | | Das am häufigsten verwendete Icon. Häkchen in einem soliden Kreis (gut für "Aktiv" / "Erledigt").|
+| :material-check-circle-outline: | | Häkchen in einem Kreis mit nur einem Umriss (etwas subtiler). 
+| :material-check-all: | | Zwei Häkchen (gut für "Alle bestätigt" oder "Gelesen"). |
+| :material-check-bold: | | Ein dickeres, prominenteres Häkchen (stärkere Betonung). 
+| :material-checkbox-marked: | | Das klassische, ausgefüllte Kontrollkästchen. |
+| :material-checkbox-blank-outline: | | Das leere Kontrollkästchen (gut für "Ausstehend"). |
 
 ### Textausrichtung
 
@@ -71,6 +91,8 @@ Ergebnis:ProduktPreisStatusLaptop1200 €Auf LagerMaus25 €Nicht verfügbar
 |---|---|---|
 | **Laptop** | 1200 € | *Auf Lager* |
 | `Maus` | **25 €** | Nicht verfügbar |
+
+
 
 
 ### Nützliche Werkzeuge

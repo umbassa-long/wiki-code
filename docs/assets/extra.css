@@ -42,3 +42,23 @@
     box-shadow: none;
     border-radius: 5px;
 }
+
+/* --- ICON-FARBEN FÜR STATUSANZEIGEN --- */
+
+/* Grünes Häkchen für "Aktiv" oder "Erfolgreich" */
+[for*="check-circle"], 
+[for*="check-bold"] {
+    color: #4CAF50; /* Klassisches Grün */
+}
+
+/* Rotes Kreuz für "Fehler" oder "Inaktiv" */
+[for*="close-circle"],
+[for*="alert-octagon"] {
+    color: #F44336; /* Klassisches Rot */
+}
+
+/* Gelbes Dreieck für "Achtung" oder "Vorsicht" */
+[for*="alert-circle"],
+[for*="warning"] {
+    color: #FFEB3B; /* Klassisches Gelb/Amber */
+}
