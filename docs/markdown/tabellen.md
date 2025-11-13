@@ -36,12 +36,6 @@ Hier ist das Grundschema:
 | docker rm | Container löschen | :material-alert-circle: Vorsicht |
 ```
 
----
-title: Tabellen
----
-
-# Tabellen
-
 ## Bunte Bildchen in Tabellen
 
 Hier siehst du die vollständig aktualisierte Tabelle mit Twemoji-Häkchen und Kontrollkästchen.  

@@ -2,43 +2,48 @@
    GLOBALE SCHRIFTGRÖSSE
    ========================================================================== */
 :root {
-    --md-font-size: 1.2em; /* Einheitliche Schriftgröße für Fließtext und Tabellen */
+    --md-font-size: 1.2em; /* Fließtext */
 }
 
-/* SCHRIFTGRÖSSE DES HAUPTTEXTES */
+/* Haupttext */
 .md-typeset {
     font-size: 1.2em;
     line-height: 1.5;
+    max-width: 900px;       /* Maximalbreite für besseren Lesefluss */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;        /* Abstand zu den Seitenrändern */
 }
 
 /* ==========================================================================
-   TABELLEN-STYLING (Card-Look)
+   TABELLEN-STYLING (Card-Look, kompakter)
    ========================================================================== */
 .md-typeset table {
     border: none !important;
     border-collapse: separate;
     border-spacing: 0 10px;
     margin-bottom: 30px;
-    width: 100%;
-    font-size: 1.2em; /* gleiche Größe wie Fließtext */
-    line-height: 1.5;
+    width: auto;             /* Tabellen passen sich Container an */
+    max-width: 100%;         /* Nicht breiter als Container */
+    font-size: 1.1em;        /* etwas kompakter als Fließtext */
+    line-height: 1.4;
 }
 
 .md-typeset table th,
 .md-typeset table td {
     border: none !important;
-    padding: 15px 12px;
-    color: inherit; /* Textfarbe übernehmen */
+    padding: 12px 10px;
+    color: inherit;
 }
 
-/* Helles Schema (default) */
+/* Helles Schema */
 .md-theme-default .md-typeset table tbody tr {
     background-color: #fcfcfc;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 }
 
-/* Dunkles Schema (slate) */
+/* Dunkles Schema */
 .md-theme-slate .md-typeset table tbody tr {
     background-color: var(--md-code-bg-color);
     box-shadow: none;
@@ -78,7 +83,7 @@
 /* Tabellen-Icons explizit einfärben */
 .md-typeset table td .material-icons,
 .md-typeset table td .twemoji {
-    color: #009688 !important; /* Default Akzentfarbe */
+    color: #009688 !important;
     fill: #009688 !important;
 }
 
