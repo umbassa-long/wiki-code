@@ -132,7 +132,7 @@ Nutzen Sie hierfür eckige Klammern und ein X. Zwischen den eckigen Klammern ein
 
 **Links ins Internet**
 - Optionaler Tooltip: Fügen Sie einen Titel in Anführungszeichen nach der URL ein, 
-  der angezeigt wird, wenn man mit der Maus über den Link fährt. 
+  der angezeigt wird, wenn man mit der Maus über den Link fährt.
 
 ```markdown
 

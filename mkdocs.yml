@@ -78,6 +78,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   # Folgende Erweiterungen wurden aufgrund von Modul-Fehlern deaktiviert:
   # - attr_list
   # - pymdownx.md_in_html:
