@@ -31,3 +31,72 @@
 /* HELL (default) */
 .md-theme-default .md-typeset table tbody tr {
     background-color: #fcfcfc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+/* DUNKEL (slate) */
+.md-theme-slate .md-typeset table tbody tr {
+    background-color: var(--md-code-bg-color);
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+/* ==========================================================================
+   MATERIAL ICONS & TWEMOJI
+   ========================================================================== */
+
+/* Icons übernehmen Textfarbe */
+.md-typeset :is(.md-icon, .mdx-icon, .material-icons, .material-symbols, .twemoji) {
+    color: currentColor !important;
+    fill: currentColor !important;
+}
+
+/* Alle SVG-Pfade einfärben */
+.md-typeset svg path {
+    fill: currentColor !important;
+}
+
+/* ==========================================================================
+   ICON-FARBKLASSEN
+   ========================================================================== */
+
+/* Grün = Erfolg / Häkchen */
+.icon-success {
+    color: #4caf50 !important;
+    fill: #4caf50 !important;
+}
+
+/* Rot = Fehler / Warnung */
+.icon-error {
+    color: #f44336 !important;
+    fill: #f44336 !important;
+}
+
+/* Grau = Ausstehend / Pending */
+.icon-pending {
+    color: #9e9e9e !important;
+    fill: #9e9e9e !important;
+}
+
+/* Tabellen-Icons explizit einfärben */
+.md-typeset table td .material-icons,
+.md-typeset table td .twemoji {
+    color: #009688 !important; /* Default Akzentfarbe */
+    fill: #009688 !important;
+}
+
+/* Dunkles Schema Tabellen-Icons */
+.md-theme-slate .md-typeset table td .material-icons,
+.md-theme-slate .md-typeset table td .twemoji {
+    color: #4dd0e1 !important;
+    fill: #4dd0e1 !important;
+}
+
+/* ==========================================================================
+   OPTIONAL: Hover-Effekt für Tabellenzeilen
+   ========================================================================== */
+.md-typeset table tbody tr:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
