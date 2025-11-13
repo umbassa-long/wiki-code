@@ -43,22 +43,34 @@
     border-radius: 5px;
 }
 
-/* --- ICON-FARBEN FÜR STATUSANZEIGEN --- */
+/* --- FINALE IKONEN-FARBANPASSUNG --- */
 
-/* Grünes Häkchen für "Aktiv" oder "Erfolgreich" */
-[for*="check-circle"], 
-[for*="check-bold"] {
-    color: #4CAF50; /* Klassisches Grün */
+/* 1. ZIELEN AUF ALLE ICONS INNERHALB DES TEXTES */
+.md-typeset :is(.twemoji, .octicons, .md-icon, .md-content) svg {
+    /* Setzt die Farbe für FontAwesome, Material und Emojis */
+    fill: currentColor; 
 }
 
-/* Rotes Kreuz für "Fehler" oder "Inaktiv" */
-[for*="close-circle"],
-[for*="alert-octagon"] {
-    color: #F44336; /* Klassisches Rot */
+/* 2. GRÜN FÜR ERFOLG ODER CHECK-SYMBOLE */
+/* Zielt auf alle Elemente, die ein Check-Icon enthalten */
+.md-typeset a[href*="check-circle"] .md-icon,
+.md-typeset .md-icon[title*="check-circle"],
+.md-typeset .md-icon[title*="check-bold"] {
+    color: #4CAF50 !important; /* Grünes Häkchen */
 }
 
-/* Gelbes Dreieck für "Achtung" oder "Vorsicht" */
-[for*="alert-circle"],
-[for*="warning"] {
-    color: #FFEB3B; /* Klassisches Gelb/Amber */
+/* 3. ROT FÜR FEHLER ODER ALARM-SYMBOLE */
+/* Zielt auf alle Elemente, die ein Alarm- oder Fehler-Icon enthalten */
+.md-typeset .md-icon[title*="close-circle"],
+.md-typeset .md-icon[title*="alert-octagon"] {
+    color: #F44336 !important; /* Rotes Kreuz/Achtung */
 }
+
+/* 4. GELB FÜR WARNUNGEN */
+.md-typeset .md-icon[title*="warning"],
+.md-typeset .md-icon[title*="alert-circle"] {
+    color: #FFEB3B !important; /* Gelber Kreis/Achtung */
+}
+
+/* Beispiel für eine manuelle Korrektur, falls der Titel nicht funktioniert (weniger robust) */
+/* .md-typeset :is(.twemoji) svg { fill: currentColor; } */
