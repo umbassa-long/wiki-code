@@ -22,7 +22,7 @@ Hier ist das Grundschema:
     |-------------|-------------|-------------|
     | Zelle A1    | Zelle B1    | Zelle C1    |
     | Zelle A2    | Zelle B2    | Zelle C2    |
-```
+    ```
 
 === "Aussehen 2"
 
