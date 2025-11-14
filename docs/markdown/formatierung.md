@@ -21,7 +21,6 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
 
 ---
 
-
 ## Überschriften
 
 === "Darstellung"
@@ -43,7 +42,6 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
     ##### Überschrift 5
     ###### Überschrift 6
     ```
-
 
 ## Listen
 

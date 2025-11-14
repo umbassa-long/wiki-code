@@ -46,6 +46,7 @@ theme:
     - content.external_link.icon # Fügt ein Icon für externe Links hinzu
     - content.external_link.target # Stellt sicher, dass externe Links in einem neuen Tab geöffnet werden
     - toc.follow
+    - toc.integration
 
 # ==========================================================================
 # Extra CSS (für Twemoji, Tabellen Card-Look, Schriftgrößen)
@@ -110,6 +111,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true      # Tabbed Interface
   - attr_list
+  - toc:
+      toc_depth: 3
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
