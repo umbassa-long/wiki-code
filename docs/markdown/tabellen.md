@@ -45,7 +45,7 @@ Hier ist das Grundschema:
 
 ```markdown
 
-\ ### "Name der Tabüberschrift
+### "Name der Tabüberschrift
 
 === "Name Tab1"
 
