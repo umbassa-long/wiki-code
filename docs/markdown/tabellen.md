@@ -14,8 +14,8 @@ Vor und nach der Tabelle jeweils eine leere Zeile.
 Hier ist das Grundschema:
 
 ### "Aufbau"
-=== "Aussehen 1"
 
+=== "Aussehen 1"
 ```markdown
 | Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
 |-------------|-------------|-------------|
@@ -24,14 +24,12 @@ Hier ist das Grundschema:
 ```
 
 === "Aussehen 2"
-
 | Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
 |-------------|-------------|-------------|
 | Zelle A1    | Zelle B1    | Zelle C1    |
 | Zelle A2    | Zelle B2    | Zelle C2    |
 
 === "Syntax"
-
 ```markdown
 | Docker-Befehl | Erklärung | Status |
 | :--- | :--- | :--- |
