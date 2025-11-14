@@ -95,6 +95,8 @@ nav:
 # ==========================================================================
 markdown_extensions:
   - admonition                   # für Hinweise, Tipps, Warnungen
+  - pymdownx.tasklist:
+      custom_checkbox: true      # Checkboxen in Markdown
   - pymdownx.superfences:          # für Codeblöcke mit Syntax Highlighting
       custom_fences:
         - name: table
@@ -107,8 +109,6 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true      # Tabbed Interface
-  - pymdownx.tasklist:
-      custom_checkbox: true      # Checkboxen in Markdown
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
