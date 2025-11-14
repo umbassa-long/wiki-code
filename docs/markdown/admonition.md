@@ -67,17 +67,32 @@ indem Sie ?? statt !! verwenden. Dies ist nützlich für lange Abschnitte, die n
 
 Voraussetzung: **pymdownx.details** muss in Ihrer **mkdocs.yml** unter markdown_extensions: aktiviert sein.
 
-??? tip
+?? tip
     Mögliche Arten von **TYP** siehe oben. 
     Richtige Anzahl der Leerzeichen beachten
+
+
+!!! question "Wie installiere ich die Abhängigkeiten?"
+    Hier ist eine Schritt-für-Schritt-Anleitung:
+
+    1. Öffnen Sie Ihr Terminal.
+    2. Navigieren Sie in das Projektverzeichnis.
+    3. Führen Sie den folgenden Befehl aus:
+
+    ```bash
+    npm install
+    ```
+
+
+
 
 --Fenster mit Icon__
 Sie können das Standard-Icon eines Admonition-Typs überschreiben, 
 indem Sie das gewünschte Icon direkt nach dem Typ angeben:
 
 ```markdown
-!!! success icon:material-check "Fertig!"
-    Die Installation ist abgeschlossen.
+!! success icon:material-check "Fertig!"
+   Die Installation ist abgeschlossen.
 ```
 - Ergebnis
 
