@@ -47,32 +47,20 @@ Hier ist das Grundschema:
 
 \ ### "Name der Tabüberschrift
 
-=== "Aussehen 1"
+=== "Name Tab1"
 
-    | Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
-    |-------------|-------------|-------------|
-    | Zelle A1    | Zelle B1    | Zelle C1    |
-    | Zelle A2    | Zelle B2    | Zelle C2    |
+    - Syntax von Markdown beachten.
+    - Dieser Text muss immer um 4 Leerzeichen eingerückt sein
 
-=== "Syntax 1"
+=== "Name Tab2"
 
-    ```markdown
-    | Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
-    |-------------|-------------|-------------|
-    | Zelle A1    | Zelle B1    | Zelle C1    |
-    | Zelle A2    | Zelle B2    | Zelle C2    |
-    ```
+    - Syntax von Markdown beachten.
+    - Dieser Text muss immer um 4 Leerzeichen eingerückt sein
 
-=== "Syntax 2"
+=== "Name Tab3"
 
-    ```markdown
-    | Docker-Befehl | Erklärung | Status |
-    | :--- | :--- | :--- |
-    | docker run | Container starten | :material-check-circle: Aktiv |
-    | docker stop | Container stoppen | :material-close-circle: Inaktiv |
-    | docker rm | Container löschen | :material-alert-circle: Vorsicht |
-    ```
-```
+    - Syntax von Markdown beachten.
+    - Dieser Text muss immer um 4 Leerzeichen eingerückt sein
 
 ## Bunte Bildchen in Tabellen
 
@@ -125,8 +113,6 @@ Alle Tabellen übernehmen automatisch **schriftgröße, Farben und Card-Look** a
 | `:material-alert:` | <span class="twemoji icon-error">⚠️</span> | Warnung / Achtung. |
 | `:material-info:` | <span class="twemoji icon-success">ℹ️</span> | Informationssymbol. |
 ```
-
-
 
 ### Textausrichtung
 
