@@ -17,29 +17,29 @@ Hier ist das Grundschema:
 
 === "Aussehen 1"
 
-```markdown
-| Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
-|-------------|-------------|-------------|
-| Zelle A1    | Zelle B1    | Zelle C1    |
-| Zelle A2    | Zelle B2    | Zelle C2    |
+    ```markdown
+    | Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
+    |-------------|-------------|-------------|
+    | Zelle A1    | Zelle B1    | Zelle C1    |
+    | Zelle A2    | Zelle B2    | Zelle C2    |
 ```
 
 === "Aussehen 2"
 
-| Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
-|-------------|-------------|-------------|
-| Zelle A1    | Zelle B1    | Zelle C1    |
-| Zelle A2    | Zelle B2    | Zelle C2    |
+    | Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
+    |-------------|-------------|-------------|
+    | Zelle A1    | Zelle B1    | Zelle C1    |
+    | Zelle A2    | Zelle B2    | Zelle C2    |
 
 === "Syntax"
 
-```markdown
-| Docker-Befehl | Erklärung | Status |
-| :--- | :--- | :--- |
-| docker run | Container starten | :material-check-circle: Aktiv |
-| docker stop | Container stoppen | :material-close-circle: Inaktiv |
-| docker rm | Container löschen | :material-alert-circle: Vorsicht |
-```
+    ```markdown
+    | Docker-Befehl | Erklärung | Status |
+    | :--- | :--- | :--- |
+    | docker run | Container starten | :material-check-circle: Aktiv |
+    | docker stop | Container stoppen | :material-close-circle: Inaktiv |
+    | docker rm | Container löschen | :material-alert-circle: Vorsicht |
+    ```
 
 ## Bunte Bildchen in Tabellen
 
