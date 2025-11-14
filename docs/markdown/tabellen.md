@@ -17,6 +17,13 @@ Hier ist das Grundschema:
 
 === "Aussehen 1"
 
+    | Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
+    |-------------|-------------|-------------|
+    | Zelle A1    | Zelle B1    | Zelle C1    |
+    | Zelle A2    | Zelle B2    | Zelle C2    |
+
+=== "Syntax 1"
+
     ```markdown
     | Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
     |-------------|-------------|-------------|
@@ -24,14 +31,7 @@ Hier ist das Grundschema:
     | Zelle A2    | Zelle B2    | Zelle C2    |
     ```
 
-=== "Aussehen 2"
-
-    | Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
-    |-------------|-------------|-------------|
-    | Zelle A1    | Zelle B1    | Zelle C1    |
-    | Zelle A2    | Zelle B2    | Zelle C2    |
-
-=== "Syntax"
+=== "Syntax 2"
 
     ```markdown
     | Docker-Befehl | Erklärung | Status |
