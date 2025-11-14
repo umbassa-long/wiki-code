@@ -104,8 +104,8 @@ Nutzen Sie hierfür eckige Klammern und ein X.
 | Aufgabe | Status |
 |----------|--------|
 | A | [x] |
-| B | [ ] |
-| C | [ ] |
+| B | [] |
+| C | [] |
 
 ## Darstellung von Code
 
