@@ -1,45 +1,24 @@
 ﻿
 # Formatierung
 
-## Fett & Kursiv & Highlighting & und mehr
 
-```markdown
-*Kursiver Text*
-_Kursiver Text_
-**Fetter Text**
-__Fetter Text__
-***Kursiver und fetter Text***
-___Kursiver und fetter Text___
-Highlighting ==very important words==.
-H~2~O
-X^2^
-```
+## 🅰️ Text-Basisformatierung (Inline)
 
-- *Kursiver Text*
-- _Kursiver Text_
-- **Fetter Text**
-- __Fetter Text__
-- ***Kursiver und fetter Text***
-- ___Kursiver und fetter Text___
-- Highlighting ==very important words== .
-- H~2~O
-- X^2^
+Hier sehen Sie die Syntax und das gerenderte Ergebnis.
 
-## Unterstreichen
+| Ziel | Syntax (So schreiben Sie es) | Ergebnis (So sieht es aus) |
+| :--- | :--- | :--- |
+| **Kursiv** | `*Text*` oder `_Text_` | *Text* |
+| **Fett** | `**Text**` oder `__Text__` | **Text** |
+| **Fett & Kursiv** | `***Text***` oder `___Text___` | ***Text*** |
+| **Hervorhebung (Highlight)** | `==Text==` | ==Text== |
+| **Durchgestrichen** | `~~Text~~` | ~~Text~~ |
+| **Tiefgestellt** | `H~2~O` | H~2~O |
+| **Hochgestellt** | `X^2^` | X^2^ |
+| **Unterstreichen** | `---` oder `***` | siehe unten  **eigene Zeile** |
+*** 
+---
 
-Eine horizontale Linie wird durch drei oder mehr Bindestriche, 
-Sternchen oder Unterstriche in einer eigenen Zeile erstellt.
-
-```markdown
-- ---
-- ***
-```
-
-## Durchstreichen
-
-```markdown
-~~Dieser Text ist durchgestrichen.~~ Dieser aber nicht.
-```
 
 ## Überschriften
 
@@ -52,41 +31,30 @@ Sternchen oder Unterstriche in einer eigenen Zeile erstellt.
 ###### Überschrift 6
 ```
 
-## Zitate
+## "Listen"
 
-```markdown
->Dies ist ein **eingerückter Bereich**.
->Der Bereich geht hier weiter.
->Dies ist ein weiterer **eingerückter Bereich**.
-Auch dieser Bereich geht in der nächsten Zeile weiter.
-Diese Zeile ist allerdings nicht mehr eingerückt.
-```
+=== "Unsortiert"
 
-- >Dies ist ein **eingerückter Bereich**. 
-- >Der Bereich geht hier weiter. 
-- >Dies ist ein weiterer **eingerückter Bereich**. 
-- Auch dieser Bereich geht in der nächsten Zeile weiter. 
-- Diese Zeile ist allerdings nicht mehr eingerückt. 
+    - Listenpunkt 1
+    - Listenpunkt 2
+    - Listenpunkt 3
 
-## Listen
+=== "Syntax"
 
-**Unsortiert**
+    ```markdown
+    - Listenpunkt 1
+    - Listenpunkt 2
+    - Listenpunkt 3
+    ```
 
-```markdown
-- Listenpunkt 1
-- Listenpunkt 2
-- Listenpunkt 3
-```
-**Sortiert**
 
-Eine sortierte Liste hingegen erzeugt man durch eine Zahl 
-mit einem direkt darauffolgenden Punkt.
+=== "Sortiert"
 
-```markdown
-1. Listenpunkt 1
-2. Listenpunkt 2
-3. Listenpunkt 3
-```
+    ```markdown
+    1. Listenpunkt 1
+    2. Listenpunkt 2
+    3. Listenpunkt 3
+    ```
 
 **Checkliste**
 
