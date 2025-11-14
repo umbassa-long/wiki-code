@@ -47,20 +47,20 @@ Hier ist das Grundschema:
 
     ### "Name der Tabüberschrift
 
-=== "Name Tab1"
+    === "Name Tab1"  ==keine Leerzeichen==
 
-    - Syntax von Markdown beachten.
-    - Dieser Text muss immer um 4 Leerzeichen eingerückt sein
+        - Syntax von Markdown beachten.
+        - Dieser Text muss immer um 4 Leerzeichen eingerückt sein
 
-=== "Name Tab2"
+    === "Name Tab2"  ==keine Leerzeichen==
 
-    - Syntax von Markdown beachten.
-    - Dieser Text muss immer um 4 Leerzeichen eingerückt sein
+        - Syntax von Markdown beachten.
+        - Dieser Text muss immer um 4 Leerzeichen eingerückt sein
 
-=== "Name Tab3"
+    === "Name Tab3"  ==keine Leerzeichen==
 
-    - Syntax von Markdown beachten.
-    - Dieser Text muss immer um 4 Leerzeichen eingerückt sein
+        - Syntax von Markdown beachten.
+        - Dieser Text muss immer um 4 Leerzeichen eingerückt sein
     ```
 
 ## Bunte Bildchen in Tabellen
