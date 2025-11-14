@@ -16,22 +16,36 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
 | **Tiefgestellt** | `H~2~O` | H~2~O |
 | **Hochgestellt** | `X^2^` | X^2^ |
 | **Unterstreichen** | `---` oder `***` | siehe unten  **eigene Zeile** |
-*** 
+
+***
+
 ---
 
 
 ## Überschriften
 
-```markdown
-# Überschrift 1
-## Überschrift 2
-### Überschrift 3
-#### Überschrift 4
-##### Überschrift 5
-###### Überschrift 6
-```
+=== "Darstellung"
 
-## "Listen"
+    # Überschrift 1
+    ## Überschrift 2
+    ### Überschrift 3
+    #### Überschrift 4
+    ##### Überschrift 5
+    ###### Überschrift 6
+
+=== "Syntax"
+
+    ```markdown
+    # Überschrift 1
+    ## Überschrift 2
+    ### Überschrift 3
+    #### Überschrift 4
+    ##### Überschrift 5
+    ###### Überschrift 6
+    ```
+
+
+## Listen
 
 === "Unsortiert"
 
@@ -47,8 +61,13 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
     - Listenpunkt 3
     ```
 
-
 === "Sortiert"
+
+    1. Listenpunkt 1
+    2. Listenpunkt 2
+    3. Listenpunkt 3
+
+=== "Syntax"
 
     ```markdown
     1. Listenpunkt 1
@@ -58,10 +77,9 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
 
 **Checkliste**
 
-Markdown gibt Ihnen zusätzlich die Möglichkeit, Checklisten zu erstellen. 
-Diese erscheinen mit einem Kästchen, das per Knopfdruck aktiviert werden kann. 
-Sie können auch bereits beim Erstellen der Liste Häkchen setzen. 
-Nutzen Sie hierfür eckige Klammern und ein X. Zwischen den eckigen Klammern ein Leerzeichen.
+- Markdown gibt Ihnen zusätzlich die Möglichkeit, Checklisten zu erstellen. Diese erscheinen mit einem Kästchen.
+Sie können auch beim erstellen der Liste Häkchen setzen. 
+Nutzen Sie hierfür eckige Klammern und ein X.
 
 ```markdown
 - [ ] A
