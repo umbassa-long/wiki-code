@@ -2,7 +2,7 @@
 # Formatierung
 
 
-## 🅰️ Text-Basisformatierung (Inline)
+### 🅰️ Text-Basisformatierung (Inline)
 
 Hier sehen Sie die Syntax und das gerenderte Ergebnis.
 
@@ -21,7 +21,7 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
 
 ---
 
-## Überschriften
+### Überschriften
 
 === "Darstellung"
 
@@ -43,7 +43,7 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
     ###### Überschrift 6
     ```
 
-## Listen
+### Listen
 
 === "Unsortiert"
 
@@ -105,14 +105,14 @@ Nutzen Sie hierfür eckige Klammern und ein X.
 | B | [ ] |
 | C | [ ] |
 
-## Darstellung von Code
+### Darstellung von Code
 
  - Apostroph vor und nach dem Wort siehe `code`.
  - ``Zwei Apostrophe an Anfang und Ende hebt jeweils ein Apostroph auf, siehe `code`.``
  - Drei Apostrophe Anfang und Ende, sowie der Name der Programmiersprache. 
    Damit wird highlighting aktiviert
 
-## Links
+### Links
 
 **Links ins Internet**
 - Optionaler Tooltip: Fügen Sie einen Titel in Anführungszeichen nach der URL ein, 
@@ -135,12 +135,12 @@ Nutzen Sie hierfür eckige Klammern und ein X.
 
 ```
 
-## Emojis
+### Emojis
 
 - [Emojis](https://gist.github.com/rxaviers/7360908)
 
 
-## Sonderzeichen
+### Sonderzeichen
 
 - Asterisk: *
 - Bindestrich:
