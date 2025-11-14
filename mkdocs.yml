@@ -17,7 +17,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: 'indigo'
-      accent: 'teal'
+      accent: 'red'
       toggle:
         icon: material/weather-sunny
         name: Auf dunkles Schema wechseln

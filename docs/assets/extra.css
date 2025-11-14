@@ -101,32 +101,3 @@
     transform: translateY(-2px);
     transition: all 0.2s ease-in-out;
 }
-
-/* ==========================================================================
-   TAB FARBEN ANPASSEN
-    (Beschreibung = Rot, Codebeispiele = Blau)
-   ========================================================================== */
-
-/* Farbe für "Beschreibung" Tabs (Rot) */
-/* Ändert die Hintergrundfarbe des Labels, wenn es aktiv ist (ausgewählt) */
-.md-typeset .tabbed-labels [for$="__1"]:checked + .tabbed-label {
-    background-color: #ff4444; /* Ein helleres Rot für den aktiven Reiter */
-    color: white; /* Weiße Schrift für bessere Lesbarkeit */
-}
-
-/* Ändert die Farbe der Unterstreichung (Indikator), wenn "Beschreibung" aktiv ist */
-.md-typeset .tabbed-labels:before {
-    background-color: #ff4444; 
-}
-
-
-/* Farbe für "Codebeispiele" Tabs (Blau) */
-/* Ändert die Hintergrundfarbe des Labels, wenn es aktiv ist (ausgewählt) */
-.md-typeset .tabbed-labels [for$="__2"]:checked + .tabbed-label {
-    background-color: #3366cc; /* Ein schönes Blau */
-    color: white;
-}
-
-/* Ändert die Farbe der Unterstreichung (Indikator), wenn "Codebeispiele" aktiv ist */
-/* ACHTUNG: Der Indikator gilt oft für das GESAMTE Tab-Set, 
-   eine spezifische Farbe pro Tab ist hier sehr schwierig ohne JavaScript */
