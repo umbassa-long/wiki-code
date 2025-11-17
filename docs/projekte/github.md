@@ -1,6 +1,6 @@
 ﻿# Github 
 
-## GitHub-Account einrichten
+## **GitHub-Account einrichten**
 
 1. **Registrieren:** Gehe auf die GitHub-Website und klicke auf **"Sign up"**.
 
@@ -8,7 +8,7 @@
 
 3. **Verifizieren:** Bestätige deine E-Mail-Adresse über den Link, den du erhältst.
 
-## Neues Projekt (Repository) erstellen
+## **Neues Projekt (Repository) erstellen**
 
 Ein **Repository** (Repo) ist der Speicherort für dein Projekt auf GitHub.
 
@@ -24,47 +24,48 @@ Ein **Repository** (Repo) ist der Speicherort für dein Projekt auf GitHub.
 
 6. **Erstellen:** Klicke auf **"Create repository"**.
 
-## Projektbearbeitung über Codespaces
-### Einrichten
+## **Projektbearbeitung über Codespaces**
+### **Einrichten**
 
 Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner GitHub-Repositorys verbunden sind.
 
-1. **Navigiere zum Repository:** Gehe auf GitHub zu dem Repository, das du verwalten möchtest (das, welches du im ersten Schritt eingerichtet hast, z. B. mein-erstes-projekt).
+1. **Navigiere zum Repository:** Gehe auf GitHub zu dem Repository, das du verwalten möchtest (das, welches du im ersten Schritt eingerichtet hast, z. B. `mein-erstes-projekt`).
 
-2. **Codespace starten:** Klicke auf den grünen Button < > Code.
+2. **Codespace starten:** Klicke auf den grünen Button 
+`< > Code`.
 
 3. **Wähle Codespaces:** Wechsle zum Tab "Codespaces".
 
-4. Neuen Codespace erstellen: Klicke auf "Create codespace on main" (oder auf dem Branch, den du verwenden möchtest).
+4. **Neuen Codespace erstellen:** Klicke auf **"Create codespace on main"** (oder auf dem Branch, den du verwenden möchtest).
 
 GitHub führt nun folgende Schritte automatisch im Hintergrund aus:
 
-- Es wird eine virtuelle Maschine (VM) zugewiesen.
+- Es wird eine **virtuelle Maschine (VM)** zugewiesen.
 
-- Es wird ein Entwicklungscontainer (mit allen notwendigen Tools und Abhängigkeiten) erstellt.
+- Es wird ein **Entwicklungscontainer** (mit allen notwendigen Tools und Abhängigkeiten) erstellt.
 
-- Dein Repository wird in diesen Container geklont.
+- Dein **Repository** wird in diesen Container geklont.
 
-- Der VS Code Editor öffnet sich direkt in deinem Browser und zeigt deine Projektdateien an.
+- Der **VS Code Editor** öffnet sich direkt in deinem Browser und zeigt deine Projektdateien an.
 
-### 2. Im Codespace arbeiten und Änderungen verwalten
+### **2. Im Codespace arbeiten und Änderungen verwalten**
 Im Codespace nutzt du die integrierten Funktionen von VS Code, um deine Projektdateien zu bearbeiten und die Änderungen zu synchronisieren.
 
-1. Dateien bearbeiten
+**1. Dateien bearbeiten**
 - Du kannst Dateien über den Dateiexplorer (links in der VS Code Seitenleiste) öffnen und bearbeiten.
 
 - Das Terminal unten im Codespace funktioniert genau wie das Terminal auf deinem lokalen Computer, sodass du dort deine üblichen Befehle (z. B. zum Starten der Anwendung, Installieren von Paketen) ausführen kannst.
 
-2. Git-Workflow (Committen und Pushen)
+**2. Git-Workflow** (Committen und Pushen)
 Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, entfallen die Schritte git clone und die manuelle Authentifizierung.
 
 - Änderungen einsehen: Klicke in der Seitenleiste auf das Quellcodeverwaltung-Symbol (drei Kreise, die Linien miteinander verbinden – das Git-Symbol).
 
-- Staging: Alle Änderungen werden dort als "Änderungen" angezeigt. Klicke auf das Pluszeichen (+) neben einer Datei oder neben "Änderungen", um die Dateien zur Staging Area hinzuzufügen (git add .).
+- **Staging:** Alle Änderungen werden dort als **"Änderungen"** angezeigt. Klicke auf das **Pluszeichen (+)** neben einer Datei oder neben **"Änderungen"**, um die Dateien zur Staging Area hinzuzufügen `(git add .)`.
 
-- Commit: Gib eine kurze, beschreibende Commit-Nachricht in das Textfeld ein (z. B. "Feature: Neue Navigation hinzugefügt"). Klicke dann auf "Commit".
+- **Commit:** Gib eine kurze, beschreibende **Commit-Nachricht** in das Textfeld ein (z. B. "Feature: Neue Navigation hinzugefügt"). Klicke dann auf **"Commit"**.
 
-- Push (Synchronisieren): Klicke auf den Button "Änderungen synchronisieren" oder "Push" (kann auch ein Pfeilsymbol nach oben sein).
+- **Push (Synchronisieren)**: Klicke auf den Button **"Änderungen synchronisieren"** oder **"Push"** (kann auch ein Pfeilsymbol nach oben sein).
 
 Diese Aktion überträgt deine Commits direkt von deinem Codespace in dein GitHub-Repository.
 
@@ -72,11 +73,11 @@ Diese Aktion überträgt deine Commits direkt von deinem Codespace in dein GitHu
 
 Codespaces sind ideal für die Zusammenarbeit, da die Umgebung für jeden Mitarbeiter exakt gleich ist.
 
-- Pullen von Partner-Änderungen: Wenn dein Partner Änderungen in das Repository hochgeladen hat, klicke im Codespace auf das Quellcodeverwaltung-Symbol und dann auf den "Pull"-Button (Pfeil nach unten) oder "Änderungen synchronisieren". Dadurch werden die neuesten Änderungen in deinen Codespace geholt.
+- **Pullen von Partner-Änderungen:** Wenn dein Partner Änderungen in das Repository hochgeladen hat, klicke im Codespace auf das Quellcodeverwaltung-Symbol und dann auf den "Pull"-Button (Pfeil nach unten) oder "Änderungen synchronisieren". Dadurch werden die neuesten Änderungen in deinen Codespace geholt.
 
-- Branches: Du kannst Branches direkt im Codespace verwalten. Unten links in der Statusleiste von VS Code siehst du den aktuellen Branch (main). Klicke darauf, um einen neuen Branch zu erstellen oder zu einem bestehenden Branch zu wechseln.
+- **Branches:** Du kannst Branches direkt im Codespace verwalten. Unten links in der Statusleiste von VS Code siehst du den aktuellen Branch (main). Klicke darauf, um einen **neuen Branch zu erstellen** oder zu einem **bestehenden Branch zu wechseln.**
 
-- Pull Request: Nachdem du deine Änderungen in einem Feature-Branch gepusht hast, kannst du den Pull Request weiterhin über die GitHub-Website erstellen, um den Code von deinen Kollegen überprüfen zu lassen.
+- **Pull Request:** Nachdem du deine Änderungen in einem Feature-Branch gepusht hast, kannst du den **Pull Request** weiterhin über die **GitHub-Website** erstellen, um den Code von deinen Kollegen überprüfen zu lassen.
 
 Das Verwalten deines Projekts über GitHub Codespaces ist sehr einfach, da Codespaces direkt in deinem GitHub-Repository gestartet werden und Visual Studio Code (VS Code) im Browser bereitstellen.
 
