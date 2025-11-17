@@ -73,4 +73,11 @@ https://dentro.de/ai/features/
 :smile:
 :axt:
 
+```preview
+https://app.diagrams.net
+```
+
+<a href="https://app.diagrams.net" target="_blank">Öffne Diagramme in neuem Tab</a>
+
+
 
