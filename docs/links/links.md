@@ -14,7 +14,7 @@ title: Links
 
 - Anpassung den Wert des href-Attributs im HTML-Tag `<a>` ändern.
 
-<a href="https://de247.die-staemme.de/" class="md-button md-button--primary">
+<a href="https://de247.die-staemme.de/" class="md-button md-button--primary">{ data-preview prefer-hover }
     Engage Hyperdrive :material-rocket-launch:
 </a>
 
@@ -35,24 +35,24 @@ title: Links
 
 
 ## Markdownguides
-   - [Markdownguide](https://www.markdownguide.org/basic-syntax/)
-   - [Material für MD](https://squidfunk.github.io/mkdocs-material/getting-started/)
+   - [Markdownguide](https://www.markdownguide.org/basic-syntax/){ data-preview prefer-hover }
+   - [Material für MD](https://squidfunk.github.io/mkdocs-material/getting-started/){ data-preview prefer-hover }
 	
 ## Interessante Seiten und sonst so
 
 - <a href="https://labex.io/de" target="_blank">kostenlose Howto´s</a>
-- [kostenlose Howto´s](https://labex.io/de)
+- [kostenlose Howto´s](https://labex.io/de){ data-preview prefer-hover }
 
 
 
 
-- <a href="https://app.diagrams.net" target="_blank">Erstellen von Diagrammen</a>
-- <a href="https://strukto.io/" target="_blank">Struktogramme für Programmierer</a>
-- <a href="https://www.matheretter.de/wiki/binarzahlen" target="_blank">Matheretter-Binärzahlen</a>
-- <a href="https://excalidraw.com/" target="_blank">Schöne Präsentation erstellen</a>
-- <a href="https://wiki.debian.org/SystemMonitoring" target="_blank">Linux Monitoring</a> # URL mit Tab 
-- <a href="https://qualidy.github.io/wiki-docker/" target="_blank">Docker</a>
-- <a href="https://docs.github.com/de/get-started" target="_blank">Starten mit Github</a>
+- <a href="https://app.diagrams.net" target="_blank">Erstellen von Diagrammen</a>{ data-preview prefer-hover }
+- <a href="https://strukto.io/" target="_blank">Struktogramme für Programmierer</a>{ data-preview prefer-hover }
+- <a href="https://www.matheretter.de/wiki/binarzahlen" { data-preview prefer-hover }target="_blank">Matheretter-Binärzahlen</a>
+- <a href="https://excalidraw.com/" target="_blank">Schöne Präsentation erstellen</a>{ data-preview prefer-hover }
+- <a href="https://wiki.debian.org/SystemMonitoring" target="_blank">Linux Monitoring</a>{ data-preview prefer-hover } # URL mit Tab 
+- <a href="https://qualidy.github.io/wiki-docker/" target="_blank">Docker</a>{ data-preview prefer-hover }
+- <a href="https://docs.github.com/de/get-started" target="_blank">Starten mit Github</a>{ data-preview prefer-hover }
 
 https://yaml-online-parser.appspot.com/
 https://dentro.de/ai/features/
@@ -62,12 +62,12 @@ https://dentro.de/ai/features/
 
 ## Qualität mal anders, aber nicht gegensätzlich
 
-- <a href="https://qualidy.github.io/wiki-docker" target="_blank">Docker</a> 
-- <a href="https://qualidy.github.io/wiki-bfz" target="_blank">BFZ</a>
-- <a href="https://qualidy.github.io/wiki-promthaton" target="_blank">Promthaton</a>
-- <a href="https://qualidy.github.io/base_wiki" target="_blank">Base Wiki</a>
-- <a href="https://qualidy.github.io/wiki-c-sharp-buch" target="_blank">C-Sharp-Buch</a>
-- <a href="https://pictogrammers.com/libraries/" target="_blank">Pictogramme</a>
+- <a href="https://qualidy.github.io/wiki-docker" target="_blank">Docker{ data-preview prefer-hover }</a>
+- <a href="https://qualidy.github.io/wiki-bfz" target="_blank">BFZ{ data-preview prefer-hover }</a>
+- <a href="https://qualidy.github.io/wiki-promthaton" target="_blank">Promthaton{ data-preview prefer-hover }</a>
+- <a href="https://qualidy.github.io/base_wiki" target="_blank">Base Wiki{ data-preview prefer-hover }</a>
+- <a href="https://qualidy.github.io/wiki-c-sharp-buch" target="_blank">C-Sharp-Buch{ data-preview prefer-hover }</a>
+- <a href="https://pictogrammers.com/libraries/" target="_blank">Pictogramme{ data-preview prefer-hover }</a>
 :smile:
 :axt:
 

@@ -114,22 +114,18 @@ markdown_extensions:
   - admonition
   - pymdownx.tasklist:
       custom_checkbox: true
-
   - pymdownx.superfences:
       custom_fences:
         - name: table
           class: table
           format: !!python/name:pymdownx.superfences.fence_code_format
-
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-
   - pymdownx.tabbed:
       alternate_style: true
-
   - attr_list
 
   - toc:
