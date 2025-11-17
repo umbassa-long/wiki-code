@@ -2,9 +2,7 @@
 
 ## **GitHub-Account einrichten**
 
-1. **Registrieren:** Gehe auf die GitHub-Website und klicke auf https://github.com/signup**"Sign up"**.
-
-<a href="https://github.com/signup" target="_blank">Sign Up</a>
+1. **Registrieren:** Gehe auf die GitHub-Website und klicke auf <a href="https://github.com/signup" target="_blank">***Sign Up***</a>
 
 2. **Daten eingeben:** Folge den Anweisungen, gib deine E-Mail-Adresse ein, wähle ein starkes Passwort und einen **Benutzernamen**.
 
