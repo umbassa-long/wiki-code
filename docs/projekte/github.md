@@ -2,7 +2,9 @@
 
 ## **GitHub-Account einrichten**
 
-1. **Registrieren:** Gehe auf die GitHub-Website und klicke auf **"Sign up"**.
+1. **Registrieren:** Gehe auf die GitHub-Website und klicke auf https://github.com/signup**"Sign up"**.
+
+<a href="https://github.com/signup" target="_blank">Sign Up</a>
 
 2. **Daten eingeben:** Folge den Anweisungen, gib deine E-Mail-Adresse ein, wähle ein starkes Passwort und einen **Benutzernamen**.
 
@@ -24,7 +26,7 @@ Ein **Repository** (Repo) ist der Speicherort für dein Projekt auf GitHub.
 
 6. **Erstellen:** Klicke auf **"Create repository"**.
 
-## **Projektbearbeitung über Codespaces**
+## **Codespaces**
 ### **Einrichten**
 
 Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner GitHub-Repositorys verbunden sind.
@@ -33,6 +35,7 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 
 2. **Codespace starten:** Klicke auf den grünen Button 
 `< > Code`.
+![CodeButton](bilder/github-codespace-button)
 
 3. **Wähle Codespaces:** Wechsle zum Tab "Codespaces".
 
@@ -48,7 +51,7 @@ GitHub führt nun folgende Schritte automatisch im Hintergrund aus:
 
 - Der **VS Code Editor** öffnet sich direkt in deinem Browser und zeigt deine Projektdateien an.
 
-### **2. Im Codespace arbeiten und Änderungen verwalten**
+### **Code Bearbeiten und Änderungen verwalten**
 Im Codespace nutzt du die integrierten Funktionen von VS Code, um deine Projektdateien zu bearbeiten und die Änderungen zu synchronisieren.
 
 **1. Dateien bearbeiten**
@@ -59,7 +62,7 @@ Im Codespace nutzt du die integrierten Funktionen von VS Code, um deine Projektd
 **2. Git-Workflow** (Committen und Pushen)
 Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, entfallen die Schritte git clone und die manuelle Authentifizierung.
 
-- Änderungen einsehen: Klicke in der Seitenleiste auf das Quellcodeverwaltung-Symbol (drei Kreise, die Linien miteinander verbinden – das Git-Symbol).
+- **Änderungen einsehen:** Klicke in der Seitenleiste auf das Quellcodeverwaltung-Symbol (drei Kreise, die Linien miteinander verbinden – das Git-Symbol).
 
 - **Staging:** Alle Änderungen werden dort als **"Änderungen"** angezeigt. Klicke auf das **Pluszeichen (+)** neben einer Datei oder neben **"Änderungen"**, um die Dateien zur Staging Area hinzuzufügen `(git add .)`.
 
@@ -83,6 +86,6 @@ Codespaces sind ideal für die Zusammenarbeit, da die Umgebung für jeden Mitarb
 
 Da Codespaces in der Cloud laufen, sind sie nicht an deinen lokalen Computer gebunden.
 
-- Beenden: Schließe einfach deinen Browser-Tab. Der Codespace wird nach einer gewissen Inaktivität (meist 30 Minuten, je nach Einstellung) automatisch gestoppt, um Kosten zu sparen.
+- **Beenden:** Schließe einfach deinen Browser-Tab. Der Codespace wird nach einer gewissen Inaktivität (meist 30 Minuten, je nach Einstellung) automatisch gestoppt, um Kosten zu sparen.
 
-- Fortsetzen: Wenn du auf github.com/codespaces oder den Code-Button deines Repositorys zurückkehrst, wird dein letzter Codespace angezeigt. Klicke auf ihn, um ihn innerhalb weniger Sekunden wieder zu starten, genau an dem Punkt, wo du aufgehört hast (inklusive aller geöffneten Dateien und des Terminalverlaufs).
+- **Fortsetzen:** Wenn du auf github.com/codespaces oder den Code-Button deines Repositorys zurückkehrst, wird dein letzter Codespace angezeigt. Klicke auf ihn, um ihn innerhalb weniger Sekunden wieder zu starten, genau an dem Punkt, wo du aufgehört hast (inklusive aller geöffneten Dateien und des Terminalverlaufs).

@@ -3,7 +3,6 @@
 
 
 ### 🅰️ Text-Basisformatierung (Inline)
-
 Hier sehen Sie die Syntax und das gerenderte Ergebnis.
 
 | Ziel | Syntax (So schreiben Sie es) | Ergebnis (So sieht es aus) |
@@ -16,14 +15,13 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
 | **Tiefgestellt** | `H~2~O` | H~2~O |
 | **Hochgestellt** | `X^2^` | X^2^ |
 | **Unterstreichen** | `---` oder `***` | siehe unten  **eigene Zeile** |
-| ** Wörter grau hinterlegt** | ``Wörter grau hinterlegt`` | `Wörter grau hinterlegt` |
+| **Wörter grau hinterlegt** | \``Wörter grau hinterlegt`\` | `Wörter grau hinterlegt` |
 
 ***
 
 ---
 
 ### Überschriften
-
 === "Darstellung"
 
     # Überschrift 1
@@ -45,7 +43,6 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
     ```
 
 ### Listen
-
 === "Unsortiert"
 
     - Listenpunkt 1
@@ -107,14 +104,12 @@ Nutzen Sie hierfür eckige Klammern und ein X.
 | C | [ ] |
 
 ### Darstellung von Code
-
  - Apostroph vor und nach dem Wort siehe `code`.
  - ``Zwei Apostrophe an Anfang und Ende hebt jeweils ein Apostroph auf, siehe `code`.``
  - Drei Apostrophe Anfang und Ende, sowie der Name der Programmiersprache. 
    Damit wird highlighting aktiviert
 
 ### Links
-
 **Links ins Internet**
 - Optionaler Tooltip: Fügen Sie einen Titel in Anführungszeichen nach der URL ein, 
   der angezeigt wird, wenn man mit der Maus über den Link fährt.
@@ -129,22 +124,17 @@ Nutzen Sie hierfür eckige Klammern und ein X.
 - Links ins Internet 
 	    - Es wird ein neuer Tab geöffnet.
 
-```markdown
-
+```html
 <a href="https://qualidy.github.io/wiki-docker" target="_blank">Docker</a>
-
-
 ```
 
 ### Emojis
-
 - [Emojis](https://gist.github.com/rxaviers/7360908)
 
 
 ### Sonderzeichen
-
 - Asterisk: *
-- Bindestrich:
+- Bindestrich: \-
 - Unterstrich: _
 - Runde Klammern: ()
 - Eckige Klammern: []
@@ -155,8 +145,5 @@ Nutzen Sie hierfür eckige Klammern und ein X.
 - Gravis: `
 - Backslash: \
 
-- Mit dem Backslash löst man die Bedeutung der Sonderzeichen auf.
-
-Die ist ein \*Beispiel mit Sternchen\*.
-
-Die ist ein *Beispiel mit Sternchen und ohne backslash*.
+!!! info 
+ - Backslash hebt die Bedeutung des folgenden Sonderzeichen auf.
