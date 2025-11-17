@@ -69,7 +69,7 @@ Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, en
 
 Diese Aktion überträgt deine Commits direkt von deinem Codespace in dein GitHub-Repository.
 
-### Mit dem Team zusammenarbeiten
+### **Mit dem Team zusammenarbeiten**
 
 Codespaces sind ideal für die Zusammenarbeit, da die Umgebung für jeden Mitarbeiter exakt gleich ist.
 
@@ -79,62 +79,7 @@ Codespaces sind ideal für die Zusammenarbeit, da die Umgebung für jeden Mitarb
 
 - **Pull Request:** Nachdem du deine Änderungen in einem Feature-Branch gepusht hast, kannst du den **Pull Request** weiterhin über die **GitHub-Website** erstellen, um den Code von deinen Kollegen überprüfen zu lassen.
 
-Das Verwalten deines Projekts über GitHub Codespaces ist sehr einfach, da Codespaces direkt in deinem GitHub-Repository gestartet werden und Visual Studio Code (VS Code) im Browser bereitstellen.
-
-Hier ist die Schritt-für-Schritt-Anleitung, wie du dein Projekt über Codespaces verwaltest:
-
-1. Codespace für dein Projekt erstellen
-Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner GitHub-Repositorys verbunden sind.
-
-Navigiere zum Repository: Gehe auf GitHub zu dem Repository, das du verwalten möchtest (das, welches du im ersten Schritt eingerichtet hast, z. B. mein-erstes-projekt).
-
-Codespace starten: Klicke auf den grünen Button < > Code.
-
-Wähle Codespaces: Wechsle zum Tab "Codespaces".
-
-Neuen Codespace erstellen: Klicke auf "Create codespace on main" (oder auf dem Branch, den du verwenden möchtest).
-
-GitHub führt nun folgende Schritte automatisch im Hintergrund aus:
-
-Es wird eine virtuelle Maschine (VM) zugewiesen.
-
-Es wird ein Entwicklungscontainer (mit allen notwendigen Tools und Abhängigkeiten) erstellt.
-
-Dein Repository wird in diesen Container geklont.
-
-Der VS Code Editor öffnet sich direkt in deinem Browser und zeigt deine Projektdateien an.
-
-2. Im Codespace arbeiten und Änderungen verwalten
-Im Codespace nutzt du die integrierten Funktionen von VS Code, um deine Projektdateien zu bearbeiten und die Änderungen zu synchronisieren.
-
-A) Dateien bearbeiten
-Du kannst Dateien über den Dateiexplorer (links in der VS Code Seitenleiste) öffnen und bearbeiten.
-
-Das Terminal unten im Codespace funktioniert genau wie das Terminal auf deinem lokalen Computer, sodass du dort deine üblichen Befehle (z. B. zum Starten der Anwendung, Installieren von Paketen) ausführen kannst.
-
-B) Git-Workflow (Committen und Pushen)
-Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, entfallen die Schritte git clone und die manuelle Authentifizierung.
-
-Änderungen einsehen: Klicke in der Seitenleiste auf das Quellcodeverwaltung-Symbol (drei Kreise, die Linien miteinander verbinden – das Git-Symbol).
-
-Staging: Alle Änderungen werden dort als "Änderungen" angezeigt. Klicke auf das Pluszeichen (+) neben einer Datei oder neben "Änderungen", um die Dateien zur Staging Area hinzuzufügen (git add .).
-
-Commit: Gib eine kurze, beschreibende Commit-Nachricht in das Textfeld ein (z. B. "Feature: Neue Navigation hinzugefügt"). Klicke dann auf "Commit".
-
-Push (Synchronisieren): Klicke auf den Button "Änderungen synchronisieren" oder "Push" (kann auch ein Pfeilsymbol nach oben sein).
-
-Diese Aktion überträgt deine Commits direkt von deinem Codespace in dein GitHub-Repository.
-
-3. Mit dem Team zusammenarbeiten
-Codespaces sind ideal für die Zusammenarbeit, da die Umgebung für jeden Mitarbeiter exakt gleich ist.
-
-Pullen von Partner-Änderungen: Wenn dein Partner Änderungen in das Repository hochgeladen hat, klicke im Codespace auf das Quellcodeverwaltung-Symbol und dann auf den "Pull"-Button (Pfeil nach unten) oder "Änderungen synchronisieren". Dadurch werden die neuesten Änderungen in deinen Codespace geholt.
-
-Branches: Du kannst Branches direkt im Codespace verwalten. Unten links in der Statusleiste von VS Code siehst du den aktuellen Branch (main). Klicke darauf, um einen neuen Branch zu erstellen oder zu einem bestehenden Branch zu wechseln.
-
-Pull Request: Nachdem du deine Änderungen in einem Feature-Branch gepusht hast, kannst du den Pull Request weiterhin über die GitHub-Website erstellen, um den Code von deinen Kollegen überprüfen zu lassen.
-
-### Codespace schließen und fortsetzen
+### **Codespace schließen und fortsetzen**
 
 Da Codespaces in der Cloud laufen, sind sie nicht an deinen lokalen Computer gebunden.
 
