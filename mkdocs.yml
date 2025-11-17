@@ -3,90 +3,106 @@
 # ==========================================================================
 site_name: Denkwürdig
 site_url: https://wiki-code.github.io/
-repo_url: https://github.com/Ihr-Github-Name/wiki-code # BITTE HIER IHRE REPO-URL EINTRAGEN
+repo_url: https://github.com/Ihr-Github-Name/wiki-code  # HIER ANPASSEN
 repo_name: GitHub
 
 # ==========================================================================
-# Theme-Konfiguration: Material for MkDocs
+# Theme: Material for MkDocs
 # ==========================================================================
 theme:
   name: material
   language: de
+
   palette:
-    # Helles Schema (Standard)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: 'indigo'
-      accent: 'red'
+      primary: indigo
+      accent: red
       toggle:
         icon: material/weather-sunny
         name: Auf dunkles Schema wechseln
-    # Dunkles Schema
+
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: 'indigo'
-      accent: 'teal'
+      primary: indigo
+      accent: teal
       toggle:
         icon: material/weather-night
         name: Auf helles Schema wechseln
+
   font:
-    text: 'Roboto'       # Fließtext
-    code: 'Roboto Mono'  # Monospaced Code
+    text: Roboto
+    code: Roboto Mono
+
   features:
+    # Navigation
     - navigation.tabs
     - navigation.side
     - navigation.top
     - navigation.tracking
-    - navigation.instant
+    - navigation.instant               # schnelle Seitenwechsel
+    - navigation.instant.preview        # interne Link-Vorschau (NEU)
+    
+    # Suche
     - search.highlight
     - search.suggest
     - search.share
+    
+    # Content
     - content.action.top
     - content.code.copy
-    - content.external_link.icon # Fügt ein Icon für externe Links hinzu
-    - content.external_link.target # Stellt sicher, dass externe Links in einem neuen Tab geöffnet werden
+    - content.external_link.icon
+    - content.external_link.target
+    
+    # Inhaltsverzeichnis
     - toc.follow
     - toc.integrate
-
-# ==========================================================================
-# Extra CSS (für Twemoji, Tabellen Card-Look, Schriftgrößen)
-# ==========================================================================
-#extra_css:
-#  - assets/extra.css
 
 # ==========================================================================
 # Plugins
 # ==========================================================================
 plugins:
   - macros
+
+  # Datum / Uhrzeit für Seiten
   - git-revision-date-localized:
       type: datetime
       timezone: Europe/Berlin
       locale: de
+
+  # Suche
   - search:
       separator: '[\s\-\.]+'
       lang:
         - de
         - en
 
+  # Externe Link-Vorschauen (OpenGraph Cards)
+  - link-preview
+
 # ==========================================================================
 # Navigation
 # ==========================================================================
 nav:
   - Wissensspeicher: index.md
+
   - Code:
       - Welcome to MkDocs: code/welcome.md
+
   - Links:
       - Links & Ressourcen: links/links.md
+
   - Markdown:
       - Formatierung: markdown/formatierung.md
       - Grundlagen: markdown/grundlagen.md
-      - Markdown-Tabellen: markdown/tabellen.md  # <-- hier liegt die neue Twemoji-Tabelle
+      - Markdown-Tabellen: markdown/tabellen.md
       - Highlighting: markdown/admonition.md
       - Emoji: markdown/emoji.md
+
   - How Tos:
       - Projekt1: projekte/projekt1.md
       - Projekt2: projekte/projekt2.md
+
   - Tools:
       - Docker: tools/docker.md
       - Git: tools/git.md
@@ -95,43 +111,38 @@ nav:
 # Markdown-Erweiterungen
 # ==========================================================================
 markdown_extensions:
-  - admonition                   # für Hinweise, Tipps, Warnungen
-  - material.extensions.preview:
-      configurations:
-        - targets:
-            include:
-              - changelog/index.md
-              - customization.md
-              - insiders/changelog/*
-              - setup/extensions/*
+  - admonition
   - pymdownx.tasklist:
-      custom_checkbox: true      # Checkboxen in Markdown
-  - pymdownx.superfences:          # für Codeblöcke mit Syntax Highlighting
+      custom_checkbox: true
+
+  - pymdownx.superfences:
       custom_fences:
         - name: table
           class: table
           format: !!python/name:pymdownx.superfences.fence_code_format
+
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+
   - pymdownx.tabbed:
-      alternate_style: true      # Tabbed Interface
+      alternate_style: true
+
   - attr_list
+
   - toc:
       toc_depth: 3
+
+  # Twemoji für farbige Emojis
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      # Twemoji-Support, notwendig für die bunten Icons in Tabellen
 
 # ==========================================================================
 # Hinweise:
-# - Alle Tabellen in markdown/tabellen.md sind jetzt auf Twemoji-Variante aktualisiert.
-# - extra.css regelt:
-#    * Schriftgröße 1.2em für Fließtext & Tabellen
-#    * Farben der Icons (icon-success, icon-pending, icon-error)
-#    * Card-Look und Hover-Effekt für Tabellen
-# - Browser-Cache leeren (STRG+F5 / ⌘+Shift+R) nach Upload
+# - Interne Vorschauen: automatisch durch navigation.instant.preview
+# - Externe Vorschauen: durch ```preview <URL> ```
+# - extra.css optional aktivierbar
 # ==========================================================================
