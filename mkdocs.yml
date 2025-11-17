@@ -63,9 +63,7 @@ theme:
 # ==========================================================================
 plugins:
   - macros
-
-  # Datum / Uhrzeit für Seiten
-  - git-revision-date-localized:
+  - git-revision-date-localized:   # Datum / Uhrzeit für Seiten
       type: datetime
       timezone: Europe/Berlin
       locale: de
@@ -128,9 +126,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - attr_list
-
   - toc:
-      toc_depth: 3
+      toc_depth: 4
 
   # Twemoji für farbige Emojis
   - pymdownx.emoji:

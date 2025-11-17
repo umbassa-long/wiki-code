@@ -57,17 +57,19 @@ title: Links
 https://yaml-online-parser.appspot.com/
 https://dentro.de/ai/features/
 
-- <a href="URL" target="_blank">TEXT</a> # URL mit Tab 
+- <a href="URL" target="_blank" data-preview prefer-hover>TEXT</a> # URL mit Tab  # mit Hover Effekt
 - [Text](URL) # reine Markdownsyntax für URL ohne Tab
 
 ## Qualität mal anders, aber nicht gegensätzlich
 
+```preview
 - <a href="https://qualidy.github.io/wiki-docker" target="_blank">Docker{ data-preview prefer-hover }</a>
+```
 - <a href="https://qualidy.github.io/wiki-bfz" target="_blank">BFZ{ data-preview prefer-hover }</a>
-- <a href="https://qualidy.github.io/wiki-promthaton" target="_blank">Promthaton{ data-preview prefer-hover }</a>
-- <a href="https://qualidy.github.io/base_wiki" target="_blank">Base Wiki{ data-preview prefer-hover }</a>
-- <a href="https://qualidy.github.io/wiki-c-sharp-buch" target="_blank">C-Sharp-Buch{ data-preview prefer-hover }</a>
-- <a href="https://pictogrammers.com/libraries/" target="_blank">Pictogramme{ data-preview prefer-hover }</a>
+- <a href="https://qualidy.github.io/wiki-promthaton" target="_blank">Promthaton</a>
+- <a href="https://qualidy.github.io/base_wiki" target="_blank">Base Wiki</a>
+- <a href="https://qualidy.github.io/wiki-c-sharp-buch" target="_blank">C-Sharp-Buch</a>
+- <a href="https://pictogrammers.com/libraries/" target="_blank">Pictogramme</a>
 :smile:
 :axt:
 
