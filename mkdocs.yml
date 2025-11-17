@@ -98,8 +98,8 @@ nav:
       - Emoji: markdown/emoji.md
 
   - How Tos:
-      - Projekt1: projekte/projekt1.md
-      - Projekt2: projekte/projekt2.md
+      - Github: projekte/github.md
+      - Docker: projekte/projekt2.md
 
   - Tools:
       - Docker: tools/docker.md
