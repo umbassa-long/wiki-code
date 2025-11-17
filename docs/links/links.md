@@ -46,13 +46,13 @@ title: Links
 
 
 
-- <a href="https://app.diagrams.net" target="_blank">Erstellen von Diagrammen</a>{ data-preview prefer-hover }
-- <a href="https://strukto.io/" target="_blank">Struktogramme für Programmierer</a>{ data-preview prefer-hover }
-- <a href="https://www.matheretter.de/wiki/binarzahlen" { data-preview prefer-hover }target="_blank">Matheretter-Binärzahlen</a>
-- <a href="https://excalidraw.com/" target="_blank">Schöne Präsentation erstellen</a>{ data-preview prefer-hover }
-- <a href="https://wiki.debian.org/SystemMonitoring" target="_blank">Linux Monitoring</a>{ data-preview prefer-hover } # URL mit Tab 
-- <a href="https://qualidy.github.io/wiki-docker/" target="_blank">Docker</a>{ data-preview prefer-hover }
-- <a href="https://docs.github.com/de/get-started" target="_blank">Starten mit Github</a>{ data-preview prefer-hover }
+- <a href="https://app.diagrams.net" target="_blank" data-preview prefer-hover>Erstellen von Diagrammen</a>
+- <a href="https://strukto.io/" target="_blank" data-preview prefer-hover>Struktogramme für Programmierer</a>
+- <a href="https://www.matheretter.de/wiki/binarzahlen" target="_blank" data-preview prefer-hover>Matheretter-Binärzahlen</a>
+- <a href="https://excalidraw.com/" target="_blank" data-preview prefer-hover>Schöne Präsentation erstellen</a>
+- <a href="https://wiki.debian.org/SystemMonitoring" target="_blank" data-preview prefer-hover>Linux Monitoring</a> # URL mit Tab 
+- <a href="https://qualidy.github.io/wiki-docker/" target="_blank" data-preview prefer-hover>Docker</a>
+- <a href="https://docs.github.com/de/get-started" target="_blank" data-preview prefer-hover>Starten mit Github</a>
 
 https://yaml-online-parser.appspot.com/
 https://dentro.de/ai/features/
