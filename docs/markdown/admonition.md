@@ -93,6 +93,23 @@ indem Sie das gewünschte Icon direkt nach dem Typ angeben:
 | !!! ? note "Titel" | Ausklappbar, geschlossen | Blau (Note) | Akzentfarbe des Themes
 | !!! + note "Titel" | Ausklappbar, geöffnet | Blau (Note) | Blau (Note)
 
+
+<script src="https://giscus.app/client.js"
+        data-repo="umbassa-long/wiki-code"
+        data-repo-id="R_kgDOP3PyJA"
+        data-category="[GIB KATEGORIE NAMEN HIER EIN]"
+        data-category-id="[GIB KATEGORIE ID HIER EIN]"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="de"
+        crossorigin="anonymous"
+        async>
+</script>
+
 ### Beispiele 
 
 __Links für Icons__
