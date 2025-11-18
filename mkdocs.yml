@@ -11,6 +11,7 @@ repo_name: GitHub
 # ==========================================================================
 theme:
   name: material
+  custom_dir: .overrides
   language: de
 
   palette:
