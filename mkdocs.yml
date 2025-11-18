@@ -83,7 +83,7 @@ plugins:
 # Navigation
 # ==========================================================================
 nav:
-  - Wissensspeicher: main.html
+  - Wissensspeicher: index.md
 
   - Code:
       - Welcome to MkDocs: code/welcome.md
