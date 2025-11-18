@@ -3,8 +3,8 @@
 {% block content %}
   {{ super() }}
   
-  {# Dieser Block fügt Inhalte nach dem Hauptartikel ein #}
-  {% block content.article.bottom %}
+  {# Korrekter Blockname für Material for MkDocs: Tilde (~) statt Punkt (.) #}
+  {% block content~article~bottom %} 
     <hr>
     
     <script src="https://giscus.app/client.js"
