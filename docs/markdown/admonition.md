@@ -97,8 +97,8 @@ indem Sie das gewünschte Icon direkt nach dem Typ angeben:
 <script src="https://giscus.app/client.js"
         data-repo="umbassa-long/wiki-code"
         data-repo-id="R_kgDOP3PyJA"
-        data-category="[GIB KATEGORIE NAMEN HIER EIN]"
-        data-category-id="[GIB KATEGORIE ID HIER EIN]"
+        data-category="Neuigkeiten"
+        data-category-id="DIC_kwDOP3PyJM4Cx8D4"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
@@ -109,7 +109,6 @@ indem Sie das gewünschte Icon direkt nach dem Typ angeben:
         crossorigin="anonymous"
         async>
 </script>
-
 ### Beispiele 
 
 __Links für Icons__
