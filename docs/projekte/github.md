@@ -33,11 +33,11 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 
 2. **Codespace starten:** Klicke auf den grünen Button 
 `< > Code`.
-![CodeButton](../docs/bilder/github-codespace-button.png)
+![CodeButton](../bilder/github-codespace-button.png)
 
 
-![GitHub Add File](../docs/bilder/github-codespace-button.png){: width="300px" }
-![GitHub Add File](../docs/bilder/github-codespace-button.png){width=300px}
+![GitHub Add File](../bilder/github-codespace-button.png){: width="300px" }
+![GitHub Add File](../bilder/github-codespace-button.png){width=300px}
 <img src="../docs/bilder/github-codespace-button.png" alt="GitHub Add File" width="300" height="auto" />
 
 
