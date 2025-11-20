@@ -157,8 +157,16 @@ Den Mauszeiger über großgeschriebenen Begriff bewegen.
 *[WINNETOU]: Er ist der Chief-Influencer der Apachen. Reitet meistens auf seinem Pferd Iltschi durch die Prärie, hat nie einen Bad Hair Day, egal wie stürmisch es wird.
 *[APACHEN]: Sie reiten schneller, schießen besser und sind insgesamt viel zu ehrenhaft für die fiesen Tricks ihrer Gegenspieler. Sie sind die, die am Ende das Lagerfeuer löschen und dafür sorgen, dass der Sonnenuntergang auch morgen noch schön rot ist.
 *[ÖLPRINZ]: Das ist der Typ, der sich dachte: "Ich bau' hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck 
-``
+```
 
 Die *[APACHEN]: Sie reiten schneller, schießen besser und sind insgesamt viel zu ehrenhaft für die fiesen Tricks ihrer Gegenspieler. Sie sind die, die am Ende das Lagerfeuer löschen und dafür sorgen, dass der Sonnenuntergang auch morgen noch schön rot ist. unter ihrem edlen Häuptling *[WINNETOU]: Er ist der Chief-Influencer der Apachen. Reitet meistens auf seinem Pferd Iltschi durch die Prärie, hat nie einen Bad Hair Day, egal wie stürmisch es wird. ritten entschlossen in den Kampf, um die Machenschaften des [ÖLPRINZ]: Das ist der Typ, der sich dachte: "Ich bau' hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck und seiner skrupellosen Gehilfen zu beenden.
 
 Winnetous Angriff zielte darauf ab, die von den Handlangern des Ölprinzen durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.
+
+### Verlinkung von Bilder
+
+| Beschreibung | Markdown-Syntax |
+| --- | --- |
+| Bild von einer externen URL | `![Winnetou reitet](https://example.com/winnetou.jpg)` |
+| Bild aus dem gleichen Ordner | `![Blick auf die Prärie](praerie.png)` |
+| Bild aus einem Unterordner | `![Der Ölprinz](bilder/oelprinz.gif)` |
