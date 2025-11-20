@@ -29,11 +29,11 @@ Ein **Repository** (Repo) ist der Speicherort für dein Projekt auf GitHub.
 
 Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner GitHub-Repositorys verbunden sind.
 
-1. **Navigiere zum Repository:** Gehe auf GitHub zu dem Repository, das du verwalten möchtest (das, welches du im ersten Schritt eingerichtet hast, z. B. `mein-erstes-projekt`). ![CodeButton](../bilder/github-navrepository.png)
+1. **Navigiere zum Repository:** Gehe auf GitHub zu dem Repository, das du verwalten möchtest (das, welches du im ersten Schritt eingerichtet hast, z. B. `mein-erstes-projekt`).
 
 <details>
   <summary>Klicke hier, um das Bild zu sehen (Details)</summary>
-  <img src="../docs/bilder/github-navrepository.png" alt="Navigations-Repository" />
+  <img src="../bilder/github-navrepository.png" alt="Navigations-Repository" />
 </details>
 
 2. **Codespace starten:** Klicke auf den grünen Button 
