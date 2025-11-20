@@ -36,10 +36,6 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 ![CodeButton](../bilder/github-codespace-button.png)
 
 
-![GitHub Add File](../bilder/github-codespace-button.png){: width="300px" }
-![GitHub Add File](../bilder/github-codespace-button.png){width=300px}
-<img src="../docs/bilder/github-codespace-button.png" alt="GitHub Add File" width="300" height="auto" />
-
 
 3. **Wähle Codespaces:** Wechsle zum Tab "Codespaces".
 
