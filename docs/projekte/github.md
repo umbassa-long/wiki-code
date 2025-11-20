@@ -2,7 +2,8 @@
 
 ## **GitHub-Account einrichten**
 
-1. **Registrieren:** Gehe auf die GitHub-Website und klicke auf <a href="https://github.com/signup" target="_blank">Sign Up</a>
+1. **Registrieren:** Gehe auf die GitHub-Website und klicke auf 
+<a href="https://github.com/signup" target="_blank">Sign Up</a>
 
 2. **Daten eingeben:** Folge den Anweisungen, gib deine E-Mail-Adresse ein, wähle ein starkes Passwort und einen **Benutzernamen**.
 
@@ -33,6 +34,7 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 
 <details>
 <summary>Klicke hier, um das Bild zu sehen (Details)</summary>
+
 <img src="/docs/bilder/github-navrepository.png" alt="Navigations-Repository" />
 </details>
 
