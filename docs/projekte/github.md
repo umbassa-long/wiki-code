@@ -33,7 +33,7 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 
 2. **Codespace starten:** Klicke auf den grünen Button 
 `< > Code`.
-![CodeButton](bilder/github-codespace-button.png)
+![CodeButton](docs/bilder/github-codespace-button.png)
 
 
 3. **Wähle Codespaces:** Wechsle zum Tab "Codespaces".
