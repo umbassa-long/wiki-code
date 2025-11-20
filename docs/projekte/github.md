@@ -33,10 +33,10 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 1. **Navigiere zum Repository:** Gehe auf GitHub zu dem Repository, das du verwalten möchtest (das, welches du im ersten Schritt eingerichtet hast, z. B. `mein-erstes-projekt`)
 
 <details>
-<summary>Klicke hier, um das Bild zu sehen (Details)</summary>
-
-<img src="bilder/github-navrepository.png" alt="Navigations-Repository" />
+  <summary>Klicke hier, um das Bild zu sehen (Details)</summary>
+  <img src="../bilder/github-navrepository.png" alt="Navigations-Repository" />
 </details>
+
 
 2. **Codespace starten:** Klicke auf den grünen Button 
 `< > Code`.
