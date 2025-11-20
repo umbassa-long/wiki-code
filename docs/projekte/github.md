@@ -34,7 +34,7 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 
 <details>
   <summary>Klicke hier, um das Bild zu sehen (Details)</summary>
-  <img src="../bilder/github-navrepository.png" alt="Navigations-Repository" />
+  [Navigation-Repository](../bilder/github-navrepository.png)
 </details>
 
 
