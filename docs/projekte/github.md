@@ -35,7 +35,7 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 <details>
 <summary>Klicke hier, um das Bild zu sehen (Details)</summary>
 
-<img src="/docs/bilder/github-navrepository.png" alt="Navigations-Repository" />
+<img src="../bilder/github-navrepository.png" alt="Navigations-Repository" />
 </details>
 
 2. **Codespace starten:** Klicke auf den grünen Button 
