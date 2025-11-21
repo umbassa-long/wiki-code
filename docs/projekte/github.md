@@ -39,10 +39,20 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 </details>
 
 <details>
-  <summary>Klicke hier, um das Bild zu sehen (Details)</summary>
+<summary>Klicke hier, um das Bild zu sehen (Details)</summary>
 
 ![github-navrepository.png](../bilder/github-navrepository.png)
 </details>
+
+
+<details>
+  <summary>
+    <img src="bilder/github-navrepository.png" alt="Thumbnail" style="width:120px; cursor:pointer;">
+  </summary>
+
+  <img src="bilder/github-navrepository.png" alt="Bild" style="width:100%; margin-top:10px;">
+</details>
+
 
 2. **Codespace starten:** Klicke auf den grünen Button 
 `< > Code`.

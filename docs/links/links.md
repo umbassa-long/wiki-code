@@ -14,22 +14,21 @@ title: Links
 
 - Anpassung den Wert des href-Attributs im HTML-Tag `<a>` ändern.
 
-<a href="https://de247.die-staemme.de/" class="md-button md-button--primary">
+<a href="https://soundcloud.com/discover" class="md-button md-button--primary">
     Engage Hyperdrive :material-rocket-launch:
 </a>
 
-<a href="https://de247.die-staemme.de/" class="md-button">
+<a href="https://labex.io/de" class="md-button">
     Jettison All Cargo :material-delete-empty:
 </a>
 
 ```HTML
-<a href="#" class="md-button md-button--primary">
+<a href="https://soundcloud.com/discover" class="md-button md-button--primary">
     Engage Hyperdrive :material-rocket-launch:
 </a>
 
-<a href="#" class="md-button">
+<a href="https://labex.io/de" class="md-button">
     Jettison All Cargo :material-delete-empty:
-</a>
 ```
 
 
