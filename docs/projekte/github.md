@@ -56,7 +56,15 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
        style="width:100%; margin-top:10px;">
 </details>
 
+<div class="image-hover-container">
+    <img src="/wiki-code/bilder/github-navrepository.png"
+        alt="Vorschau des Repository-Buttons"
+        style="width:120px; cursor: pointer;">
 
+    <img src="/wiki-code/bilder/github-navrepository.png"
+        alt="Vollbild-Navigation"
+        class="full-image-preview">
+</div>
 
 2. **Codespace starten:** Klicke auf den grünen Button 
 `< > Code`.

@@ -101,3 +101,50 @@
     transform: translateY(-2px);
     transition: all 0.2s ease-in-out;
 }
+
+
+/* ==========================================================================
+   BILD VORSCHAU BEI HOVER (Tooltip-Effekt)
+   ========================================================================== */
+
+/* 1. Container-Styling */
+.image-hover-container {
+    /* Stellt sicher, dass das Vollbild relativ zum Thumbnail positioniert wird */
+    position: relative;
+    /* Wichtig: Container umschließt nur den Thumbnail, damit der Hover-Bereich klein bleibt */
+    display: inline-block;
+}
+
+/* 2. Styling des Vollbildes (Standard: unsichtbar und positioniert) */
+.image-hover-container .full-image-preview {
+    /* Standardmäßig versteckt */
+    display: none; 
+    /* Lässt das Bild über anderen Inhalten erscheinen */
+    z-index: 10; 
+    
+    /* Positionierung des Tooltips: 
+       Startet 140px rechts vom Thumbnail und auf gleicher Höhe (top: 0) */
+    position: absolute; 
+    left: 140px; 
+    top: 0;
+
+    /* Für sanftes Ein- und Ausblenden */
+    transition: opacity 0.3s ease; 
+    opacity: 0; 
+
+    /* Standardgröße des eingeblendeten Bildes */
+    width: 400px; /* Passen Sie dies nach Bedarf an */
+    height: auto;
+    
+    /* Visuelle Verbesserungen */
+    border: 1px solid var(--md-code-fg-color); /* Farbanpassung an Ihr Theme */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* 3. Hover-Effekt: Beim Hover über den Container wird das Vollbild sichtbar */
+.image-hover-container:hover .full-image-preview {
+    /* Macht das Bild sichtbar */
+    display: block; 
+    opacity: 1; 
+}
