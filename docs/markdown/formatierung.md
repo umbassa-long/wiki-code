@@ -143,11 +143,15 @@ Nutzen Sie hierfür eckige Klammern und ein X.
 - Ausrufezeichen: !
 - Raute: #
 - Gravis: `
-- Backslash: \
+- Backslash: \\
 
 !!! info 
  - Backslash hebt die Bedeutung des folgenden Sonderzeichen auf.
 
+ 
+ 
+ 
+ 
  ### Abkürzungserweiterung
 
 Den Mauszeiger über großgeschriebenen Begriff bewegen.
@@ -166,7 +170,7 @@ Den Mauszeiger über großgeschriebenen Begriff bewegen.
 *[ÖLPRINZ]: Das ist der Typ, der sich dachte: "Ich bau' hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck und seiner skrupellosen Gehilfen zu beenden.
 
 Die **APACHEN** unter ihrem edlen Häuptling **WINNETOU** ritten entschlossen in den Kampf, um die Machenschaften des **ÖLPRINZ** 
-**Winnetous** Angriff zielte darauf ab, die von den Handlangern des **Ölprinzen** durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.
+**Winnetou** Angriff zielte darauf ab, die von den Handlangern des **Ölprinz** durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.
 
 ### Verlinkung von Bilder
 
