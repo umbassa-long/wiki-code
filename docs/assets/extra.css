@@ -106,46 +106,19 @@
    BILD VORSCHAU BEI HOVER (Tooltip-Effekt)
    ========================================================================== */
 
-/* 1. Container-Styling */
-.image-hover-container {
-    /* Stellt sicher, dass das Vollbild relativ zum Thumbnail positioniert wird */
-    position: relative;
-    /* Container umschließt nur den Thumbnail */
-    display: inline-block;
-    /* Optional: Fügt einen kleinen Abstand unter dem Element hinzu */
-    margin-bottom: 20px;
+/* Ändert die Hover-Farbe von Links im Hauptinhaltsbereich */
+.md-typeset a:hover {
+    color: #FF5733; /* Beispiel: Ihre gewünschte Hex-Farbe */
+    /* Optional: Ändert die Hintergrundfarbe beim Hovern */
+    /* background-color: #f0f0f0; */
 }
 
-/* 2. Styling des Vollbildes (Standard: unsichtbar und positioniert) */
-.image-hover-container .full-image-preview {
-    /* Standardmäßig versteckt */
-    display: none; 
-    /* Lässt das Bild über anderen Inhalten erscheinen */
-    z-index: 10; 
-    
-    /* Positionierung des Tooltips: 
-       Startet 140px rechts vom Thumbnail und auf gleicher Höhe (top: 0) */
-    position: absolute; 
-    left: 140px; 
-    top: 0;
-
-    /* Für sanftes Ein- und Ausblenden */
-    transition: opacity 0.3s ease; 
-    opacity: 0; 
-
-    /* Standardgröße des eingeblendeten Bildes */
-    width: 400px; /* Hier können Sie die Breite des eingeblendeten Bildes festlegen */
-    height: auto;
-    
-    /* Visuelle Verbesserungen */
-    border: 1px solid var(--md-code-fg-color); 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+/* Ändert die Hover-Farbe der Navigationselemente */
+.md-nav__link:hover {
+    color: #4CAF50; /* Beispiel: Ihre gewünschte Hex-Farbe */
 }
 
-/* 3. Hover-Effekt: Beim Hover über den Container wird das Vollbild sichtbar */
-.image-hover-container:hover .full-image-preview {
-    /* Macht das Bild sichtbar */
-    display: block; 
-    opacity: 1; 
+/* Ändert die Hover-Farbe der Tabs in der Kopfzeile */
+.md-tabs__link:hover {
+    color: #FFC300; /* Beispiel: Ihre gewünschte Hex-Farbe */
 }
