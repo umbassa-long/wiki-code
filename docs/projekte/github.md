@@ -45,12 +45,10 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 </details>
 
 <details>
-  <summary>
-    <div>
-      <img src="/wiki-code/bilder/github-navrepository.png" 
-           alt="Thumbnail" 
-           style="width:120px; cursor:pointer;">
-    </div>
+  <summary style="cursor: pointer;">
+    <img src="/wiki-code/bilder/github-navrepository.png" 
+         alt="Thumbnail" 
+         style="width:120px;">
   </summary>
 
   <img src="/wiki-code/bilder/github-navrepository.png" 
