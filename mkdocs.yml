@@ -15,7 +15,6 @@ theme:
   language: de
   extra_css:
     - assets/extra.css
-
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
