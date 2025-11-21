@@ -950,6 +950,39 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#code-bearbeiten-und-anderungen-verwalten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code Bearbeiten und Änderungen verwalten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mit-dem-team-zusammenarbeiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mit dem Team zusammenarbeiten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codespace-schlieen-und-fortsetzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codespace schließen und fortsetzen
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1174,16 +1207,6 @@
 <ol>
 <li><strong>Navigiere zum Repository:</strong> Gehe auf GitHub zu dem Repository, das du verwalten möchtest (das, welches du im ersten Schritt eingerichtet hast, z. B. <code>mein-erstes-projekt</code>)</li>
 </ol>
-<details>
-  <summary style="cursor: pointer;">
-    <img src="/wiki-code/bilder/github-navrepository.png" 
-         alt="Thumbnail" 
-         style="width:120px;">
-  </summary>
-
-
-
-
 <div class="hover-container">
     <!-- Der Text/Link, über den man hovern soll -->
     <a href="/wiki-code/bilder/github-navrepository.png" class="mein-link">Fahren Sie mit der Maus hier rüber</a>
@@ -1192,64 +1215,81 @@
     <img src="URL_ZU_IHREM_BILD.jpg" alt="Hover-Bild" class="hover-bild">
 </div>
 
-
-2. **Codespace starten:** Klicke auf den grünen Button 
-`< > Code`.
-![CodeButton](../bilder/github-codespace-button.png)
-
-
-3. **Wähle Codespaces:** Wechsle zum Tab "Codespaces".
-
-4. **Neuen Codespace erstellen:** Klicke auf **"Create codespace on main"** (oder auf dem Branch, den du verwenden möchtest).
-
-GitHub führt nun folgende Schritte automatisch im Hintergrund aus:
-
-- Es wird eine **virtuelle Maschine (VM)** zugewiesen.
-
-- Es wird ein **Entwicklungscontainer** (mit allen notwendigen Tools und Abhängigkeiten) erstellt.
-
-- Dein **Repository** wird in diesen Container geklont.
-
-- Der **VS Code Editor** öffnet sich direkt in deinem Browser und zeigt deine Projektdateien an.
-
-### **Code Bearbeiten und Änderungen verwalten**
-Im Codespace nutzt du die integrierten Funktionen von VS Code, um deine Projektdateien zu bearbeiten und die Änderungen zu synchronisieren.
-
-**1. Dateien bearbeiten**
-- Du kannst Dateien über den Dateiexplorer (links in der VS Code Seitenleiste) öffnen und bearbeiten.
-
-- Das Terminal unten im Codespace funktioniert genau wie das Terminal auf deinem lokalen Computer, sodass du dort deine üblichen Befehle (z. B. zum Starten der Anwendung, Installieren von Paketen) ausführen kannst.
-
-**2. Git-Workflow** (Committen und Pushen)
-Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, entfallen die Schritte git clone und die manuelle Authentifizierung.
-
-- **Änderungen einsehen:** Klicke in der Seitenleiste auf das Quellcodeverwaltung-Symbol (drei Kreise, die Linien miteinander verbinden – das Git-Symbol).
-
-- **Staging:** Alle Änderungen werden dort als **"Änderungen"** angezeigt. Klicke auf das **Pluszeichen (+)** neben einer Datei oder neben **"Änderungen"**, um die Dateien zur Staging Area hinzuzufügen `(git add .)`.
-
-- **Commit:** Gib eine kurze, beschreibende **Commit-Nachricht** in das Textfeld ein (z. B. "Feature: Neue Navigation hinzugefügt"). Klicke dann auf **"Commit"**.
-
-- **Push (Synchronisieren)**: Klicke auf den Button **"Änderungen synchronisieren"** oder **"Push"** (kann auch ein Pfeilsymbol nach oben sein).
-
-Diese Aktion überträgt deine Commits direkt von deinem Codespace in dein GitHub-Repository.
-
-### **Mit dem Team zusammenarbeiten**
-
-Codespaces sind ideal für die Zusammenarbeit, da die Umgebung für jeden Mitarbeiter exakt gleich ist.
-
-- **Pullen von Partner-Änderungen:** Wenn dein Partner Änderungen in das Repository hochgeladen hat, klicke im Codespace auf das Quellcodeverwaltung-Symbol und dann auf den "Pull"-Button (Pfeil nach unten) oder "Änderungen synchronisieren". Dadurch werden die neuesten Änderungen in deinen Codespace geholt.
-
-- **Branches:** Du kannst Branches direkt im Codespace verwalten. Unten links in der Statusleiste von VS Code siehst du den aktuellen Branch (main). Klicke darauf, um einen **neuen Branch zu erstellen** oder zu einem **bestehenden Branch zu wechseln.**
-
-- **Pull Request:** Nachdem du deine Änderungen in einem Feature-Branch gepusht hast, kannst du den **Pull Request** weiterhin über die **GitHub-Website** erstellen, um den Code von deinen Kollegen überprüfen zu lassen.
-
-### **Codespace schließen und fortsetzen**
-
-Da Codespaces in der Cloud laufen, sind sie nicht an deinen lokalen Computer gebunden.
-
-- **Beenden:** Schließe einfach deinen Browser-Tab. Der Codespace wird nach einer gewissen Inaktivität (meist 30 Minuten, je nach Einstellung) automatisch gestoppt, um Kosten zu sparen.
-
-- **Fortsetzen:** Wenn du auf github.com/codespaces oder den Code-Button deines Repositorys zurückkehrst, wird dein letzter Codespace angezeigt. Klicke auf ihn, um ihn innerhalb weniger Sekunden wieder zu starten, genau an dem Punkt, wo du aufgehört hast (inklusive aller geöffneten Dateien und des Terminalverlaufs).
+<ol>
+<li>
+<p><strong>Codespace starten:</strong> Klicke auf den grünen Button 
+<code>&lt; &gt; Code</code>.
+<img alt="CodeButton" src="../../bilder/github-codespace-button.png" /></p>
+</li>
+<li>
+<p><strong>Wähle Codespaces:</strong> Wechsle zum Tab "Codespaces".</p>
+</li>
+<li>
+<p><strong>Neuen Codespace erstellen:</strong> Klicke auf <strong>"Create codespace on main"</strong> (oder auf dem Branch, den du verwenden möchtest).</p>
+</li>
+</ol>
+<p>GitHub führt nun folgende Schritte automatisch im Hintergrund aus:</p>
+<ul>
+<li>
+<p>Es wird eine <strong>virtuelle Maschine (VM)</strong> zugewiesen.</p>
+</li>
+<li>
+<p>Es wird ein <strong>Entwicklungscontainer</strong> (mit allen notwendigen Tools und Abhängigkeiten) erstellt.</p>
+</li>
+<li>
+<p>Dein <strong>Repository</strong> wird in diesen Container geklont.</p>
+</li>
+<li>
+<p>Der <strong>VS Code Editor</strong> öffnet sich direkt in deinem Browser und zeigt deine Projektdateien an.</p>
+</li>
+</ul>
+<h3 id="code-bearbeiten-und-anderungen-verwalten"><strong>Code Bearbeiten und Änderungen verwalten</strong></h3>
+<p>Im Codespace nutzt du die integrierten Funktionen von VS Code, um deine Projektdateien zu bearbeiten und die Änderungen zu synchronisieren.</p>
+<p><strong>1. Dateien bearbeiten</strong>
+- Du kannst Dateien über den Dateiexplorer (links in der VS Code Seitenleiste) öffnen und bearbeiten.</p>
+<ul>
+<li>Das Terminal unten im Codespace funktioniert genau wie das Terminal auf deinem lokalen Computer, sodass du dort deine üblichen Befehle (z. B. zum Starten der Anwendung, Installieren von Paketen) ausführen kannst.</li>
+</ul>
+<p><strong>2. Git-Workflow</strong> (Committen und Pushen)
+Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, entfallen die Schritte git clone und die manuelle Authentifizierung.</p>
+<ul>
+<li>
+<p><strong>Änderungen einsehen:</strong> Klicke in der Seitenleiste auf das Quellcodeverwaltung-Symbol (drei Kreise, die Linien miteinander verbinden – das Git-Symbol).</p>
+</li>
+<li>
+<p><strong>Staging:</strong> Alle Änderungen werden dort als <strong>"Änderungen"</strong> angezeigt. Klicke auf das <strong>Pluszeichen (+)</strong> neben einer Datei oder neben <strong>"Änderungen"</strong>, um die Dateien zur Staging Area hinzuzufügen <code>(git add .)</code>.</p>
+</li>
+<li>
+<p><strong>Commit:</strong> Gib eine kurze, beschreibende <strong>Commit-Nachricht</strong> in das Textfeld ein (z. B. "Feature: Neue Navigation hinzugefügt"). Klicke dann auf <strong>"Commit"</strong>.</p>
+</li>
+<li>
+<p><strong>Push (Synchronisieren)</strong>: Klicke auf den Button <strong>"Änderungen synchronisieren"</strong> oder <strong>"Push"</strong> (kann auch ein Pfeilsymbol nach oben sein).</p>
+</li>
+</ul>
+<p>Diese Aktion überträgt deine Commits direkt von deinem Codespace in dein GitHub-Repository.</p>
+<h3 id="mit-dem-team-zusammenarbeiten"><strong>Mit dem Team zusammenarbeiten</strong></h3>
+<p>Codespaces sind ideal für die Zusammenarbeit, da die Umgebung für jeden Mitarbeiter exakt gleich ist.</p>
+<ul>
+<li>
+<p><strong>Pullen von Partner-Änderungen:</strong> Wenn dein Partner Änderungen in das Repository hochgeladen hat, klicke im Codespace auf das Quellcodeverwaltung-Symbol und dann auf den "Pull"-Button (Pfeil nach unten) oder "Änderungen synchronisieren". Dadurch werden die neuesten Änderungen in deinen Codespace geholt.</p>
+</li>
+<li>
+<p><strong>Branches:</strong> Du kannst Branches direkt im Codespace verwalten. Unten links in der Statusleiste von VS Code siehst du den aktuellen Branch (main). Klicke darauf, um einen <strong>neuen Branch zu erstellen</strong> oder zu einem <strong>bestehenden Branch zu wechseln.</strong></p>
+</li>
+<li>
+<p><strong>Pull Request:</strong> Nachdem du deine Änderungen in einem Feature-Branch gepusht hast, kannst du den <strong>Pull Request</strong> weiterhin über die <strong>GitHub-Website</strong> erstellen, um den Code von deinen Kollegen überprüfen zu lassen.</p>
+</li>
+</ul>
+<h3 id="codespace-schlieen-und-fortsetzen"><strong>Codespace schließen und fortsetzen</strong></h3>
+<p>Da Codespaces in der Cloud laufen, sind sie nicht an deinen lokalen Computer gebunden.</p>
+<ul>
+<li>
+<p><strong>Beenden:</strong> Schließe einfach deinen Browser-Tab. Der Codespace wird nach einer gewissen Inaktivität (meist 30 Minuten, je nach Einstellung) automatisch gestoppt, um Kosten zu sparen.</p>
+</li>
+<li>
+<p><strong>Fortsetzen:</strong> Wenn du auf github.com/codespaces oder den Code-Button deines Repositorys zurückkehrst, wird dein letzter Codespace angezeigt. Klicke auf ihn, um ihn innerhalb weniger Sekunden wieder zu starten, genau an dem Punkt, wo du aufgehört hast (inklusive aller geöffneten Dateien und des Terminalverlaufs).</p>
+</li>
+</ul>
 
 
 
@@ -1270,7 +1310,7 @@ Da Codespaces in der Cloud laufen, sind sie nicht an deinen lokalen Computer geb
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="21. November 2025 12:56:14 CET">21. November 2025 12:56:14</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="21. November 2025 12:58:16 CET">21. November 2025 12:58:16</span>
   </span>
 
     
