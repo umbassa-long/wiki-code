@@ -41,7 +41,7 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 <details>
   <summary>Klicke hier, um das Bild zu sehen (Details)</summary>
 
-[github-navrepository.png](https://github.com/umbassa-long/wiki-code/blob/ca8d552f6c97dffda4cdd3bd6efce96b82fbf255/docs/bilder/github-navrepository.png)
+![github-navrepository.png](https://github.com/umbassa-long/wiki-code/blob/ca8d552f6c97dffda4cdd3bd6efce96b82fbf255/docs/bilder/github-navrepository.png)
 </details>
 
 2. **Codespace starten:** Klicke auf den grünen Button 

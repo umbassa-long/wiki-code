@@ -148,7 +148,7 @@ Nutzen Sie hierfür eckige Klammern und ein X.
 !!! info 
     Backslash hebt die Bedeutung eines darauf folgenden Sonderzeichen auf.
 
- ### Abkürzungserweiterung
+### Abkürzungserweiterung
 
 Den Mauszeiger über großgeschriebenen Begriff bewegen.
 
