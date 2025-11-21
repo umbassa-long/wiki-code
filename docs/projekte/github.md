@@ -33,38 +33,23 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 1. **Navigiere zum Repository:** Gehe auf GitHub zu dem Repository, das du verwalten möchtest (das, welches du im ersten Schritt eingerichtet hast, z. B. `mein-erstes-projekt`)
 
 <details>
-  <summary>Klicke hier, um das Bild zu sehen (Details)</summary>
-
-  <img src="/workspaces/wiki-code/docs/bilder/github-navrepository.png" alt="Navigations-Repository" />
-</details>
-
-<details>
-<summary>Klicke hier, um das Bild zu sehen (Details)</summary>
-
-![github-navrepository.png](../bilder/github-navrepository.png)
-</details>
-
-<details>
   <summary style="cursor: pointer;">
     <img src="/wiki-code/bilder/github-navrepository.png" 
          alt="Thumbnail" 
          style="width:120px;">
   </summary>
 
-  <img src="/wiki-code/bilder/github-navrepository.png" 
-       alt="Bild" 
-       style="width:100%; margin-top:10px;">
-</details>
 
-<div class="image-hover-container">
-    <img src="/wiki-code/bilder/github-navrepository.png"
-        alt="Vorschau des Repository-Buttons"
-        style="width:120px; cursor: pointer;">
 
-    <img src="/wiki-code/bilder/github-navrepository.png"
-        alt="Vollbild-Navigation"
-        class="full-image-preview">
+
+<div class="hover-container">
+    <!-- Der Text/Link, über den man hovern soll -->
+    <a href="/wiki-code/bilder/github-navrepository.png" class="mein-link">Fahren Sie mit der Maus hier rüber</a>
+    
+    <!-- Das Bild, das beim Hovern erscheinen soll -->
+    <img src="URL_ZU_IHREM_BILD.jpg" alt="Hover-Bild" class="hover-bild">
 </div>
+
 
 2. **Codespace starten:** Klicke auf den grünen Button 
 `< > Code`.
