@@ -14,7 +14,7 @@ theme:
   custom_dir: .overrides
   language: de
   extra_css:
-    - assets/extra.css
+    - extra.css
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
