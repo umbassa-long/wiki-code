@@ -11,10 +11,10 @@ repo_name: GitHub
 # ==========================================================================
 theme:
   name: material
-  custom_dir: .overrides
+  # custom_dir: .overrides
   language: de
   extra_css:
-    - assets/extra.css
+    - .overrides/assets/extra.css
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
