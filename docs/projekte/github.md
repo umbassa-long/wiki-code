@@ -47,10 +47,10 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 
 <details>
   <summary>
-    <img src="bilder/github-navrepository.png" alt="Thumbnail" style="width:120px; cursor:pointer;">
+    <img src="/docs/bilder/github-navrepository.png" alt="Thumbnail" style="width:120px; cursor:pointer;">
   </summary>
 
-  <img src="bilder/github-navrepository.png" alt="Bild" style="width:100%; margin-top:10px;">
+  <img src="/docs/bilder/github-navrepository.png" alt="Bild" style="width:100%; margin-top:10px;">
 </details>
 
 
