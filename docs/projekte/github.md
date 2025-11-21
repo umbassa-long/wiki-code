@@ -32,15 +32,6 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
 
 1. **Navigiere zum Repository:** Gehe auf GitHub zu dem Repository, das du verwalten möchtest (das, welches du im ersten Schritt eingerichtet hast, z. B. `mein-erstes-projekt`)
 
-<details>
-  <summary style="cursor: pointer;">
-    <img src="/wiki-code/bilder/github-navrepository.png" 
-         alt="Thumbnail" 
-         style="width:120px;">
-  </summary>
-
-
-
 
 <div class="hover-container">
     <!-- Der Text/Link, über den man hovern soll -->
