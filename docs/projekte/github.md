@@ -38,7 +38,7 @@ Du musst nichts manuell verlinken, da Codespaces immer direkt mit einem deiner G
     <a href="/wiki-code/bilder/github-navrepository.png" class="mein-link">Fahren Sie mit der Maus hier rüber</a>
     
     <!-- Das Bild, das beim Hovern erscheinen soll -->
-    <img src="URL_ZU_IHREM_BILD.jpg" alt="Hover-Bild" class="hover-bild">
+    <img=src"/wiki-code/bilder/github-navrepository.png" alt="Hover-Bild" class="hover-bild">
 </div>
 
 
