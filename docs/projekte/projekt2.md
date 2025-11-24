@@ -79,34 +79,29 @@ kann.
 -   **Dienste anzeigen:** `docker compose ps`
 
 
-?? Tipps und Tricks
+?? tip
 
     ✔️ Container automatisch neustarten
-
     ``` yaml
     restart: unless-stopped
     ```
 
     ✔️ Logs live ansehen
-
     ``` bash
     docker compose logs -f
     ````
 
     ✔️ Alte Ressourcen löschen
-
     ``` bash
     docker system prune -a
     ```
 
     ✔️ CLI Autocomplete aktivieren
-
     ``` bash
     sudo apt install bash-completion
     ```
 
     ✔️ Healthchecks verwenden
-
     ``` yaml
     healthcheck:
     test: ["CMD", "curl", "-f", "http://localhost:5678"]
@@ -116,7 +111,6 @@ kann.
     ```
 
     ✔️ Updates von Images ziehen
-
     ``` bash
     docker pull n8nio/n8n
     docker compose up -d
