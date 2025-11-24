@@ -1279,42 +1279,34 @@ kann.</p>
 <li><strong>Stoppen:</strong> <code>docker compose down</code></li>
 <li><strong>Dienste anzeigen:</strong> <code>docker compose ps</code></li>
 </ul>
-<p>??? tip</p>
-<pre><code>✔️ Container automatisch neustarten
-``` yaml
-restart: unless-stopped
-```
+<details class="tip">
+<summary>Tip</summary>
+<p>✔️ Container automatisch neustarten
+<div class="highlight"><pre><span></span><code><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
+</code></pre></div></p>
+<p>✔️ Logs live ansehen
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>-f
+<span class="sb">````</span>
 
-✔️ Logs live ansehen
-``` bash
-docker compose logs -f
-````
-
-✔️ Alte Ressourcen löschen
-``` bash
-docker system prune -a
-```
-
-✔️ CLI Autocomplete aktivieren
-``` bash
-sudo apt install bash-completion
-```
-
-✔️ Healthchecks verwenden
-``` yaml
-healthcheck:
-test: ["CMD", "curl", "-f", "http://localhost:5678"]
-interval: 30s
-timeout: 10s
-retries: 5
-```
-
-✔️ Updates von Images ziehen
-``` bash
-docker pull n8nio/n8n
-docker compose up -d
-```
-</code></pre>
+✔️<span class="w"> </span>Alte<span class="w"> </span>Ressourcen<span class="w"> </span>löschen
+<span class="sb">```</span><span class="w"> </span>bash
+docker<span class="w"> </span>system<span class="w"> </span>prune<span class="w"> </span>-a
+</code></pre></div></p>
+<p>✔️ CLI Autocomplete aktivieren
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>bash-completion
+</code></pre></div></p>
+<p>✔️ Healthchecks verwenden
+<div class="highlight"><pre><span></span><code><span class="nt">healthcheck</span><span class="p">:</span>
+<span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;curl&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;-f&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;http://localhost:5678&quot;</span><span class="p p-Indicator">]</span>
+<span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span>
+<span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span>
+<span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+</code></pre></div></p>
+<p>✔️ Updates von Images ziehen
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>n8nio/n8n
+docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div></p>
+</details>
 
 
 
