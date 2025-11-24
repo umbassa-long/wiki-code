@@ -71,9 +71,6 @@ Voraussetzung: **pymdownx.details** muss in Ihrer **mkdocs.yml** unter markdown_
     Mögliche Arten von **TYP** siehe oben. 
     Richtige Anzahl der Leerzeichen beachten
 
---Fenster mit Icon__
-Sie können das Standard-Icon eines Admonition-Typs überschreiben, 
-indem Sie das gewünschte Icon direkt nach dem Typ angeben:
 
 ```markdown
 !!! success icon:material-check "Fertig!"

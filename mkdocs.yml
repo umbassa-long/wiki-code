@@ -121,6 +121,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.critic
   - pymdownx.caret
+  - pymdownx.details
   - pymdownx.extra
   - pymdownx.keys
   - pymdownx.mark
