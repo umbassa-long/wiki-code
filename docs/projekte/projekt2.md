@@ -79,7 +79,7 @@ kann.
 -   **Dienste anzeigen:** `docker compose ps`
 
 
-??  Tipps und Tricks
+?? Tipps und Tricks
 
     ✔️ Container automatisch neustarten
 
