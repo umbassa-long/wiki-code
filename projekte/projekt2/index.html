@@ -1050,72 +1050,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#container-automatisch-neustarten" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✔️ Container automatisch neustarten
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logs-live-ansehen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✔️ Logs live ansehen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alte-ressourcen-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✔️ Alte Ressourcen löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cli-autocomplete-aktivieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✔️ CLI Autocomplete aktivieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#healthchecks-verwenden" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✔️ Healthchecks verwenden
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#updates-von-images-ziehen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✔️ Updates von Images ziehen
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1345,30 +1279,48 @@ kann.</p>
 <li><strong>Stoppen:</strong> <code>docker compose down</code></li>
 <li><strong>Dienste anzeigen:</strong> <code>docker compose ps</code></li>
 </ul>
-<p>?? 💡 Tipps und Tricks</p>
-<h3 id="container-automatisch-neustarten">✔️ Container automatisch neustarten</h3>
-<div class="highlight"><pre><span></span><code><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
-</code></pre></div>
-<h3 id="logs-live-ansehen">✔️ Logs live ansehen</h3>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>-f
-</code></pre></div>
-<h3 id="alte-ressourcen-loschen">✔️ Alte Ressourcen löschen</h3>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>system<span class="w"> </span>prune<span class="w"> </span>-a
-</code></pre></div>
-<h3 id="cli-autocomplete-aktivieren">✔️ CLI Autocomplete aktivieren</h3>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>bash-completion
-</code></pre></div>
-<h3 id="healthchecks-verwenden">✔️ Healthchecks verwenden</h3>
-<div class="highlight"><pre><span></span><code><span class="nt">healthcheck</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;curl&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;-f&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;http://localhost:5678&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span>
-<span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span>
-<span class="w">  </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
-</code></pre></div>
-<h3 id="updates-von-images-ziehen">✔️ Updates von Images ziehen</h3>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>n8nio/n8n
-docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
-</code></pre></div>
+<p>??  Tipps und Tricks</p>
+<pre><code>✔️ Container automatisch neustarten
+
+``` yaml
+restart: unless-stopped
+```
+
+✔️ Logs live ansehen
+
+``` bash
+docker compose logs -f
+````
+
+✔️ Alte Ressourcen löschen
+
+``` bash
+docker system prune -a
+```
+
+✔️ CLI Autocomplete aktivieren
+
+``` bash
+sudo apt install bash-completion
+```
+
+✔️ Healthchecks verwenden
+
+``` yaml
+healthcheck:
+test: ["CMD", "curl", "-f", "http://localhost:5678"]
+interval: 30s
+timeout: 10s
+retries: 5
+```
+
+✔️ Updates von Images ziehen
+
+``` bash
+docker pull n8nio/n8n
+docker compose up -d
+```
+</code></pre>
 
 
 
@@ -1389,7 +1341,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="24. November 2025 10:55:51 CET">24. November 2025 10:55:51</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="24. November 2025 11:12:07 CET">24. November 2025 11:12:07</span>
   </span>
 
     
