@@ -79,7 +79,7 @@ kann.
 -   **Dienste anzeigen:** `docker compose ps`
 
 
-?? tip
+??? tip
 
     ✔️ Container automatisch neustarten
     ``` yaml

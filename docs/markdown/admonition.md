@@ -67,7 +67,7 @@ indem Sie ?? statt !! verwenden. Dies ist nützlich für lange Abschnitte, die n
 
 Voraussetzung: **pymdownx.details** muss in Ihrer **mkdocs.yml** unter markdown_extensions: aktiviert sein.
 
-?? tip
+??? tip
     Mögliche Arten von **TYP** siehe oben. 
     Richtige Anzahl der Leerzeichen beachten
 
