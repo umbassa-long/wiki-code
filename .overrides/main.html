@@ -1,15 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-{# 1. Anzeige der letzten 3 Änderungen, nur auf der Homepage #}
-  {% if page.is_homepage %}
+
+{% if page.is_homepage %}
     <h2>🚀 Neueste Beiträge</h2>
     <ul>
-      {# WICHTIG: Verwenden Sie 'nav.pages' anstelle von 'pages', um nur gültige Seiten zu erhalten #}
-      {# ACHTUNG: Der 'sort'-Filter kann das Problem weiterhin verursachen, wenn das Plugin nicht lädt. #}
-      
-      {# Versuchen Sie diese Version: #}
-      {% for page in pages | selectattr('meta.revision_date') | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
+      {# WICHTIG: Verwenden Sie 'nav.pages' anstelle von 'pages' und fügen Sie 'selectattr' hinzu #}
+      {% for page in nav.pages | selectattr('meta.revision_date') | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
         <li>
           <a href="{{ page.url | url }}">{{ page.title }}</a>
           <small> (zuletzt geändert: {{ page.meta.revision_date.strftime('%Y-%m-%d') }})</small>
