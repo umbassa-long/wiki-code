@@ -1,6 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
+{# 1. Anzeige der letzten 3 Änderungen, nur auf der Homepage #}
+  {% if page.is_homepage %}
+    <h2>🚀 Neueste Beiträge</h2>
+    <ul>
+      {# Sortiert alle Seiten (pages) nach dem Änderungsdatum (meta.revision_date) absteigend und nimmt die ersten 3 #}
+      {% for page in pages | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
+        <li>
+          <a href="{{ page.url | url }}">{{ page.title }}</a>
+          <small> (zuletzt geändert: {{ page.meta.revision_date.strftime('%Y-%m-%d') }})</small>
+        </li>
+      {% endfor %}
+    </ul>
+    <hr>
+  {% endif %}
   {{ super() }}
   
   {# NEUER VERSUCH: Unterstriche (_) als Trennzeichen #}
