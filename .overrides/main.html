@@ -5,12 +5,13 @@
 {% if page.is_homepage %}
     <h2>🚀 Neueste Beiträge</h2>
     <ul>
-      {# 1. Filtern nach Seitenobjekten (is_page) #}
-      {# 2. Sicherstellen, dass die gefilterten Seiten ein Änderungsdatum haben (selectattr) #}
-      {% for page in nav.pages | selectattr('is_page') | selectattr('meta.revision_date') | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
+      {# NEUE LÖSUNG: Wir verwenden 'nav.pages' und filtern zusätzlich nach 'is_page' #}
+      {# Der Fehler tritt auf, weil 'selectattr' nicht vor dem Sortieren greift #}
+      
+      {% for item in nav.pages | selectattr('is_page') | selectattr('meta.revision_date') | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
         <li>
-          <a href="{{ page.url | url }}">{{ page.title }}</a>
-          <small> (zuletzt geändert: {{ page.meta.revision_date.strftime('%Y-%m-%d') }})</small>
+          <a href="{{ item.url | url }}">{{ item.title }}</a>
+          <small> (zuletzt geändert: {{ item.meta.revision_date.strftime('%Y-%m-%d') }})</small>
         </li>
       {% endfor %}
     </ul>
