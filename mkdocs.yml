@@ -1,145 +1,56 @@
-﻿# ==========================================================================
-# MKDocs Konfiguration für "Denkwürdig"
-# ==========================================================================
-site_name: Denkwürdig
-site_url: https://wiki-code.github.io/
-repo_url: https://github.com/Ihr-Github-Name/wiki-code  # HIER ANPASSEN
-repo_name: GitHub
+﻿site_name: Wiki-Code
+site_url: https://deine-domain.de
+site_author: Dein Name
+site_description: Ein produktives Wiki-Projekt
 
-# ==========================================================================
-# Theme: Material for MkDocs
-# ==========================================================================
 theme:
   name: material
-  custom_dir: .overrides
   language: de
-  extra_css:
-    - assets/extra.css
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: red
-      toggle:
-        icon: material/weather-sunny
-        name: Auf dunkles Schema wechseln
-
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: teal
-      toggle:
-        icon: material/weather-night
-        name: Auf helles Schema wechseln
-
-  font:
-    text: Roboto
-    code: Roboto Mono
-
+  custom_dir: .overrides
   features:
-    # Navigation
-    - navigation.tabs
-    - navigation.side
+    - navigation.instant
     - navigation.top
-    - navigation.tracking
-    - navigation.instant               # schnelle Seitenwechsel
-    - navigation.instant.preview        # interne Link-Vorschau (NEU)
-    
-    # Suche
     - search.highlight
     - search.suggest
-    - search.share
-    
-    # Content
-    - content.action.top
-    - content.code.copy
-    - content.external_link.icon
-    - content.external_link.target
-    
-    # Inhaltsverzeichnis
-    - toc.follow
-    - toc.integrate
 
-# ==========================================================================
-# Plugins
-# ==========================================================================
 plugins:
+  - search
   - macros
-  - git-revision-date-localized:   # Datum / Uhrzeit für Seiten
+  - git-revision-date-localized:
+      enable_creation_date: false  # optional
+      fallback_to_build_date: true
       type: datetime
-      timezone: Europe/Berlin
-      locale: de
+      locale: de_DE
+      date_format: '%Y-%m-%d'
 
-  # Suche
-  - search:
-      separator: '[\s\-\.]+'
-      lang:
-        - de
-        - en
+extra:
+  social:
+    - type: github
+      link: https://github.com/umbassa-long/wiki-code
 
-  # Externe Link-Vorschauen (OpenGraph Cards)
-  - link-preview
-
-# ==========================================================================
-# Navigation
-# ==========================================================================
 nav:
-  - Wissensspeicher: index.md
-
-  - Code:
-      - Welcome to MkDocs: code/welcome.md
-
-  - Links:
-      - Links & Ressourcen: links/links.md
-
-  - Markdown:
-      - Formatierung: markdown/formatierung.md
-      - Grundlagen: markdown/grundlagen.md
-      - Markdown-Tabellen: markdown/tabellen.md
-      - Highlighting: markdown/admonition.md
-      - Emoji: markdown/emoji.md
-
-  - How Tos:
-      - Github: projekte/github.md
-      - Docker: projekte/projekt2.md
-
+  - Home: index.md
+  - Projekte:
+      - Projekt 1: projekte/projekt1.md
+      - Projekt 2: projekte/projekt2.md
   - Tools:
-      - Docker: tools/docker.md
-      - Git: tools/git.md
+      - Tool 1: tools/tool1.md
+  - Markdown: markdown.md
+  - Hochladen: hochladen.md
+  - Links: links/links.md
 
-# ==========================================================================
-# Markdown-Erweiterungen
-# ==========================================================================
 markdown_extensions:
   - admonition
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: table
-          class: table
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.extra
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.tabbed:
-      alternate_style: true
-  - attr_list
+  - codehilite
+  - footnotes
   - toc:
-      toc_depth: 4
+      permalink: true
+  - tables
+  - pymdownx.superfences
+  - pymdownx.tabbed
 
-  # Twemoji für farbige Emojis
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+extra_javascript:
+  - https://giscus.app/client.js
 
-# ==========================================================================
-# Hinweise:
-# - Interne Vorschauen: automatisch durch navigation.instant.preview
-# - Externe Vorschauen: durch ```preview <URL> ```
-# - extra.css optional aktivierbar
-# ==========================================================================
+extra_css:
+  - stylesheets/extra.css

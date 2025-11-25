@@ -6,7 +6,7 @@
 
 <h2>🚀 Neueste Beiträge</h2>
 
-{# --- Alle Seiten aus nav.pages sammeln, nur mit einem Datum --- #}
+{# --- Alle Seiten sammeln, nur mit Datum --- #}
 {% set dated_pages = [] %}
 
 {% for p in nav.pages %}
@@ -19,25 +19,28 @@
     {% endif %}
 {% endfor %}
 
-{# --- Sortieren nach Datum, neueste zuerst --- #}
-{% set sorted_pages = dated_pages | sort(attribute=1, reverse=True) %}
-
-<ul>
-{% for p, date in sorted_pages | slice(3) %}
-    <li>
-        <a href="{{ p.url | url }}">{{ p.title }}</a>
-        <small>
-            (zuletzt geändert: 
-            {% if p.meta.revision_date is defined %}
-                {{ p.meta.revision_date.strftime('%Y-%m-%d') }}
-            {% else %}
-                {{ p.meta.git_revision_date_localized }}
-            {% endif %}
-            )
-        </small>
-    </li>
-{% endfor %}
-</ul>
+{# --- Nur wenn es Daten gibt --- #}
+{% if dated_pages %}
+    {% set sorted_pages = dated_pages | sort(attribute=1, reverse=True) %}
+    <ul>
+    {% for p, date in sorted_pages | slice(3) %}
+        <li>
+            <a href="{{ p.url | url }}">{{ p.title }}</a>
+            <small>
+                (zuletzt geändert: 
+                {% if p.meta.revision_date is defined %}
+                    {{ p.meta.revision_date.strftime('%Y-%m-%d') }}
+                {% else %}
+                    {{ p.meta.git_revision_date_localized }}
+                {% endif %}
+                )
+            </small>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Keine aktuellen Beiträge vorhanden.</p>
+{% endif %}
 
 <hr>
 
