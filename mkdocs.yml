@@ -1,55 +1,73 @@
-﻿site_name: Wiki-Code
-site_url: https://deine-domain.de
-site_author: Dein Name
-site_description: Ein produktives Wiki-Projekt
+﻿site_name: Wissensspeicher
+site_url: https://wiki-code.github.io/
+repo_url: https://github.com/umbassa-long/wiki-code
+repo_name: GitHub
 
 theme:
   name: material
   language: de
-  custom_dir: .overrides
+  logo: assets/images/logo.png
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan 
+      accent: pink
+
   features:
-    - navigation.instant
-    - navigation.top
-    - search.highlight
-    - search.suggest
+    - navigation.tabs
+    - navigation.sections
+    - navigation.with_icons
+    - navigation.expand
+    - navigation.footer
+    - content.code.copy
+    #- toc.follow
 
 plugins:
-  - search
-  - macros
-  - git-revision-date-localized:
-      enable_creation_date: false  # optional
-      fallback_to_build_date: true
-      type: datetime
-      locale: de_DE
+  - git-revision-date-localized
+  - macros:
+      include_dir: includes
 
 extra:
+  revision:
+    date: true
   social:
-    - type: github
-      link: https://github.com/umbassa-long/wiki-code
+    - icon: github
+      link: https://github.com/umbassa-long
+    - icon: discord
+      link: "#"
 
-nav:
-  - Home: index.md
-  - Projekte:
-      - Projekt 1: projekte/projekt1.md
-      - Projekt 2: projekte/projekt2.md
-  - Tools:
-      - Tool 1: tools/tool1.md
-  - Markdown: markdown.md
-  - Hochladen: hochladen.md
-  - Links: links/links.md
+extra_javascript:
+  - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
+
+extra_css:
+  - css/style.css
 
 markdown_extensions:
   - admonition
-  - codehilite
-  - footnotes
-  - toc:
-      permalink: true
-  - tables
+  - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed
+  - pymdownx.highlight
+  - attr_list
+  - pymdownx.emoji
 
-extra_javascript:
-  - https://giscus.app/client.js
-
-extra_css:
-  - stylesheets/extra.css
+nav:
+  - Wissensspeicher: index.md
+  - 📘 Inhaltsübersicht: summary.md
+  - Code:
+      - Welcome to MkDocs: code/welcome.md
+  - Links:
+      - Links & Ressourcen: links/links.md
+  - Markdown:
+      - Formatierung: markdown/formatierung.md
+      - Grundlagen: markdown/grundlagen.md
+      - Markdown-Tabellen: markdown/tabellen.md
+      - Highlighting: markdown/admonition.md
+      - Emoji: markdown/emoji.md
+  - How Tos:
+      - Projekt1: projekte/projekt1.md
+      - Projekt2: projekte/projekt2.md
+  - Tools:
+      - Docker: tools/docker.md
+      - Git: tools/git.md
