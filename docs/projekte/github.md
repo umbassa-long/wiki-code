@@ -99,3 +99,40 @@ Da Codespaces in der Cloud laufen, sind sie nicht an deinen lokalen Computer geb
 - **Beenden:** Schließe einfach deinen Browser-Tab. Der Codespace wird nach einer gewissen Inaktivität (meist 30 Minuten, je nach Einstellung) automatisch gestoppt, um Kosten zu sparen.
 
 - **Fortsetzen:** Wenn du auf github.com/codespaces oder den Code-Button deines Repositorys zurückkehrst, wird dein letzter Codespace angezeigt. Klicke auf ihn, um ihn innerhalb weniger Sekunden wieder zu starten, genau an dem Punkt, wo du aufgehört hast (inklusive aller geöffneten Dateien und des Terminalverlaufs).
+
+### Standard Arbeitsablauf
+
+```bash
+git add . # Änderungen markieren
+git commit -m "KURZE BESCHREIBUNG" # Änderung speichern
+git push # Änderung zu Github hochladen
+```
+
+***Github-Branch aktueller als lokale Version***
+
+```bash
+git pull # Neueste Änderungen von Github holen
+```
+
+### Einrichten eines lokalen Editor (VSCode)
+
+
+```bash
+git remote add origin https://github.com/DEINNAME/DEINREPO.git
+git branch -M main
+git push -u origin main
+
+git clone https://github.com/DEINNAME/DEINREPO.git # laden der vollständigen github copie
+```
+
+### Optionen im Merge Editor
+
+***In VS Code hast du oben vier Buttons:***
+
+ - Accept Current Change → lokale Datei behalten
+
+ - Accept Incoming Change → GitHub-Version übernehmen
+
+ - Accept Both Changes → beide Versionen zusammenführen
+
+ - Compare Changes → Unterschiede anzeigen
