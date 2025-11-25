@@ -5,10 +5,20 @@
 {% if page.is_homepage %}
     <h2>🚀 Neueste Beiträge</h2>
     <ul>
-      {# NEUE LÖSUNG: Wir verwenden 'nav.pages' und filtern zusätzlich nach 'is_page' #}
-      {# Der Fehler tritt auf, weil 'selectattr' nicht vor dem Sortieren greift #}
+      {# Verwenden Sie die Seitenliste direkt aus der Konfiguration, wenn möglich (oft nicht verfügbar) #}
+      {# Wir MÜSSEN nav.pages verwenden, aber das Element benennen wir 'item' #}
       
-      {% for item in nav.pages | selectattr('is_page') | selectattr('meta.revision_date') | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
+      {# Zuerst filtern wir die Liste der Seiten, um nur echte Seiten mit Metadaten zu erhalten #}
+      {% set recent_pages = [] %}
+      {% for item in nav.pages %}
+        {% if item.is_page and item.meta.revision_date is defined %}
+          {# Fügen Sie das Seitenobjekt zur Liste hinzu #}
+          {% set recent_pages = recent_pages + [item] %}
+        {% endif %}
+      {% endfor %}
+
+      {# Jetzt die gefilterte Liste sortieren und ausgeben #}
+      {% for item in recent_pages | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
         <li>
           <a href="{{ item.url | url }}">{{ item.title }}</a>
           <small> (zuletzt geändert: {{ item.meta.revision_date.strftime('%Y-%m-%d') }})</small>
