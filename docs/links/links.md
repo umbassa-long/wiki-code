@@ -31,7 +31,7 @@ title: Links
     Jettison All Cargo :material-delete-empty:
 ```
 
-https://learningapps.org/
+[LearningApp](https://learningapps.org/)
 
 
 ## Markdownguides

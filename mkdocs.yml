@@ -11,7 +11,7 @@ repo_name: GitHub
 # ==========================================================================
 theme:
   name: material
-  # custom_dir: .overrides
+  custom_dir: .overrides
   language: de
   extra_css:
     - assets/extra.css
