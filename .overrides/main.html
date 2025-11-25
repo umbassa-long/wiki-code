@@ -6,31 +6,18 @@
 
 <h2>🚀 Neueste Beiträge</h2>
 
-{# --- Hilfs-Makro: Rekursive Sammlung aller Seiten --- #}
-{% macro collect_pages(nav_items) %}
-    {% for item in nav_items %}
-        {% if item.is_page %}
-            {{ caller(item) }}
-        {% elif item.children %}
-            {% call(child) collect_pages(item.children) %}
-                {{ caller(child) }}
-            {% endcall %}
-        {% endif %}
-    {% endfor %}
-{% endmacro %}
-
-{# --- Alle Seiten sammeln, nur echte Pages mit Metadaten --- #}
+{# --- Alle Seiten aus nav.pages sammeln --- #}
 {% set recent_pages = [] %}
 
-{% call(p) collect_pages(nav.items) %}
+{% for p in nav.pages %}
     {% if p.meta is defined %}
         {% if p.meta.revision_date is defined or p.meta.git_revision_date_localized is defined %}
             {% set recent_pages = recent_pages + [p] %}
         {% endif %}
     {% endif %}
-{% endcall %}
+{% endfor %}
 
-{# --- Sortieren nach Änderungsdatum (fallback auf git_revision_date_localized) --- #}
+{# --- Sortieren nach Änderungsdatum --- #}
 {% set sorted_pages = recent_pages
     | sort(attribute="meta.revision_date", reverse=True, default="1970-01-01")
     | sort(attribute="meta.git_revision_date_localized", reverse=True, default="1970-01-01")
@@ -62,11 +49,6 @@
 {{ super() }}
 
 {% endblock %}
-
-
-{# -------------------------------------------------------- #}
-{#                   GISCUS FOOTER                         #}
-{# -------------------------------------------------------- #}
 
 {% block content_article_footer %}
 
