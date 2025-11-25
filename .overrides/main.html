@@ -6,37 +6,34 @@
 
 <h2>🚀 Neueste Beiträge</h2>
 
+{# --- Hilfs-Makro: Rekursive Sammlung aller Seiten --- #}
+{% macro collect_pages(nav_items) %}
+    {% for item in nav_items %}
+        {% if item.is_page %}
+            {{ caller(item) }}
+        {% elif item.children %}
+            {% call(child) collect_pages(item.children) %}
+                {{ caller(child) }}
+            {% endcall %}
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+{# --- Alle Seiten sammeln, nur echte Pages mit Metadaten --- #}
 {% set recent_pages = [] %}
 
-{# --- Robuste und sichere Navigation --- #}
-
-{# Wir nutzen 'namespace', damit die Variable auch außerhalb der Schleife verfügbar bleibt #}
-{% set ns = namespace(recent_pages=[]) %}
-
-{# 'pages' ist die globale Variable von MkDocs, die alle Seiten enthält #}
-{% for p in pages %}
-
-    {# Prüfen, ob Meta-Daten vorhanden sind #}
+{% call(p) collect_pages(nav.items) %}
     {% if p.meta is defined %}
-
-        {# 1. Priorität: revision_date #}
-        {% if p.meta.revision_date is defined %}
-            {% set ns.recent_pages = ns.recent_pages + [p] %}
-
-        {# 2. Fallback: git-revision-date-localized plugin #}
-        {# Wir fügen es nur hinzu, wenn es nicht schon durch revision_date hinzugefügt wurde, 
-           um Duplikate zu vermeiden (optional, je nach Logik) #}
-        {% elif p.meta.git_revision_date_localized is defined %}
-            {% set ns.recent_pages = ns.recent_pages + [p] %}
+        {% if p.meta.revision_date is defined or p.meta.git_revision_date_localized is defined %}
+            {% set recent_pages = recent_pages + [p] %}
         {% endif %}
-
     {% endif %}
-{% endfor %}
+{% endcall %}
 
-{# Sortierung: Zugriff nun über ns.recent_pages #}
-{% set sorted_pages = ns.recent_pages
-    | sort(attribute="meta.revision_date", reverse=True)
-    | sort(attribute="meta.git_revision_date_localized", reverse=True)
+{# --- Sortieren nach Änderungsdatum (fallback auf git_revision_date_localized) --- #}
+{% set sorted_pages = recent_pages
+    | sort(attribute="meta.revision_date", reverse=True, default="1970-01-01")
+    | sort(attribute="meta.git_revision_date_localized", reverse=True, default="1970-01-01")
 %}
 
 <ul>
@@ -46,8 +43,7 @@
         <small>
             (
             {% if p.meta.revision_date is defined %}
-                {# Beachte: revision_date ist oft ein Datum-Objekt, git_revision... ein String #}
-                zuletzt geändert: {{ p.meta.revision_date }}
+                zuletzt geändert: {{ p.meta.revision_date.strftime('%Y-%m-%d') }}
             {% elif p.meta.git_revision_date_localized is defined %}
                 zuletzt geändert: {{ p.meta.git_revision_date_localized }}
             {% else %}
@@ -63,16 +59,14 @@
 
 {% endif %}
 
-{# Standard-Content von Material (TOC, Text etc.) #}
 {{ super() }}
 
 {% endblock %}
 
 
-
-{# ------------------------------------------------------- #}
-{#            FOOTER MIT GISCUS (Kommentare)               #}
-{# ------------------------------------------------------- #}
+{# -------------------------------------------------------- #}
+{#                   GISCUS FOOTER                         #}
+{# -------------------------------------------------------- #}
 
 {% block content_article_footer %}
 
