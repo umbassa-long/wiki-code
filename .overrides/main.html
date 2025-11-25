@@ -10,7 +10,7 @@
     {# 1. Sicher durch die nav.pages iterieren, um nur echte Seitenobjekte zu sammeln #}
     {% for item in nav.pages %}
       
-      {# Prüfen, ob das Objekt eine Seite ist (nicht nur eine Section/Liste) #}
+      {# Prüfen, ob das Objekt eine Seite ist #}
       {% if item.is_page is defined and item.is_page %}
         
         {# Jetzt prüfen wir sicher, ob die vom Plugin bereitgestellten Metadaten existieren #}
@@ -18,13 +18,26 @@
           {# Nur wenn beide Bedingungen erfüllt sind, fügen wir die Seite hinzu #}
           {% set recent_pages = recent_pages + [item] %}
         {% endif %}
+        
       {% endif %}
-      {% endif %}
+    {% endfor %} <-- HIER FEHLTE DAS ENDFOR!
 
-  {{ super() }}
-  
-  {# NEUER VERSUCH: Unterstriche (_) als Trennzeichen #}
-  {% block content_article_bottom %} 
+    {# 2. Sortieren und Ausgabe der letzten 3 Einträge #}
+    <ul>
+      {% for item in recent_pages | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
+        <li>
+          <a href="{{ item.url | url }}">{{ item.title }}</a>
+          <small> (zuletzt geändert: {{ item.meta.revision_date.strftime('%Y-%m-%d') }})</small>
+        </li>
+      {% endfor %}
+    </ul>
+    <hr>
+{% endif %} <-- Schließt die homepage-Prüfung
+
+{# HIER beginnt Ihr ursprünglicher Giscus-Block #}
+{{ super() }}
+
+{% block content.article.footer %} 
     <hr>
     
     <script src="https://giscus.app/client.js"
@@ -43,5 +56,5 @@
             async>
     </script>
     
-  {% endblock %}
+{% endblock %}
 {% endblock %}
