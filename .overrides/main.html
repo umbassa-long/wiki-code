@@ -18,6 +18,7 @@
           {# Nur wenn beide Bedingungen erfüllt sind, fügen wir die Seite hinzu #}
           {% set recent_pages = recent_pages + [item] %}
         {% endif %}
+      {% endif %}
 
   {{ super() }}
   
