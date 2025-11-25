@@ -5,8 +5,11 @@
   {% if page.is_homepage %}
     <h2>🚀 Neueste Beiträge</h2>
     <ul>
-      {# Sortiert alle Seiten (pages) nach dem Änderungsdatum (meta.revision_date) absteigend und nimmt die ersten 3 #}
-      {% for page in pages | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
+      {# WICHTIG: Verwenden Sie 'nav.pages' anstelle von 'pages', um nur gültige Seiten zu erhalten #}
+      {# ACHTUNG: Der 'sort'-Filter kann das Problem weiterhin verursachen, wenn das Plugin nicht lädt. #}
+      
+      {# Versuchen Sie diese Version: #}
+      {% for page in pages | selectattr('meta.revision_date') | sort(attribute='meta.revision_date', reverse=True) | slice(3) %}
         <li>
           <a href="{{ page.url | url }}">{{ page.title }}</a>
           <small> (zuletzt geändert: {{ page.meta.revision_date.strftime('%Y-%m-%d') }})</small>
@@ -15,6 +18,7 @@
     </ul>
     <hr>
   {% endif %}
+
   {{ super() }}
   
   {# NEUER VERSUCH: Unterstriche (_) als Trennzeichen #}
