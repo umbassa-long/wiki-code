@@ -9,6 +9,10 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 
 ---
 
+[Frank's Spielesammlung](https://borg707germany.github.io/Spielesammlung)
+
+
+
 ## 💡 Schnellstart & Wichtige Links
 
 | Links | Ressourcen |
