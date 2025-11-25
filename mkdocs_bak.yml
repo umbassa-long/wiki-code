@@ -1,0 +1,73 @@
+﻿site_name: Wissensspeicher
+site_url: https://wiki-code.github.io/
+# repo_url: https://github.com/umbassa-long/wiki-code
+# repo_name: GitHub
+
+theme:
+  name: material
+  language: de
+  logo: assets/images/logo.png
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan
+      accent: pink
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.with_icons
+    - navigation.expand
+    - navigation.footer
+    - content.code.copy
+
+plugins:
+  - git-revision-date-localized:
+      date_format: "%d. %B %Y"
+      time_format: "%H:%M"
+
+extra:
+  revision:
+    date: true
+  
+  # NEU HINZUFÜGEN, UM DEN ICON-FEHLER ZU BEHEBEN
+  # social:
+  #   - icon: fontawesome/brands/github
+  #     link: https://github.com/umbassa-long/wiki-code
+
+extra_javascript:
+  - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
+
+extra_css:
+  - css/style.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - attr_list
+  - pymdownx.emoji
+
+nav:
+  - Wissensspeicher: index.md
+#  - 📘 Inhaltsübersicht: summary.md
+  - Code:
+      - Welcome to MkDocs: code/welcome.md
+  - Links:
+      - Links & Ressourcen: links/links.md
+  - Markdown:
+      - Formatierung: markdown/formatierung.md
+      - Grundlagen: markdown/grundlagen.md
+      - Markdown-Tabellen: markdown/tabellen.md
+      - Highlighting: markdown/admonition.md
+      - Emoji: markdown/emoji.md
+  - How Tos:
+      # Diese Dateien müssen existieren oder entfernen
+      #- Projekt1: projekte/projekt1.md
+      #- Projekt2: projekte/projekt2.md
+  - Tools:
+      - Docker: tools/docker.md
+      - Git: tools/git.md

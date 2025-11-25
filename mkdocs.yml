@@ -1,60 +1,13 @@
-﻿site_name: Wissensspeicher
+site_name: Wissensspeicher
 site_url: https://wiki-code.github.io/
-repo_url: https://github.com/umbassa-long/wiki-code
-repo_name: GitHub
+site_description: Mein Wissensspeicher
 
 theme:
   name: material
-  language: de
-  logo: assets/images/logo.png
 
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: cyan 
-      accent: pink
-
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.with_icons
-    - navigation.expand
-    - navigation.footer
-    - content.code.copy
-    #- toc.follow
-
-plugins:
-  - git-revision-date-localized
-  - macros:
-      include_dir: includes
-
-extra:
-  revision:
-    date: true
-  social:
-    - icon: github
-      link: https://github.com/umbassa-long
-    - icon: discord
-      link: "#"
-
-extra_javascript:
-  - https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap
-
-extra_css:
-  - css/style.css
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - pymdownx.highlight
-  - attr_list
-  - pymdownx.emoji
-
-nav:
+  nav:
   - Wissensspeicher: index.md
-  - 📘 Inhaltsübersicht: summary.md
+#  - 📘 Inhaltsübersicht: summary.md
   - Code:
       - Welcome to MkDocs: code/welcome.md
   - Links:
@@ -66,8 +19,10 @@ nav:
       - Highlighting: markdown/admonition.md
       - Emoji: markdown/emoji.md
   - How Tos:
-      - Projekt1: projekte/projekt1.md
-      - Projekt2: projekte/projekt2.md
+#       Diese Dateien müssen existieren oder entfernen
+#      - Projekt1: projekte/projekt1.md
+ #     - Projekt2: projekte/projekt2.md
   - Tools:
       - Docker: tools/docker.md
       - Git: tools/git.md
+
