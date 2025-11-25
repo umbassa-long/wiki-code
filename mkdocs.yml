@@ -21,7 +21,6 @@ plugins:
       fallback_to_build_date: true
       type: datetime
       locale: de_DE
-      date_format: '%Y-%m-%d'
 
 extra:
   social:
