@@ -6,35 +6,32 @@
 
 <h2>🚀 Neueste Beiträge</h2>
 
-{# --- Alle Seiten aus nav.pages sammeln --- #}
-{% set recent_pages = [] %}
+{# --- Alle Seiten aus nav.pages sammeln, nur mit einem Datum --- #}
+{% set dated_pages = [] %}
 
 {% for p in nav.pages %}
     {% if p.meta is defined %}
-        {% if p.meta.revision_date is defined or p.meta.git_revision_date_localized is defined %}
-            {% set recent_pages = recent_pages + [p] %}
+        {% if p.meta.revision_date is defined %}
+            {% set dated_pages = dated_pages + [(p, p.meta.revision_date)] %}
+        {% elif p.meta.git_revision_date_localized is defined %}
+            {% set dated_pages = dated_pages + [(p, p.meta.git_revision_date_localized)] %}
         {% endif %}
     {% endif %}
 {% endfor %}
 
-{# --- Sortieren nach Änderungsdatum --- #}
-{% set sorted_pages = recent_pages
-    | sort(attribute="meta.revision_date", reverse=True, default="1970-01-01")
-    | sort(attribute="meta.git_revision_date_localized", reverse=True, default="1970-01-01")
-%}
+{# --- Sortieren nach Datum, neueste zuerst --- #}
+{% set sorted_pages = dated_pages | sort(attribute=1, reverse=True) %}
 
 <ul>
-{% for p in sorted_pages | slice(3) %}
+{% for p, date in sorted_pages | slice(3) %}
     <li>
         <a href="{{ p.url | url }}">{{ p.title }}</a>
         <small>
-            (
+            (zuletzt geändert: 
             {% if p.meta.revision_date is defined %}
-                zuletzt geändert: {{ p.meta.revision_date.strftime('%Y-%m-%d') }}
-            {% elif p.meta.git_revision_date_localized is defined %}
-                zuletzt geändert: {{ p.meta.git_revision_date_localized }}
+                {{ p.meta.revision_date.strftime('%Y-%m-%d') }}
             {% else %}
-                kein Datum
+                {{ p.meta.git_revision_date_localized }}
             {% endif %}
             )
         </small>
@@ -49,6 +46,7 @@
 {{ super() }}
 
 {% endblock %}
+
 
 {% block content_article_footer %}
 
