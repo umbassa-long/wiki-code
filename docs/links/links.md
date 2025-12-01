@@ -31,11 +31,14 @@ title: Links
     Jettison All Cargo :material-delete-empty:
 ```
 
-[LearningApp](https://learning/apps.org)
-[Cryptpad](https://cryptpad.fr/)
-[Genially](https://genially.com/de/)
-[Websim](https://websim.com/@Nokix/datentyp-explorer-byte-short-int-long)
-
+## Lernen, Basteln,, Präsentieren
+-  <a href="https://learning/apps.org" target="_blank">Learning Apps</a>
+-  <a href="https://cryptpad.fr" target="_blank">Cryptpad - Online Office</a>
+-  <a href="https://genially.com/de/" target="_blank">Genially - Erstelle Schulungs- und Kommunikationsmaterialien</a>
+-  <a href="https://nawi-werft.de/" target="_blank">Roboter bauen</a>
+-  <a href="https://websim.com/@Nokix/datentyp-explorer-byte-short-int-long" target="_blank">Websim-kleine Apps oder schnell mal ne Slide</a>
+-  <a href="https://labex.io/de" target="_blank">labex - Online Kurse</a>
+-  <a href="https://excalidraw.com/" target="_blank">Schöne Präsentation erstellen</a>
 
 ## Markdownguides
 -  <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">Markdownguide.org</a>
@@ -44,19 +47,22 @@ title: Links
 
 ## Interessante Seiten und sonst so
 
--  <a href="https://labex.io/de" target="_blank">kostenlose Howto´s</a>
 -  <a href="https://app.diagrams.net" target="_blank" >Erstellen von Diagrammen</a>
 -  <a href="https://strukto.io/" target="_blank" >Struktogramme für Programmierer</a>
 -  <a href="https://www.matheretter.de/wiki/binarzahlen" target="_blank">Matheretter-Binärzahlen</a>
--  <a href="https://excalidraw.com/" target="_blank">Schöne Präsentation erstellen</a>
 -  <a href="https://wiki.debian.org/SystemMonitoring" target="_blank">Linux Monitoring</a> # URL mit Tab 
 -  <a href="https://qualidy.github.io/wiki-docker/" target="_blank" >Docker</a>
--  <a href="https://docs.github.com/de/get-started" target="_blank" >Starten mit Github</a>
--  <a href="https://yaml-online-parser.appspot.com/" target="_blank" >Yaml-Online-Parser</a>
 
 
+## Programing
+- <a href="https://docs.github.com/de/get-started" target="_blank" >Starten mit Github</a>
+- <a href="https://www.programiz.com/" target="_blank">Online-Compilers</a>
+- <a href="https://yaml-online-parser.appspot.com/" target="_blank" >Yaml-Online-Parser</a>
+
+```html
 - <a href="URL" target="_blank">TEXT</a> # URL mit Tab  # mit Hover Effekt
 - [Text](URL) # reine Markdownsyntax für URL ohne Tab
+```
 
 ## Qualität mal anders, aber nicht gegensätzlich
 
@@ -69,9 +75,8 @@ title: Links
 :smile:
 :axt:
 
-```preview
 https://app.diagrams.net
-```
+
 
 <a href="https://app.diagrams.net" target="_blank">Öffne Diagramme in neuem Tab</a>
 
