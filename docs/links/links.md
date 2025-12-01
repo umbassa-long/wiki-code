@@ -10,7 +10,7 @@ title: Links
 | **Interner Abschnitt (Anker)** | `[Zum Abschnitt Tabellen](#markdown-tabellen-erstellen)` | [Zum Abschnitt Tabellen](#markdown-tabellen-erstellen) |
 | **Link mit Tooltip** | `[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ "Theme Dokumentation")` | [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/ "Theme Dokumentation") |
 
-## Links in Button
+## Links im Button
 
 - Anpassung den Wert des href-Attributs im HTML-Tag `<a>` ändern.
 
@@ -39,6 +39,7 @@ title: Links
 -  <a href="https://websim.com/@Nokix/datentyp-explorer-byte-short-int-long" target="_blank">Websim-kleine Apps oder schnell mal ne Slide</a>
 -  <a href="https://labex.io/de" target="_blank">labex - Online Kurse</a>
 -  <a href="https://excalidraw.com/" target="_blank">Schöne Präsentation erstellen</a>
+-  <a href="https://jupyter.org/" target="_blank">Visuelle Darstellung von Daten</a>
 
 ## Markdownguides
 -  <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">Markdownguide.org</a>
@@ -50,8 +51,9 @@ title: Links
 -  <a href="https://app.diagrams.net" target="_blank" >Erstellen von Diagrammen</a>
 -  <a href="https://strukto.io/" target="_blank" >Struktogramme für Programmierer</a>
 -  <a href="https://www.matheretter.de/wiki/binarzahlen" target="_blank">Matheretter-Binärzahlen</a>
--  <a href="https://wiki.debian.org/SystemMonitoring" target="_blank">Linux Monitoring</a> # URL mit Tab 
+-  <a href="https://wiki.debian.org/SystemMonitoring" target="_blank">Linux Monitoring</a>
 -  <a href="https://qualidy.github.io/wiki-docker/" target="_blank" >Docker</a>
+-  <a href="https://www.hackingarticles.in/privacy-protection-encrypted-dns/" target="_blank" >Verschlüsseltes DNS</a>
 
 
 ## Programing

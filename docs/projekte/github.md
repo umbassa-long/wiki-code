@@ -125,6 +125,10 @@ git push -u origin main
 git clone https://github.com/DEINNAME/DEINREPO.git # laden der vollständigen github copie
 ```
 
+### Weitere Befehle
+
+![Befehle](../bilder/git-cheatsheet.jpg)
+
 ### Optionen im Merge Editor
 
 ***In VS Code hast du oben vier Buttons:***
