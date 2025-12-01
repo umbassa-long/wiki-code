@@ -31,7 +31,10 @@ title: Links
     Jettison All Cargo :material-delete-empty:
 ```
 
-[LearningApp](https://learningapps.org/)
+[LearningApp](https://learning/apps.org)
+[Cryptpad](https://cryptpad.fr/)
+[Genially](https://genially.com/de/)
+[Websim](https://websim.com/@Nokix/datentyp-explorer-byte-short-int-long)
 
 
 ## Markdownguides
