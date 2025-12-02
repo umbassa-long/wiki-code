@@ -1,27 +1,24 @@
+# ====================================================================
+# BASIS KONFIGURATION
+# ====================================================================
 site_name: Wissensspeicher
 site_url: https://wiki-code.github.io/
 site_description: Mein Wissensspeicher
 repo_url: https://github.com/umbassa-long/wiki-code
 repo_name: GitHub
 
+# ====================================================================
+# THEME KONFIGURATION (Material for MkDocs)
+# ====================================================================
 theme:
   name: material
+  
+  # Schriftarten (richtig eingerückt)
   font:
     text: Roboto
     code: Roboto Mono
 
-  plugins:
-  - macros
-  - git-revision-date-localized:
-      enabled: true
-      type: timeago
-      locale: de
-      date_format: "%d. %B %Y"
-
-  extra:
-  revision:
-    date: true
-
+  # Theme-Features (richtig eingerückt)
   features:
     - navigation.tabs
     - navigation.instant
@@ -31,7 +28,8 @@ theme:
     - navigation.footer
     - navigation.top
 
-palette:
+  # Farbpalette (richtig eingerückt)
+  palette:
     - scheme: default # Helles Schema
       primary: light blue
       accent: indigo
@@ -44,44 +42,62 @@ palette:
       toggle:
         icon: material/brightness-4
         name: Zum hellen Modus wechseln
-        
+
+# ====================================================================
+# PLUGINS (RICHTIG EINGEBRINGT, AUF DER GLEICHEN EBENE WIE 'theme')
+# ====================================================================
+plugins: 
+  - macros
+  - git-revision-date-localized:
+      enabled: true
+      type: timeago
+      locale: de
+      date_format: "%d. %B %Y"
+
+# ====================================================================
+# EXTRA (Globale Metadaten, RICHTIG EINGEBRINGT)
+# ====================================================================
+extra:
+  revision:
+    date: true
   # HIER DIE SCHRIFTART EINFÜGEN (Optional):
-
-
+  # Dieser Kommentar war vorher falsch platziert.
+  
+# ====================================================================
+# MARKDOWN EXTENSIONS
+# ====================================================================
 markdown_extensions:
-  - attr_list # Wichtig für Attribute wie { .highlight }
-  - admonition # Wichtig für Hinweis-Boxen (Info, Warning, etc.)
-  - pymdownx.details # Wichtig für zusammenklappbare Blöcke
-  - pymdownx.superfences # Wichtig für erweitertes Code-Highlighting
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true # Wichtig für Tabs in Inhalten
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight: # Erweitertes Code-Highlighting
+  - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.snippets # Wichtig für das Einbetten von Code-Blöcken
+  - pymdownx.snippets
   - toc:
       permalink: true
 
-nav:
-    - Wissensspeicher: index.md
-#  - 📘 Inhaltsübersicht: summary.md
-    - Code:
-      - Welcome to MkDocs: code/welcome.md
-    - Links:
-      - Links & Ressourcen: links/links.md
-    - Markdown:
-      - Formatierung: markdown/formatierung.md
-      - Grundlagen: markdown/grundlagen.md
-      - Markdown-Tabellen: markdown/tabellen.md
-      - Highlighting: markdown/admonition.md
-      - Emoji: markdown/emoji.md
-    - How Tos:
-#       Diese Dateien müssen existieren oder entfernen
-#      - Projekt1: projekte/projekt1.md
- #     - Projekt2: projekte/projekt2.md
-    - Tools:
-      - Docker: tools/docker.md
-      - Git: tools/git.md
+# ====================================================================
+# NAVIGATION (NAV)
+# ====================================================================
 
+nav: # Sehr wichtig. die "nav:" Unterpunkte müssen zusammenhängend sein und dürfen nicht mit einer auskommentierten Zeile unterbrochen werden" 
+  - Wissensspeicher: index.md
+  - Code:
+    - Welcome to MkDocs: code/welcome.md
+  - Links:
+    - Links & Ressourcen: links/links.md
+  - Markdown:
+    - Formatierung: markdown/formatierung.md
+    - Grundlagen: markdown/grundlagen.md
+    - Markdown-Tabellen: markdown/tabellen.md
+    - Highlighting: markdown/admonition.md
+    - Emoji: markdown/emoji.md
+  - Tools:
+    - Docker: tools/docker.md
+    - Git: tools/git.md
