@@ -1,11 +1,69 @@
 site_name: Wissensspeicher
 site_url: https://wiki-code.github.io/
 site_description: Mein Wissensspeicher
+repo_url: https://github.com/umbassa-long/wiki-code
+repo_name: GitHub
 
 theme:
   name: material
 
-  nav:
+  plugins:
+  - macros
+  - git-revision-date-localized:
+      enabled: true
+      type: timeago
+      locale: de
+      date_format: "%d. %B %Y"
+
+  extra:
+  revision:
+    date: true
+
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.expand
+    - content.tabs.link
+    - toc.follow
+    - navigation.footer
+    - navigation.top
+
+palette:
+    - scheme: default # Helles Schema
+      primary: light blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Zum dunklen Modus wechseln
+    - scheme: slate # Dunkles Schema
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Zum hellen Modus wechseln
+        
+  # HIER DIE SCHRIFTART EINFÜGEN (Optional):
+font:
+  text: Roboto
+  code: Roboto Mono
+
+markdown_extensions:
+  - attr_list # Wichtig für Attribute wie { .highlight }
+  - admonition # Wichtig für Hinweis-Boxen (Info, Warning, etc.)
+  - pymdownx.details # Wichtig für zusammenklappbare Blöcke
+  - pymdownx.superfences # Wichtig für erweitertes Code-Highlighting
+  - pymdownx.tabbed:
+      alternate_style: true # Wichtig für Tabs in Inhalten
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight: # Erweitertes Code-Highlighting
+      anchor_linenums: true
+  - pymdownx.snippets # Wichtig für das Einbetten von Code-Blöcken
+  - toc:
+      permalink: true
+
+nav:
   - Wissensspeicher: index.md
 #  - 📘 Inhaltsübersicht: summary.md
   - Code:

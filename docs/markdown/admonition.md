@@ -1,7 +1,7 @@
 ﻿
 ## Admonition-Typen
 
-1. __Standard-Hinweise__ (Grau, Blau, Grün)
+1. **Standard-Hinweise** (Grau, Blau, Grün)
 Diese sind ideal für allgemeine Informationen, Hintergrundwissen oder Tipps.
 
 | Typ | Farbe / Icon | Typischer Zweck |
@@ -12,7 +12,7 @@ tip / hint | 🟢 Grün | "Nützliche Tipps, Abkürzungen oder gute Praktiken."
 success | 🟢 Grün | "Bestätigung einer erfolgreichen Aktion, positives Ergebnis."
 question | 🟣 Lila | "Fragen oder Punkte, die zur Diskussion anregen sollen."
 
-2. __Warnungen und Dringlichkeit__ (Gelb, Rot)
+2. **Warnungen und Dringlichkeit** (Gelb, Rot)
 Diese lenken die Aufmerksamkeit des Benutzers auf kritische Punkte.
 
 |Typ | Farbe / Icon | Typischer Zweck|
@@ -22,7 +22,7 @@ caution / attention | 🟡 Gelb | "Vorsichtshinweise, die möglicherweise zu Pro
 failure | 🔴 Rot | "Negative Ergebnisse, Fehlschläge."
 danger / error | 🔴 Rot | "Kritische Warnung, Dinge, die nicht getan werden dürfen (führt zu Datenverlust, etc.)."
 
-3. __Spezielle Typen__
+3. **Spezielle Typen**
 Diese Typen sind nützlich für organisatorische Inhalte
 
 | Typ | Farbe / Icon | Typischer Zweck | 
@@ -31,7 +31,7 @@ bug | 🪲 Orange | Hinweise auf bekannte Fehler oder Bugs.
 example | 🟢 Grün/Blau | Hervorhebung eines Code-Beispiels oder Anwendungsfalls.
 quote / cite | 🔵 Blau | Zitate oder Referenzen.
 
-## __Syntax__
+## Syntax
 
 Basis Syntax
 
@@ -55,6 +55,7 @@ Basis Syntax
     Dies ist ein allgemeiner Hinweis für den Leser.
     Sie müssen hier nichts Besonderes beachten.
 ```
+
 !!! note 
     Dies ist ein allgemeiner Hinweis für den Leser.
     Sie müssen hier nichts Besonderes beachten.
