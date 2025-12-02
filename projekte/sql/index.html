@@ -10,10 +10,8 @@
       
       
       
-        <link rel="canonical" href="https://wiki-code.github.io/tools/git/">
+        <link rel="canonical" href="https://wiki-code.github.io/projekte/sql/">
       
-      
-        <link rel="prev" href="../docker/">
       
       
       
@@ -25,7 +23,7 @@
     
     
       
-        <title>Git - Wissensspeicher</title>
+        <title>SQL - Wissensspeicher</title>
       
     
     
@@ -77,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#sql" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git
+              SQL
             
           </span>
         </div>
@@ -255,13 +258,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../docker/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../tools/docker/" class="md-tabs__link">
           
   
   
@@ -722,29 +723,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -762,7 +760,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -780,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../tools/docker/" class="md-nav__link">
         
   
   
@@ -805,17 +803,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../tools/git/" class="md-nav__link">
         
   
   
@@ -831,7 +822,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -861,6 +851,55 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regeln-zum-select-befehl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regeln zum SELECT Befehl
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regeln zum SELECT Befehl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wichtige-regeln-und-reihenfolge-der-klauseln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wichtige Regeln und Reihenfolge der Klauseln
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zusatzliche-wichtige-syntax-regeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✨ Zusätzliche wichtige Syntax-Regeln
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -880,9 +919,49 @@
   
 
 
-  <h1>Git</h1>
-
-
+<h1 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
+<h2 id="regeln-zum-select-befehl">Regeln zum SELECT Befehl<a class="headerlink" href="#regeln-zum-select-befehl" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">Spaltennamen</span><span class="w"> </span><span class="o">|</span><span class="mi">2</span><span class="p">.</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Tabellenname</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">[</span><span class="k">WHERE</span><span class="w"> </span><span class="n">Suchbedingung</span><span class="p">]</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">[</span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Spaltennamen</span><span class="p">]</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">[</span><span class="k">HAVING</span><span class="w"> </span><span class="n">Gruppenbedingung</span><span class="p">]</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">[</span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Spaltennamen</span><span class="w"> </span><span class="p">[</span><span class="k">ASC</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">DESC</span><span class="p">]];</span>
+</code></pre></div>
+<h3 id="wichtige-regeln-und-reihenfolge-der-klauseln">Wichtige Regeln und Reihenfolge der Klauseln<a class="headerlink" href="#wichtige-regeln-und-reihenfolge-der-klauseln" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Die Reihenfolge der wichtigsten Klauseln ist streng festgelegt:</p>
+</div>
+<hr />
+<ol>
+<li>
+<p>SELECT: 🔎 Wählt die Spalten aus, die in der Ergebnisliste erscheinen sollen. Syntax: SELECT Spalte1, Spalte2, ... oder SELECT * (für alle Spalten).</p>
+</li>
+<li>
+<p>FROM: 📚 Gibt an, aus welcher Tabelle oder welchen Tabellen die Daten stammen. Syntax: FROM Tabellenname (oder Verknüpfungen/Joins von Tabellen).</p>
+</li>
+<li>
+<p>WHERE: ⚙️ Filtert die einzelnen Zeilen basierend auf einer oder mehreren Bedingungen. Dies geschieht bevor die Gruppierung (falls vorhanden) stattfindet. Syntax: WHERE Bedingung (z. B. Alter &gt; 18 AND Stadt = 'Berlin').</p>
+</li>
+<li>
+<p>GROUP BY: 📊 Gruppiert Zeilen mit denselben Werten in den angegebenen Spalten. Wird typischerweise mit Aggregatfunktionen (wie SUM(), COUNT(), AVG()) verwendet. Syntax: GROUP BY Spalte1, Spalte2.</p>
+</li>
+<li>
+<p>HAVING: 🛡️ Filtert die Gruppen, die durch GROUP BY erstellt wurden, basierend auf einer Bedingung. Syntax: HAVING Aggregatbedingung (z. B. HAVING COUNT(*) &gt; 10).</p>
+</li>
+<li>
+<p>ORDER BY: 🗃️ Sortiert die Ergebniszeilen in aufsteigender (ASC, Standard) oder absteigender (DESC) Reihenfolge.
+Syntax: ORDER BY Spalte [DESC].</p>
+</li>
+</ol>
+<h3 id="zusatzliche-wichtige-syntax-regeln">✨ Zusätzliche wichtige Syntax-Regeln<a class="headerlink" href="#zusatzliche-wichtige-syntax-regeln" title="Permanent link">&para;</a></h3>
+<p>Schlüsselwörter: SQL-Schlüsselwörter wie SELECT, FROM, WHERE können in Groß- oder Kleinschreibung geschrieben werden (SQL ist nicht case-sensitiv bei Schlüsselwörtern), aber Großschreibung wird aus Gründen der Lesbarkeit oft empfohlen.</p>
+<p>Aliase: Sie können Spalten oder Tabellen einen Alias (einen temporären, neuen Namen) mit dem Schlüsselwort AS geben.</p>
+<p>Beispiel: SELECT Name AS Kundenname FROM Kunden AS K.</p>
+<p>Eindeutige Werte: Das Schlüsselwort DISTINCT wird unmittelbar nach SELECT platziert, um nur eindeutige (doppelte Zeilen werden entfernt) Ergebnisse zurückzugeben.</p>
+<p>Beispiel: SELECT DISTINCT Stadt FROM Kunden.</p>
+<p>Zeilenende: SQL-Anweisungen werden in den meisten Systemen mit einem Semikolon (;) abgeschlossen, obwohl dies oft nur für das Trennen mehrerer Befehle erforderlich ist. Es ist aber eine Best Practice.</p>
+<p>Kommas: Spalten in der SELECT-Liste und in der GROUP BY- oder ORDER BY-Liste werden durch Kommas getrennt.</p>
 
 
 
@@ -903,7 +982,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4. November 2025 08:08:30 UTC"><span class="timeago" datetime="2025-11-04T08:08:30+00:00" locale="de"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4. November 2025 08:08:30 UTC">2025-11-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2. Dezember 2025 19:55:37 UTC"><span class="timeago" datetime="2025-12-02T19:55:37+00:00" locale="de"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2. Dezember 2025 19:55:37 UTC">2025-12-02</span>
   </span>
 
     
@@ -936,28 +1015,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../docker/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Docker">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Docker
-              </div>
-            </div>
-          </a>
-        
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">

@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://wiki-code.github.io/markdown/formatierung/">
       
       
-        <link rel="prev" href="../emoji/">
+        <link rel="prev" href="../../links/links/">
       
       
         <link rel="next" href="../grundlagen/">
@@ -33,6 +33,9 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -50,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../../css/timeago.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -59,7 +64,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -80,9 +92,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Wissensspeicher" class="md-header__button md-logo" aria-label="Wissensspeicher" data-md-component="logo">
       
@@ -111,51 +121,49 @@
       </div>
     </div>
     
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo"  aria-label="Zum dunklen Modus wechseln"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Zum dunklen Modus wechseln" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Zum hellen Modus wechseln"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Zum hellen Modus wechseln" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      
     
+      <div class="md-header__source">
+        <a href="https://github.com/umbassa-long/wiki-code" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -165,6 +173,116 @@
       
       
         
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Wissensspeicher
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../code/welcome/" class="md-tabs__link">
+          
+  
+  
+  Code
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../links/links/" class="md-tabs__link">
+          
+  
+  
+  Links
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Markdown
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tools/docker/" class="md-tabs__link">
+          
+  
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
           
         
       
@@ -179,8 +297,10 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Wissensspeicher" class="md-nav__button md-logo" aria-label="Wissensspeicher" data-md-component="logo">
       
@@ -190,6 +310,18 @@
     </a>
     Wissensspeicher
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/umbassa-long/wiki-code" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -207,88 +339,7 @@
   <span class="md-ellipsis">
     
   
-    🚀 Willkommen im Wissensspeicher
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../hochladen/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Code
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../indextest/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Testkarten
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Welcome to MkDocs
+    Wissensspeicher
   
 
     
@@ -310,16 +361,21 @@
     
     
     
+    
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -337,8 +393,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -362,7 +418,7 @@
   <span class="md-ellipsis">
     
   
-    Welcome
+    Welcome to MkDocs
   
 
     
@@ -393,15 +449,20 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -419,8 +480,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -444,7 +505,7 @@
   <span class="md-ellipsis">
     
   
-    Links
+    Links & Ressourcen
   
 
     
@@ -477,15 +538,21 @@
     
     
     
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -503,8 +570,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -513,62 +580,6 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../admonition/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Admonition
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../emoji/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Emoji
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -658,83 +669,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#listen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Listen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#darstellung-von-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Darstellung von Code
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Links
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#emojis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Emojis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sonderzeichen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sonderzeichen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#abkurzungserweiterung" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Abkürzungserweiterung
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verlinkung-von-bilder" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verlinkung von Bilder
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -779,34 +713,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../leereMDdatei/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    leereMDdatei
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../tabellen/" class="md-nav__link">
         
   
@@ -814,7 +720,63 @@
   <span class="md-ellipsis">
     
   
-    Tabellen
+    Markdown-Tabellen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admonition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Highlighting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emoji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emoji
   
 
     
@@ -845,153 +807,20 @@
     
     
     
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Projekte
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Projekte
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../projekte/github/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Github
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../projekte/leereMDdatei/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    leereMDdatei
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../projekte/projekt2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Wichtige Docker Befehle
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
       
       
-  
-  
-  
-  
-    
-    
-    
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1009,8 +838,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1063,34 +892,6 @@
     
   
     Git
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tools/leereMDdatei/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    leereMDdatei
   
 
     
@@ -1159,83 +960,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#listen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Listen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#darstellung-von-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Darstellung von Code
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Links
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#emojis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Emojis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sonderzeichen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sonderzeichen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#abkurzungserweiterung" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Abkürzungserweiterung
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verlinkung-von-bilder" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verlinkung von Bilder
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1252,9 +976,12 @@
                   
 
 
+  
+  
 
-<h1 id="formatierung">Formatierung</h1>
-<h3 id="text-basisformatierung-inline">🅰️ Text-Basisformatierung (Inline)</h3>
+
+<h1 id="formatierung">Formatierung<a class="headerlink" href="#formatierung" title="Permanent link">&para;</a></h1>
+<h3 id="text-basisformatierung-inline">🅰️ Text-Basisformatierung (Inline)<a class="headerlink" href="#text-basisformatierung-inline" title="Permanent link">&para;</a></h3>
 <p>Hier sehen Sie die Syntax und das gerenderte Ergebnis.</p>
 <table>
 <thead>
@@ -1314,72 +1041,81 @@
 </table>
 <hr />
 <hr />
-<h3 id="uberschriften">Überschriften</h3>
-<p>=== "Darstellung"</p>
-<pre><code># Überschrift 1
-## Überschrift 2
-### Überschrift 3
-#### Überschrift 4
-##### Überschrift 5
-###### Überschrift 6
-</code></pre>
-<p>=== "Syntax"</p>
-<pre><code>```markdown
-# Überschrift 1
-## Überschrift 2
-### Überschrift 3
-#### Überschrift 4
-##### Überschrift 5
-###### Überschrift 6
-```
-</code></pre>
-<h3 id="listen">Listen</h3>
-<p>=== "Unsortiert"</p>
-<pre><code>- Listenpunkt 1
-- Listenpunkt 2
-- Listenpunkt 3
-</code></pre>
-<p>=== "Syntax"</p>
-<pre><code>```markdown
-- Listenpunkt 1
-- Listenpunkt 2
-- Listenpunkt 3
-```
-</code></pre>
-<p>=== "Sortiert"</p>
-<pre><code>1. Listenpunkt 1
-2. Listenpunkt 2
-3. Listenpunkt 3
-</code></pre>
-<p>=== "Syntax"</p>
-<pre><code>```markdown
-1. Listenpunkt 1
-2. Listenpunkt 2
-3. Listenpunkt 3
-```
-</code></pre>
+<h3 id="uberschriften">Überschriften<a class="headerlink" href="#uberschriften" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Darstellung</label><label for="__tabbed_1_2">Syntax</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<h1 id="uberschrift-1">Überschrift 1<a class="headerlink" href="#uberschrift-1" title="Permanent link">&para;</a></h1>
+<h2 id="uberschrift-2">Überschrift 2<a class="headerlink" href="#uberschrift-2" title="Permanent link">&para;</a></h2>
+<h3 id="uberschrift-3">Überschrift 3<a class="headerlink" href="#uberschrift-3" title="Permanent link">&para;</a></h3>
+<h4 id="uberschrift-4">Überschrift 4<a class="headerlink" href="#uberschrift-4" title="Permanent link">&para;</a></h4>
+<h5 id="uberschrift-5">Überschrift 5<a class="headerlink" href="#uberschrift-5" title="Permanent link">&para;</a></h5>
+<h6 id="uberschrift-6">Überschrift 6<a class="headerlink" href="#uberschrift-6" title="Permanent link">&para;</a></h6>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gh"># Überschrift 1</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gu">## Überschrift 2</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gu">### Überschrift 3</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gu">#### Überschrift 4</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gu">##### Überschrift 5</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="gu">###### Überschrift 6</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="listen">Listen<a class="headerlink" href="#listen" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Unsortiert</label><label for="__tabbed_2_2">Syntax</label><label for="__tabbed_2_3">Sortiert</label><label for="__tabbed_2_4">Syntax</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>Listenpunkt 1</li>
+<li>Listenpunkt 2</li>
+<li>Listenpunkt 3</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">-</span><span class="w"> </span>Listenpunkt 1
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">-</span><span class="w"> </span>Listenpunkt 2
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">-</span><span class="w"> </span>Listenpunkt 3
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Listenpunkt 1</li>
+<li>Listenpunkt 2</li>
+<li>Listenpunkt 3</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">1.</span> Listenpunkt 1
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">2.</span> Listenpunkt 2
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">3.</span> Listenpunkt 3
+</code></pre></div>
+</div>
+</div>
+</div>
 <p><strong>Checkliste</strong></p>
 <ul>
 <li>Markdown gibt Ihnen zusätzlich die Möglichkeit, Checklisten zu erstellen. Diese erscheinen mit einem Kästchen.
 Sie können auch beim erstellen der Liste Häkchen setzen. 
 Nutzen Sie hierfür eckige Klammern und ein X.</li>
 </ul>
-<pre><code class="language-markdown">- [ ] A
-- [x] B
-- [ ] C
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">- [ ]</span> A
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">- [x]</span> B
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">- [ ]</span> C
+</code></pre></div>
 <ul>
 <li>[ ] A</li>
 <li>[x] B</li>
 <li>[ ] C</li>
 </ul>
 <p><strong>Checkliste in Tabellenform</strong></p>
-<pre><code class="language-markdown">| Aufgabe | Status |
-|----------|--------|
-| A | [x] |
-| B | [ ] |
-| C | [ ] |
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>| Aufgabe | Status |
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>|----------|--------|
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>| A | [x] |
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>| B | [ ] |
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>| C | [ ] |
+</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -1402,33 +1138,30 @@ Nutzen Sie hierfür eckige Klammern und ein X.</li>
 </tr>
 </tbody>
 </table>
-<h3 id="darstellung-von-code">Darstellung von Code</h3>
+<h3 id="darstellung-von-code">Darstellung von Code<a class="headerlink" href="#darstellung-von-code" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Apostroph vor und nach dem Wort siehe <code>code</code>.</li>
 <li><code>Zwei Apostrophe an Anfang und Ende hebt jeweils ein Apostroph auf, siehe `code`.</code></li>
 <li>Drei Apostrophe Anfang und Ende, sowie der Name der Programmiersprache. 
    Damit wird highlighting aktiviert</li>
 </ul>
-<h3 id="links">Links</h3>
+<h3 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h3>
 <p><strong>Links ins Internet</strong>
 - Optionaler Tooltip: Fügen Sie einen Titel in Anführungszeichen nach der URL ein, 
   der angezeigt wird, wenn man mit der Maus über den Link fährt.</p>
-<pre><code class="language-markdown">
-- [Emojis](https://gist.github.com/rxaviers/7360908&quot;Text beim Maus gleiten&quot;)
-
-
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">-</span><span class="w"> </span>[<span class="nt">Emojis</span>](<span class="na">https://gist.github.com/rxaviers/7360908&quot;Text beim Maus gleiten&quot;</span>)
+</code></pre></div>
 <ul>
 <li>Links ins Internet 
         - Es wird ein neuer Tab geöffnet.</li>
 </ul>
-<pre><code class="language-html">&lt;a href=&quot;https://qualidy.github.io/wiki-docker&quot; target=&quot;_blank&quot;&gt;Docker&lt;/a&gt;
-</code></pre>
-<h3 id="emojis">Emojis</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://qualidy.github.io/wiki-docker&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>Docker<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="emojis">Emojis<a class="headerlink" href="#emojis" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://gist.github.com/rxaviers/7360908">Emojis</a></li>
 </ul>
-<h3 id="sonderzeichen">Sonderzeichen</h3>
+<h3 id="sonderzeichen">Sonderzeichen<a class="headerlink" href="#sonderzeichen" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Asterisk: *</li>
 <li>Bindestrich: -</li>
@@ -1442,24 +1175,25 @@ Nutzen Sie hierfür eckige Klammern und ein X.</li>
 <li>Gravis: `</li>
 <li>Backslash: \</li>
 </ul>
-<p>!!! info 
-    Backslash hebt die Bedeutung eines darauf folgenden Sonderzeichen auf.</p>
-<h3 id="abkurzungserweiterung">Abkürzungserweiterung</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Backslash hebt die Bedeutung eines darauf folgenden Sonderzeichen auf.</p>
+</div>
+<h3 id="abkurzungserweiterung">Abkürzungserweiterung<a class="headerlink" href="#abkurzungserweiterung" title="Permanent link">&para;</a></h3>
 <p>Den Mauszeiger über großgeschriebenen Begriff bewegen.</p>
-<pre><code class="language-markdown">*[WINNETOU]: Er ist der Chief-Influencer der Apachen. Reitet meistens auf seinem Pferd Iltschi durch die Prärie, hat nie einen Bad Hair Day, egal wie stürmisch es wird.
-*[APACHEN]: Sie reiten schneller, schießen besser und sind insgesamt viel zu ehrenhaft für die fiesen Tricks ihrer Gegenspieler. Sie sind die, die am Ende das Lagerfeuer löschen und dafür sorgen, dass der Sonnenuntergang auch morgen noch schön rot ist.
-*[ÖLPRINZ]: Das ist der Typ, der sich dachte: &quot;Ich bau' hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck 
-
-Die **APACHEN** unter ihrem edlen Häuptling **WINNETOU** ritten entschlossen in den Kampf, um die Machenschaften des **ÖLPRINZ** 
-**Winnetou** Angriff zielte darauf ab, die von den Handlangern des **Ölprinz** durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.
-
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>*[WINNETOU]: Er ist der Chief-Influencer der Apachen. Reitet meistens auf seinem Pferd Iltschi durch die Prärie, hat nie einen Bad Hair Day, egal wie stürmisch es wird.
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>*[APACHEN]: Sie reiten schneller, schießen besser und sind insgesamt viel zu ehrenhaft für die fiesen Tricks ihrer Gegenspieler. Sie sind die, die am Ende das Lagerfeuer löschen und dafür sorgen, dass der Sonnenuntergang auch morgen noch schön rot ist.
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>*[ÖLPRINZ]: Das ist der Typ, der sich dachte: &quot;Ich bau&#39; hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck 
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>Die <span class="gs">**APACHEN**</span> unter ihrem edlen Häuptling <span class="gs">**WINNETOU**</span> ritten entschlossen in den Kampf, um die Machenschaften des <span class="gs">**ÖLPRINZ**</span> 
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="gs">**Winnetou**</span> Angriff zielte darauf ab, die von den Handlangern des <span class="gs">**Ölprinz**</span> durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.
+</code></pre></div>
 <p>*[APACHEN]: Sie reiten schneller, schießen besser und sind insgesamt viel zu ehrenhaft für die fiesen Tricks ihrer Gegenspieler. Sie sind die, die am Ende das Lagerfeuer löschen und dafür sorgen, dass der Sonnenuntergang auch morgen noch schön rot ist. unter ihrem edlen Häuptling</p>
 <p>*[WINNETOU]: Er ist der Chief-Influencer der Apachen. Reitet meistens auf seinem Pferd Iltschi durch die Prärie, hat nie einen Bad Hair Day, egal wie stürmisch es wird.</p>
 <p>*[ÖLPRINZ]: Das ist der Typ, der sich dachte: "Ich bau' hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck und seiner skrupellosen Gehilfen zu beenden.</p>
 <p>Die <strong>APACHEN</strong> unter ihrem edlen Häuptling <strong>WINNETOU</strong> ritten entschlossen in den Kampf, um die Machenschaften des <strong>ÖLPRINZ</strong> 
 <strong>Winnetou</strong> Angriff zielte darauf ab, die von den Handlangern des <strong>Ölprinz</strong> durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.</p>
-<h3 id="verlinkung-von-bilder">Verlinkung von Bilder</h3>
+<h3 id="verlinkung-von-bilder">Verlinkung von Bilder<a class="headerlink" href="#verlinkung-von-bilder" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1489,6 +1223,27 @@ Die **APACHEN** unter ihrem edlen Häuptling **WINNETOU** ritten entschlossen in
 
 
 
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="21. November 2025 07:36:48 UTC"><span class="timeago" datetime="2025-11-21T07:36:48+00:00" locale="de"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="21. November 2025 07:36:48 UTC">2025-11-21</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
 
 
 
@@ -1499,12 +1254,60 @@ Die **APACHEN** unter ihrem edlen Häuptling **WINNETOU** ritten entschlossen in
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../links/links/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Links &amp; Ressourcen">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Links & Ressourcen
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../grundlagen/" class="md-footer__link md-footer__link--next" aria-label="Next: Grundlagen">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Grundlagen
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1531,10 +1334,14 @@ Die **APACHEN** unter ihrem edlen Häuptling **WINNETOU** ritten entschlossen in
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.expand", "content.tabs.link", "toc.follow", "navigation.footer", "navigation.top"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../js/timeago.min.js"></script>
+      
+        <script src="../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>
