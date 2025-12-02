@@ -6,6 +6,9 @@ repo_name: GitHub
 
 theme:
   name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
 
   plugins:
   - macros
@@ -43,9 +46,7 @@ palette:
         name: Zum hellen Modus wechseln
         
   # HIER DIE SCHRIFTART EINFÜGEN (Optional):
-font:
-  text: Roboto
-  code: Roboto Mono
+
 
 markdown_extensions:
   - attr_list # Wichtig für Attribute wie { .highlight }
@@ -64,23 +65,23 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Wissensspeicher: index.md
+    - Wissensspeicher: index.md
 #  - 📘 Inhaltsübersicht: summary.md
-  - Code:
+    - Code:
       - Welcome to MkDocs: code/welcome.md
-  - Links:
+    - Links:
       - Links & Ressourcen: links/links.md
-  - Markdown:
+    - Markdown:
       - Formatierung: markdown/formatierung.md
       - Grundlagen: markdown/grundlagen.md
       - Markdown-Tabellen: markdown/tabellen.md
       - Highlighting: markdown/admonition.md
       - Emoji: markdown/emoji.md
-  - How Tos:
+    - How Tos:
 #       Diese Dateien müssen existieren oder entfernen
 #      - Projekt1: projekte/projekt1.md
  #     - Projekt2: projekte/projekt2.md
-  - Tools:
+    - Tools:
       - Docker: tools/docker.md
       - Git: tools/git.md
 
