@@ -154,23 +154,23 @@ Den Mauszeiger über großgeschriebenen Begriff bewegen.
 
 
 ```markdown
-*[WINNETOU]: Er ist der Chief-Influencer der Apachen. Reitet meistens auf seinem Pferd Iltschi durch die Prärie, hat nie einen Bad Hair Day, egal wie stürmisch es wird.
-*[APACHEN]: Sie reiten schneller, schießen besser und sind insgesamt viel zu ehrenhaft für die fiesen Tricks ihrer Gegenspieler. Sie sind die, die am Ende das Lagerfeuer löschen und dafür sorgen, dass der Sonnenuntergang auch morgen noch schön rot ist.
-*[ÖLPRINZ]: Das ist der Typ, der sich dachte: "Ich bau' hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck 
+[^WINNETOU]: Er ist der Chief-Influencer der Apachen. Reitet meistens auf seinem Pferd Iltschi durch die Prärie, hat nie einen Bad Hair Day, egal wie stürmisch es wird.
+[^APACHEN]: Sie reiten schneller, schießen besser und sind insgesamt viel zu ehrenhaft für die fiesen Tricks ihrer Gegenspieler. Sie sind die, die am Ende das Lagerfeuer löschen und dafür sorgen, dass der Sonnenuntergang auch morgen noch schön rot ist.
+[^ÖLPRINZ]: Das ist der Typ, der sich dachte: "Ich bau' hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck 
 
-Die **APACHEN** unter ihrem edlen Häuptling **WINNETOU** ritten entschlossen in den Kampf, um die Machenschaften des **ÖLPRINZ** 
-**Winnetou** Angriff zielte darauf ab, die von den Handlangern des **Ölprinz** durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.
+Die **APACHEN**[^APACHEN] unter ihrem edlen Häuptling **WINNETOU**[^WINNETOU] ritten entschlossen in den Kampf, um die Machenschaften des **ÖLPRINZ** [^ÖLPRINZ] zu beenden.
+**Winnetou** Angriff zielte darauf ab, die von den Handlangern des **Ölprinz**[^ÖLPRINZ] durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.
 
 ```
 
-*[APACHEN]: Sie reiten schneller, schießen besser und sind insgesamt viel zu ehrenhaft für die fiesen Tricks ihrer Gegenspieler. Sie sind die, die am Ende das Lagerfeuer löschen und dafür sorgen, dass der Sonnenuntergang auch morgen noch schön rot ist. unter ihrem edlen Häuptling
+[^APACHEN]: Sie reiten schneller, schießen besser und sind insgesamt viel zu ehrenhaft für die fiesen Tricks ihrer Gegenspieler. Sie sind die, die am Ende das Lagerfeuer löschen und dafür sorgen, dass der Sonnenuntergang auch morgen noch schön rot ist. unter ihrem edlen Häuptling
 
-*[WINNETOU]: Er ist der Chief-Influencer der Apachen. Reitet meistens auf seinem Pferd Iltschi durch die Prärie, hat nie einen Bad Hair Day, egal wie stürmisch es wird.
+[^WINNETOU]: Er ist der Chief-Influencer der Apachen. Reitet meistens auf seinem Pferd Iltschi durch die Prärie, hat nie einen Bad Hair Day, egal wie stürmisch es wird.
 
-*[ÖLPRINZ]: Das ist der Typ, der sich dachte: "Ich bau' hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck und seiner skrupellosen Gehilfen zu beenden.
+[^ÖLPRINZ]: Das ist der Typ, der sich dachte: "Ich bau' hier mal eine Fake-Tankstelle auf und verkaufe den Leuten wertlosen Dreck und seiner skrupellosen Gehilfen zu beenden.
 
-Die **APACHEN** unter ihrem edlen Häuptling **WINNETOU** ritten entschlossen in den Kampf, um die Machenschaften des **ÖLPRINZ** 
-**Winnetou** Angriff zielte darauf ab, die von den Handlangern des **Ölprinz** durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.
+Die **APACHEN**[^APACHEN] unter ihrem edlen Häuptling **WINNETOU**[^WINNETOU] ritten entschlossen in den Kampf, um die Machenschaften des **ÖLPRINZ**[^ÖLPRINZ] zu beenden
+**Winnetou**[^WINNETOU] Angriff zielte darauf ab, die von den Handlangern des **Ölprinz**[^ÖLPRINZ] durchgeführte Zerstörung des Landes und die Bedrohung ihres Stammes zu stoppen.
 
 ### Verlinkung von Bilder
 

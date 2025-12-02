@@ -81,6 +81,7 @@ markdown_extensions:
   - pymdownx.snippets
   - toc:
       permalink: true
+  - footnotes       # Fußnoten-Unterstützung
 
 # ====================================================================
 # NAVIGATION (NAV)
