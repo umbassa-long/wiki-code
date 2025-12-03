@@ -3,11 +3,24 @@
 ## Regeln zum SELECT Befehl
 
 ```SQL
-SELECT Spaltennamen |2. * FROM Tabellenname
-[WHERE Suchbedingung]
-[GROUP BY Spaltennamen]
-[HAVING Gruppenbedingung]
-[ORDER BY Spaltennamen [ASC | DESC]];
+SELECT
+    k.KundenName,
+    COUNT(b.Bestellnummer) AS AnzahlBestellungen,
+    SUM(b.Gesamtpreis) AS Gesamtumsatz
+FROM
+    Bestellungen b
+INNER JOIN
+    Kunden k ON b.KundenID = k.KundenID
+WHERE
+    b.Bestelldatum >= DATE('now', '-30 day')
+GROUP BY
+    k.KundenName -- Gruppierung nach Name
+HAVING
+    Gesamtumsatz >= 1000
+ORDER BY
+    Gesamtumsatz DESC
+LIMIT
+    10;
 ```
 
 ### Wichtige Regeln und Reihenfolge der Klauseln
@@ -16,6 +29,43 @@ SELECT Spaltennamen |2. * FROM Tabellenname
     Die Reihenfolge der wichtigsten Klauseln ist streng festgelegt:
     
 ---
+
+# SQL Query Logik: Ausführungsreihenfolge 
+
+## 1. Datenbasis festlegen
+| Schritt | Klausel | Beschreibung |
+| :--- | :--- | :--- |
+| START | **FROM** [Tabelle] | Wählt die Quelltabelle(n) aus. |
+| ↓ | | |
+
+## 2. Zeilen-Filterung (Prä-Aggregation)
+| Schritt | Klausel | Beschreibung |
+| :--- | :--- | :--- |
+| W | **WHERE** [Bedingung] | Filtert die **einzelnen Zeilen** der Tabelle, bevor sie gruppiert werden. **KEINE** Aggregatfunktionen erlaubt. |
+| ↓ | | |
+
+## 3. Aggregation und Gruppen-Filterung
+| Schritt | Klausel | Beschreibung |
+| :--- | :--- | :--- |
+| G | **GROUP BY** [Spalte] | Erstellt Gruppen von Zeilen. Dies ist die Basis für die Aggregation. |
+| H | **HAVING** [Aggregat-Bedingung] | Filtert die **Gruppen**, nachdem die Aggregatfunktionen (`SUM`, `COUNT`, etc.) berechnet wurden. |
+| ↓ | | |
+
+## 4. Auswahl und Sortierung
+| Schritt | Klausel | Beschreibung |
+| :--- | :--- | :--- |
+| S | **SELECT** [Spalten/Aggregaten] | Definiert die finalen **Ausgabespalten** und führt die Aggregatfunktionen aus. |
+| O | **ORDER BY** [Spalte] | Sortiert das finale Ergebnis (die ausgewählten Zeilen). |
+| L | **LIMIT** [Anzahl] | Begrenzt die Anzahl der zurückgegebenen Zeilen. |
+| ENDE | | |
+
+
+
+
+
+
+
+
 
 1. SELECT: 🔎 Wählt die Spalten aus, die in der Ergebnisliste erscheinen sollen. Syntax: SELECT Spalte1, Spalte2, ... oder SELECT * (für alle Spalten).
 

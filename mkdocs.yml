@@ -46,13 +46,13 @@ theme:
 # ====================================================================
 # PLUGINS (RICHTIG EINGEBRINGT, AUF DER GLEICHEN EBENE WIE 'theme')
 # ====================================================================
-plugins: 
+plugins:
   - macros
   - git-revision-date-localized:
       enabled: true
-      type: timeago
       locale: de
-      date_format: "%d. %B %Y"
+      type: date
+
 
 # ====================================================================
 # EXTRA (Globale Metadaten, RICHTIG EINGEBRINGT)
@@ -60,8 +60,6 @@ plugins:
 extra:
   revision:
     date: true
-  # HIER DIE SCHRIFTART EINFÜGEN (Optional):
-  # Dieser Kommentar war vorher falsch platziert.
   
 # ====================================================================
 # MARKDOWN EXTENSIONS
@@ -99,6 +97,7 @@ nav: # Sehr wichtig. die "nav:" Unterpunkte müssen zusammenhängend sein und d�
     - Markdown-Tabellen: markdown/tabellen.md
     - Highlighting: markdown/admonition.md
     - Emoji: markdown/emoji.md
-  - Tools:
-    - Docker: tools/docker.md
-    - Git: tools/git.md
+  - Projekte:
+    - Docker: projekte/docker.md
+    - Github: projekte/github.md
+    - SQL: projekte/sql.md

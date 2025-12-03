@@ -148,7 +148,7 @@ Nutzen Sie hierfür eckige Klammern und ein X.
 !!! info 
     Backslash hebt die Bedeutung eines darauf folgenden Sonderzeichen auf.
 
-### Abkürzungserweiterung
+### Fußnoten
 
 Den Mauszeiger über großgeschriebenen Begriff bewegen.
 
@@ -179,3 +179,7 @@ Die **APACHEN**[^APACHEN] unter ihrem edlen Häuptling **WINNETOU**[^WINNETOU] r
 | Bild von einer externen URL | `![Winnetou reitet](https://example.com/winnetou.jpg)` |
 | Bild aus dem gleichen Ordner | `![Blick auf die Prärie](praerie.png)` |
 | Bild aus einem Unterordner | `![Der Ölprinz](bilder/oelprinz.gif)` |
+
+### Hover Effekt
+
+<span style="color: green;" title="Dieser Text erscheint, wenn Sie mit der Maus über das Wort fahren.">Ihr Wort</span>

@@ -27,4 +27,3 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 | Thema | Beschreibung | Link |
 | :--- | :--- | :--- |
 | **:material-book-edit: Markdown** | Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen. | [Zur Anleitung :fontawesome-solid-arrow-right:](markdown/formatierung.md) |
-| **:material-tools: Tools & Setup** | Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces. | [Zu den Tools :fontawesome-solid-arrow-right:](tools/docker.md) |
