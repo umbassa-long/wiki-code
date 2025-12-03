@@ -51,8 +51,6 @@
       
     
     
-      <link rel="stylesheet" href="css/timeago.css">
-    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -266,11 +264,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="tools/docker/" class="md-tabs__link">
+        <a href="projekte/docker/" class="md-tabs__link">
           
   
   
-  Tools
+  Projekte
 
         </a>
       </li>
@@ -824,7 +822,7 @@
   <span class="md-ellipsis">
     
   
-    Tools
+    Projekte
   
 
     
@@ -840,7 +838,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Tools
+    Projekte
   
 
           </label>
@@ -853,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tools/docker/" class="md-nav__link">
+      <a href="projekte/docker/" class="md-nav__link">
         
   
   
@@ -881,14 +879,42 @@
   
   
     <li class="md-nav__item">
-      <a href="tools/git/" class="md-nav__link">
+      <a href="projekte/github/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Git
+    Github
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projekte/sql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL
   
 
     
@@ -1020,11 +1046,6 @@
 <td style="text-align: left;">Lernen Sie die Grundlagen der Formatierung, Tabellen und speziellen Hervorhebungen (Admonitions) kennen.</td>
 <td style="text-align: left;"><a href="markdown/formatierung/">Zur Anleitung <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h370.7L297.3 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span></a></td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg></span> Tools &amp; Setup</strong></td>
-<td style="text-align: left;">Schnellstart-Anleitungen für Docker und die Verwendung von Git in Ihren Codespaces.</td>
-<td style="text-align: left;"><a href="tools/docker/">Zu den Tools <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h370.7L297.3 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span></a></td>
-</tr>
 </tbody>
 </table>
 
@@ -1047,7 +1068,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2. Dezember 2025 19:55:37 UTC"><span class="timeago" datetime="2025-12-02T19:55:37+00:00" locale="de"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2. Dezember 2025 19:55:37 UTC">2025-12-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="3. Dezember 2025 21:29:36 UTC">3. Dezember 2025</span>
   </span>
 
     
@@ -1137,10 +1158,6 @@
     
     
       <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
-      
-        <script src="js/timeago.min.js"></script>
-      
-        <script src="js/timeago_mkdocs_material.js"></script>
       
     
   </body>

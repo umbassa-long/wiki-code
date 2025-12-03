@@ -13,6 +13,10 @@
         <link rel="canonical" href="https://wiki-code.github.io/projekte/github/">
       
       
+        <link rel="prev" href="../docker/">
+      
+      
+        <link rel="next" href="../sql/">
       
       
         
@@ -48,8 +52,6 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-    
-      <link rel="stylesheet" href="../../css/timeago.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -258,15 +260,17 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../tools/docker/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../docker/" class="md-tabs__link">
           
   
   
-  Tools
+  Projekte
 
         </a>
       </li>
@@ -723,33 +727,36 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Tools
+    Projekte
   
 
     
@@ -760,12 +767,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Tools
+    Projekte
   
 
           </label>
@@ -778,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/docker/" class="md-nav__link">
+      <a href="../docker/" class="md-nav__link">
         
   
   
@@ -803,17 +810,219 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../tools/git/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Github
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Git
+    Github
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-account-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub-Account einrichten
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#neues-projekt-repository-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neues Projekt (Repository) erstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codespaces
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Codespaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Einrichten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mit-dem-team-zusammenarbeiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mit dem Team zusammenarbeiten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codespace-schlieen-und-fortsetzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codespace schließen und fortsetzen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-arbeitsablauf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standard Arbeitsablauf
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-branch-aktueller-als-lokale-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Github-Branch aktueller als lokale Version***
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#einrichten-eines-lokalen-editor-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Einrichten eines lokalen Editor (VSCode)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weitere-befehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weitere Befehle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optionen-im-merge-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optionen im Merge Editor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL
   
 
     
@@ -906,17 +1115,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#code-bearbeiten-und-anderungen-verwalten" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Code Bearbeiten und Änderungen verwalten
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#mit-dem-team-zusammenarbeiten" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -943,6 +1141,17 @@
     <span class="md-ellipsis">
       
         Standard Arbeitsablauf
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-branch-aktueller-als-lokale-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Github-Branch aktueller als lokale Version***
       
     </span>
   </a>
@@ -1022,7 +1231,6 @@
 </li>
 </ol>
 <h2 id="neues-projekt-repository-erstellen"><strong>Neues Projekt (Repository) erstellen</strong><a class="headerlink" href="#neues-projekt-repository-erstellen" title="Permanent link">&para;</a></h2>
-<p>Ein <strong>Repository</strong> (Repo) ist der Speicherort für dein Projekt auf GitHub.</p>
 <ol>
 <li>
 <p><strong>Repository erstellen:</strong> Logge dich bei GitHub ein. Klicke oben rechts auf das <strong>Pluszeichen</strong> (+) und wähle <strong>"New repository"</strong> (Neues Repository).</p>
@@ -1034,7 +1242,7 @@
 <p><strong>Beschreibung</strong> (optional): Füge eine kurze Beschreibung deines Projekts hinzu.</p>
 </li>
 <li>
-<p>Sichtbarkeit: Wähle zwischen <strong>"Public"</strong> (öffentlich, jeder kann es sehen) und <strong>"Private"</strong> (privat, nur du und eingeladene Mitarbeiter können es sehen).</p>
+<p><strong>Sichtbarkeit:</strong> Wähle zwischen <strong>"Public"</strong> (öffentlich, jeder kann es sehen) und <strong>"Private"</strong> (privat, nur du und eingeladene Mitarbeiter können es sehen).</p>
 </li>
 <li>
 <p><strong>Initialisierung</strong> (optinal): Aktiviere das Kästchen <strong>"Add a README file"</strong> (README-Datei hinzufügen). Das ist eine gute Praxis, da die README-Datei oft eine Projektbeschreibung enthält.</p>
@@ -1070,45 +1278,6 @@
 <p><strong>Neuen Codespace erstellen:</strong> Klicke auf <strong>"Create codespace on main"</strong> (oder auf dem Branch, den du verwenden möchtest).</p>
 </li>
 </ol>
-<p>GitHub führt nun folgende Schritte automatisch im Hintergrund aus:</p>
-<ul>
-<li>
-<p>Es wird eine <strong>virtuelle Maschine (VM)</strong> zugewiesen.</p>
-</li>
-<li>
-<p>Es wird ein <strong>Entwicklungscontainer</strong> (mit allen notwendigen Tools und Abhängigkeiten) erstellt.</p>
-</li>
-<li>
-<p>Dein <strong>Repository</strong> wird in diesen Container geklont.</p>
-</li>
-<li>
-<p>Der <strong>VS Code Editor</strong> öffnet sich direkt in deinem Browser und zeigt deine Projektdateien an.</p>
-</li>
-</ul>
-<h3 id="code-bearbeiten-und-anderungen-verwalten"><strong>Code Bearbeiten und Änderungen verwalten</strong><a class="headerlink" href="#code-bearbeiten-und-anderungen-verwalten" title="Permanent link">&para;</a></h3>
-<p>Im Codespace nutzt du die integrierten Funktionen von VS Code, um deine Projektdateien zu bearbeiten und die Änderungen zu synchronisieren.</p>
-<p><strong>1. Dateien bearbeiten</strong>
-- Du kannst Dateien über den Dateiexplorer (links in der VS Code Seitenleiste) öffnen und bearbeiten.</p>
-<ul>
-<li>Das Terminal unten im Codespace funktioniert genau wie das Terminal auf deinem lokalen Computer, sodass du dort deine üblichen Befehle (z. B. zum Starten der Anwendung, Installieren von Paketen) ausführen kannst.</li>
-</ul>
-<p><strong>2. Git-Workflow</strong> (Committen und Pushen)
-Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, entfallen die Schritte git clone und die manuelle Authentifizierung.</p>
-<ul>
-<li>
-<p><strong>Änderungen einsehen:</strong> Klicke in der Seitenleiste auf das Quellcodeverwaltung-Symbol (drei Kreise, die Linien miteinander verbinden – das Git-Symbol).</p>
-</li>
-<li>
-<p><strong>Staging:</strong> Alle Änderungen werden dort als <strong>"Änderungen"</strong> angezeigt. Klicke auf das <strong>Pluszeichen (+)</strong> neben einer Datei oder neben <strong>"Änderungen"</strong>, um die Dateien zur Staging Area hinzuzufügen <code>(git add .)</code>.</p>
-</li>
-<li>
-<p><strong>Commit:</strong> Gib eine kurze, beschreibende <strong>Commit-Nachricht</strong> in das Textfeld ein (z. B. "Feature: Neue Navigation hinzugefügt"). Klicke dann auf <strong>"Commit"</strong>.</p>
-</li>
-<li>
-<p><strong>Push (Synchronisieren)</strong>: Klicke auf den Button <strong>"Änderungen synchronisieren"</strong> oder <strong>"Push"</strong> (kann auch ein Pfeilsymbol nach oben sein).</p>
-</li>
-</ul>
-<p>Diese Aktion überträgt deine Commits direkt von deinem Codespace in dein GitHub-Repository.</p>
 <h3 id="mit-dem-team-zusammenarbeiten"><strong>Mit dem Team zusammenarbeiten</strong><a class="headerlink" href="#mit-dem-team-zusammenarbeiten" title="Permanent link">&para;</a></h3>
 <p>Codespaces sind ideal für die Zusammenarbeit, da die Umgebung für jeden Mitarbeiter exakt gleich ist.</p>
 <ul>
@@ -1133,19 +1302,30 @@ Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, en
 </li>
 </ul>
 <h3 id="standard-arbeitsablauf">Standard Arbeitsablauf<a class="headerlink" href="#standard-arbeitsablauf" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="c1"># Änderungen markieren</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;KURZE BESCHREIBUNG&quot;</span><span class="w"> </span><span class="c1"># Änderung speichern</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>git<span class="w"> </span>push<span class="w"> </span><span class="c1"># Änderung zu Github hochladen</span>
+<ol>
+<li>lokales Testen</li>
+</ol>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>mkdocs<span class="w"> </span>build<span class="w"> </span>--site-dir<span class="w"> </span>site<span class="w"> </span>--clean<span class="w"> </span><span class="c1"># erste Fehler werden sichtbar</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>mkdocs<span class="w"> </span>serve<span class="w"> </span><span class="c1"># lokaler Server wird gestartet</span>
 </code></pre></div>
-<p><strong><em>Github-Branch aktueller als lokale Version</em></strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>pull<span class="w"> </span><span class="c1"># Neueste Änderungen von Github holen</span>
+- Seiten Aufruf erfolgt über 127.0.0.1:8000</p>
+<ul>
+<li>Wenn alles passt, dann folgt ...
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="c1"># Änderungen markieren</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;KURZE BESCHREIBUNG&quot;</span><span class="w"> </span><span class="c1"># Änderung speichern</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>git<span class="w"> </span>push<span class="w"> </span><span class="c1"># Änderung zu Github hochladen</span>
+</code></pre></div></li>
+</ul>
+<h3 id="github-branch-aktueller-als-lokale-version">Github-Branch aktueller als lokale Version***<a class="headerlink" href="#github-branch-aktueller-als-lokale-version" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>pull<span class="w"> </span><span class="c1"># Neueste Änderungen von Github holen</span>
 </code></pre></div>
 <h3 id="einrichten-eines-lokalen-editor-vscode">Einrichten eines lokalen Editor (VSCode)<a class="headerlink" href="#einrichten-eines-lokalen-editor-vscode" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/DEINNAME/DEINREPO.git
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/DEINNAME/DEINREPO.git<span class="w"> </span><span class="c1"># laden der vollständigen github copie</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/DEINNAME/DEINREPO.git
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/DEINNAME/DEINREPO.git<span class="w"> </span><span class="c1"># laden der vollständigen github copie</span>
 </code></pre></div>
 <h3 id="weitere-befehle">Weitere Befehle<a class="headerlink" href="#weitere-befehle" title="Permanent link">&para;</a></h3>
 <p><img alt="Befehle" src="../../bilder/git-cheatsheet.jpg" /></p>
@@ -1185,7 +1365,7 @@ Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, en
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="1. Dezember 2025 21:39:54 UTC"><span class="timeago" datetime="2025-12-01T21:39:54+00:00" locale="de"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="1. Dezember 2025 21:39:54 UTC">2025-12-01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="3. Dezember 2025 21:29:36 UTC">3. Dezember 2025</span>
   </span>
 
     
@@ -1219,6 +1399,44 @@ Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, en
         <footer class="md-footer">
   
     
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../docker/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Docker">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Docker
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../sql/" class="md-footer__link md-footer__link--next" aria-label="Next: SQL">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                SQL
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1249,10 +1467,6 @@ Da dein Codespace bereits dein Repository geklont hat und du angemeldet bist, en
     
     
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
-      
-        <script src="../../js/timeago.min.js"></script>
-      
-        <script src="../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>

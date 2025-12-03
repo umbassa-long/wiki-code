@@ -23,7 +23,7 @@
     
     
       
-        <title>leereMDdatei - Wissensspeicher</title>
+        <title>Google hacks - Wissensspeicher</title>
       
     
     
@@ -49,8 +49,6 @@
       
     
     
-      <link rel="stylesheet" href="../../css/timeago.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -74,6 +72,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#google-hacks" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -105,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              leereMDdatei
+              Google hacks
             
           </span>
         </div>
@@ -257,11 +260,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tools/docker/" class="md-tabs__link">
+        <a href="../docker/" class="md-tabs__link">
           
   
   
-  Tools
+  Projekte
 
         </a>
       </li>
@@ -744,7 +747,7 @@
   <span class="md-ellipsis">
     
   
-    Tools
+    Projekte
   
 
     
@@ -760,7 +763,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Tools
+    Projekte
   
 
           </label>
@@ -773,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/docker/" class="md-nav__link">
+      <a href="../docker/" class="md-nav__link">
         
   
   
@@ -801,14 +804,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/git/" class="md-nav__link">
+      <a href="../github/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Git
+    Github
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL
   
 
     
@@ -846,6 +877,38 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#suche-nach-offentlicher-ordnerauflistung-directory-listing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suche nach öffentlicher Ordnerauflistung (Directory Listing):
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suche-nach-bestimmten-dateitypen-im-offentlichen-bereich" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suche nach bestimmten Dateitypen im öffentlichen Bereich:
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -865,9 +928,17 @@
   
 
 
-  <h1>leereMDdatei</h1>
-
-
+<h1 id="google-hacks">Google hacks<a class="headerlink" href="#google-hacks" title="Permanent link">&para;</a></h1>
+<h2 id="suche-nach-offentlicher-ordnerauflistung-directory-listing">Suche nach öffentlicher Ordnerauflistung (Directory Listing):<a class="headerlink" href="#suche-nach-offentlicher-ordnerauflistung-directory-listing" title="Permanent link">&para;</a></h2>
+<p>site:(Name der Seite ohne https://) intitle:"Index of /"</p>
+<ol>
+<li>Lektion: Wenn diese Suche Ergebnisse liefert, bedeutet dies, dass der Server bei Eingabe eines falschen Pfades eine Liste aller Dateien und Unterordner anzeigt. Dies ist ein großer Konfigurationsfehler und ein perfektes (negatives) Schulungsbeispiel.</li>
+</ol>
+<h2 id="suche-nach-bestimmten-dateitypen-im-offentlichen-bereich">Suche nach bestimmten Dateitypen im öffentlichen Bereich:<a class="headerlink" href="#suche-nach-bestimmten-dateitypen-im-offentlichen-bereich" title="Permanent link">&para;</a></h2>
+<p>site:(Name der Seite ohne https://) filetype:xls</p>
+<ol>
+<li>Lektion: Zeigen Sie Mitarbeitern, dass jede Datei, die sie versehentlich in einen nicht geschützten, aber von Suchmaschinen erreichbaren Bereich hochladen, mit dem Dateityp-Filter leicht auffindbar ist (z. B. .pdf, .docx, .xls).</li>
+</ol>
 
 
 
@@ -888,7 +959,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4. November 2025 08:08:30 UTC"><span class="timeago" datetime="2025-11-04T08:08:30+00:00" locale="de"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4. November 2025 08:08:30 UTC">2025-11-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="3. Dezember 2025 21:29:36 UTC">3. Dezember 2025</span>
   </span>
 
     
@@ -952,10 +1023,6 @@
     
     
       <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
-      
-        <script src="../../js/timeago.min.js"></script>
-      
-        <script src="../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>
