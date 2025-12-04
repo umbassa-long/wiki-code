@@ -78,6 +78,8 @@ title: Links
 :axt:
 
 https://app.diagrams.net
+https://mermaid.live
+https://sqliteonline.com
 
 
 <a href="https://app.diagrams.net" target="_blank">Öffne Diagramme in neuem Tab</a>
