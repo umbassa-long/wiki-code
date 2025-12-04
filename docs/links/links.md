@@ -31,6 +31,23 @@ title: Links
     Jettison All Cargo :material-delete-empty:
 ```
 
+## Blue Team
+
+***Beginners*** 
+-  <a href="https://tryhackme.com/" target="_blank">tryhackme</a>
+-  <a href="https://overthewire.org/wargames/" target="_blank">Overthewire</a>
+
+***Willige***
+-  <a href="https://www.hackthebox.com/" target="_blank">Hackthebox</a>
+-  <a href="https://www.vulnhub.com/" target="_blank">Vulnub</a>
+-  <a href="https://portswigger.net/" target="_blank">Portswigger</a>
+-  <a href="https://pentesterlab.com/" target="_blank">Pentester Lab</a>
+
+***Just for fun***
+-  <a href="https://www.root-me.org/?lang=de" target="_blank">Root-me</a>
+
+Suchmaschinen suche `CTF Plattformen` oder `Web-Vulnerabilities`
+
 ## Lernen, Basteln,, Präsentieren
 -  <a href="https://learning/apps.org" target="_blank">Learning Apps</a>
 -  <a href="https://cryptpad.fr" target="_blank">Cryptpad - Online Office</a>
@@ -45,6 +62,7 @@ title: Links
 -  <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">Markdownguide.org</a>
 -  <a href="https://squidfunk.github.io/mkdocs-material/getting-started/" target="_blank">Squidfunk</a>
 -  <a href="https://dentro.de/ai/features/" target="_blank" >Dentro-AI</a>
+-  <a href="https://mermaid.live" target="_blank">Diagramme mit Code generieren</a>
 
 ## Interessante Seiten und sonst so
 
@@ -60,6 +78,11 @@ title: Links
 - <a href="https://docs.github.com/de/get-started" target="_blank" >Starten mit Github</a>
 - <a href="https://www.programiz.com/" target="_blank">Online-Compilers</a>
 - <a href="https://yaml-online-parser.appspot.com/" target="_blank" >Yaml-Online-Parser</a>
+- <a href="https://sqliteonline.com" target="_blank">SQLiteonline</a>
+- <a href="info-wsf.de/uebungsaufgaben-w3schools/" target="_blank">SQL-Übungen</a>
+- <a href="https://w3schools.com/sql/trysql.asp?filename=trysql_select_all" target="_blank">SQL-Lernen</a>
+- <a href="https://sqlbolt.com/lesson/select_queries_with_aggregates" target="_blank">SQL-Lernen-noch_mehr</a>
+
 
 ```html
 - <a href="URL" target="_blank">TEXT</a> # URL mit Tab  # mit Hover Effekt
@@ -77,7 +100,8 @@ title: Links
 :smile:
 :axt:
 
-https://app.diagrams.net
+-  <a href="https://mermaid.live" target="_blank">Mermaid</a>
+-  <a href="" target="_blank">Learning Apps</a>
 
 
 <a href="https://app.diagrams.net" target="_blank">Öffne Diagramme in neuem Tab</a>

@@ -1,4 +1,4 @@
-﻿# Google hacks
+﻿# Internet gelöscht
 
 ## Suche nach öffentlicher Ordnerauflistung (Directory Listing):
 
@@ -11,3 +11,9 @@
 site:(Name der Seite ohne https://) filetype:xls
 
 2.  Lektion: Zeigen Sie Mitarbeitern, dass jede Datei, die sie versehentlich in einen nicht geschützten, aber von Suchmaschinen erreichbaren Bereich hochladen, mit dem Dateityp-Filter leicht auffindbar ist (z. B. .pdf, .docx, .xls).
+
+3. wget -r -np -k -p https://example.com
+ - -r = rekursiv
+ - -np = nicht zum Elternverzeichnis hochgehen
+ - -k = Links anpassen, sodass sie lokal funktionieren
+ - -p = alle benötigten Ressourcen(Bilder, CSS, JS) mitnehmen

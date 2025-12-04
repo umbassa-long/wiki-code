@@ -1,6 +1,6 @@
 # SQL
 
-## Regeln zum SELECT Befehl
+## SELECT 
 
 ```SQL
 SELECT
@@ -23,35 +23,39 @@ LIMIT
     10;
 ```
 
-### Wichtige Regeln und Reihenfolge der Klauseln
+### Regeln und Ausführungsreihenfolge
 
 !!! note
     Die Reihenfolge der wichtigsten Klauseln ist streng festgelegt:
     
 ---
 
-# SQL Query Logik: Ausführungsreihenfolge 
+**SQL Query Logik: Ausführungsreihenfolge** 
 
-## 1. Datenbasis festlegen
+1. Datenbasis festlegen
+
 | Schritt | Klausel | Beschreibung |
 | :--- | :--- | :--- |
 | START | **FROM** [Tabelle] | Wählt die Quelltabelle(n) aus. |
 | ↓ | | |
 
-## 2. Zeilen-Filterung (Prä-Aggregation)
+2. Zeilen-Filterung (Prä-Aggregation)
+
 | Schritt | Klausel | Beschreibung |
 | :--- | :--- | :--- |
 | W | **WHERE** [Bedingung] | Filtert die **einzelnen Zeilen** der Tabelle, bevor sie gruppiert werden. **KEINE** Aggregatfunktionen erlaubt. |
 | ↓ | | |
 
-## 3. Aggregation und Gruppen-Filterung
+3. Aggregation und Gruppen-Filterung
+
 | Schritt | Klausel | Beschreibung |
 | :--- | :--- | :--- |
 | G | **GROUP BY** [Spalte] | Erstellt Gruppen von Zeilen. Dies ist die Basis für die Aggregation. |
 | H | **HAVING** [Aggregat-Bedingung] | Filtert die **Gruppen**, nachdem die Aggregatfunktionen (`SUM`, `COUNT`, etc.) berechnet wurden. |
 | ↓ | | |
 
-## 4. Auswahl und Sortierung
+4. Auswahl und Sortierung
+
 | Schritt | Klausel | Beschreibung |
 | :--- | :--- | :--- |
 | S | **SELECT** [Spalten/Aggregaten] | Definiert die finalen **Ausgabespalten** und führt die Aggregatfunktionen aus. |
