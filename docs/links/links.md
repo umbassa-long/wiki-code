@@ -72,5 +72,8 @@ https://app.diagrams.net
 
 <a href="https://app.diagrams.net" target="_blank">Öffne Diagramme in neuem Tab</a>
 
+https://journals.sagepub.com/doi/10.1177/2045125312436573
+https://natuerlich.thieme.de/heilpflanzen/detail/wuerziger-lernbooster-so-hilft-der-rosmarin-beim-studieren-4325
+
 
 
