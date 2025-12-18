@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -899,22 +899,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#regeln-zum-select-befehl" class="md-nav__link">
+  <a href="#select" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Regeln zum SELECT Befehl
+        SELECT
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Regeln zum SELECT Befehl">
+    <nav class="md-nav" aria-label="SELECT">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wichtige-regeln-und-reihenfolge-der-klauseln" class="md-nav__link">
+  <a href="#regeln-und-ausfuhrungsreihenfolge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Wichtige Regeln und Reihenfolge der Klauseln
+        Regeln und Ausführungsreihenfolge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zusatzliche-wichtige-syntax-regeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✨ Zusätzliche wichtige Syntax-Regeln
       
     </span>
   </a>
@@ -969,22 +980,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#regeln-zum-select-befehl" class="md-nav__link">
+  <a href="#select" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Regeln zum SELECT Befehl
+        SELECT
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Regeln zum SELECT Befehl">
+    <nav class="md-nav" aria-label="SELECT">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wichtige-regeln-und-reihenfolge-der-klauseln" class="md-nav__link">
+  <a href="#regeln-und-ausfuhrungsreihenfolge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Wichtige Regeln und Reihenfolge der Klauseln
+        Regeln und Ausführungsreihenfolge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zusatzliche-wichtige-syntax-regeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✨ Zusätzliche wichtige Syntax-Regeln
       
     </span>
   </a>
@@ -1017,7 +1039,7 @@
 
 
 <h1 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
-<h2 id="regeln-zum-select-befehl">Regeln zum SELECT Befehl<a class="headerlink" href="#regeln-zum-select-befehl" title="Permanent link">&para;</a></h2>
+<h2 id="select">SELECT<a class="headerlink" href="#select" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">k</span><span class="p">.</span><span class="n">KundenName</span><span class="p">,</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">Bestellnummer</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">AnzahlBestellungen</span><span class="p">,</span>
@@ -1037,14 +1059,16 @@
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="k">LIMIT</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="mi">10</span><span class="p">;</span>
 </code></pre></div>
-<h3 id="wichtige-regeln-und-reihenfolge-der-klauseln">Wichtige Regeln und Reihenfolge der Klauseln<a class="headerlink" href="#wichtige-regeln-und-reihenfolge-der-klauseln" title="Permanent link">&para;</a></h3>
+<h3 id="regeln-und-ausfuhrungsreihenfolge">Regeln und Ausführungsreihenfolge<a class="headerlink" href="#regeln-und-ausfuhrungsreihenfolge" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Die Reihenfolge der wichtigsten Klauseln ist streng festgelegt:</p>
 </div>
 <hr />
-<h1 id="sql-query-logik-ausfuhrungsreihenfolge">SQL Query Logik: Ausführungsreihenfolge<a class="headerlink" href="#sql-query-logik-ausfuhrungsreihenfolge" title="Permanent link">&para;</a></h1>
-<h2 id="1-datenbasis-festlegen">1. Datenbasis festlegen<a class="headerlink" href="#1-datenbasis-festlegen" title="Permanent link">&para;</a></h2>
+<p><strong>SQL Query Logik: Ausführungsreihenfolge</strong> </p>
+<ol>
+<li>Datenbasis festlegen</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -1066,7 +1090,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="2-zeilen-filterung-pra-aggregation">2. Zeilen-Filterung (Prä-Aggregation)<a class="headerlink" href="#2-zeilen-filterung-pra-aggregation" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Zeilen-Filterung (Prä-Aggregation)</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -1088,7 +1114,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="3-aggregation-und-gruppen-filterung">3. Aggregation und Gruppen-Filterung<a class="headerlink" href="#3-aggregation-und-gruppen-filterung" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Aggregation und Gruppen-Filterung</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -1115,7 +1143,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="4-auswahl-und-sortierung">4. Auswahl und Sortierung<a class="headerlink" href="#4-auswahl-und-sortierung" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Auswahl und Sortierung</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -1196,7 +1226,7 @@ Syntax: ORDER BY Spalte [DESC].</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="3. Dezember 2025 21:29:36 UTC">3. Dezember 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="4. Dezember 2025 20:04:26 UTC">4. Dezember 2025</span>
   </span>
 
     
@@ -1278,10 +1308,10 @@ Syntax: ORDER BY Spalte [DESC].</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.expand", "content.tabs.link", "toc.follow", "navigation.footer", "navigation.top"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.expand", "content.tabs.link", "toc.follow", "navigation.footer", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
