@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://wiki-code.github.io/projekte/leereMDdatei/">
+        <link rel="canonical" href="https://wiki-code.github.io/code/linux-commands/">
       
       
       
@@ -23,7 +23,7 @@
     
     
       
-        <title>Internet gelöscht - Wissensspeicher</title>
+        <title>ss vs netstat – Markdown Cheat Sheet - Wissensspeicher</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#internet-geloscht" class="md-skip">
+        <a href="#ss-vs-netstat-markdown-cheat-sheet" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Internet gelöscht
+              ss vs netstat – Markdown Cheat Sheet
             
           </span>
         </div>
@@ -200,7 +200,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../code/welcome/" class="md-tabs__link">
+        <a href="../welcome/" class="md-tabs__link">
           
   
   
@@ -260,7 +260,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../docker/" class="md-tabs__link">
+        <a href="../../projekte/docker/" class="md-tabs__link">
           
   
   
@@ -403,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code/welcome/" class="md-nav__link">
+      <a href="../welcome/" class="md-nav__link">
         
   
   
@@ -776,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../projekte/docker/" class="md-nav__link">
         
   
   
@@ -804,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github/" class="md-nav__link">
+      <a href="../../projekte/github/" class="md-nav__link">
         
   
   
@@ -832,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sql/" class="md-nav__link">
+      <a href="../../projekte/sql/" class="md-nav__link">
         
   
   
@@ -887,10 +887,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#suche-nach-offentlicher-ordnerauflistung-directory-listing" class="md-nav__link">
+  <a href="#kurzfassung" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Suche nach öffentlicher Ordnerauflistung (Directory Listing):
+        Kurzfassung
       
     </span>
   </a>
@@ -898,10 +898,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#suche-nach-bestimmten-dateitypen-im-offentlichen-bereich" class="md-nav__link">
+  <a href="#grundlegende-befehle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Suche nach bestimmten Dateitypen im öffentlichen Bereich:
+        Grundlegende Befehle
       
     </span>
   </a>
@@ -909,22 +909,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tryhackme" class="md-nav__link">
+  <a href="#haufige-use-cases" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TryHackme
+        Häufige Use-Cases
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="TryHackme">
+    <nav class="md-nav" aria-label="Häufige Use-Cases">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#web-content-discovery-enumeration" class="md-nav__link">
+  <a href="#welcher-prozess-hort-auf-einem-port" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Web Content Discovery / Enumeration**
+        Welcher Prozess hört auf einem Port?
       
     </span>
   </a>
@@ -932,22 +932,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#verantwortlichkeiten" class="md-nav__link">
+  <a href="#alle-aktiven-tcp-verbindungen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verantwortlichkeiten
+        Alle aktiven TCP-Verbindungen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Verantwortlichkeiten">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#key-areas-of-defensive-security" class="md-nav__link">
+  <a href="#https-verbindungen-port-443" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key areas of defensive security:
+        HTTPS-Verbindungen (Port 443)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv4-ipv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IPv4 / IPv6
       
     </span>
   </a>
@@ -958,9 +968,76 @@
     </nav>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance &amp; Debugging
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance &amp; Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verbindungsstatus-zahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verbindungsstatus zählen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hohe-queues-erkennen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hohe Queues erkennen
+      
+    </span>
+  </a>
+  
+</li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ersatz-fur-weitere-netstat-befehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ersatz für weitere netstat-Befehle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merkhilfe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merkhilfe
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empfehlung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Empfehlung
+      
+    </span>
+  </a>
   
 </li>
       
@@ -984,71 +1061,122 @@
   
 
 
-<h1 id="internet-geloscht">Internet gelöscht<a class="headerlink" href="#internet-geloscht" title="Permanent link">&para;</a></h1>
-<h2 id="suche-nach-offentlicher-ordnerauflistung-directory-listing">Suche nach öffentlicher Ordnerauflistung (Directory Listing):<a class="headerlink" href="#suche-nach-offentlicher-ordnerauflistung-directory-listing" title="Permanent link">&para;</a></h2>
-<p>site:(Name der Seite ohne https://) intitle:"Index of /"</p>
+<h1 id="ss-vs-netstat-markdown-cheat-sheet">ss vs netstat – Markdown Cheat Sheet<a class="headerlink" href="#ss-vs-netstat-markdown-cheat-sheet" title="Permanent link">&para;</a></h1>
+<h2 id="kurzfassung">Kurzfassung<a class="headerlink" href="#kurzfassung" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Lektion: Wenn diese Suche Ergebnisse liefert, bedeutet dies, dass der Server bei Eingabe eines falschen Pfades eine Liste aller Dateien und Unterordner anzeigt.</li>
+<li><strong>ss</strong> = moderner Ersatz für <strong>netstat</strong></li>
+<li>Schneller, detaillierter, besser filterbar</li>
+<li>Standard auf modernen Linux-Systemen</li>
 </ul>
-<h2 id="suche-nach-bestimmten-dateitypen-im-offentlichen-bereich">Suche nach bestimmten Dateitypen im öffentlichen Bereich:<a class="headerlink" href="#suche-nach-bestimmten-dateitypen-im-offentlichen-bereich" title="Permanent link">&para;</a></h2>
-<p>site:example.com filetype:xls</p>
-<ul>
-<li>
-<p>Lektion: alle Dateien mit einer bestimmten Endung im öffentlichen Bereich der Webseite</p>
-</li>
-<li>
-<p>wget -r -np -k -p https://example.com</p>
-</li>
-<li>-r = rekursiv</li>
-<li>-np = nicht zum Elternverzeichnis hochgehen</li>
-<li>-k = Links anpassen, sodass sie lokal funktionieren</li>
-<li>-p = alle benötigten Ressourcen(Bilder, CSS, JS) mitnehmen</li>
-</ul>
-<h2 id="tryhackme">TryHackme<a class="headerlink" href="#tryhackme" title="Permanent link">&para;</a></h2>
-<p><a href="../../code/linux-commands/">Linux-Commands</a></p>
-<h3 id="web-content-discovery-enumeration">Web Content Discovery / Enumeration**<a class="headerlink" href="#web-content-discovery-enumeration" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>- dirb - alt
-- ffuf - modern
-</code></pre></div>
-<h3 id="verantwortlichkeiten">Verantwortlichkeiten<a class="headerlink" href="#verantwortlichkeiten" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p><strong>Security Operations Center (SOC)</strong> is a team of IT security professionals tasked with monitoring, preventing , detecting , investigating, and responding to threats within a company’s network and systems.</p>
-</li>
-<li>
-<p><strong>Incident Responder</strong> is responsible for investigating and responding to ongoing security incidents within the organisation.
-They will monitor and prevent attackers in real time and share lessons learned during the attack to prevent future incidents.</p>
-</li>
-<li>
-<p><strong>Security Engineer</strong> develops and maintains the essential tools and systems that support the defensive security team.
-These systems enable the team to monitor, investigate, and explore events within an organisation.</p>
-</li>
-<li>
-<p><strong>Digital Forensics</strong> will utilise their expertise to understand what occurred during an incident.
-They will gather, preserve, and analyse evidence from the network and systems to uncover vital information about the attackers and their methods.</p>
-</li>
-</ul>
-<h4 id="key-areas-of-defensive-security">Key areas of defensive security:<a class="headerlink" href="#key-areas-of-defensive-security" title="Permanent link">&para;</a></h4>
+<hr />
+<h2 id="grundlegende-befehle">Grundlegende Befehle<a class="headerlink" href="#grundlegende-befehle" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Monitoring and Detecting</th>
-<th>Incident Response</th>
-<th>Threat Intelligence</th>
-<th>Vulnerability Management</th>
-<th>Investigation and Analysis</th>
+<th>Zweck</th>
+<th>netstat</th>
+<th>ss</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Continually observing network and system activity to detect suspicious behaviour and events. These may include, for example, monitoring for logins from another country while the employee is based in the company's London office.</td>
-<td>The team quickly comes together if suspicious activity is confirmed and alerts are raised. This is when the Incident Response process begins. The process involves containing and removing the threat and restoring the business back to normality.</td>
-<td>Gathering and using information about attackers—their latest methods, targets, and trends—can greatly strengthen an organisation’s defences. For example, understanding that an attacker focuses on a specific software application used within organisations.</td>
-<td>Fixing software or system flaws is an important preventative measure that can lower the risk of an attack. Security teams can check which systems attackers are most likely to target. This can be done manually or with the help of automated tools.</td>
-<td>Members of a defensive security team are always monitoring and analysing what’s happening inside an organisation. They work to separate normal activity from suspicious behaviour, digging into the details like solving a puzzle to uncover valuable insights.</td>
+<td>Alle Verbindungen</td>
+<td><code>netstat -a</code></td>
+<td><code>ss -a</code></td>
+</tr>
+<tr>
+<td>Listening Sockets</td>
+<td><code>netstat -l</code></td>
+<td><code>ss -l</code></td>
+</tr>
+<tr>
+<td>TCP</td>
+<td><code>netstat -t</code></td>
+<td><code>ss -t</code></td>
+</tr>
+<tr>
+<td>UDP</td>
+<td><code>netstat -u</code></td>
+<td><code>ss -u</code></td>
+</tr>
+<tr>
+<td>Numerisch</td>
+<td><code>netstat -n</code></td>
+<td><code>ss -n</code></td>
+</tr>
+<tr>
+<td>Prozesse anzeigen</td>
+<td><code>netstat -p</code></td>
+<td><code>ss -p</code></td>
+</tr>
+<tr>
+<td>Alles kombiniert</td>
+<td><code>netstat -tulnp</code></td>
+<td><code>ss -tulnp</code></td>
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="haufige-use-cases">Häufige Use-Cases<a class="headerlink" href="#haufige-use-cases" title="Permanent link">&para;</a></h2>
+<h3 id="welcher-prozess-hort-auf-einem-port">Welcher Prozess hört auf einem Port?<a class="headerlink" href="#welcher-prozess-hort-auf-einem-port" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ss<span class="w"> </span>-tulnp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>:80
+</code></pre></div>
+<h3 id="alle-aktiven-tcp-verbindungen">Alle aktiven TCP-Verbindungen<a class="headerlink" href="#alle-aktiven-tcp-verbindungen" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ss<span class="w"> </span>-t<span class="w"> </span>state<span class="w"> </span>established
+</code></pre></div>
+<h3 id="https-verbindungen-port-443">HTTPS-Verbindungen (Port 443)<a class="headerlink" href="#https-verbindungen-port-443" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ss<span class="w"> </span>state<span class="w"> </span>established<span class="w"> </span><span class="s1">&#39;( dport = :443 or sport = :443 )&#39;</span>
+</code></pre></div>
+<h3 id="ipv4-ipv6">IPv4 / IPv6<a class="headerlink" href="#ipv4-ipv6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ss<span class="w"> </span>-4<span class="w"> </span>-tuln<span class="w">   </span><span class="c1"># IPv4</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>ss<span class="w"> </span>-6<span class="w"> </span>-tuln<span class="w">   </span><span class="c1"># IPv6</span>
+</code></pre></div>
+<hr />
+<h2 id="performance-debugging">Performance &amp; Debugging<a class="headerlink" href="#performance-debugging" title="Permanent link">&para;</a></h2>
+<h3 id="verbindungsstatus-zahlen">Verbindungsstatus zählen<a class="headerlink" href="#verbindungsstatus-zahlen" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ss<span class="w"> </span>-ant<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq<span class="w"> </span>-c
+</code></pre></div>
+<h3 id="hohe-queues-erkennen">Hohe Queues erkennen<a class="headerlink" href="#hohe-queues-erkennen" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ss<span class="w"> </span>-lnt
+</code></pre></div>
+<p>Achte auf hohe Werte in <strong>Recv-Q</strong> / <strong>Send-Q</strong></p>
+<hr />
+<h2 id="ersatz-fur-weitere-netstat-befehle">Ersatz für weitere netstat-Befehle<a class="headerlink" href="#ersatz-fur-weitere-netstat-befehle" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>netstat</th>
+<th>moderner Ersatz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>netstat -r</code></td>
+<td><code>ip route</code></td>
+</tr>
+<tr>
+<td><code>netstat -i</code></td>
+<td><code>ip -s link</code></td>
+</tr>
+<tr>
+<td><code>ifconfig</code></td>
+<td><code>ip addr</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="merkhilfe">Merkhilfe<a class="headerlink" href="#merkhilfe" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>ss</code> = <strong>Socket Statistics</strong></li>
+<li>Nutzt Netlink → schneller als <code>/proc</code></li>
+<li>Ideal für Server, Container, Cloud</li>
+</ul>
+<hr />
+<h2 id="empfehlung">Empfehlung<a class="headerlink" href="#empfehlung" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Neue Skripte immer mit <code>ss</code> schreiben</strong></p>
+</blockquote>
+<hr />
 
 
 
