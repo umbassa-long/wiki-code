@@ -89,6 +89,7 @@ nav: # Sehr wichtig. die "nav:" Unterpunkte müssen zusammenhängend sein und d�
   - Wissensspeicher: index.md
   - Code:
     - Welcome to MkDocs: code/welcome.md
+    - Linux-Commands: code/linux-commands.md
   - Links:
     - Links & Ressourcen: links/links.md
   - Markdown:
@@ -101,3 +102,4 @@ nav: # Sehr wichtig. die "nav:" Unterpunkte müssen zusammenhängend sein und d�
     - Docker: projekte/docker.md
     - Github: projekte/github.md
     - SQL: projekte/sql.md
+    - TryHackme: projekte/tryhackme.md

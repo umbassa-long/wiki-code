@@ -308,3 +308,112 @@ Symbols
 | :black_circle: `:black_circle:` | :white_circle: `:white_circle:` | :red_circle: `:red_circle:` |
 | :large_blue_circle: `:large_blue_circle:` | :large_blue_diamond: `:large_blue_diamond:` | :large_orange_diamond: `:large_orange_diamond:` |
 | :small_blue_diamond: `:small_blue_diamond:` | :small_orange_diamond: `:small_orange_diamond:` | :small_red_triangle: `:small_red_triangle:` |
+
+# 🎨 GitHub Icon Cheat Sheet (Emojis)
+
+> GitHub unterstützt **nur Emojis (Unicode)** & Bilder.
+> Diese Icons sind **100 % GitHub-safe**.
+
+---
+
+## 🚀 Allgemein & Struktur
+| Zweck | Emoji |
+|----|----|
+| Start / Willkommen | 🚀 |
+| Übersicht | 📋 |
+| Fokus / Ziel | 🎯 |
+| Idee / Hinweis | 💡 |
+| Info | ℹ️ |
+| Hilfe | 🆘 |
+
+---
+
+## 📚 Dokumentation & Inhalte
+| Zweck | Emoji |
+|----|----|
+| Buch / Doku | 📘 |
+| Notizen | 📝 |
+| Artikel | 📄 |
+| Wiki | 📖 |
+| Lernen | 🎓 |
+
+---
+
+## 💻 Code & Technik
+| Zweck | Emoji |
+|----|----|
+| Code | 💻 |
+| Terminal | 🖥️ |
+| Bug | 🐛 |
+| Fix | 🔧 |
+| Build | 🏗️ |
+| Tests | 🧪 |
+| API | 🔌 |
+
+---
+
+## 📦 Projekt & Workflow
+| Zweck | Emoji |
+|----|----|
+| Paket | 📦 |
+| Version | 🏷️ |
+| Release | 🚢 |
+| Roadmap | 🗺️ |
+| Aufgabe | 📌 |
+
+---
+
+## 🔄 Status & CI
+| Zweck | Emoji |
+|----|----|
+| Erfolg | ✅ |
+| Fehler | ❌ |
+| Warnung | ⚠️ |
+| In Arbeit | 🚧 |
+| Pause | ⏸️ |
+| Abgeschlossen | 🏁 |
+
+---
+
+## 🔐 Sicherheit
+| Zweck | Emoji |
+|----|----|
+| Sicherheit | 🔐 |
+| Passwort | 🔑 |
+| Achtung | 🚨 |
+| Sperre | 🔒 |
+
+---
+
+## 🔗 Navigation & Links
+| Zweck | Emoji |
+|----|----|
+| Link | 🔗 |
+| Extern | 🌍 |
+| Download | ⬇️ |
+| Upload | ⬆️ |
+| Weiter | ➡️ |
+| Zurück | ⬅️ |
+
+---
+
+## 👥 Community & Kommunikation
+| Zweck | Emoji |
+|----|----|
+| Benutzer | 👤 |
+| Team | 👥 |
+| Diskussion | 💬 |
+| Feedback | 🗣️ |
+| Beitrag | 🤝 |
+
+---
+
+## 🧪 Markdown-Beispiele
+
+```md
+## 🚀 Projektstart
+## 📘 Dokumentation
+## 🧪 Tests
+- ✅ Build erfolgreich
+- ⚠️ WIP
+- ❌ Fehlgeschlagen
