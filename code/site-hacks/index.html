@@ -1004,6 +1004,109 @@
 <li>-k = Links anpassen, sodass sie lokal funktionieren</li>
 <li>-p = alle benötigten Ressourcen(Bilder, CSS, JS) mitnehmen</li>
 </ul>
+<h1 id="google-dorks-top-20-cheat-sheet">🧭 Google Dorks – Top 20 Cheat Sheet<a class="headerlink" href="#google-dorks-top-20-cheat-sheet" title="Permanent link">&para;</a></h1>
+<p>Google Dorks (auch „Site Hacks“) nutzen erweiterte Suchoperatoren,
+um öffentlich zugängliche, aber oft unbeabsichtigt exponierte Inhalte zu finden.</p>
+<hr />
+<h2 id="grundlegende-operatoren">🔎 Grundlegende Operatoren<a class="headerlink" href="#grundlegende-operatoren" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Beschreibung</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>site:</code></td>
+<td>Suche auf einer Domain</td>
+<td><code>site:example.com</code></td>
+</tr>
+<tr>
+<td><code>intitle:</code></td>
+<td>Suchbegriff im Titel</td>
+<td><code>intitle:"index of"</code></td>
+</tr>
+<tr>
+<td><code>inurl:</code></td>
+<td>Suchbegriff in URL</td>
+<td><code>inurl:admin</code></td>
+</tr>
+<tr>
+<td><code>filetype:</code></td>
+<td>Dateityp suchen</td>
+<td><code>filetype:pdf</code></td>
+</tr>
+<tr>
+<td><code>cache:</code></td>
+<td>Google-Cache anzeigen</td>
+<td><code>cache:example.com</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="top-20-google-dorks">🧭 Top 20 Google Dorks<a class="headerlink" href="#top-20-google-dorks" title="Permanent link">&para;</a></h2>
+<h3 id="1-offene-verzeichnisse">1️⃣ Offene Verzeichnisse<a class="headerlink" href="#1-offene-verzeichnisse" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>intitle:&quot;index of&quot;
+</code></pre></div>
+<h3 id="2-admin-logins-finden">2️⃣ Admin-Logins finden<a class="headerlink" href="#2-admin-logins-finden" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>inurl:admin login
+</code></pre></div>
+<h3 id="3-offentliche-konfigurationsdateien">3️⃣ Öffentliche Konfigurationsdateien<a class="headerlink" href="#3-offentliche-konfigurationsdateien" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>filetype:env
+</code></pre></div>
+<h3 id="4-backup-dateien">4️⃣ Backup-Dateien<a class="headerlink" href="#4-backup-dateien" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>filetype:bak OR filetype:backup
+</code></pre></div>
+<h3 id="5-datenbanken-sql-dumps">5️⃣ Datenbanken (SQL Dumps)<a class="headerlink" href="#5-datenbanken-sql-dumps" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>filetype:sql
+</code></pre></div>
+<h3 id="6-offentliche-log-dateien">6️⃣ Öffentliche Log-Dateien<a class="headerlink" href="#6-offentliche-log-dateien" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>filetype:log
+</code></pre></div>
+<h3 id="7-passwort-dateien">7️⃣ Passwort-Dateien<a class="headerlink" href="#7-passwort-dateien" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>intext:&quot;password&quot; filetype:txt
+</code></pre></div>
+<h3 id="8-git-repositories">8️⃣ Git-Repositories<a class="headerlink" href="#8-git-repositories" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>inurl:.git
+</code></pre></div>
+<h3 id="9-apache-status-pages">9️⃣ Apache Status Pages<a class="headerlink" href="#9-apache-status-pages" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>inurl:server-status
+</code></pre></div>
+<h3 id="kameras-iot-gerate">🔟 Kameras &amp; IoT-Geräte<a class="headerlink" href="#kameras-iot-gerate" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>intitle:&quot;Live View&quot; inurl:view
+</code></pre></div>
+<h3 id="11-php-info-seiten">1️⃣1️⃣ PHP-Info-Seiten<a class="headerlink" href="#11-php-info-seiten" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>intitle:&quot;phpinfo()&quot;
+</code></pre></div>
+<h3 id="12-admin-panels-generisch">1️⃣2️⃣ Admin-Panels (generisch)<a class="headerlink" href="#12-admin-panels-generisch" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>inurl:admin OR inurl:login
+</code></pre></div>
+<h3 id="13-offentliche-dokumente">1️⃣3️⃣ Öffentliche Dokumente<a class="headerlink" href="#13-offentliche-dokumente" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>filetype:doc OR filetype:xls OR filetype:pdf
+</code></pre></div>
+<h3 id="14-konfigurationsdateien">1️⃣4️⃣ Konfigurationsdateien<a class="headerlink" href="#14-konfigurationsdateien" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>filetype:xml OR filetype:conf
+</code></pre></div>
+<h3 id="15-fehler-debug-seiten">1️⃣5️⃣ Fehler- &amp; Debug-Seiten<a class="headerlink" href="#15-fehler-debug-seiten" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>intext:&quot;Fatal error&quot; filetype:php
+</code></pre></div>
+<h3 id="16-vpn-zugangsdaten">1️⃣6️⃣ VPN / Zugangsdaten<a class="headerlink" href="#16-vpn-zugangsdaten" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>intext:&quot;vpn&quot; filetype:txt
+</code></pre></div>
+<h3 id="17-exposed-apis">1️⃣7️⃣ Exposed APIs<a class="headerlink" href="#17-exposed-apis" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>inurl:api filetype:json
+</code></pre></div>
+<h3 id="18-wordpress-admin">1️⃣8️⃣ WordPress Admin<a class="headerlink" href="#18-wordpress-admin" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>inurl:/wp-admin
+</code></pre></div>
+<h3 id="19-wordpress-backups">1️⃣9️⃣ WordPress Backups<a class="headerlink" href="#19-wordpress-backups" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>inurl:wp-content filetype:zip
+</code></pre></div>
+<h3 id="20-offentliche-jenkins-dashboards">2️⃣0️⃣ Öffentliche Jenkins-Dashboards<a class="headerlink" href="#20-offentliche-jenkins-dashboards" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>intitle:&quot;Dashboard [Jenkins]&quot;
+</code></pre></div>
 
 
 
@@ -1024,7 +1127,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="22. Dezember 2025 20:04:43 UTC">22. Dezember 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="22. Dezember 2025 23:11:46 UTC">22. Dezember 2025</span>
   </span>
 
     
