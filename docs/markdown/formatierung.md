@@ -49,7 +49,7 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
     - Listenpunkt 2
     - Listenpunkt 3
 
-=== "Syntax"
+=== "Syntax 1 "
 
     ```markdown
     - Listenpunkt 1
@@ -63,7 +63,7 @@ Hier sehen Sie die Syntax und das gerenderte Ergebnis.
     2. Listenpunkt 2
     3. Listenpunkt 3
 
-=== "Syntax"
+=== "Syntax 2"
 
     ```markdown
     1. Listenpunkt 1
