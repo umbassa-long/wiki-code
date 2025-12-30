@@ -17,7 +17,8 @@ Herzlich willkommen in meinem zentralen digitalen Notizbuch, betrieben durch das
 
 | Links | Ressourcen |
 | :--- | :--- |
-| :fontawesome-solid-book: [Grundlagen zur Wiki-Nutzung](markdown/grundlagen.md) | :material-code-tags: [Code-Beispiele und Syntax](code/welcome.md) |
+| :fontawesome-solid-book: [Grundlagen zur Wiki-Nutzung](markdown/grundlagen.md) |
+| :material-code-tags: [Code-Beispiele und Syntax](code/linux-commands.md) |
 | :material-link: [Externe Links & Ressourcen](links/links.md) | |
 
 ---

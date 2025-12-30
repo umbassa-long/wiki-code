@@ -88,7 +88,6 @@ markdown_extensions:
 nav: # Sehr wichtig. die "nav:" Unterpunkte m체ssen zusammenh채ngend sein und d체rfen nicht mit einer auskommentierten Zeile unterbrochen werden" 
   - Wissensspeicher: index.md
   - Code:
-    - Welcome to MkDocs: code/welcome.md
     - Linux-Commands: code/linux-commands.md
   - Links:
     - Links & Ressourcen: links/links.md
@@ -103,3 +102,5 @@ nav: # Sehr wichtig. die "nav:" Unterpunkte m체ssen zusammenh채ngend sein und d�
     - Github: projekte/github.md
     - SQL: projekte/sql.md
     - TryHackme: projekte/tryhackme.md
+  - Howto: 
+    - ForgeofEmpire: howto/forgeofempire.md
