@@ -87,9 +87,41 @@ Achte auf hohe Werte in **Recv-Q** / **Send-Q**
 
 ---
 
-## Empfehlung
+# grep
 
-> **Neue Skripte immer mit `ss` schreiben**
+🔁 Rekursiv in allen Dateien suchen
+```bash
+grep -r "THM{" .
+```
 
----
+🔡 Groß-/Kleinschreibung ignorieren
+```bash
+grep -i "thm{" file.txt
+```
 
+🔗 grep + Pipes (sehr wichtig!)
+Kombiniert mit cat
+```bash
+cat notes.txt | grep "THM{"
+```
+
+Nur Textdateien durchsuchen
+```bash
+grep -r "THM{" /var/log --include="*.txt"
+```
+
+Ausschließen bestimmter Dateien
+```bash
+grep -r "THM{" . --exclude="*.bin"
+```
+
+📦 In Archiven suchen
+unzip archive.zip
+```bash
+grep -r "THM{" .
+```
+
+🔎 Dateien nach Inhalt finden
+```bash
+find . -type f -exec grep "THM{" {} \;
+```
