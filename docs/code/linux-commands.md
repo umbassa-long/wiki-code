@@ -125,3 +125,22 @@ grep -r "THM{" .
 ```bash
 find . -type f -exec grep "THM{" {} \;
 ```
+
+| Befehl | Beschreibung |
+| :--- | :--- |
+| **ls** | Listet den Inhalt eines Verzeichnisses auf (oft mit `-la` genutzt). |
+| **cd** | Wechselt das aktuelle Arbeitsverzeichnis (Change Directory). |
+| **cat** | Zeigt den Inhalt einer Datei vollständig im Terminal an. |
+| **grep** | Durchsucht Dateien oder Ausgaben nach bestimmten Textmustern. |
+| **chmod** | Ändert die Zugriffsrechte (Read, Write, Execute) einer Datei. |
+| **chown** | Ändert den Besitzer und die Gruppe einer Datei oder eines Ordners. |
+| **cp** | Kopiert Dateien oder ganze Verzeichnisse. |
+| **mv** | Verschiebt oder benennt Dateien und Verzeichnisse um. |
+| **rm** | Löscht Dateien (mit `-r` auch Verzeichnisse). |
+| **mkdir** | Erstellt ein neues Verzeichnis. |
+| **touch** | Erstellt eine neue, leere Datei oder aktualisiert den Zeitstempel. |
+| **head** / **tail** | Zeigt die ersten bzw. letzten Zeilen einer Datei an (ideal für Logs). |
+| **nano** / **vi** | Einfache Texteditoren direkt für die Konsole. |
+| **find** | Sucht im Dateisystem nach Dateien basierend auf Namen oder Typ. |
+| **df** | Zeigt den verfügbaren Speicherplatz auf den Dateisystemen an. |
+| **du** | Schätzt den Speicherverbrauch von Dateien oder Verzeichnissen. |

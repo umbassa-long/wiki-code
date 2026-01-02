@@ -2,6 +2,8 @@
 
 🎯 [Linux-Commands](../code/linux-commands.md) :globe_with_meridians: [Shodan](https://shodan.io) 💡 [Censys](https://search.censys.io/) 🏗️ [Virustotal](https://www.virustotal.com/gui/home/upload) 🌐 [CVE.org](https://cve.org) 🌐 [NVD (NIST)](https://nvd.nist.gov/)
 
+[Exploit-DB](https://www.exploit-db.com/)
+
 ### Web Content Discovery / Enumeration**
     - dirb - alt
     - ffuf - modern 
