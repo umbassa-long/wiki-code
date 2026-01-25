@@ -3,16 +3,16 @@
 !!! info ":material-information-outline: Aufbau für QI"
     Diese Anleitung beschreibt einen effizienten Aufbau für die Quest-Insel in Forge of Empire. Folge den Schritten zeitlich, um optimale Ressourcen zu maximieren.
 
-| Stunde | Aktionen |
-|--------|----------|
-| 1 (:material-clock-outline: Tag 1) | - Kaufe 1 Erweiterung<br>- Baue 6x Markt<br>- Baue 9x Gerberei<br>- Baue 5x Mehrgeschossiges Haus |
-| 2 (:material-clock-outline: nach 10h) | - 6x Markt<br>- 8x Gerberei<br> - 5x Mehrgeschossiges Haus<br>- Baue 1x Alchemist |
-| 3 (:material-clock-outline: nach 10h) | - 6x Markt<br>- 7x Gerberei<br> - 7x Mehrgeschossiges Haus<br>- Baue 2x Alchemist<br> - Baue 1 Galgen<br>|
-| 4 (:material-clock-outline: nach 10h) | - 6x Markt<br>- 6x Gerberei<br> - 8x Mehrgeschossiges Haus<br>- Baue 3x Alchemist<br> - 2 Galgen<br>|
-| 5 (:material-clock-outline: nach 10h) | - 6x Markt<br>- 4x Gerberei<br> - 8x Mehrgeschossiges Haus<br>- Baue 6x Alchemist<br> - 2 Galgen<br>|
-| 6 (:material-clock-outline: nach 10h) | - 5x Markt<br>- 4x Gerberei<br> - 8x Mehrgeschossiges Haus<br>- Baue 6x Alchemist<br> - 2 Galgen<br> - Baue 1 Pranger<br> - Baue 2 Fachwerkhaus<br>|
-| 7 (:material-clock-outline: nach 10h) | - 2x Markt<br>- 2x Gerberei<br> - 7x Mehrgeschossiges Haus<br>- Baue 8x Alchemist<br> - 4 Galgen<br> - Baue 1 Pranger<br> - Baue 4 Fachwerkhaus<br> - Baue 1 Blidenlager<br>|
-| 8 (:material-clock-outline: nach 10h) | - 2x Gerberei<br> - 7x Fachwerk oder Schindel<br> -  10x Alchemist dann Bäcker<br> - 6 Galgen anschließend Pranger<br> - 1 Pranger<br> - Baue 4 Fachwerkhaus<br> - Baue 1 Blidenlager<br>|
+| Stunde | Haustyp 1 | Haustyp 2 | Haustyp 3 | Haustyp 4 | Haustyp 5 | Haustyp 6 | Haustyp 7 |
+|--------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| 1 (:material-clock-outline: Tag 1) | - 6x Markt<br> |- 9x Gerberei<br> | - 5x Mehrgeschossiges Haus | - Kaufe 1 Erweiterung<br> |
+| 2 (:material-clock-outline: nach 10h) | - 6x Markt<br> | - 8x Gerberei<br> | - 5x Mehrgeschossiges Haus<br> | - 1x Alchemist |
+| 3 (:material-clock-outline: nach 10h) | - 6x Markt<br> | - 7x Gerberei<br> | - 7x Mehrgeschossiges Haus<br> | - 2x Alchemist<br> | - 1 Galgen<br>|
+| 4 (:material-clock-outline: nach 10h) | - 6x Markt<br> | - 6x Gerberei<br> | - 8x Mehrgeschossiges Haus<br> | - 3x Alchemist<br> | - 2 Galgen<br>|
+| 5 (:material-clock-outline: nach 10h) | - 6x Markt<br> | - 4x Gerberei<br> | - 8x Mehrgeschossiges Haus<br> | - 6x Alchemist<br> |- 2 Galgen<br>|
+| 6 (:material-clock-outline: nach 10h) | - 5x Markt<br> | - 4x Gerberei<br> | - 8x Mehrgeschossiges Haus<br> - 4 Fachwerkhaus | - 6x Alchemist<br> |- 2 Galgen<br>| - 1 Pranger<br> |
+| 7 (:material-clock-outline: nach 10h) | - 2x Markt<br> | - 2x Gerberei<br> | - 7x Mehrgeschossiges Haus<br> |- 8x Alchemist<br> | - 4 Galgen<br> | - 1 Pranger<br> | - Baue 1 Blidenlager<br>|
+| 8 (:material-clock-outline: nach 10h) | - 2x Gerberei<br> | - 11x Fachwerk oder Schindel<br> | -  10x Alchemist dann Bäcker<br> - 6 Galgen anschließend Pranger<br> | - 1 Pranger<br> | - 1 Blidenlager<br>|
 
 !!! tip ":material-lightbulb-outline: Hinweis"
     Passe die Anzahl der Gebäude an deine verfügbaren Ressourcen und Inselgröße an. Ernte regelmäßig, um Produktionsunterbrechungen zu vermeiden.
