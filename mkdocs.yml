@@ -93,6 +93,7 @@ nav: # Sehr wichtig. die "nav:" Unterpunkte müssen zusammenhängend sein und d�
   - Howto: 
     - ForgeofEmpire: howto/forgeofempire.md
     - VPN Zertifikat Linux: howto/vpn-cisco-linux.md
+    - Github Sync Guide: howto/github-sync-guide.md
   - Links:
     - Links & Ressourcen: links/links.md
   - Markdown:
