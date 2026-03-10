@@ -1,4 +1,3 @@
-Hier ist dein komplettes, strukturiertes **Cheat Sheet** im Markdown-Format. Du kannst diesen Block einfach kopieren und in deine Wissensdatenbank (z. B. Obsidian, Notion oder als `.md` Datei) einfügen.
 
 ---
 
